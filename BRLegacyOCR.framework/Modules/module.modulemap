@@ -1,0 +1,6 @@
+framework module BRLegacyOCR {
+  umbrella header "BRLegacyOCR.h"
+
+  export *
+  module * { export * }
+}

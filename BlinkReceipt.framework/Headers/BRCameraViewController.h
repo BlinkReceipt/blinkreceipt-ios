@@ -115,14 +115,6 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
 /**-------------------------*/
 
 /**
- *  Override this method to be notified after each frame of the OCR results so that you can implement UI effects related to the scan results and positions
- *
- *  @param results An array of OCR results and their positions within the image (see documentation for details on the exact structure)
- *  @param imgSize The size of the image for the corresponding OCR results
- */
-- (void)didGetOverlayResults:(NSArray*)results forImgSize:(CGSize)imgSize;
-
-/**
  *  Override this method to be notified when a determination is made that the user's scanning distance is either too far or is acceptable (OK)
  *
  *  @param newStatus The newly detected distance status

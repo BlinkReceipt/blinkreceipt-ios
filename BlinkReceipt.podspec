@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -18,9 +18,9 @@ This is the BlinkReceipt SDK
   
   s.source       = { :git => "https://github.com/BlinkReceipt/blinkreceipt-ios.git", :tag => "#{s.version}" }
 
-  s.vendored_frameworks = ["BlinkReceipt.framework","BRLegacyOCR.framework"]
+  s.vendored_frameworks = ["BlinkReceipt.framework"]
 
-  s.resources = ["BlinkReceipt.framework/*.zzip", "BlinkReceipt.framework/windfall-intermediate.der", "BlinkReceipt.framework/*.nib", "BlinkReceipt.framework/*.png", "BlinkReceipt.framework/*.wav", "BRLegacyOCR.framework/*.zzip"]
+  s.resources = ["BlinkReceipt.framework/*.zzip", "BlinkReceipt.framework/windfall-intermediate.der", "BlinkReceipt.framework/*.nib", "BlinkReceipt.framework/*.png", "BlinkReceipt.framework/*.wav"]
   
   s.dependency 'AFNetworking', '~> 2.0'
   s.dependency 'libextobjc', '~> 0.4'

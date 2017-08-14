@@ -13,13 +13,16 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'YourTarget' do
-	use_frameworks!
+  use_frameworks!
 
-	pod 'BlinkReceipt', '~> 1.0'
+  pod 'BlinkReceipt', '~> 1.0'
 end
 ```
-
-- After editing your Podfile, run `pod install` and then make sure to open the `.xcworkspace` file rather than the `.xcodeproj`
+- Note: If you plan to use Scandit barcode scanning, please also add the following line to your `Podfile`:
+```
+pod 'BRScandit', '~> 2.0'
+```
+After editing your Podfile, run `pod install` and then make sure to open the `.xcworkspace` file rather than the `.xcodeproj`
 
 ## Integration
 
@@ -35,7 +38,7 @@ end
 [BRScanManager sharedManager].licenseKey = @"YOUR-LICENSE-KEY";
 ```
 
-- If you have a Scandit App Key then add it as follows:
+- If you have a Scandit app key (and included the `BRScandit` pod above) then add it as follows:
 
 ```obj-c
 [BRScanManager sharedManager].scanditAppKey = @"YOUR-SCANDIT-KEY";

@@ -87,6 +87,11 @@
 @property (strong, nonatomic, readonly) NSString *storeName;
 
 /**
+ *  The mall name in which the retailer is located, if any
+ */
+@property (strong, nonatomic, readonly) NSString *mallName;
+
+/**
  *  The store street address detected on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSString *storeAddress;
@@ -135,5 +140,10 @@
    amount   : NSNumber* containing a float with the amount for that payment method
  */
 @property (strong, nonatomic, readonly) NSArray<NSDictionary*> *paymentMethods;
+
+/**
+ *  The tax ID of the retailer, if any
+ */
+@property (strong, nonatomic, readonly) NSString *taxId;
 
 @end

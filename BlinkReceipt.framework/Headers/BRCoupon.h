@@ -30,6 +30,17 @@ typedef NS_ENUM(NSUInteger, BRCouponType) {
 @property (nonatomic, readonly) float couponAmount;
 
 /**
+ *  Coupon description
+ */
+@property (nonatomic, strong, readonly) NSString *couponDesc;
+
+
+/**
+ *  Coupon SKU
+ */
+@property (nonatomic, strong, readonly) NSString *couponSku;
+
+/**
  *  Convert a coupon type to a user-friendly string
  */
 + (NSString*)friendlyNameForCouponType:(BRCouponType)type;

@@ -142,4 +142,12 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL detectWrongRetailer;
 
 
+/**
+ If specified, the SDK will assume all receipts scanned are from a particular country.
+ Format is ISO 2 character country code for the receipts which will be scanned (full list here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
+ Default: nil
+ */
+@property (strong, nonatomic) NSString *countryCode;
+
+
 @end

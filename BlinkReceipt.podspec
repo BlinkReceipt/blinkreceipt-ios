@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.1.8"
+  s.version      = "1.1.9"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -27,7 +27,6 @@ This is the BlinkReceipt SDK
   s.dependency 'GPUImage', '~> 0.1'
   s.dependency 'MBProgressHUD'
   s.dependency 'SimpleKeychain', '~> 0.7'
-  #s.dependency 'BRScandit'
   s.dependency 'UIAlertController-BetterConstructor', '~> 0.1'
 
   s.user_target_xcconfig = { 'BLINKRECEIPT_VERSION' => s.version }

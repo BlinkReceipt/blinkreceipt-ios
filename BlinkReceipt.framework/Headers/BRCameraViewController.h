@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BRScanOptions.h"
+#import "BRScanResults.h"
 
 typedef NS_ENUM(NSUInteger, BRDistanceStatus) {
     BRDistanceStatusOK,
@@ -138,5 +139,14 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
  @param confidence Whether the new retailer is based only on a store phone match, or if we have also successfully parsed products using the new retailer
  */
 - (void)didDetectWrongRetailer:(WFRetailerId)correctRetailer withConfidence:(BRWrongRetailerConfidence)confidence;
+
+
+/**
+ Override this method to receive frame by frame scan results (note: metadata only, does not include product results).
+ Results are cumulative from all frames previously scanned.
+
+ @param frameResults The scan results at this point in time
+ */
+- (void)didGetFrameResults:(BRScanResults*)frameResults;
 
 @end

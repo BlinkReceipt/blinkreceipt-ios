@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.2.2"
+  s.version      = "1.2.3"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -20,14 +20,13 @@ This is the BlinkReceipt SDK
 
   s.vendored_frameworks = ["BlinkReceipt.framework"]
 
-  s.resources = ["BlinkReceipt.framework/*.zzip", "BlinkReceipt.framework/windfall-intermediate.der", "BlinkReceipt.framework/*.nib", "BlinkReceipt.framework/*.png", "BlinkReceipt.framework/*.wav"]
+  s.resources = ["BlinkReceipt.framework/*.zzip", "BlinkReceipt.framework/windfall-intermediate.der", "BlinkReceipt.framework/*.nib", "BlinkReceipt.framework/*.png", "BlinkReceipt.framework/*.wav", "BlinkReceipt.framework/*.csv"]
   
   s.dependency 'AFNetworking', '~> 2.0'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'GPUImage', '~> 0.1'
   s.dependency 'MBProgressHUD'
   s.dependency 'SimpleKeychain', '~> 0.7'
-  s.dependency 'UIAlertController-BetterConstructor', '~> 0.1'
 
   s.user_target_xcconfig = { 'BLINKRECEIPT_VERSION' => s.version }
 

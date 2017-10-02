@@ -30,9 +30,19 @@
 @property (strong, nonatomic, nonnull) NSString *licenseKey;
 
 /**
- *  The Scandit app key to use.
+ *  Scandit App Key (for more info see: https://www.scandit.com/)
  */
 @property (strong, nonatomic, nullable) NSString *scanditAppKey;
+
+/**
+ *  Google Places Web Service API Key (for more info see: https://developers.google.com/places/web-service/get-api-key)
+ */
+@property (strong, nonatomic, nullable) NSString *googlePlacesApiKey;
+
+/**
+ *  Yelp API Key (for more infos see: https://www.yelp.com/developers)
+ */
+@property (strong, nonatomic, nullable) NSString *yelpApiKey;
 
 /**
  *  An array of NSString filepaths corresponding to the user images, if any, which were confirmed by the user during the scanning session.

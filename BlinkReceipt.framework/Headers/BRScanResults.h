@@ -146,4 +146,10 @@
  */
 @property (strong, nonatomic, readonly) NSString *taxId;
 
+
+/**
+ An average confidence (between 0 and 1) for the OCR performed on this receipt
+ */
+@property (nonatomic, readonly) float ocrConfidence;
+
 @end

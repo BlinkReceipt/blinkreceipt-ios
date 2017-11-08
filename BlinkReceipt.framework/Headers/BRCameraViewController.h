@@ -53,6 +53,13 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
 @property (readonly, nonatomic) BOOL isPaused;
 
 
+/**
+ *  Set this property to YES to prevent the parent view controller from starting and stopping the AVCaptureSession based on view lifecycle events.
+ *  You will be responsible for manually calling resumeScanning and pauseScanning to manage the capture session
+ */
+@property (nonatomic) BOOL manualCaptureSession;
+
+
 
 /**--------------------------*/
 /** @name Base Class Methods */

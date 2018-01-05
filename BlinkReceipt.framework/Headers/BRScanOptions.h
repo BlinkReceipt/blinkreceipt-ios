@@ -149,5 +149,9 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (strong, nonatomic) NSString *countryCode;
 
+/**
+ Whether to enable logo detection
+ */
+@property (nonatomic) BOOL detectLogo;
 
 @end

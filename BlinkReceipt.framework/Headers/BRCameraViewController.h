@@ -156,4 +156,12 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
  */
 - (void)didGetFrameResults:(BRScanResults*)frameResults;
 
+
+/**
+ Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
+
+ @param validFrame W
+ */
+- (void)receiptValidityEstimate:(BOOL)validReceipt;
+
 @end

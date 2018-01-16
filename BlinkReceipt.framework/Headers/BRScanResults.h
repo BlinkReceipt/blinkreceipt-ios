@@ -152,4 +152,9 @@
  */
 @property (nonatomic, readonly) float ocrConfidence;
 
+/**
+ Indicates whether any server lookups were still pending at the time results were returned to the client
+ */
+@property (nonatomic, readonly) BOOL serverLookupsCompleted;
+
 @end

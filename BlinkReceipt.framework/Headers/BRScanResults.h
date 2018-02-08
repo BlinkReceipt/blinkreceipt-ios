@@ -10,6 +10,8 @@
 #import "BRScanOptions.h"
 #import "BRProduct.h"
 #import "BRCoupon.h"
+#import "BRPaymentMethod.h"
+#import "BRValue.h"
 
 /**
  *  This class holds the scan results for a particular scanning session
@@ -45,30 +47,28 @@
 /**
  *  The total detected on the receipt, if any
  */
-@property (nonatomic, readonly) float total;
+@property (strong, nonatomic, readonly) BRFloatValue *total;
 
 /**
  *  The subtotal detected on the receipt, if any
  */
-@property (nonatomic, readonly) float subtotal;
+@property (nonatomic, readonly) BRFloatValue *subtotal;
 
 /**
  *  The tax detected on the receipt, if any
  */
-@property (nonatomic, readonly) float taxes;
+@property (nonatomic, readonly) BRFloatValue *taxes;
 
 /**
- The purchase date found on the receipt formatted as MM/dd/yyyy
- nil if not found
+ The purchase date found on the receipt formatted as MM/dd/yyyy, if any
  */
-@property (strong, nonatomic, readonly) NSString *receiptDate;
+@property (strong, nonatomic, readonly) BRStringValue *receiptDate;
 
 
 /**
- The purchase time found on the receipt formatted as HH:mm
- nil if not found
+ The purchase time found on the receipt formatted as HH:mm, if any
  */
-@property (strong, nonatomic, readonly) NSString *receiptTime;
+@property (strong, nonatomic, readonly) BRStringValue *receiptTime;
 
 /**
  *  The barcode detected on the receipt, if any.
@@ -79,72 +79,69 @@
 /**
  *  The store number detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeNumber;
+@property (strong, nonatomic, readonly) BRStringValue *storeNumber;
 
 /**
  *  The store name detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeName;
+@property (strong, nonatomic, readonly) BRStringValue *storeName;
 
 /**
  *  The mall name in which the retailer is located, if any
  */
-@property (strong, nonatomic, readonly) NSString *mallName;
+@property (strong, nonatomic, readonly) BRStringValue *mallName;
 
 /**
  *  The store street address detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeAddress;
+@property (strong, nonatomic, readonly) BRStringValue *storeAddress;
 
 /**
  *  The store city detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeCity;
+@property (strong, nonatomic, readonly) BRStringValue *storeCity;
 
 /**
  *  The store state detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeState;
+@property (strong, nonatomic, readonly) BRStringValue *storeState;
 
 /**
  *  The store zipcode detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storeZip;
+@property (strong, nonatomic, readonly) BRStringValue *storeZip;
 
 /**
  *  The store phone number detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *storePhone;
+@property (strong, nonatomic, readonly) BRStringValue *storePhone;
 
 
 /**
  *  The cashier ID detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *cashierId;
+@property (strong, nonatomic, readonly) BRStringValue *cashierId;
 
 /**
  *  The transaction ID detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *transactionId;
+@property (strong, nonatomic, readonly) BRStringValue *transactionId;
 
 /**
  *  The register ID detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSString *registerId;
+@property (strong, nonatomic, readonly) BRStringValue *registerId;
 
 
 /**
- The payment methods detected on the receipt, if any
- Each payment method detected is returned as an NSDictionary* with keys:
-   type     : NSString* with the name of the payment method
-   amount   : NSNumber* containing a float with the amount for that payment method
+ An array of BRPaymentMethod's representing all payment methods found on the receipt, if any
  */
-@property (strong, nonatomic, readonly) NSArray<NSDictionary*> *paymentMethods;
+@property (strong, nonatomic, readonly) NSArray<BRPaymentMethod*> *paymentMethods;
 
 /**
  *  The tax ID of the retailer, if any
  */
-@property (strong, nonatomic, readonly) NSString *taxId;
+@property (strong, nonatomic, readonly) BRStringValue *taxId;
 
 
 /**

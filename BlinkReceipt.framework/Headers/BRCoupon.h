@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BRValue.h"
 
 typedef NS_ENUM(NSUInteger, BRCouponType) {
     BRCouponTypeUnknown,
@@ -27,18 +28,18 @@ typedef NS_ENUM(NSUInteger, BRCouponType) {
 /**
  *  The amount of the coupon or discount
  */
-@property (nonatomic, readonly) float couponAmount;
+@property (nonatomic, readonly, strong) BRFloatValue *couponAmount;
 
 /**
  *  Coupon description
  */
-@property (nonatomic, strong, readonly) NSString *couponDesc;
+@property (nonatomic, readonly, strong) BRStringValue *couponDesc;
 
 
 /**
  *  Coupon SKU
  */
-@property (nonatomic, strong, readonly) NSString *couponSku;
+@property (nonatomic, readonly, strong) BRStringValue *couponSku;
 
 /**
  *  Convert a coupon type to a user-friendly string

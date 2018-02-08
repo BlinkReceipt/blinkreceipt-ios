@@ -154,4 +154,10 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL detectLogo;
 
+
+/**
+ Whether the client will control the torch manually (should only be used with custom BRCameraViewController subclass). When this is enabled, the didGetLightingCondition: callback method will be invoked to notify the client of lighting changes
+ */
+@property (nonatomic) BOOL manualTorchControl;
+
 @end

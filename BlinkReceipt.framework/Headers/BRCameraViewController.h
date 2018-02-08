@@ -20,6 +20,12 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
     BRWrongRetailerConfidencePhoneAndProducts
 };
 
+typedef NS_ENUM(NSUInteger, BRLightingCondition) {
+    BRLightingConditionTerrible,
+    BRLightingConditionLow,
+    BRLightingConditionGood
+};
+
 /**
  *  Base camera controller class. Subclass BRCameraViewController to build your own UI on top of the fullscreen camera view
  */
@@ -134,7 +140,7 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
  Override this method to receive statistics on each frame that is processed
 
  @param frameStats A dictionary with the following keys:
-    contentWidth    : CGFloat indicating what percent (0-100) of the image the receipt appears in
+    contentWidth - CGFloat indicating what percent (0-100) of the image the receipt appears in
  */
 - (void)didGetFrameStats:(NSDictionary*)frameStats;
 
@@ -152,7 +158,7 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
  Override this method to receive frame by frame scan results (note: metadata only, does not include product results).
  Results are cumulative from all frames previously scanned.
 
- @param frameResults The scan results at this point in time
+ @param frameResults - The scan results at this point in time
  */
 - (void)didGetFrameResults:(BRScanResults*)frameResults;
 
@@ -160,8 +166,17 @@ typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
 /**
  Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
 
- @param validFrame W
+ @param validFrame Whether the SDK believes that it is scanning a valid receipt at this point
  */
 - (void)receiptValidityEstimate:(BOOL)validReceipt;
+
+
+/**
+ When manualTorchControl is enabled in BRScanOptions, this callback will indicate to the client VC if the SDK detects a new lighting condition
+ Note: Lighting is assumed to start in BRLightingConditionTerrible, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to BRLightingConditionLow or BRLightingConditionGood
+
+ @param lightingCondition - the new lighting condition
+ */
+- (void)didGetLightingCondition:(BRLightingCondition)lightingCondition;
 
 @end

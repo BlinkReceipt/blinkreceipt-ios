@@ -61,7 +61,6 @@ This scanning mode simulates the user snapping a series of still photos although
 ```obj-c
 - (IBAction)btnTouched:(id)sender {
   BRScanOptions *scanOptions = [BRScanOptions new];
-  scanOptions.retailerId = WFRetailerWalgreens;
   
   [[BRScanManager sharedManager] startStaticCameraFromController:self
                                                      scanOptions:scanOptions

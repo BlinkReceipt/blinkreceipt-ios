@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D01575573021E938B321CED /* Pods_BRDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68244ED69445F191FD230846 /* Pods_BRDemo.framework */; };
 		B9EC9D35204F6C6100E13E95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC9D34204F6C6100E13E95 /* AppDelegate.m */; };
 		B9EC9D38204F6C6100E13E95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC9D37204F6C6100E13E95 /* ViewController.m */; };
 		B9EC9D3B204F6C6100E13E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EC9D39204F6C6100E13E95 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FF63EC34CBEBBDFC9BAAA61 /* Pods-BRDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		68244ED69445F191FD230846 /* Pods_BRDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EC9D30204F6C6100E13E95 /* BRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EC9D33204F6C6100E13E95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9EC9D34204F6C6100E13E95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		B9EC9D3F204F6C6100E13E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9EC9D41204F6C6100E13E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9EC9D42204F6C6100E13E95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB6F4F715E857254493FC56B /* Pods-BRDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D01575573021E938B321CED /* Pods_BRDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3B51E5578001A5B8A71207E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68244ED69445F191FD230846 /* Pods_BRDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9EC9D27204F6C6100E13E95 = {
 			isa = PBXGroup;
 			children = (
 				B9EC9D32204F6C6100E13E95 /* BRDemo */,
 				B9EC9D31204F6C6100E13E95 /* Products */,
+				DAB38CA7B55B89DB5B071B74 /* Pods */,
+				B3B51E5578001A5B8A71207E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = BRDemo;
 			sourceTree = "<group>";
 		};
+		DAB38CA7B55B89DB5B071B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FF63EC34CBEBBDFC9BAAA61 /* Pods-BRDemo.debug.xcconfig */,
+				FB6F4F715E857254493FC56B /* Pods-BRDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9EC9D46204F6C6100E13E95 /* Build configuration list for PBXNativeTarget "BRDemo" */;
 			buildPhases = (
+				A6A9134DA0F43FBE1D39F478 /* [CP] Check Pods Manifest.lock */,
 				B9EC9D2C204F6C6100E13E95 /* Sources */,
 				B9EC9D2D204F6C6100E13E95 /* Frameworks */,
 				B9EC9D2E204F6C6100E13E95 /* Resources */,
+				2D5F96231989D48850EDC8EA /* [CP] Embed Pods Frameworks */,
+				57CCC2EF709EFC7BDD0D7CFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D5F96231989D48850EDC8EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework",
+				"${BUILT_PRODUCTS_DIR}/CHCSVParser/CHCSVParser.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlinkReceipt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHCSVParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57CCC2EF709EFC7BDD0D7CFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-resources.sh",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/melania_82.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/melania_82_fast.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/nn_model_LogoDetection_mikica_26.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/nn_model_LogoDetection_motifa_26.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/windfall-intermediate.der",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/BRLiveScanViewController.nib",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/BRStaticScanViewController.nib",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btnPlus.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btnPlus@2x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btnPlus@3x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam@2x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam@3x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam_pressed.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam_pressed@2x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/btn_cam_pressed@3x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_off.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_off@2x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_off@3x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_on.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_on@2x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/ic_flash_on@3x.png",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/camera.wav",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/merchant-names.csv",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/singapore-mall.csv",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82_fast.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn_model_LogoDetection_mikica_26.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn_model_LogoDetection_motifa_26.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/windfall-intermediate.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRLiveScanViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRStaticScanViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/camera.wav",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/merchant-names.csv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/singapore-mall.csv",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A9134DA0F43FBE1D39F478 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BRDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9EC9D2C204F6C6100E13E95 /* Sources */ = {
@@ -276,6 +420,7 @@
 		};
 		B9EC9D47204F6C6100E13E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF63EC34CBEBBDFC9BAAA61 /* Pods-BRDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +434,7 @@
 		};
 		B9EC9D48204F6C6100E13E95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6F4F715E857254493FC56B /* Pods-BRDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

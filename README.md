@@ -44,9 +44,9 @@ After editing your Podfile, run `pod install` and then make sure to open the `.x
 [BRScanManager sharedManager].scanditAppKey = @"YOUR-SCANDIT-KEY";
 ```
 
-- The simplest way to test the SDK is by launching one of our prepackaged scanning experiences
+- The simplest way to test the SDK is by launching our prepackaged scanning experience
 
-### Static Camera Scanning
+### Prepackaged Scanning Experience
 
 This scanning mode simulates the user snapping a series of still photos although in fact live video frames are actually being scanned in the background. To test this:
 
@@ -82,16 +82,6 @@ This scanning mode simulates the user snapping a series of still photos although
         
     //Use scan results
 }
-```
-
-### Live Camera Scanning
-
-This scanning mode allows the user to simply hover over the receipt and receive scanning feedback in the form of character overlays that are displayed after OCR completes for each frame. To test this, follow all the same instructions as above, but in the IBAction handler of your view controller, use the following method call instead:
-
-```obj-c
-[[BRScanManager sharedManager] startLiveCameraFromController:self
-                                                 scanOptions:scanOptions
-                                                withDelegate:self];
 ```
 
 ### Custom Camera Controller UI

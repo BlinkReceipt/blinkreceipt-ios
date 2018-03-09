@@ -52,8 +52,6 @@
  */
 @property (strong, nonatomic, nullable) NSArray<NSString*> *userFramesFilepaths;
 
-
-
 /**------------------*/
 /** @name Methods    */
 /**------------------*/

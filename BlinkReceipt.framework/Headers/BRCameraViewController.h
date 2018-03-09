@@ -166,7 +166,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
 
- @param validFrame Whether the SDK believes that it is scanning a valid receipt at this point
+ @param validReceipt Whether the SDK believes that it is scanning a valid receipt at this point
  */
 - (void)receiptValidityEstimate:(BOOL)validReceipt;
 

@@ -84,7 +84,7 @@
 /**
  *  The store name detected on the receipt, if any
  */
-@property (strong, nonatomic, readonly) BRStringValue *storeName;
+@property (strong, nonatomic, readonly) BRStringValue *merchantName;
 
 /**
  *  The mall name in which the retailer is located, if any

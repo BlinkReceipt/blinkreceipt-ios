@@ -47,4 +47,13 @@ typedef NS_ENUM(NSUInteger, WFErrorCodes) {
  */
 - (void)scanningErrorOccurred:(NSError*)error;
 
+
+/**
+ This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Crashlytics, this can be passed along as follows:
+ CLSLog(@"%@", debugInfo);
+
+ @param debugInfo The encrypted debugging information
+ */
+- (void)didOutputDebugInfo:(NSString*)debugInfo;
+
 @end

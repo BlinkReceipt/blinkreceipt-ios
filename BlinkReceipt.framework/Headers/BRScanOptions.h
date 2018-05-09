@@ -135,6 +135,13 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) NSInteger numGoodFramesToStopEdges;
 
+
+/**
+ Whether the SDK should continue edge detection after the first user snapped photo
+ Default: NO
+ */
+@property (nonatomic) BOOL enableEdgesAfterUserPhoto;
+
 /**
  Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, the didDetectWrongRetailer callback will be triggered, which allows the client to determine if scanning should continue with the new retailer
  Default: NO

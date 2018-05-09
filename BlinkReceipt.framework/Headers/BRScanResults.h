@@ -143,7 +143,6 @@
  */
 @property (strong, nonatomic, readonly) BRStringValue *taxId;
 
-
 /**
  An average confidence (between 0 and 1) for the OCR performed on this receipt
  */
@@ -153,5 +152,15 @@
  Indicates whether any server lookups were still pending at the time results were returned to the client
  */
 @property (nonatomic, readonly) BOOL serverLookupsCompleted;
+
+/**
+ Indicates whether a top edge was found on any frame that was scanned in this session
+ */
+@property (nonatomic, readonly) BOOL foundTopEdge;
+
+/**
+ Indicates whether a bottom edge was found on any frame that was scanned in this session
+ */
+@property (nonatomic, readonly) BOOL foundBottomEdge;
 
 @end

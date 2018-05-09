@@ -58,6 +58,11 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  */
 @property (readonly, nonatomic) BOOL isPaused;
 
+/**
+ *  Indicates whether edge detection is running
+ */
+@property (readonly, nonatomic) BOOL isEdgeDetectionRunning;
+
 
 /**
  *  Set this property to YES to prevent the parent view controller from starting and stopping the AVCaptureSession based on view lifecycle events.
@@ -83,6 +88,12 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *  This will perform some cleanup and then call the didFinishScanning: method on the BRScanResultsDelegate instance that you have supplied
  */
 - (void)userFinishedScan;
+
+
+/**
+ *  Call this method to invoke the same processing that happens at end of scan session and inspect the results
+ */
+- (void)getPreliminaryResults:(void(^)(BRScanResults *scanResults, BOOL stillProcessing))callback;
 
 /**
  *  Call this method to notify the camera controller that the user has cancelled scanning.
@@ -178,5 +189,15 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  @param lightingCondition - the new lighting condition
  */
 - (void)didGetLightingCondition:(BRLightingCondition)lightingCondition;
+
+
+/**
+ Override this method to receive a callback when one or both horizontal edges is detected on the current frame. Note: This does *not* guarantee that this frame will be scanned.
+ To determine if a top/bottom edge was seen on any of the scanned frames, consult the topEdgeFound and bottomEdgeFound properties of BRScanResults
+
+ @param topEdge - whether a top edge was detected on this frame
+ @param bottomEdge - whether a bottom edge was detected on this frame
+ */
+- (void)didGetHorizontalEdges:(BOOL)topEdge andBottomEdge:(BOOL)bottomEdge;
 
 @end

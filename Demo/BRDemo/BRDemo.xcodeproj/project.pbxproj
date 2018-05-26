@@ -202,10 +202,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-resources.sh",
-				"${PODS_ROOT}/../../../BlinkReceipt.framework/melania_82.zzip",
-				"${PODS_ROOT}/../../../BlinkReceipt.framework/melania_82_fast.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/melania_82_aug.zzip",
 				"${PODS_ROOT}/../../../BlinkReceipt.framework/nn_model_LogoDetection_mikica_26.zzip",
-				"${PODS_ROOT}/../../../BlinkReceipt.framework/nn_model_LogoDetection_motifa_26.zzip",
+				"${PODS_ROOT}/../../../BlinkReceipt.framework/googlevision.der",
 				"${PODS_ROOT}/../../../BlinkReceipt.framework/windfall-intermediate.der",
 				"${PODS_ROOT}/../../../BlinkReceipt.framework/BRLiveScanViewController.nib",
 				"${PODS_ROOT}/../../../BlinkReceipt.framework/BRStaticScanViewController.nib",
@@ -230,10 +229,9 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82.zzip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82_fast.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82_aug.zzip",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn_model_LogoDetection_mikica_26.zzip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn_model_LogoDetection_motifa_26.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/googlevision.der",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/windfall-intermediate.der",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRLiveScanViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRStaticScanViewController.nib",
@@ -424,6 +422,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.blinkreceipt.BRDemo;
@@ -438,6 +438,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.blinkreceipt.BRDemo;

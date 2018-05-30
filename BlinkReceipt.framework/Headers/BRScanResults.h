@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "BRScanOptions.h"
 #import "BRProduct.h"
 #import "BRCoupon.h"
@@ -162,5 +164,10 @@
  Indicates whether a bottom edge was found on any frame that was scanned in this session
  */
 @property (nonatomic, readonly) BOOL foundBottomEdge;
+
+/**
+ If the returnStitchedImage property of BRScanOptions is set, this property will contain the stitched image
+ */
+@property (strong, nonatomic, readonly) UIImage *stitchedImage;
 
 @end

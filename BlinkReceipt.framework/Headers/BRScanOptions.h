@@ -87,6 +87,12 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL storeUserFrames;
 
 /**
+ Whether to return a stitched image consisting of multiple frames that cover the entirety of the receipt that was scanned
+ Default: NO
+ */
+@property (nonatomic) BOOL returnStitchedImage;
+
+/**
  Whether the client uses a Scandit camera independently of the BlinkReceipt SDK. If this is the case, BlinkReceipt will incorporate a fix to an inconsistent
  camera bug that occurs in this scenario.
  Default: NO
@@ -135,6 +141,11 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) NSInteger numGoodFramesToStopEdges;
 
+/**
+ If numGoodFramesToStopEdges is greater than 0, this property allows edge detection to restart after a user confirms a frame
+ Default: NO
+ */
+@property (nonatomic) BOOL restartEdgesAfterUserConfirm;
 
 /**
  Whether the SDK should continue edge detection after the first user snapped photo

@@ -37,14 +37,9 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**------------------*/
 
 /**
- *  Indicates the number of frames currently in the processing pipeline. You may want to consult this property to delay closing the view controller
- *  until all frames have finished
- */
-@property (readonly, nonatomic) NSInteger numFramesProcessing;
-
-/**
  *  Set this property in viewDidLoad of your subclass in order to scan only a certain region of the returned image from the camera. The values of the CGRect
  *  are all given from 0.0 to 1.0, indicating a fraction of the current view's dimensions. Default is (0.0, 0.0, 1.0, 1.0) which scans the whole screen.
+    It is recommended to set the scanning region equal to the area of the screen that is not covered by other UI elements, so that the frames being scanned are consistent with what the user appears to be snapping photos of
  */
 @property (nonatomic) CGRect scanningRegion;
 
@@ -79,13 +74,13 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Call this method to notify the camera controller that the user has attempted to snap a picture.
  *
- *  @param readyBlock This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview, and also includes a flag indicating whether the frame is below the blurry threshold (isBlurry == YES means the frame was below the threshold is blurry)
+ *  @param readyBlock This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview, and also includes a flag indicating whether the frame is below the blurry threshold
  */
 - (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry))readyBlock;
 
 /**
  *  Call this method to notify the camera controller that the user has indicated they have finished scanning.
- *  This will perform some cleanup and then call the didFinishScanning: method on the BRScanResultsDelegate instance that you have supplied
+ *  This will perform some cleanup and then call the didFinishScanning: method on the BRScanResultsDelegate instance that you have supplied. It is recommended that prior to or simultaneous with calling this method, you display some sort of loader until the didFinishScanning: callback is received
  */
 - (void)userFinishedScan;
 

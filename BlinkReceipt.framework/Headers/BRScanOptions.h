@@ -178,4 +178,9 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL manualTorchControl;
 
+/**
+ Override default SDK behavior of saving images for scanning improvement and debugging purposes
+ */
+@property (nonatomic) BOOL dontSaveImages;
+
 @end

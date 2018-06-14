@@ -15,6 +15,17 @@
 #import "BRPaymentMethod.h"
 #import "BRValue.h"
 
+typedef NS_ENUM(NSUInteger, BRMerchantSource) {
+    BRMerchantSourcePhone = 1,
+    BRMerchantSourceStoreId,
+    BRMerchantSourceTaxId,
+    BRMerchantSourceAddress,
+    BRMerchantSourceKnownList,          //text on receipt was matched against a list of known retailers
+    BRMerchantSourceNameLookup,         //text on receipt was matched to a retailer based on external name lookups
+    BRMerchantSourceLogo,
+    BRMerchantSourceLayoutAnalysis      //text on receipt with common layout characteristics generally seen in merchant names
+};
+
 /**
  *  This class holds the scan results for a particular scanning session
  */
@@ -87,6 +98,12 @@
  *  The store name detected on the receipt, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *merchantName;
+
+/**
+ *  An array of NSNumber* objects wrapping BRMerchantSource values indicating which merchant detection method(s) succeeded in identifying the current merchant.
+ *  This will be nil if no merchant was detected (i.e. merchantName == nil)
+ */
+@property (strong, nonatomic, readonly) NSArray<NSNumber*> *merchantSources;
 
 /**
  *  The mall name in which the retailer is located, if any

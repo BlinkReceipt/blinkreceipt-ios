@@ -12,7 +12,8 @@
 #import "BRScanResults.h"
 
 typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
-    BREReceiptProviderGmail = 1,
+    BREReceiptProviderNone = 0,
+    BREReceiptProviderGmail,
     BREReceiptProviderOutlook,
     BREReceiptProviderYahoo,
     BREReceiptProviderAOL
@@ -46,6 +47,24 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
  */
 @property (nonatomic, strong) NSString *yahooClientId;
 @property (nonatomic, strong) NSString *yahooClientSecret;
+
+/**
+ Whether there is a stored provider
+ */
+@property (nonatomic) BOOL userHasProvider;
+
+/**
+ If there is a stored provider, this property will indicate which provider it is
+ */
+@property (nonatomic) BREReceiptProvider currentProvider;
+
+/**
+ Debug property to enable other sender emails to be parsed as ereceipts.
+ Each element in this array should be a dictionary with the following keys:
+    @"email"        The e-mail address to whitelist
+    @"merchant"     The merchant to use for parsing emails from this sender. Values are: Peapod, Walmart, Target, Instacart, Jet, Costco, SamsClub
+ */
+@property (strong, nonatomic) NSArray<NSDictionary*> *whitelistedSenders;
 
 #pragma mark Methods
 

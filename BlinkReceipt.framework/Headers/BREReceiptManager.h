@@ -94,6 +94,14 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
                       forProvider:(BREReceiptProvider)provider;
 
 /**
+ Verifies that stored IMAP credentials are valid
+
+ @param completion      success: YES or NO
+                        error: nil or contains error information
+ */
+- (void)verifyImapCredentials:(void(^)(BOOL success, NSError *error))completion;
+
+/**
  Attempts to retrieve new (since last check) e-receipts from the stored e-mail account. You must have successfully authenticated an OAuth provider, or stored IMAP credentials prior to calling this method
 
  @param completion  When retrieval is successful, "error" will be nil and "receipts" will contain an array of BRScanResults* objects corresponding to the e-receipts that were successfully parsed. In addition to standard receipt properties, these objects also contain properties unique to e-receipts: ereceiptOrderStatus and ereceiptOrderNum

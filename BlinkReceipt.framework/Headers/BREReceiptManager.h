@@ -66,6 +66,18 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
  */
 @property (strong, nonatomic) NSArray<NSDictionary*> *whitelistedSenders;
 
+
+/**
+ How far back to search the user's inbox for e-receipts
+ Default is 14
+ */
+@property (nonatomic) NSInteger dayCutoff;
+
+/**
+ If the OAuth provider supports returning the logged-in email, it will be populated into this property after OAuth or silent authentications
+ */
+@property (strong, nonatomic) NSString *userCurrentEmail;
+
 #pragma mark Methods
 
 + (instancetype)shared;
@@ -114,6 +126,9 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
  */
 - (void)signOut;
 
-+ (NSString*)getNameForProvider:(BREReceiptProvider)provider;
+/**
+ Resets emails so you don't need to log out and log in during testing
+ */
+- (void)resetEmailsChecked;
 
 @end

@@ -47,7 +47,7 @@
 @property (strong, nonatomic, readonly) BRStringValue *unitOfMeasure;
 
 /**
- *  The total price for this line item, taking into account quantities and weights
+ *  The total price paid for this line item, taking into account quantities, weights, and discounts
  */
 @property (nonatomic, readonly) float totalPrice;
 
@@ -57,6 +57,7 @@
  */
 @property (nonatomic, readonly) float fullPrice;
 
+@property (nonatomic, readonly) float priceAfterCoupons;
 
 /**
     An array of any additional lines connected to this product that were scanned (can be above or below). This array can be nil if no lines were found

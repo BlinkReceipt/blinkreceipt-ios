@@ -147,6 +147,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *transactionId;
 
 /**
+ Some receipts contain a longer transaction number in addition to the standard one
+ */
+@property (strong, nonatomic, readonly) BRStringValue *longTransactionId;
+
+/**
  *  The register ID detected on the receipt, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *registerId;
@@ -156,6 +161,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  An array of BRPaymentMethod's representing all payment methods found on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSArray<BRPaymentMethod*> *paymentMethods;
+
+/**
+ The last 4 digits of the credit card used, if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *last4CC;
 
 /**
  *  The tax ID of the retailer, if any
@@ -186,5 +196,10 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  If the returnStitchedImage property of BRScanOptions is set, this property will contain the stitched image
  */
 @property (strong, nonatomic, readonly) UIImage *stitchedImage;
+
+/**
+ Indicate whether the subtotal matches the sum of the products and coupons
+ */
+@property (nonatomic, readonly) BOOL subtotalMatches;
 
 @end

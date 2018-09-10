@@ -183,4 +183,9 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL dontSaveImages;
 
+/**
+ If this property is enabled, the SDK will not perform any on-device frame processing
+ */
+@property (nonatomic) BOOL disableOnDeviceProcessing;
+
 @end

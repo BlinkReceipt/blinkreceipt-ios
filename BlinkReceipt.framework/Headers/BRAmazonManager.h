@@ -19,7 +19,8 @@ typedef enum : NSUInteger {
     BRAmazonErrorInvalidCookie,
     BRAmazonErrorVerificationNeeded,
     BRAmazonErrorParsingFail,
-    BRAmazonErrorLoginTimeout
+    BRAmazonErrorLoginTimeout,
+    BRAmazonErroriOS12
 } BRAmazonError;
 
 @interface BRAmazonManager : NSObject

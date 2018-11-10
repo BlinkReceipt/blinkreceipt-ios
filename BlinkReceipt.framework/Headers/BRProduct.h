@@ -64,4 +64,6 @@
  */
 @property (strong, nonatomic, readonly) NSArray<BRProductAdditionalLine*> *additionalLines;
 
+@property (nonatomic, readonly) BOOL isVoided;
+
 @end

@@ -193,13 +193,18 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL foundBottomEdge;
 
 /**
- If the returnStitchedImage property of BRScanOptions is set, this property will contain the stitched image
+ Indicate whether the subtotal matches the sum of the products and coupons
  */
-@property (strong, nonatomic, readonly) UIImage *stitchedImage;
+@property (nonatomic, readonly) BOOL subtotalMatches;
 
 /**
  Indicate whether the subtotal matches the sum of the products and coupons
  */
-@property (nonatomic, readonly) BOOL subtotalMatches;
+@property (nonatomic, readonly) NSInteger productsPendingLookup;
+
+/**
+ Indicate whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
+ */
+@property (nonatomic, readonly) BOOL isDuplicate;
 
 @end

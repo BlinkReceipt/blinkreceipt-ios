@@ -87,12 +87,6 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL storeUserFrames;
 
 /**
- Whether to return a stitched image consisting of multiple frames that cover the entirety of the receipt that was scanned
- Default: NO
- */
-@property (nonatomic) BOOL returnStitchedImage;
-
-/**
  Whether the client uses a Scandit camera independently of the BlinkReceipt SDK. If this is the case, BlinkReceipt will incorporate a fix to an inconsistent
  camera bug that occurs in this scenario.
  Default: NO
@@ -187,5 +181,15 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  If this property is enabled, the SDK will not perform any on-device frame processing
  */
 @property (nonatomic) BOOL disableOnDeviceProcessing;
+
+/**
+ If this property is enabled, and the receipt is detected to be a duplicate, the isDuplicate property of BRScanResults will be set to true
+ */
+@property (nonatomic) BOOL detectDuplicates;
+
+/**
+ If this property is enabled, voided products will be returns with the `isVoided` property set to YES
+ */
+@property (nonatomic) BOOL returnVoidedProducts;
 
 @end

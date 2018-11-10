@@ -42,6 +42,13 @@ typedef NS_ENUM(NSUInteger, BRCouponType) {
 @property (nonatomic, readonly, strong) BRStringValue *couponSku;
 
 /**
+ *  If this coupon is related to a particular product, this property will be set to correspond to the index of related product in the `BRScanResults.products` array.
+ 
+    Default value: -1
+ */
+@property (nonatomic, readonly) NSInteger relatedProductIndex;
+
+/**
  *  Convert a coupon type to a user-friendly string
  */
 + (NSString*)friendlyNameForCouponType:(BRCouponType)type;

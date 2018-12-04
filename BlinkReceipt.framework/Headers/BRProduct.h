@@ -64,6 +64,22 @@
  */
 @property (strong, nonatomic, readonly) NSArray<BRProductAdditionalLine*> *additionalLines;
 
+/**
+ *  Indicates whether this is a voided product. Voided products will only be returned if the `returnedVoidedProducts` property of `BRScanOptions` is set
+ */
 @property (nonatomic, readonly) BOOL isVoided;
+
+/***********************************/
+/* PRODUCT INTELLIGENCE PROPERTIES */
+/***********************************/
+
+/* These properties will only be set if product intelligence is enabled and a valid `prodIntelKey` is set on `[BRScanManager sharedManager]` */
+
+@property (strong, nonatomic) NSString *productName;
+@property (strong, nonatomic) NSString *brand;
+@property (strong, nonatomic) NSString *category;
+@property (strong, nonatomic) NSString *size;
+@property (strong, nonatomic) NSString *upc;
+@property (strong, nonatomic) NSString *imgUrl;
 
 @end

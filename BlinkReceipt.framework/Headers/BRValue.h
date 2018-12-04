@@ -31,6 +31,11 @@
  */
 @interface BRFloatValue : BRValue
 @property (nonatomic, readonly) float value;
+
+/**
+ Rounded to exactly 2 decimal places for currency
+ */
+@property (strong, nonatomic, readonly) NSDecimalNumber *decimalValue;
 @end
 
 /**

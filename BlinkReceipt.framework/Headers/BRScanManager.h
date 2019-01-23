@@ -20,12 +20,12 @@
  */
 @interface BRScanManager : NSObject
 
-/**------------------*/
-/** @name Properties */
-/**------------------*/
+///------------------
+/// @name Properties
+///------------------
 
 /**
- *  The license key you were assigned for use with BlinkReceipt
+ *  Your BlinkReceipt license key
  */
 @property (strong, nonatomic, nonnull) NSString *licenseKey;
 
@@ -44,6 +44,9 @@
  */
 @property (strong, nonatomic, nullable) NSString *yelpApiKey;
 
+/**
+ *  Your BlinkReceipt product intelligence key (if any)
+ */
 @property (strong, nonatomic, nullable) NSString *prodIntelKey;
 
 /**
@@ -52,9 +55,9 @@
  */
 @property (strong, nonatomic, nullable) NSArray<NSString*> *userFramesFilepaths;
 
-/**------------------*/
-/** @name Methods    */
-/**------------------*/
+///---------------------
+/// @name Class Methods
+///---------------------
 
 /**
  *  Always access the singleton instance of BRScanManager using this class method
@@ -63,6 +66,9 @@
  */
 +(nonnull instancetype) sharedManager;
 
+///---------------
+/// @name Methods
+///---------------
 
 /**
  *  Initiates a static camera scanning experience (in which the user appears to be snapping static photos)
@@ -72,18 +78,6 @@
  *  @param delegate       An instance conforming to BRScanResultsDelegate
  */
 - (void)startStaticCameraFromController:(nonnull UIViewController*)viewController
-                            scanOptions:(nullable BRScanOptions*)scanOptions
-                           withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
-
-
-/**
- *  Initiates a live camera scanning experience (in which the user simply hovers over the receipt image and character overlays are drawn to provide feedback)
- *
- *  @param viewController The parent view controller from which to display the camera controller modally
- *  @param scanOptions    An instance of BRScanOptions specifying options for this scanning session
- *  @param delegate       An instance conforming to BRScanResultsDelegate
- */
-- (void)startLiveCameraFromController:(nonnull UIViewController*)viewController
                             scanOptions:(nullable BRScanOptions*)scanOptions
                            withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
@@ -103,24 +97,24 @@
 
 
 /**
- Initiates a scanning session using QR code to grab remote image and scan it
-
- @param qrCodeText      The value of the QR code already scanned
- @param scanOptions     An instance of BRScanOptions specifying options for this scanning session
- @param delegate        An instance conforming to BRScanResultsDelegate
- 
- Notes: If there is an error retrieving the remote image for this QR code, scanningErrorOccurred: will be invoked on the delegate with error code WFErrorCodeFailToGrabImage
+ *  Initiates a scanning session using QR code to grab remote image and scan it
+ *
+ *  @param qrCodeText      The value of the QR code already scanned
+ *  @param scanOptions     An instance of BRScanOptions specifying options for this scanning session
+ *  @param delegate        An instance conforming to BRScanResultsDelegate
+ *
+ *  Notes: If there is an error retrieving the remote image for this QR code, scanningErrorOccurred: will be invoked on the delegate with error code WFErrorCodeFailToGrabImage
  */
 - (void)scanFromQRCode:(nonnull NSString*)qrCodeText
            scanOptions:(nonnull BRScanOptions*)scanOptions
           withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
 /**
- Creates a new MFMailComposeViewController populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
- 
- Note: If this method is invoked on the simulator or a device with no email supported, it will output the message body to the console and return nil.
-
- @return The controller to display
+ *  Creates a new MFMailComposeViewController populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
+ *
+ *  Note: If this method is invoked on the simulator or a device with no email supported, it will output the message body to the console and return nil.
+ *
+ *  @return The controller to display
  */
 - (nonnull MFMailComposeViewController*)createMailControllerWithDebugInfo;
 

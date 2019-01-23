@@ -1,3 +1,6 @@
+source 'https://github.com/BlinkReceipt/PodSpecRepo.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
@@ -6,6 +9,7 @@ target 'BRDemo' do
   use_frameworks!
 
   # Pods for BRDemo
-  pod 'BlinkReceipt', :path => '../../BlinkReceipt.podspec'
+  #pod 'BlinkReceipt', :path => '../../BlinkReceipt.podspec'
+  pod 'BlinkReceipt'
 
 end

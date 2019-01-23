@@ -19,3 +19,6 @@ FOUNDATION_EXPORT const unsigned char BlinkReceiptVersionString[];
 #import <BlinkReceipt/BRScanResults.h>
 #import <BlinkReceipt/BRScanResultsDelegate.h>
 #import <BlinkReceipt/BRCameraViewController.h>
+#import <BlinkReceipt/BRAmazonManager.h>
+#import <BlinkReceipt/BREReceiptManager.h>
+#import <BlinkReceipt/BRShipment.h>

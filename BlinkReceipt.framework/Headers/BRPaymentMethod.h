@@ -8,21 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "BRValue.h"
-
+#import "BRSerializable.h"
 
 /**
- Described a payment method and the amount charged to that payment method
+ *  Described a payment method and the amount charged to that payment method
  */
-@interface BRPaymentMethod : NSObject
+@interface BRPaymentMethod : NSObject <BRSerializable>
 
+///------------------
+/// @name Properties
+///------------------
 
 /**
- The payment method type (i.e. Cash, Credit, American Express, etc)
+ *  The payment method type (i.e. Cash, Credit, American Express, etc)
  */
 @property (nonatomic, readonly, strong) BRStringValue *type;
 
 /**
- The amount charted to this payment method
+ *  The amount charged to this payment method
  */
 @property (nonatomic, readonly, strong) BRFloatValue *amount;
 

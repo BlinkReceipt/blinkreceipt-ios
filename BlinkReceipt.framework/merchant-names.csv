@@ -1,6 +1,7 @@
+banner_id,merchant,merchant_string,tax_id
 1,Target,Target
 2,Costco Wholesale Corp.,Costco
-3,CVS,CVS.com; |CVS Return|;Extracare Card
+3,CVS,CVS.com;|CVS Return|;Extracare Card
 4,Dollar General,Dollar General;DGCustomer;LAR GENERAL STORE
 5,Dollar Tree,Dollar Tree
 6,Kroger,KROGER
@@ -262,7 +263,7 @@
 8684,SPARKLE,Sparkle
 8685,Busch's Fresh Food Market,BUSCH'S;BUSCHS
 8687,Walt's Food Center,Walt's Food
-8688,Yoke's Fresh Market,YOKE'S; YOKES
+8688,Yoke's Fresh Market,YOKE'S;YOKES
 8693,Kuhn's Market,Kuhns;Kuhn's
 8695,Fine Wine & Good Spirits,FINE WINE & GOOD;FINE WINE AND GOOD
 8699,Binny's Beverage Depot,BINNY'S;BINNYS
@@ -289,7 +290,7 @@
 7712,Lowe's Foods,Lowe's Foods
 5919,Ross Dress for Less,Ross Dress for Less
 5991,Tractor Supply,Tractor Supply
-5921,T.J. Maxx,T.J. Maxx; TJ MAXX
+5921,T.J. Maxx,T.J. Maxx;TJ MAXX
 7590,Best Market,Best Market
 7713,Lucky Supermarkets,Lucky Supermarkets
 25,Star Market,Star Market

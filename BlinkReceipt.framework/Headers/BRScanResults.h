@@ -13,27 +13,39 @@
 #import "BRProduct.h"
 #import "BRCoupon.h"
 #import "BRPaymentMethod.h"
+#import "BRPromotion.h"
+#import "BRShipment.h"
 #import "BRValue.h"
+#import "BRSerializable.h"
 
+/**
+ *  Represents a single method of identifying the merchant on the receipt
+ */
 typedef NS_ENUM(NSUInteger, BRMerchantSource) {
     BRMerchantSourcePhone = 1,
     BRMerchantSourceStoreId,
     BRMerchantSourceTaxId,
     BRMerchantSourceAddress,
-    BRMerchantSourceKnownList,          //text on receipt was matched against a list of known retailers
-    BRMerchantSourceNameLookup,         //text on receipt was matched to a retailer based on external name lookups
+    
+    /// Text on receipt was matched against a list of known retailers
+    BRMerchantSourceKnownList,
+    
+    /// Text on receipt was matched to a retailer based on external name lookups
+    BRMerchantSourceNameLookup,
     BRMerchantSourceLogo,
-    BRMerchantSourceLayoutAnalysis      //text on receipt with common layout characteristics generally seen in merchant names
+    
+    /// Text on receipt matched common layout characteristics of merchant's receipts
+    BRMerchantSourceLayoutAnalysis
 };
 
 /**
  *  This class holds the scan results for a particular scanning session
  */
-@interface BRScanResults : NSObject
+@interface BRScanResults : NSObject <BRSerializable>
 
-/**------------------*/
-/** @name Properties */
-/**------------------*/
+///------------------
+/// @name Properties
+///------------------
 
 /**
  *  For future auto-detect retailer functionality
@@ -42,7 +54,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 
 
 /**
- Unique ID for this receipt which allows BlinkReceipt to correspond scan data to the correct receipt image stored by client
+ *  Unique ID for this receipt which allows BlinkReceipt to correspond scan data to the correct receipt image stored by client
  */
 @property (strong, nonatomic, readonly) NSString *blinkReceiptId;
 
@@ -73,13 +85,12 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BRFloatValue *taxes;
 
 /**
- The purchase date found on the receipt formatted as MM/dd/yyyy, if any
+ *  The purchase date found on the receipt formatted as MM/dd/yyyy, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *receiptDate;
 
-
 /**
- The purchase time found on the receipt formatted as HH:mm, if any
+ *  The purchase time found on the receipt formatted as HH:mm, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *receiptTime;
 
@@ -104,6 +115,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  This will be nil if no merchant was detected (i.e. merchantName == nil)
  */
 @property (strong, nonatomic, readonly) NSArray<NSNumber*> *merchantSources;
+
+/**
+ *  When no merchant is detected using standard methods, the parser will occasionally return a best guess for the merchant based on receipt heuristics.
+ */
+@property (strong, nonatomic, readonly) NSString *merchantGuess;
 
 /**
  *  The mall name in which the retailer is located, if any
@@ -147,7 +163,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *transactionId;
 
 /**
- Some receipts contain a longer transaction number in addition to the standard one
+ *  Some receipts contain a longer transaction number in addition to the standard one
  */
 @property (strong, nonatomic, readonly) BRStringValue *longTransactionId;
 
@@ -158,12 +174,12 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 
 
 /**
- An array of BRPaymentMethod's representing all payment methods found on the receipt, if any
+ *  An array of BRPaymentMethod's representing all payment methods found on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSArray<BRPaymentMethod*> *paymentMethods;
 
 /**
- The last 4 digits of the credit card used, if any
+ *  The last 4 digits of the credit card used, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *last4CC;
 
@@ -173,43 +189,73 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *taxId;
 
 /**
- An average confidence (between 0 and 1) for the OCR performed on this receipt
+ *  An average confidence (between 0 and 1) for the OCR performed on this receipt
  */
 @property (nonatomic, readonly) float ocrConfidence;
 
 /**
- Indicates whether any server lookups were still pending at the time results were returned to the client
+ *  Indicates whether any server lookups were still pending at the time results were returned to the client
  */
 @property (nonatomic, readonly) BOOL serverLookupsCompleted;
 
 /**
- Indicates whether a top edge was found on any frame that was scanned in this session
+ *  Indicates whether a top edge was found on any frame that was scanned in this session
  */
 @property (nonatomic, readonly) BOOL foundTopEdge;
 
 /**
- Indicates whether a bottom edge was found on any frame that was scanned in this session
+ *  Indicates whether a bottom edge was found on any frame that was scanned in this session
  */
 @property (nonatomic, readonly) BOOL foundBottomEdge;
 
 /**
- Indicate whether the subtotal matches the sum of the products and coupons
+ *  Indicate whether the subtotal matches the sum of the products and coupons
  */
 @property (nonatomic, readonly) BOOL subtotalMatches;
 
 /**
- Indicate whether the subtotal matches the sum of the products and coupons
+ *  Indicate whether the subtotal matches the sum of the products and coupons
  */
 @property (nonatomic, readonly) NSInteger productsPendingLookup;
 
 /**
- Indicate whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
+ *  Indicate whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
  */
 @property (nonatomic, readonly) BOOL isDuplicate;
 
 /**
- If `isDuplicate` is true, this property contains the Blink Receipt ID of the duplicate receipt
+ *  If `isDuplicate` is true, this property contains the Blink Receipt ID of the duplicate receipt
  */
 @property (strong, nonatomic, readonly) NSString *duplicateBlinkReceiptId;
+
+/**
+ *  If promotion validation is enabled, this will contain all the promotions that were validated
+ */
+@property (strong, nonatomic, readonly) NSArray<BRPromotion*> *qualifiedPromotions;
+
+/**
+ *  If promotion validation is enabled, this will contain all the promotions that were NOT validated
+ */
+@property (strong, nonatomic, readonly) NSArray<BRPromotion*> *unqualifiedPromotions;
+
+/**
+ *  Additional product fields
+ */
+@property (strong, nonatomic, readonly) NSDictionary *extendedFields;
+
+/**
+ *  For an Amazon or e-receipt order, this is the order number
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptOrderNum;
+
+/**
+ *  For an Amazon or e-receipt order, this is the raw HTML that was parsed
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptRawHTML;
+
+/**
+ *  For an Amazon order only, this is an array of all the shipments discovered in this order
+ */
+@property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;
 
 @end

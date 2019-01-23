@@ -9,10 +9,21 @@
 #import <Foundation/Foundation.h>
 
 #import "BRProduct.h"
+#import "BRSerializable.h"
 
-@interface BRShipment : NSObject
+/**
+ *  Represents one shipment in an Amazon order
+ */
+@interface BRShipment : NSObject <BRSerializable>
 
-@property (strong, nonatomic) NSString *status;
-@property (strong, nonatomic) NSArray<BRProduct*> *products;
+/**
+ *  The status of this shipment. For example "Arriving Tomorrow", "Delivered", "Refunded", etc.
+ */
+@property (strong, nonatomic, readonly) NSString *status;
+
+/**
+ *  The products contained in this shipment
+ */
+@property (strong, nonatomic, readonly) NSArray<BRProduct*> *products;
 
 @end

@@ -8,24 +8,32 @@
 
 #import <Foundation/Foundation.h>
 #import "BRValue.h"
-
-@interface BRProductAdditionalLine : NSObject
+#import "BRSerializable.h"
 
 
 /**
- The type of this additional line. For example "Full Price", "Price Cut", "Quantity", etc.
+ *  Represents an additional line of text attached to a product
+ */
+@interface BRProductAdditionalLine : NSObject <BRSerializable>
+
+///------------------
+/// @name Properties
+///------------------
+
+/**
+ *  The type of this additional line. For example "Full Price", "Price Cut", "Quantity", etc.
  */
 @property (nonatomic, readonly, strong) BRStringValue *type;
 
 
 /**
- The text of this additional line
+ *  The text of this additional line
  */
 @property (nonatomic, readonly, strong) BRStringValue *text;
 
 
 /**
- The line number of this additional line
+ *  The line number of this additional line
  */
 @property (nonatomic, readonly) NSInteger lineNumber;
 

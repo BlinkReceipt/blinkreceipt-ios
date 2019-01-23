@@ -32,14 +32,14 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 @interface BRCameraViewController : UIViewController
 
 
-/**------------------*/
-/** @name Properties */
-/**------------------*/
+///------------------
+/// @name Properties
+///------------------
 
 /**
  *  Set this property in viewDidLoad of your subclass in order to scan only a certain region of the returned image from the camera. The values of the CGRect
  *  are all given from 0.0 to 1.0, indicating a fraction of the current view's dimensions. Default is (0.0, 0.0, 1.0, 1.0) which scans the whole screen.
-    It is recommended to set the scanning region equal to the area of the screen that is not covered by other UI elements, so that the frames being scanned are consistent with what the user appears to be snapping photos of
+ *  It is recommended to set the scanning region equal to the area of the screen that is not covered by other UI elements, so that the frames being scanned are consistent with what the user appears to be snapping photos of
  */
 @property (nonatomic) CGRect scanningRegion;
 
@@ -61,20 +61,24 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 /**
  *  Set this property to YES to prevent the parent view controller from starting and stopping the AVCaptureSession based on view lifecycle events.
- *  You will be responsible for manually calling resumeScanning and pauseScanning to manage the capture session
+ *  You will be responsible for manually calling [BRCameraViewController resumeScanning] and [BRCameraViewController pauseScanning] to manage the capture session
  */
 @property (nonatomic) BOOL manualCaptureSession;
 
 
 
-/**--------------------------*/
-/** @name Base Class Methods */
-/**--------------------------*/
+///--------------------------
+/// @name Base Class Methods
+///--------------------------
 
 /**
  *  Call this method to notify the camera controller that the user has attempted to snap a picture.
  *
- *  @param readyBlock This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview, and also includes a flag indicating whether the frame is below the blurry threshold
+ *  @param readyBlock This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview.
+ *
+ *      * `UIImage *frameImg` - The frame to display as a preview
+ *
+ *      * `BOOL isBlurry` - A flag indicating whether the frame is below the blurry threshold
  */
 - (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry))readyBlock;
 
@@ -85,8 +89,15 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 - (void)userFinishedScan;
 
 
+
 /**
- *  Call this method to invoke the same processing that happens at end of scan session and inspect the results
+ *  Call this method to invoke the same processing that happens at the end of the scan session.
+ *
+ *  @param callback This callback is invoked as soon as it is possible to return preliminary results
+ *
+ *      * `BRScanResults *scanResults` - The scan results up to this point
+ *
+ *      * `BOOL stillProcessing` - A flag indicating whether there are still frames processing in the pipeline
  */
 - (void)getPreliminaryResults:(void(^)(BRScanResults *scanResults, BOOL stillProcessing))callback;
 
@@ -118,21 +129,21 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 
 /**
- Resume frame capture and scanning.
+ *  Resume frame capture and scanning.
  */
 - (void)resumeScanning;
 
 
 /**
- After receiving the "didDetectWrongRetailer:" callback, call this method to indicate that scanning should use the new retailer going forward
-
- @param retailerId The new retailer to use
+ *  After receiving the "didDetectWrongRetailer:" callback, call this method to indicate that scanning should use the new retailer going forward
+ *
+ *  @param retailerId The new retailer to use
  */
 - (void)confirmCorrectRetailer:(WFRetailerId)retailerId;
 
-/**-------------------------*/
-/** @name Subclass Methods */
-/**-------------------------*/
+///------------------------
+/// @name Subclass Methods
+///------------------------
 
 /**
  *  Override this method to be notified when a determination is made that the user's scanning distance is either too far or is acceptable (OK)
@@ -143,55 +154,55 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 
 /**
- Override this method to receive statistics on each frame that is processed
-
- @param frameStats A dictionary with the following keys:
-    contentWidth - CGFloat indicating what percent (0-100) of the image the receipt appears in
+ *  Override this method to receive statistics on each frame that is processed
+ *
+ *  @param frameStats A dictionary with the following keys:
+ *      `contentWidth` - CGFloat indicating what percent (0-100) of the image the receipt appears in
  */
 - (void)didGetFrameStats:(NSDictionary*)frameStats;
 
 
 /**
- Override this method to be notified when the SDK detects that the receipt being scanned is from a different retailer than was specified
-
- @param correctRetailer The retailer the SDK believes the receipt to be from
- @param confidence Whether the new retailer is based only on a store phone match, or if we have also successfully parsed products using the new retailer
+ *  Override this method to be notified when the SDK detects that the receipt being scanned is from a different retailer than was specified
+ *
+ *  @param correctRetailer The retailer the SDK believes the receipt to be from
+ *  @param confidence Whether the new retailer is based only on a store phone match, or if we have also successfully parsed products using the new retailer
  */
 - (void)didDetectWrongRetailer:(WFRetailerId)correctRetailer withConfidence:(BRWrongRetailerConfidence)confidence;
 
 
 /**
- Override this method to receive frame by frame scan results (note: metadata only, does not include product results).
- Results are cumulative from all frames previously scanned.
-
- @param frameResults - The scan results at this point in time
+ *  Override this method to receive frame by frame scan results (note: metadata only, does not include product results).
+ *  Results are cumulative from all frames previously scanned.
+ *
+ *  @param frameResults - The scan results at this point in time
  */
 - (void)didGetFrameResults:(BRScanResults*)frameResults;
 
 
 /**
- Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
-
- @param validReceipt Whether the SDK believes that it is scanning a valid receipt at this point
+ *  Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
+ *
+ *  @param validReceipt Whether the SDK believes that it is scanning a valid receipt at this point
  */
 - (void)receiptValidityEstimate:(BOOL)validReceipt;
 
 
 /**
- When manualTorchControl is enabled in BRScanOptions, this callback will indicate to the client VC if the SDK detects a new lighting condition
- Note: Lighting is assumed to start in BRLightingConditionTerrible, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to BRLightingConditionLow or BRLightingConditionGood
-
- @param lightingCondition - the new lighting condition
+ *  When manualTorchControl is enabled in BRScanOptions, this callback will indicate to the client VC if the SDK detects a new lighting condition.
+ *  Note: Lighting is assumed to start in BRLightingConditionTerrible, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to BRLightingConditionLow or BRLightingConditionGood
+ *
+ *  @param lightingCondition - the new lighting condition
  */
 - (void)didGetLightingCondition:(BRLightingCondition)lightingCondition;
 
 
 /**
- Override this method to receive a callback when one or both horizontal edges is detected on the current frame. Note: This does *not* guarantee that this frame will be scanned.
- To determine if a top/bottom edge was seen on any of the scanned frames, consult the topEdgeFound and bottomEdgeFound properties of BRScanResults
-
- @param topEdge - whether a top edge was detected on this frame
- @param bottomEdge - whether a bottom edge was detected on this frame
+ *  Override this method to receive a callback when one or both horizontal edges is detected on the current frame. Note: This does *not* guarantee that this frame will be scanned.
+ *  To determine if a top/bottom edge was seen on any of the scanned frames, consult the topEdgeFound and bottomEdgeFound properties of BRScanResults
+ *
+ *  @param topEdge - whether a top edge was detected on this frame
+ *  @param bottomEdge - whether a bottom edge was detected on this frame
  */
 - (void)didGetHorizontalEdges:(BOOL)topEdge andBottomEdge:(BOOL)bottomEdge;
 

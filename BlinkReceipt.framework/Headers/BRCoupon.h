@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BRValue.h"
+#import "BRSerializable.h"
 
 typedef NS_ENUM(NSUInteger, BRCouponType) {
     BRCouponTypeUnknown,
@@ -18,7 +19,11 @@ typedef NS_ENUM(NSUInteger, BRCouponType) {
 /**
  *  Describes one coupon or discount on a receipt
  */
-@interface BRCoupon : NSObject
+@interface BRCoupon : NSObject <BRSerializable>
+
+///------------------
+/// @name Properties
+///------------------
 
 /**
  *  The type of coupon based on the above enum
@@ -43,10 +48,14 @@ typedef NS_ENUM(NSUInteger, BRCouponType) {
 
 /**
  *  If this coupon is related to a particular product, this property will be set to correspond to the index of related product in the `BRScanResults.products` array.
- 
-    Default value: -1
+ *
+ *  Default value: -1
  */
 @property (nonatomic, readonly) NSInteger relatedProductIndex;
+
+///---------------------
+/// @name Class Methods
+///---------------------
 
 /**
  *  Convert a coupon type to a user-friendly string

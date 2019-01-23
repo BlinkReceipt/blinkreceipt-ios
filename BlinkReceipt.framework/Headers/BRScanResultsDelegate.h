@@ -10,11 +10,20 @@
 #import "BRProduct.h"
 #import "BRScanResults.h"
 
-typedef NS_ENUM(NSUInteger, WFErrorCodes) {
-    WFErrorCodeFailToGrabImage
+typedef NS_ENUM(NSUInteger, BRErrorCodes) {
+    BRErrorInvalidLicenseKey,
+    BRErrorFailToGrabImage,
+    BRErrorFailToWriteToDisk
 };
 
+/**
+ *  Implement this protocol to receive callbacks from a scanning session
+ */
 @protocol BRScanResultsDelegate <NSObject>
+
+///---------------
+/// @name Methods
+///---------------
 
 @optional
 
@@ -22,6 +31,7 @@ typedef NS_ENUM(NSUInteger, WFErrorCodes) {
  *  Indicates that the scanning session has ended
  *
  *  @param cameraViewController The subclass of BRCameraViewController to dismiss
+ *  @param scanResults The results of the scanning session
  */
 - (void)didFinishScanning:(UIViewController*)cameraViewController withScanResults:(BRScanResults*)scanResults;
 
@@ -49,10 +59,11 @@ typedef NS_ENUM(NSUInteger, WFErrorCodes) {
 
 
 /**
- This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Crashlytics, this can be passed along as follows:
- CLSLog(@"%@", debugInfo);
-
- @param debugInfo The encrypted debugging information
+ *  This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Crashlytics, this can be passed along as follows:
+ *
+ *  `CLSLog(@"%@", debugInfo);`
+ *
+ *  @param debugInfo The encrypted debugging information
  */
 - (void)didOutputDebugInfo:(NSString*)debugInfo;
 

@@ -209,17 +209,17 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL foundBottomEdge;
 
 /**
- *  Indicate whether the subtotal matches the sum of the products and coupons
+ *  Indicates whether the subtotal matches the sum of the products and coupons
  */
 @property (nonatomic, readonly) BOOL subtotalMatches;
 
 /**
- *  Indicate whether the subtotal matches the sum of the products and coupons
+ *  Indicates how many products were still awaiting product intelligence results when the scan session ended
  */
 @property (nonatomic, readonly) NSInteger productsPendingLookup;
 
 /**
- *  Indicate whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
+ *  Indicates whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
  */
 @property (nonatomic, readonly) BOOL isDuplicate;
 

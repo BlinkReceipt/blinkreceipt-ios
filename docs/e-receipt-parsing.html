@@ -145,12 +145,157 @@
         <section>
           <section class="section">
             
-            <p>Best</p>
+            <h1 id='e-receipt-parsing' class='heading'>E-Receipt Parsing</h1>
+
+<p>The BlinkReceipt SDK supports parsing e-receipts from a growing list of retailers and a specific set of mail providers: Gmail, Outlook, Yahoo, and AOL. The procedure for integrating each of these providers is slightly different. This guide will outline the steps necessary to integrate and authenticate a user account for each mail provider, and then the common methods that you will use to invoke the e-receipt parsing functionality.</p>
+<h2 id='gmail' class='heading'>Gmail</h2>
+
+<p>Gmail integration requires 2 additional pods in your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>pod 'GoogleAPIClientForREST/Gmail', '~&gt; 1.2.1'
+pod 'GoogleSignIn'
+</code></pre>
+
+<p>You must also create an application in the <a href="https://console.developers.google.com">Google API Console</a>, enable the Gmail API, and obtain a Client ID for your app&rsquo;s bundle identifier</p>
+
+<p><img src="img/gmail.png" alt="Google API Console"></p>
+
+<p>You must provide this Client ID via the <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)googleClientId">BREReceiptManager.googleClientId</a></code> property</p>
+
+<p>Gmail uses OAuth to authenticate user accounts via a modal view controller provided by Google&rsquo;s SDK. Here is how you invoke it from within your own view controller:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">beginOAuthForProvider</span><span class="p">:</span><span class="n">BREReceiptProviderGmail</span>
+                               <span class="nf">withViewController</span><span class="p">:</span><span class="n">self</span>
+                                    <span class="n">andCompletion</span><span class="o">:^</span><span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+                                        <span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+                                            <span class="c1">//Account successfully authenticated</span>
+                                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                            <span class="c1">//Failed to authenticate</span>
+                                        <span class="p">}</span>
+                                    <span class="p">}];</span>
+</code></pre>
+<h2 id='outlook' class='heading'>Outlook</h2>
+
+<p>Outlook integration requires 2 additional pods in your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>pod 'MSGraphSDK'
+pod 'MSGraphSDK-NXOAuth2Adapter'
+</code></pre>
+
+<p>You must also register an application in the <a href="https://apps.dev.microsoft.com/">MS Application Registration Portal</a>, add a Native Application platform, and obtain an Application ID</p>
+
+<p><img src="img/outlook.png" alt="MS Portal"></p>
+
+<p>You must provide this Application ID via the <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)outlookClientId">BREReceiptManager.outlookClientId</a></code> property</p>
+
+<p>Outlook uses OAuth to authenticate user accounts via a modal view controller provided by Microsoft&rsquo;s SDK. Here is how you invoke it from within your own view controller:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">beginOAuthForProvider</span><span class="p">:</span><span class="n">BREReceiptProviderOutlook</span>
+                               <span class="nf">withViewController</span><span class="p">:</span><span class="n">self</span>
+                                    <span class="n">andCompletion</span><span class="o">:^</span><span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+                                        <span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+                                            <span class="c1">//Account successfully authenticated</span>
+                                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                            <span class="c1">//Failed to authenticate</span>
+                                        <span class="p">}</span>
+                                    <span class="p">}];</span>
+</code></pre>
+<h2 id='yahoo-amp-aol' class='heading'>Yahoo &amp; AOL</h2>
+
+<p>Yahoo &amp; AOL are owend by Oath Inc. and thus share the same authentication requirements. All AOL and Yahoo accounts have a setting called <q>Allow apps that use less secure sign in</q>. For accounts created a long time ago (the exact cutoff is unclear), the default value for this setting is ON, whereas accounts created more recently have this setting OFF. Users can toggle this setting at any time.</p>
+
+<p>To support only users that have this setting ON, it is sufficient to complete the simpler IMAP integration.</p>
+
+<p>To also support users that have this setting OFF, you must go through the more tedious OAuth integration.</p>
+<h3 id='imap-integration' class='heading'>IMAP Integration</h3>
+
+<p>Include the following pod in your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>pod 'BRMailCore'
+</code></pre>
+
+<p>For this simpler version, all you need to do is provide UI for the user to enter their e-mail address and password, and set these values into the corresponding properties. You can then verify the credentials are valid as in this example:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">IBAction</span><span class="p">)</span><span class="nf">btnOKTouched</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span> <span class="p">{</span>
+    <span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">storeImapCredentials</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">txtEmail</span><span class="p">.</span><span class="n">text</span>
+                                     <span class="nf">andPassword</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">txtPassword</span><span class="p">.</span><span class="n">text</span>
+                                     <span class="nl">forProvider:</span><span class="n">BREReceiptProviderAOL</span><span class="p">];</span>
+
+    <span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">verifyImapCredentials</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">success</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">success</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//Credentials verified</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">//Failed to verify credentials</span>
+        <span class="p">}</span>
+
+    <span class="p">}];</span>
+
+<span class="p">}</span>
+</code></pre>
+<h3 id='oauth-integration' class='heading'>OAuth Integration</h3>
+
+<p>Include the following pods in your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>pod 'GTMOAuth2'
+pod 'BRMailCore'
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If you are also integrating Gmail then you can omit <code>pod &#39;GTMOAuth2&#39;</code> here
+
+</div>
+
+<p>In order to obtain access to all AOL and Yahoo accounts regardless of the above setting, you first need to register a <a href="https://developer.yahoo.com">Yahoo developer account</a> and then contact <a href="mailto:mail-api@oath.com">mail-api@oath.com</a> to request an IMAP ID.</p>
+
+<p>Once you receive an IMAP ID you set it into <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)yahooImapId">BREReceiptManager.yahooImapId</a></code></p>
+
+<p>Then you will need to create a new Web Application at <a href="https://developer.yahoo.com">https://developer.yahoo.com</a>. You should set the <code>callback_domain</code> to <q>microblink.com</q></p>
+
+<p>The permissions you need to request are <q>Mail->Read</q> and <q>Profiles->Read/Write Public and Private</q>.</p>
+
+<p><img src="img/yahoo.png" alt="Yahoo Dev Portal"></p>
+
+<p>You should then obtain a Client ID and Client Secret which you set into <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)yahooClientId">BREReceiptManager.yahooClientId</a></code> and <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)yahooClientSecret">BREReceiptManager.yahooClientSecret</a></code> respectively</p>
+
+<p>At this point you can begin the OAuth authentication process as follows:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">beginOAuthForProvider</span><span class="p">:</span><span class="n">BREReceiptProviderYahoo</span>
+                               <span class="nf">withViewController</span><span class="p">:</span><span class="n">self</span>
+                                    <span class="n">andCompletion</span><span class="o">:^</span><span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+                                        <span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+                                            <span class="c1">//Account successfully authenticated</span>
+                                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                            <span class="c1">//Failed to authenticate</span>
+                                        <span class="p">}</span>
+                                    <span class="p">}];</span>
+</code></pre>
+<h2 id='retrieving-and-parsing-e-receipts' class='heading'>Retrieving and Parsing E-Receipts</h2>
+
+<p>Once you have successfully integrated one or more mail providers, and the user has successfully authenticated their account, you can begin retrieving and parsing e-receipts as follows:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BREReceiptManager</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getEReceiptsWithCompletion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">scanResults</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Found %lu new e-receipt orders"</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span><span class="n">scanResults</span><span class="p">.</span><span class="n">count</span><span class="p">);</span>
+
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Error retrieving e-receipts"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}];</span>
+</code></pre>
+
+<p>This will connect to the user&rsquo;s email account and search for new e-receipts from all supported retailers <em>since the most recent successful retrieval of e-receipts</em>.</p>
+
+<p>If any orders are found, they will be returned as an array of <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> objects. These objects contain many of the standard fields that are populated when scanning a physical receipt, but also contain certain properties that are unique to e-receipts such as:</p>
+
+<ul>
+<li><code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)ereceiptOrderNum">BRScanResults.ereceiptOrderNum</a></code></li>
+<li><code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)ereceiptRawHTML">BRScanResults.ereceiptRawHTML</a></code></li>
+</ul>
+
+<p>The <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)products">BRScanResults.products</a></code> array is composed of <code><a href="Classes/BRProduct.html">BRProduct</a></code> objects as usual, but with 1 additional property: <code><a href="Classes/BRProduct.html#/c:objc(cs)BRProduct(py)shippingStatus">BRProduct.shippingStatus</a></code></p>
+
+<p>Finally, you can control how far back to search in the user&rsquo;s email for e-receipts via the <code><a href="Classes/BREReceiptManager.html#/c:objc(cs)BREReceiptManager(py)dayCutoff">BREReceiptManager.dayCutoff</a></code> property. The default is 14 days.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2019-01-25)</p>
+          <p>&copy; 2019 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2019-01-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

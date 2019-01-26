@@ -170,7 +170,7 @@
 <li>It is recommended to set <code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(py)scanningRegion">BRCameraViewController.scanningRegion</a></code> so that the area of the camera preview that is visible to the user corresponds to the region that is cropped out of the full camera frame for scanning.</li>
 </ul>
 <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLayoutSubviews</span> <span class="p">{</span>
-    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLayoutSubvies</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLayoutSubviews</span><span class="p">];</span>
 
     <span class="n">self</span><span class="p">.</span><span class="n">scanningRegion</span> <span class="o">=</span> <span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mo">05</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">65</span><span class="p">);</span>
 <span class="p">}</span>
@@ -207,8 +207,6 @@
                                      <span class="n">scanOptions</span><span class="o">:</span><span class="n">scanOptions</span>
                                     <span class="n">withDelegate</span><span class="o">:</span><span class="n">self</span><span class="p">];</span>
 </code></pre>
-
-<p>Copyright &copy; 2017 BlinkReceipt. All rights reserved.</p>
 
           </section>
         </section>

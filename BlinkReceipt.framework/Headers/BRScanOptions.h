@@ -72,20 +72,20 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 ///------------------
 
 /**
- *  Pass in one of the retailer ID's enumerated in the WFRetailerID typedef above
+ *  If the retailer is known in advance pass in a value from the `WFRetailerId` enum
  */
 @property (nonatomic) WFRetailerId retailerId;
 
 
 /**
- *  Whether to return the raw OCR text. If this property is true, the BRScanResultsDelegate method didOutputRawText: will be called
+ *  Whether to return the raw OCR text. If this property is true, `-[BRScanResultsDelegate didOutputRawText:]` will be called
  *
  *  Default: NO
  */
 @property (nonatomic) BOOL returnRawText;
 
 /**
- *  Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session the userFramesFilepaths property of BRScanManager will be set
+ *  Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session `BRScanManager.userFramesFilepaths` will contain the local paths of the user frames
  *
  *  Default: NO
  */
@@ -108,7 +108,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 
 
 /**
- *  The compression quality parameter to pass into UIImageJPEGRepresentation for saving user images to disk
+ *  The compression quality parameter to pass into `UIImageJPEGRepresentation` for saving user images to disk
  *
  *  Default: 0.9
  */
@@ -140,14 +140,14 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 
 
 /**
- *  The number of consecutive frames above the tooFarThreshold before we stop running edge detection
+ *  The number of consecutive frames above the `tooFarThreshold` before we stop running edge detection
  *
  *  Default: 2
  */
 @property (nonatomic) NSInteger numGoodFramesToStopEdges;
 
 /**
- *  If numGoodFramesToStopEdges is greater than 0, this property allows edge detection to restart after a user confirms a frame
+ *  If `numGoodFramesToStopEdges` is greater than 0, this property allows edge detection to restart after a user confirms a frame
  *
  *  Default: NO
  */
@@ -161,7 +161,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL enableEdgesAfterUserPhoto;
 
 /**
- *  Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, the didDetectWrongRetailer callback will be triggered, which allows the client to determine if scanning should continue with the new retailer
+ *  Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, `-[BRCameraViewController didDetectWrongRetailer:withConfidence:]` will be triggered, which allows the client to determine if scanning should continue with the new retailer
  *
  *  Default: NO
  */
@@ -185,7 +185,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 
 
 /**
- *  Whether the client will control the torch manually (should only be used with custom BRCameraViewController subclass). When this is enabled, the didGetLightingCondition: callback method will be invoked to notify the client of lighting changes
+ *  Whether the client will control the torch manually (should only be used with custom `BRCameraViewController` subclass). When this is enabled, `-[BRCameraViewController didGetLightingCondition:]` will be invoked to notify the client of lighting changes
  *
  *  Default: NO
  */
@@ -213,7 +213,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL detectDuplicates;
 
 /**
- *  If this property is enabled, voided products will be returned with the `BRProduct.isVoided` property set to YES
+ *  If this property is enabled, voided products will be returned with the `BRProduct.isVoided` property set to `YES`
  *
  *  Default: NO
  */

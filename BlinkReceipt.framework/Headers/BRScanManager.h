@@ -50,7 +50,7 @@
 @property (strong, nonatomic, nullable) NSString *prodIntelKey;
 
 /**
- *  An array of NSString filepaths corresponding to the user images, if any, which were confirmed by the user during the scanning session.
+ *  An array of `NSString` filepaths corresponding to the user images, if any, which were confirmed by the user during the scanning session.
  *  Only applies to static camera UX
  */
 @property (strong, nonatomic, nullable) NSArray<NSString*> *userFramesFilepaths;
@@ -60,7 +60,7 @@
 ///---------------------
 
 /**
- *  Always access the singleton instance of BRScanManager using this class method
+ *  Always access this singleton instance
  *
  *  @return The singleton instance
  */
@@ -74,8 +74,8 @@
  *  Initiates a static camera scanning experience (in which the user appears to be snapping static photos)
  *
  *  @param viewController The parent view controller from which to display the camera controller modally
- *  @param scanOptions    An instance of BRScanOptions specifying options for this scanning session
- *  @param delegate       An instance conforming to BRScanResultsDelegate
+ *  @param scanOptions    An instance of `BRScanOptions` specifying options for this scanning session
+ *  @param delegate       An instance conforming to `BRScanResultsDelegate`
  */
 - (void)startStaticCameraFromController:(nonnull UIViewController*)viewController
                             scanOptions:(nullable BRScanOptions*)scanOptions
@@ -83,12 +83,12 @@
 
 
 /**
- *  Initiates a scanning session using your own subclass of BRCameraViewController
+ *  Initiates a scanning session using your own subclass of `BRCameraViewController`
  *
- *  @param customController Your custom subclass of BRCameraViewController
+ *  @param customController Your custom subclass of `BRCameraViewController`
  *  @param viewController   The parent view controller from which to display the camera controller modally
- *  @param scanOptions      An instance of BRScanOptions specifying options for this scanning session
- *  @param delegate         An instance conforming to BRScanResultsDelegate
+ *  @param scanOptions      An instance of `BRScanOptions` specifying options for this scanning session
+ *  @param delegate         An instance conforming to `BRScanResultsDelegate`
  */
 - (void)startCustomCamera:(nonnull BRCameraViewController*)customController
            fromController:(nonnull UIViewController*)viewController
@@ -100,19 +100,19 @@
  *  Initiates a scanning session using QR code to grab remote image and scan it
  *
  *  @param qrCodeText      The value of the QR code already scanned
- *  @param scanOptions     An instance of BRScanOptions specifying options for this scanning session
- *  @param delegate        An instance conforming to BRScanResultsDelegate
+ *  @param scanOptions     An instance of `BRScanOptions` specifying options for this scanning session
+ *  @param delegate        An instance conforming to `BRScanResultsDelegate`
  *
- *  Notes: If there is an error retrieving the remote image for this QR code, scanningErrorOccurred: will be invoked on the delegate with error code WFErrorCodeFailToGrabImage
+ *  Notes: If there is an error retrieving the remote image for this QR code, `-[BRScanResultsDelegate scanningErrorOccurred:]` will be invoked on your scanning delegate with error code `WFErrorCodeFailToGrabImage`
  */
 - (void)scanFromQRCode:(nonnull NSString*)qrCodeText
            scanOptions:(nonnull BRScanOptions*)scanOptions
           withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
 /**
- *  Creates a new MFMailComposeViewController populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
+ *  Creates a new `MFMailComposeViewController` populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
  *
- *  Note: If this method is invoked on the simulator or a device with no email supported, it will output the message body to the console and return nil.
+ *  Note: If this method is invoked on the simulator or a device with no email supported, it will output the message body to the console and return `nil`.
  *
  *  @return The controller to display
  */

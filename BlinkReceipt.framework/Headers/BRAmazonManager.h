@@ -11,7 +11,7 @@
 
 #import "BRScanResults.h"
 
-typedef enum : NSUInteger {
+typedef NS_ENUM(NSUInteger, BRAmazonError) {
     BRAmazonErrorNone = 0,
     BRAmazonErrorNoCredentials,
     BRAmazonErrorInvalidEmail,
@@ -21,7 +21,7 @@ typedef enum : NSUInteger {
     BRAmazonErrorParsingFail,
     BRAmazonErrorLoginTimeout,
     BRAmazonErroriOS12
-} BRAmazonError;
+};
 
 /**
  *  Use this interface to manage Amazon parsing. Here are the basic steps to integrate:
@@ -58,7 +58,7 @@ typedef enum : NSUInteger {
 /**
  *  This method grabs any incremental orders found on the user's Amazon account. An incremental order is defined as an order that has not been previously returned, or an order previously returned but with a new status (i.e. if the status of any items changes from "Processing" to "Shipped")
  
- *  @param completion This callback is invoked when parsing the user's Amazon account has completed
+ *  @param completion   This callback is invoked when parsing the user's Amazon account has completed
  *
  *      * `NSArray<BRScanResults*> *orders` - An array of `BRScanResults` objects representing all the Amazon orders found. You can expect the following order-level properties to be populated:
  *
@@ -113,7 +113,7 @@ typedef enum : NSUInteger {
 /**
  *  Attempts to verify the stored Amazon credentials
  *
- *  @param completion Callback indicates whether account was verified successfully or not.
+ *  @param completion   Callback indicates whether account was verified successfully or not.
  *
  *      * `BRAmazonError error` - `BRAmazonErrorNone` on success, otherwise indicates the type of error.
  *          `BRAmazonErrorVerificationNeeded` indicates the user needs to manually log in to Amazon via a mobile web page, for this see the  `-[BRAmazonManager showBrowserFromViewController:withCompletion:]` method below
@@ -123,8 +123,8 @@ typedef enum : NSUInteger {
 /**
  *  Shows a view controller containing a web view that allows
  *
- *  @param viewController You must provide a view controller from which the web view will be shown
- *  @param completion Indicates whether the user successfully logged in manually. If so, you can call `-[BRAmazonManager grabNewAmazonOrders:]`
+ *  @param viewController   You must provide a view controller from which the web view will be shown
+ *  @param completion       Indicates whether the user successfully logged in manually. If so, you can call `-[BRAmazonManager grabNewAmazonOrders:]`
  *
  *      * `BRAmazonError error` - `BRAmazonErrorNone` if manual login was successful. Otherwise, the appropriate error code
  */

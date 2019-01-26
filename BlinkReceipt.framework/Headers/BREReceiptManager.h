@@ -72,8 +72,10 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
 /**
  *  Debug property to enable other sender emails to be parsed as ereceipts.
  *  Each element in this array should be a dictionary with the following keys:
- *      * `email` - The e-mail address to whitelist
- *      * `merchant` - The merchant to use for parsing emails from this sender. Values are: Peapod, Walmart, Target, Instacart, Jet, Costco, SamsClub
+ *
+ *  `email` - The e-mail address to whitelist
+ *
+ *  `merchant` - The merchant to use for parsing emails from this sender. Values are: Peapod, Walmart, Target, Instacart, Jet, Costco, SamsClub
  */
 @property (strong, nonatomic) NSArray<NSDictionary*> *whitelistedSenders;
 
@@ -103,9 +105,9 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
 /**
  *  Begins the OAuth process for the given provider (currently only Gmail and Outlook supported). If the completion is called with no error, you may then invoke `-[BREReceiptManager getEReceiptsWithCompletion:]`
  *
- *  @param provider The provider you would like to authenticate against
- *  @param viewController The view controller from which to present the OAuth modal
- *  @param completion The completion is invoked after the OAuth attempt has completed
+ *  @param provider         The provider you would like to authenticate against
+ *  @param viewController   The view controller from which to present the OAuth modal
+ *  @param completion       The completion is invoked after the OAuth attempt has completed
  *
  *      * `NSError *error` - The error returned during the OAuth attempt, if any. A successful attempt will return `nil`
  */
@@ -125,7 +127,7 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
 /**
  *  Verifies that stored IMAP credentials are valid
  *
- *  @param completion The completion is invoked after the attempt to verify IMAP credentials completes
+ *  @param completion   The completion is invoked after the attempt to verify IMAP credentials completes
  *
  *      * `BOOL success` - indicates whether verification succeeded or not
  *      * `NSError *error` - `nil` on success, otherwise contains error information
@@ -135,7 +137,7 @@ typedef NS_ENUM(NSUInteger, BREReceiptProvider) {
 /**
  *  Attempts to retrieve new (since last check) e-receipts from the stored e-mail account. You must have successfully authenticated an OAuth provider, or stored IMAP credentials prior to calling this method
  *
- *  @param completion The completion function will be invoked when e-receipt parsing has completed.
+ *  @param completion   The completion function will be invoked when e-receipt parsing has completed.
  *
  *      * `NSArray<BRScanResults*> *receipts` - an array of `BRScanResults` objects corresponding to the e-receipts that were successfully parsed. You can expect the following order-level properties to be populated:
  *

@@ -59,12 +59,12 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *blinkReceiptId;
 
 /**
- *  An array of BRProduct's representing the products that were detected on the receipt, if any
+ *  An array of `BRProduct` objects representing the products that were detected on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSArray<BRProduct*> *products;
 
 /**
- *  An array of BRCoupon's representing the coupons that were detected on the receipt, if any
+ *  An array of `BRCoupon` objects representing the coupons that were detected on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSArray<BRCoupon*> *coupons;
 
@@ -111,8 +111,8 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *merchantName;
 
 /**
- *  An array of NSNumber* objects wrapping BRMerchantSource values indicating which merchant detection method(s) succeeded in identifying the current merchant.
- *  This will be nil if no merchant was detected (i.e. merchantName == nil)
+ *  An array of `NSNumber` objects wrapping `BRMerchantSource` values indicating which merchant detection method(s) succeeded in identifying the current merchant.
+ *  This will be `nil` if no merchant was detected (i.e. `merchantName == nil`)
  */
 @property (strong, nonatomic, readonly) NSArray<NSNumber*> *merchantSources;
 
@@ -174,7 +174,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 
 
 /**
- *  An array of BRPaymentMethod's representing all payment methods found on the receipt, if any
+ *  An array of `BRPaymentMethod` objects representing all payment methods found on the receipt, if any
  */
 @property (strong, nonatomic, readonly) NSArray<BRPaymentMethod*> *paymentMethods;
 
@@ -219,7 +219,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) NSInteger productsPendingLookup;
 
 /**
- *  Indicates whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions
+ *  Indicate whether the receipt is a duplicate (depends on `BRScanOptions.detectDuplicates` being enabled)
  */
 @property (nonatomic, readonly) BOOL isDuplicate;
 

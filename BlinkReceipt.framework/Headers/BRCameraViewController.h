@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 };
 
 /**
- *  Base camera controller class. Subclass BRCameraViewController to build your own UI on top of the fullscreen camera view
+ *  Base camera controller class. Subclass to build your own UI on top of the fullscreen camera view
  */
 @interface BRCameraViewController : UIViewController
 
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 ///------------------
 
 /**
- *  Set this property in viewDidLoad of your subclass in order to scan only a certain region of the returned image from the camera. The values of the CGRect
+ *  Set this property of your subclass in order to scan only a certain region of the returned image from the camera. The values of the `CGRect`
  *  are all given from 0.0 to 1.0, indicating a fraction of the current view's dimensions. Default is (0.0, 0.0, 1.0, 1.0) which scans the whole screen.
  *  It is recommended to set the scanning region equal to the area of the screen that is not covered by other UI elements, so that the frames being scanned are consistent with what the user appears to be snapping photos of
  */
@@ -60,8 +60,8 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 
 /**
- *  Set this property to YES to prevent the parent view controller from starting and stopping the AVCaptureSession based on view lifecycle events.
- *  You will be responsible for manually calling [BRCameraViewController resumeScanning] and [BRCameraViewController pauseScanning] to manage the capture session
+ *  Set this property to `YES` to prevent the parent view controller from starting and stopping the `AVCaptureSession` based on view lifecycle events.
+ *  You will be responsible for manually calling `-[BRCameraViewController resumeScanning]` and `-[BRCameraViewController pauseScanning]` to manage the capture session
  */
 @property (nonatomic) BOOL manualCaptureSession;
 
@@ -74,7 +74,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Call this method to notify the camera controller that the user has attempted to snap a picture.
  *
- *  @param readyBlock This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview.
+ *  @param readyBlock   This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview.
  *
  *      * `UIImage *frameImg` - The frame to display as a preview
  *
@@ -84,7 +84,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 /**
  *  Call this method to notify the camera controller that the user has indicated they have finished scanning.
- *  This will perform some cleanup and then call the didFinishScanning: method on the BRScanResultsDelegate instance that you have supplied. It is recommended that prior to or simultaneous with calling this method, you display some sort of loader until the didFinishScanning: callback is received
+ *  This will perform some cleanup and then call `-[BRScanResultsDelegate didFinishScanning:withScanResults:]` on your scanning delegate. It is recommended that prior to or simultaneous with calling this method, you display some sort of loader until the callback is received
  */
 - (void)userFinishedScan;
 
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Call this method to invoke the same processing that happens at the end of the scan session.
  *
- *  @param callback This callback is invoked as soon as it is possible to return preliminary results
+ *  @param callback     This callback is invoked as soon as it is possible to return preliminary results
  *
  *      * `BRScanResults *scanResults` - The scan results up to this point
  *
@@ -103,22 +103,22 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 /**
  *  Call this method to notify the camera controller that the user has cancelled scanning.
- *  This will perform some cleanup and then call the didCancelScanning: method on the BRScanResultsDelegate instance that you have supplied
+ *  This will perform some cleanup and then call `-[BRScanResultsDelegate didCancelScanning:]` on your scanning delegate
  */
 - (void)userCancelledScan;
 
 /**
  *  Call this method to notify the camera controller that the user has confirmed a particular frame. This will mark the frame internally as a user frame
- *  and after the scanning session it will be saved to disk if the storeUserFrames flag in BRScanOptions is set
+ *  and after the scanning session it will be saved to disk if `BRScanOptions.storeUserFrames` is set
  *
- *  @param frameImg The image the user has confirmed. Should be the same as the image passed to the readyBlock of userSnappedPhotoOnReady: above
+ *  @param frameImg     The image the user has confirmed. Should be the same as the image passed to the `readyBlock` of `userSnappedPhotoOnReady:` above
  */
 - (void)userConfirmedFrame:(UIImage*)frameImg;
 
 /**
  *  Toggle the status of the torch
  *
- *  @param torchOn Whether to turn the torch on or off
+ *  @param torchOn      Whether to turn the torch on or off
  */
 - (void)setTorch:(BOOL)torchOn;
 
@@ -135,9 +135,9 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 
 
 /**
- *  After receiving the "didDetectWrongRetailer:" callback, call this method to indicate that scanning should use the new retailer going forward
+ *  After receiving the `didDetectWrongRetailer:` callback, call this method to indicate that scanning should use the new retailer going forward
  *
- *  @param retailerId The new retailer to use
+ *  @param retailerId   The new retailer to use
  */
 - (void)confirmCorrectRetailer:(WFRetailerId)retailerId;
 
@@ -148,7 +148,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Override this method to be notified when a determination is made that the user's scanning distance is either too far or is acceptable (OK)
  *
- *  @param newStatus The newly detected distance status
+ *  @param newStatus    The newly detected distance status
  */
 - (void)userDistanceChanged:(BRDistanceStatus)newStatus;
 
@@ -156,8 +156,9 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Override this method to receive statistics on each frame that is processed
  *
- *  @param frameStats A dictionary with the following keys:
- *      `contentWidth` - CGFloat indicating what percent (0-100) of the image the receipt appears in
+ *  @param frameStats   A dictionary with the following keys:
+ *
+ *      `contentWidth` - a float indicating what percent (0-100) of the image the receipt appears in
  */
 - (void)didGetFrameStats:(NSDictionary*)frameStats;
 
@@ -165,8 +166,8 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Override this method to be notified when the SDK detects that the receipt being scanned is from a different retailer than was specified
  *
- *  @param correctRetailer The retailer the SDK believes the receipt to be from
- *  @param confidence Whether the new retailer is based only on a store phone match, or if we have also successfully parsed products using the new retailer
+ *  @param correctRetailer  The retailer the SDK believes the receipt to be from
+ *  @param confidence       Whether the new retailer is based only on a store phone match, or if we have also successfully parsed products using the new retailer
  */
 - (void)didDetectWrongRetailer:(WFRetailerId)correctRetailer withConfidence:(BRWrongRetailerConfidence)confidence;
 
@@ -175,7 +176,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *  Override this method to receive frame by frame scan results (note: metadata only, does not include product results).
  *  Results are cumulative from all frames previously scanned.
  *
- *  @param frameResults - The scan results at this point in time
+ *  @param frameResults     The scan results at this point in time
  */
 - (void)didGetFrameResults:(BRScanResults*)frameResults;
 
@@ -183,26 +184,26 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Override this method to receive frame by frame estimations about whether the user is scanning a valid receipt (estimation is cumulative based on all previous frames scanned to that point)
  *
- *  @param validReceipt Whether the SDK believes that it is scanning a valid receipt at this point
+ *  @param validReceipt         Whether the SDK believes that it is scanning a valid receipt at this point
  */
 - (void)receiptValidityEstimate:(BOOL)validReceipt;
 
 
 /**
- *  When manualTorchControl is enabled in BRScanOptions, this callback will indicate to the client VC if the SDK detects a new lighting condition.
- *  Note: Lighting is assumed to start in BRLightingConditionTerrible, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to BRLightingConditionLow or BRLightingConditionGood
+ *  When `BRScanOptions.manualTorchControl` is enabled, this callback will indicate to the client VC if the SDK detects a new lighting condition.
+ *  Note: Lighting is assumed to start in `BRLightingConditionTerrible`, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to `BRLightingConditionLow` or `BRLightingConditionGood`
  *
- *  @param lightingCondition - the new lighting condition
+ *  @param lightingCondition    The new lighting condition
  */
 - (void)didGetLightingCondition:(BRLightingCondition)lightingCondition;
 
 
 /**
  *  Override this method to receive a callback when one or both horizontal edges is detected on the current frame. Note: This does *not* guarantee that this frame will be scanned.
- *  To determine if a top/bottom edge was seen on any of the scanned frames, consult the topEdgeFound and bottomEdgeFound properties of BRScanResults
+ *  To determine if a top/bottom edge was seen on any of the scanned frames, consult `BRScanResults.foundTopEdge` and `BRScanResults.foundBottomEdge`
  *
- *  @param topEdge - whether a top edge was detected on this frame
- *  @param bottomEdge - whether a bottom edge was detected on this frame
+ *  @param topEdge      Whether a top edge was detected on this frame
+ *  @param bottomEdge   Whether a bottom edge was detected on this frame
  */
 - (void)didGetHorizontalEdges:(BOOL)topEdge andBottomEdge:(BOOL)bottomEdge;
 

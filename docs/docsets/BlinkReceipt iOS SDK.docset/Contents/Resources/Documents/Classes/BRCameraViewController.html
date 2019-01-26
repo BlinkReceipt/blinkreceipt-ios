@@ -96,6 +96,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/BRAmazonError.html">BRAmazonError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BRCouponType.html">BRCouponType</a>
               </li>
               <li class="nav-group-task">
@@ -132,14 +135,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions/BRAmazonError.html">BRAmazonError</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -152,7 +147,7 @@
 
                 </div>
               </div>
-            <p>Base camera controller class. Subclass BRCameraViewController to build your own UI on top of the fullscreen camera view</p>
+            <p>Base camera controller class. Subclass to build your own UI on top of the fullscreen camera view</p>
 
           </section>
           <section class="section task-group-section">
@@ -178,7 +173,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Set this property in viewDidLoad of your subclass in order to scan only a certain region of the returned image from the camera. The values of the CGRect
+                        <p>Set this property of your subclass in order to scan only a certain region of the returned image from the camera. The values of the <code>CGRect</code>
 are all given from 0.0 to 1.0, indicating a fraction of the current view&rsquo;s dimensions. Default is (0.0, 0.0, 1.0, 1.0) which scans the whole screen.
 It is recommended to set the scanning region equal to the area of the screen that is not covered by other UI elements, so that the frames being scanned are consistent with what the user appears to be snapping photos of</p>
 
@@ -320,8 +315,8 @@ It is recommended to set the scanning region equal to the area of the screen tha
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Set this property to YES to prevent the parent view controller from starting and stopping the AVCaptureSession based on view lifecycle events.
-You will be responsible for manually calling [BRCameraViewController resumeScanning] and [BRCameraViewController pauseScanning] to manage the capture session</p>
+                        <p>Set this property to <code>YES</code> to prevent the parent view controller from starting and stopping the <code>AVCaptureSession</code> based on view lifecycle events.
+You will be responsible for manually calling <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)resumeScanning">-[BRCameraViewController resumeScanning]</a></code> and <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)pauseScanning">-[BRCameraViewController pauseScanning]</a></code> to manage the capture session</p>
 
                       </div>
                       <div class="declaration">
@@ -427,7 +422,7 @@ You will be responsible for manually calling [BRCameraViewController resumeScann
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Call this method to notify the camera controller that the user has indicated they have finished scanning.
-This will perform some cleanup and then call the didFinishScanning: method on the BRScanResultsDelegate instance that you have supplied. It is recommended that prior to or simultaneous with calling this method, you display some sort of loader until the didFinishScanning: callback is received</p>
+This will perform some cleanup and then call <code><a href="../Protocols/BRScanResultsDelegate.html#/c:objc(pl)BRScanResultsDelegate(im)didFinishScanning:withScanResults:">-[BRScanResultsDelegate didFinishScanning:withScanResults:]</a></code> on your scanning delegate. It is recommended that prior to or simultaneous with calling this method, you display some sort of loader until the callback is received</p>
 
                       </div>
                       <div class="declaration">
@@ -522,7 +517,7 @@ This will perform some cleanup and then call the didFinishScanning: method on th
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Call this method to notify the camera controller that the user has cancelled scanning.
-This will perform some cleanup and then call the didCancelScanning: method on the BRScanResultsDelegate instance that you have supplied</p>
+This will perform some cleanup and then call <code><a href="../Protocols/BRScanResultsDelegate.html#/c:objc(pl)BRScanResultsDelegate(im)didCancelScanning:">-[BRScanResultsDelegate didCancelScanning:]</a></code> on your scanning delegate</p>
 
                       </div>
                       <div class="declaration">
@@ -558,7 +553,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Call this method to notify the camera controller that the user has confirmed a particular frame. This will mark the frame internally as a user frame
-  and after the scanning session it will be saved to disk if the storeUserFrames flag in BRScanOptions is set</p>
+  and after the scanning session it will be saved to disk if <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)storeUserFrames">BRScanOptions.storeUserFrames</a></code> is set</p>
 
                       </div>
                       <div class="declaration">
@@ -586,7 +581,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>The image the user has confirmed. Should be the same as the image passed to the readyBlock of userSnappedPhotoOnReady: above</p>
+                                  <p>The image the user has confirmed. Should be the same as the image passed to the <code>readyBlock</code> of <code>userSnappedPhotoOnReady:</code> above</p>
                                 </div>
                               </td>
                             </tr>
@@ -736,7 +731,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>After receiving the <q>didDetectWrongRetailer:</q> callback, call this method to indicate that scanning should use the new retailer going forward</p>
+                        <p>After receiving the <code>didDetectWrongRetailer:</code> callback, call this method to indicate that scanning should use the new retailer going forward</p>
 
                       </div>
                       <div class="declaration">
@@ -883,8 +878,9 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>A dictionary with the following keys:
-  <code>contentWidth</code> - CGFloat indicating what percent (0-100) of the image the receipt appears in</p>
+                                  <p>A dictionary with the following keys:</p>
+
+<p><code>contentWidth</code> - a float indicating what percent (0-100) of the image the receipt appears in</p>
                                 </div>
                               </td>
                             </tr>
@@ -892,7 +888,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L162">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L163">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -959,7 +955,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L171">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1006,7 +1002,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>- The scan results at this point in time</p>
+                                  <p>The scan results at this point in time</p>
                                 </div>
                               </td>
                             </tr>
@@ -1014,7 +1010,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L180">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L181">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1068,7 +1064,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L188">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L189">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1086,8 +1082,8 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>When manualTorchControl is enabled in BRScanOptions, this callback will indicate to the client VC if the SDK detects a new lighting condition.
-  Note: Lighting is assumed to start in BRLightingConditionTerrible, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to BRLightingConditionLow or BRLightingConditionGood</p>
+                        <p>When <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)manualTorchControl">BRScanOptions.manualTorchControl</a></code> is enabled, this callback will indicate to the client VC if the SDK detects a new lighting condition.
+  Note: Lighting is assumed to start in <code>BRLightingConditionTerrible</code>, so there will never be a callback with that passed as a parameter, rather we only upgrade the lighting to <code>BRLightingConditionLow</code> or <code>BRLightingConditionGood</code></p>
 
                       </div>
                       <div class="declaration">
@@ -1115,7 +1111,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>- the new lighting condition</p>
+                                  <p>The new lighting condition</p>
                                 </div>
                               </td>
                             </tr>
@@ -1123,7 +1119,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L197">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1142,7 +1138,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Override this method to receive a callback when one or both horizontal edges is detected on the current frame. Note: This does <em>not</em> guarantee that this frame will be scanned.
-  To determine if a top/bottom edge was seen on any of the scanned frames, consult the topEdgeFound and bottomEdgeFound properties of BRScanResults</p>
+  To determine if a top/bottom edge was seen on any of the scanned frames, consult <code><a href="../Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)foundTopEdge">BRScanResults.foundTopEdge</a></code> and <code><a href="../Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)foundBottomEdge">BRScanResults.foundBottomEdge</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -1170,7 +1166,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>- whether a top edge was detected on this frame</p>
+                                  <p>Whether a top edge was detected on this frame</p>
                                 </div>
                               </td>
                             </tr>
@@ -1182,7 +1178,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                               </td>
                               <td>
                                 <div>
-                                  <p>- whether a bottom edge was detected on this frame</p>
+                                  <p>Whether a bottom edge was detected on this frame</p>
                                 </div>
                               </td>
                             </tr>
@@ -1190,7 +1186,7 @@ This will perform some cleanup and then call the didCancelScanning: method on th
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L207">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L208">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

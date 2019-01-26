@@ -96,6 +96,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/BRAmazonError.html">BRAmazonError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BRCouponType.html">BRCouponType</a>
               </li>
               <li class="nav-group-task">
@@ -129,14 +132,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BRSerializable.html">BRSerializable</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions/BRAmazonError.html">BRAmazonError</a>
               </li>
             </ul>
           </li>
@@ -178,7 +173,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Pass in one of the retailer ID&rsquo;s enumerated in the WFRetailerID typedef above</p>
+                        <p>If the retailer is known in advance pass in a value from the <code><a href="../Enums/WFRetailerId.html">WFRetailerId</a></code> enum</p>
 
                       </div>
                       <div class="declaration">
@@ -213,7 +208,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether to return the raw OCR text. If this property is true, the BRScanResultsDelegate method didOutputRawText: will be called</p>
+                        <p>Whether to return the raw OCR text. If this property is true, <code><a href="../Protocols/BRScanResultsDelegate.html#/c:objc(pl)BRScanResultsDelegate(im)didOutputRawText:">-[BRScanResultsDelegate didOutputRawText:]</a></code> will be called</p>
 
 <p>Default: NO</p>
 
@@ -250,7 +245,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session the userFramesFilepaths property of BRScanManager will be set</p>
+                        <p>Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session <code><a href="../Classes/BRScanManager.html#/c:objc(cs)BRScanManager(py)userFramesFilepaths">BRScanManager.userFramesFilepaths</a></code> will contain the local paths of the user frames</p>
 
 <p>Default: NO</p>
 
@@ -361,7 +356,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The compression quality parameter to pass into UIImageJPEGRepresentation for saving user images to disk</p>
+                        <p>The compression quality parameter to pass into <code>UIImageJPEGRepresentation</code> for saving user images to disk</p>
 
 <p>Default: 0.9</p>
 
@@ -509,7 +504,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of consecutive frames above the tooFarThreshold before we stop running edge detection</p>
+                        <p>The number of consecutive frames above the <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)tooFarThreshold">tooFarThreshold</a></code> before we stop running edge detection</p>
 
 <p>Default: 2</p>
 
@@ -546,7 +541,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If numGoodFramesToStopEdges is greater than 0, this property allows edge detection to restart after a user confirms a frame</p>
+                        <p>If <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)numGoodFramesToStopEdges">numGoodFramesToStopEdges</a></code> is greater than 0, this property allows edge detection to restart after a user confirms a frame</p>
 
 <p>Default: NO</p>
 
@@ -620,7 +615,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, the didDetectWrongRetailer callback will be triggered, which allows the client to determine if scanning should continue with the new retailer</p>
+                        <p>Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)didDetectWrongRetailer:withConfidence:">-[BRCameraViewController didDetectWrongRetailer:withConfidence:]</a></code> will be triggered, which allows the client to determine if scanning should continue with the new retailer</p>
 
 <p>Default: NO</p>
 
@@ -735,7 +730,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether the client will control the torch manually (should only be used with custom BRCameraViewController subclass). When this is enabled, the didGetLightingCondition: callback method will be invoked to notify the client of lighting changes</p>
+                        <p>Whether the client will control the torch manually (should only be used with custom <code><a href="../Classes/BRCameraViewController.html">BRCameraViewController</a></code> subclass). When this is enabled, <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)didGetLightingCondition:">-[BRCameraViewController didGetLightingCondition:]</a></code> will be invoked to notify the client of lighting changes</p>
 
 <p>Default: NO</p>
 
@@ -883,7 +878,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If this property is enabled, voided products will be returned with the <code><a href="../Classes/BRProduct.html#/c:objc(cs)BRProduct(py)isVoided">BRProduct.isVoided</a></code> property set to YES</p>
+                        <p>If this property is enabled, voided products will be returned with the <code><a href="../Classes/BRProduct.html#/c:objc(cs)BRProduct(py)isVoided">BRProduct.isVoided</a></code> property set to <code>YES</code></p>
 
 <p>Default: NO</p>
 

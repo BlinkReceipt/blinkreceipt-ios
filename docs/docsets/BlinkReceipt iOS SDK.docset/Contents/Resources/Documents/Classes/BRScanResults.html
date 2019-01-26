@@ -96,6 +96,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/BRAmazonError.html">BRAmazonError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BRCouponType.html">BRCouponType</a>
               </li>
               <li class="nav-group-task">
@@ -129,14 +132,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BRSerializable.html">BRSerializable</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions/BRAmazonError.html">BRAmazonError</a>
               </li>
             </ul>
           </li>
@@ -248,7 +243,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of BRProduct&rsquo;s representing the products that were detected on the receipt, if any</p>
+                        <p>An array of <code><a href="../Classes/BRProduct.html">BRProduct</a></code> objects representing the products that were detected on the receipt, if any</p>
 
                       </div>
                       <div class="declaration">
@@ -283,7 +278,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of BRCoupon&rsquo;s representing the coupons that were detected on the receipt, if any</p>
+                        <p>An array of <code><a href="../Classes/BRCoupon.html">BRCoupon</a></code> objects representing the coupons that were detected on the receipt, if any</p>
 
                       </div>
                       <div class="declaration">
@@ -599,8 +594,8 @@ Currently we recognize Code 39, Code 128, and ITF formats</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of NSNumber* objects wrapping BRMerchantSource values indicating which merchant detection method(s) succeeded in identifying the current merchant.
-This will be nil if no merchant was detected (i.e. merchantName == nil)</p>
+                        <p>An array of <code>NSNumber</code> objects wrapping <code><a href="../Enums/BRMerchantSource.html">BRMerchantSource</a></code> values indicating which merchant detection method(s) succeeded in identifying the current merchant.
+This will be <code>nil</code> if no merchant was detected (i.e. <code>merchantName == nil</code>)</p>
 
                       </div>
                       <div class="declaration">
@@ -1020,7 +1015,7 @@ This will be nil if no merchant was detected (i.e. merchantName == nil)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of BRPaymentMethod&rsquo;s representing all payment methods found on the receipt, if any</p>
+                        <p>An array of <code><a href="../Classes/BRPaymentMethod.html">BRPaymentMethod</a></code> objects representing all payment methods found on the receipt, if any</p>
 
                       </div>
                       <div class="declaration">
@@ -1336,7 +1331,7 @@ This will be nil if no merchant was detected (i.e. merchantName == nil)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates whether the receipt is a duplicate (depends on the detectDuplicates property of BRScanOptions</p>
+                        <p>Indicate whether the receipt is a duplicate (depends on <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)detectDuplicates">BRScanOptions.detectDuplicates</a></code> being enabled)</p>
 
                       </div>
                       <div class="declaration">

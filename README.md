@@ -86,28 +86,7 @@ This scanning mode simulates the user snapping a series of still photos although
 
 ### Custom Camera Controller UI
 
-You can also build out your own UI that sits on top of our basic camera controller. To do so, all you have to do is subclass `BRCameraViewController` and create your UI programmatically or in Interface Builder as normal.
-
-```obj-c
-#import <BlinkReceipt/BlinkReceipt.h>
-
-@interface MyCameraController : BRCameraViewController
-```
-
-- Note that you must set the background of your view to be transparent so that the camera controller underneath will be visible.
-
-Your camera controller interacts with properties and methods of its superclass to facilitate the scanning experience. For details refer to BRCameraViewController.h
-
-To begin scanning with your custom controller use the following in your IBAction handler:
-
-```obj-c
-MyCameraController *cameraController = [MyCameraController new]; //or instantiate from storyboard
-
-[[BRScanManager sharedManager] startCustomCamera:cameraController
-                                  fromController:self
-                                     scanOptions:scanOptions
-                                    withDelegate:self];
-```
+You can also build out your own UI that sits on top of our basic camera controller. Check out our [Custom Camera Controller](https://blinkreceipt.github.io/blinkreceipt-ios/custom-camera-controller.html) guide for further details.
 
 
 Copyright (c) 2017 BlinkReceipt. All rights reserved.

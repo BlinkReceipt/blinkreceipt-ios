@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Protocols  Reference</title>
+    <title>Custom Camera Controller  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,7 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Section/Protocols" class="dashAnchor"></a>
-    <a title="Protocols  Reference"></a>
+    <a title="Custom Camera Controller  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">BlinkReceipt iOS SDK Docs</a></p>
@@ -22,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="index.html">BlinkReceipt iOS SDK Reference</a>
         <img id="carat" src="img/carat.png" />
-        Protocols  Reference
+        Custom Camera Controller  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -145,91 +144,72 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Protocols</h1>
-            <p>The following protocols are available globally.</p>
+            
+            <h1 id='custom-camera-controller-ui' class='heading'>Custom Camera Controller UI</h1>
 
-          </section>
-          <section class="section task-group-section">
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BRScanResultsDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/BRScanResultsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate">BRScanResultsDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Implement this protocol to receive callbacks from a scanning session</p>
+<p>For greater control you can build out your own UI that sits on top of our base camera controller. To do so, subclass <code><a href="Classes/BRCameraViewController.html">BRCameraViewController</a></code> and create your UI programmatically or in Interface Builder.</p>
+<pre class="highlight objective_c"><code><span class="cp">#import &lt;BlinkReceipt/BlinkReceipt.h&gt;
+</span>
+<span class="k">@interface</span> <span class="nc">MyCameraController</span> <span class="p">:</span> <span class="nc">BRCameraViewController</span>
+</code></pre>
 
-                        <a href="Protocols/BRScanResultsDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BRScanResultsDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+<p>Your camera controller interacts with properties and methods of its superclass to facilitate the scanning experience.</p>
+<h2 id='initial-setup' class='heading'>Initial Setup</h2>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BRScanResultsDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+<ul>
+<li>You must set the background of your view to be transparent so that the camera preview underneath will be visible.</li>
+</ul>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLoad</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLoad</span><span class="p">];</span>
 
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L22-L70">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BRSerializable"></a>
-                    <a name="//apple_ref/objc/Protocol/BRSerializable" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRSerializable">BRSerializable</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>All BlinkReceipt results objects implement this protocol in order to provide an easy method for serializing results into JSON (or other formats). You can call <code>dictionaryForSerializing</code> on any results object or sub-object and get an <code>NSDictionary*</code> that is suitable for serialization (i.e. contains no custom classes)</p>
+    <span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">clearColor</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre>
 
-                        <a href="Protocols/BRSerializable.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BRSerializable</span></code></pre>
+<ul>
+<li>It is recommended to set <code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(py)scanningRegion">BRCameraViewController.scanningRegion</a></code> so that the area of the camera preview that is visible to the user corresponds to the region that is cropped out of the full camera frame for scanning.</li>
+</ul>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLayoutSubviews</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLayoutSubvies</span><span class="p">];</span>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BRSerializable</span></code></pre>
+    <span class="n">self</span><span class="p">.</span><span class="n">scanningRegion</span> <span class="o">=</span> <span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mo">05</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">65</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The components of this property are <em>percentages</em> not absolute pixel values. They must all be between 0.0 and 1.0.
 
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.7/BlinkReceipt.framework/Headers/BRSerializable.h#L17-L28">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
+</div>
+<h2 id='basic-scanning' class='heading'>Basic Scanning</h2>
+
+<p>There are 3 base class methods for which you should provide UI in order to enable basic scanning functionality:</p>
+
+<ol>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userSnappedPhotoOnReady:">-[BRCameraViewController userSnappedPhotoOnReady:]</a></code> - Call this method when the user attempts to snap a picture (such as a press on a camera button)</li>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userFinishedScan">-[BRCameraViewController userFinishedScan]</a></code> - Call this method when the user indicates the scan session is complete</li>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userCancelledScan">-[BRCameraViewController userCancelledScan]</a></code> - Call this method when the user cancels the scan session</li>
+</ol>
+<h2 id='extended-functionality' class='heading'>Extended Functionality</h2>
+
+<p>See the <code><a href="Classes/BRCameraViewController.html">BRCameraViewController</a></code> documentation for extended functionality:</p>
+
+<ul>
+<li><p><q>Base Class Methods</q> are methods you can call to control aspects of the scan session</p></li>
+<li><p><q>Subclass Methods</q> are methods you can implement that allow the base class to notify your subclass of various conditions during the scan session</p></li>
+</ul>
+<h2 id='starting-a-scan-session-with-a-custom-controller' class='heading'>Starting a Scan Session with a Custom Controller</h2>
+
+<p>To begin a scan session with your custom controller use the following:</p>
+<pre class="highlight objective_c"><code><span class="n">MyCameraController</span> <span class="o">*</span><span class="n">cameraController</span> <span class="o">=</span> <span class="p">[</span><span class="n">MyCameraController</span> <span class="nf">new</span><span class="p">];</span> <span class="c1">//or instantiate from storyboard</span>
+
+<span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">startCustomCamera</span><span class="p">:</span><span class="n">cameraController</span>
+                                  <span class="nf">fromController</span><span class="p">:</span><span class="n">self</span>
+                                     <span class="n">scanOptions</span><span class="o">:</span><span class="n">scanOptions</span>
+                                    <span class="n">withDelegate</span><span class="o">:</span><span class="n">self</span><span class="p">];</span>
+</code></pre>
+
+<p>Copyright &copy; 2017 BlinkReceipt. All rights reserved.</p>
+
           </section>
         </section>
         <section id="footer">

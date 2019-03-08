@@ -245,11 +245,4 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) NSInteger previousFrameOverlap;
 
-/**
- *  If enabled, the stock camera controller will provide audio prompts to assist in the scanning process:
- *
- *  Default: NO
- */
-@property (nonatomic) BOOL enableAudioPrompts;
-
 @end

@@ -20,9 +20,19 @@
 ///------------------
 
 /**
- *  The payment method type (i.e. Cash, Credit, American Express, etc)
+ *  The payment method (i.e. Cash, Credit, Debit, Gift Card, Check, etc), if any
  */
-@property (nonatomic, readonly, strong) BRStringValue *type;
+@property (nonatomic, readonly, strong) BRStringValue *method;
+
+/**
+ *  The card type (i.e. Visa, American Express, Mastercard, or Discover), if any
+ */
+@property (nonatomic, readonly, strong) BRStringValue *cardType;
+
+/**
+ *  The card issuer (i.e. Target, Walmart, etc), if any
+ */
+@property (nonatomic, readonly, strong) BRStringValue *cardIssuer;
 
 /**
  *  The amount charged to this payment method

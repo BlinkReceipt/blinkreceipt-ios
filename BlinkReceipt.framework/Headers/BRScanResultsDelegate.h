@@ -13,7 +13,8 @@
 typedef NS_ENUM(NSUInteger, BRErrorCodes) {
     BRErrorInvalidLicenseKey,
     BRErrorFailToGrabImage,
-    BRErrorFailToWriteToDisk
+    BRErrorFailToWriteToDisk,
+    BRErrorCameraPermission
 };
 
 /**

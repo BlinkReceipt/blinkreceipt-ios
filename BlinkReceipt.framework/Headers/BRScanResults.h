@@ -189,7 +189,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *taxId;
 
 /**
- *  An average confidence (between 0 and 1) for the OCR performed on this receipt
+ *  An average confidence (between 0 and 100) for the OCR performed on this receipt
  */
 @property (nonatomic, readonly) float ocrConfidence;
 

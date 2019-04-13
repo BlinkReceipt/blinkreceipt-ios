@@ -85,7 +85,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL returnRawText;
 
 /**
- *  Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session `BRScanManager.userFramesFilepaths` will contain the local paths of the user frames
+ *  Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session `BRScanManager.userFramesFilepaths` will contain the local paths of the user frames. You are responsible for deleting these images from disk when you are done with them.
  *
  *  Default: NO
  */
@@ -190,13 +190,6 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  *  Default: NO
  */
 @property (nonatomic) BOOL manualTorchControl;
-
-/**
- *  Override default SDK behavior of saving images for scanning improvement and debugging purposes
- *
- *  Default: NO
- */
-@property (nonatomic) BOOL dontSaveImages;
 
 /**
  *  If this property is enabled, the SDK will not perform any on-device frame processing

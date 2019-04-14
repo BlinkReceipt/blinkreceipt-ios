@@ -650,6 +650,13 @@
       "symbol": "BRErrorCodes.BRErrorFailToWriteToDisk",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
+      "line": 17,
+      "symbol": "BRErrorCodes.BRErrorCameraPermission",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/dpanzer/Projects/blinkreceipt-ios"

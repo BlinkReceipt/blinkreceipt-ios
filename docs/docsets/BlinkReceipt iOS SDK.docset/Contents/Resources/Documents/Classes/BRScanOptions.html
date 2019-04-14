@@ -245,7 +245,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session <code><a href="../Classes/BRScanManager.html#/c:objc(cs)BRScanManager(py)userFramesFilepaths">BRScanManager.userFramesFilepaths</a></code> will contain the local paths of the user frames</p>
+                        <p>Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session <code><a href="../Classes/BRScanManager.html#/c:objc(cs)BRScanManager(py)userFramesFilepaths">BRScanManager.userFramesFilepaths</a></code> will contain the local paths of the user frames. You are responsible for deleting these images from disk when you are done with them.</p>
 
 <p>Default: NO</p>
 
@@ -757,43 +757,6 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BRScanOptions(py)dontSaveImages"></a>
-                    <a name="//apple_ref/objc/Property/dontSaveImages" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)dontSaveImages">dontSaveImages</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Override default SDK behavior of saving images for scanning improvement and debugging purposes</p>
-
-<p>Default: NO</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">dontSaveImages</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dontSaveImages</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L199">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:objc(cs)BRScanOptions(py)disableOnDeviceProcessing"></a>
                     <a name="//apple_ref/objc/Property/disableOnDeviceProcessing" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)BRScanOptions(py)disableOnDeviceProcessing">disableOnDeviceProcessing</a>
@@ -823,7 +786,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L206">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L199">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -860,7 +823,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L213">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L206">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -897,7 +860,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L220">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L213">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -934,7 +897,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L227">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -969,7 +932,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L232">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1006,7 +969,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L239">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1043,44 +1006,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L246">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BRScanOptions(py)enableAudioPrompts"></a>
-                    <a name="//apple_ref/objc/Property/enableAudioPrompts" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableAudioPrompts">enableAudioPrompts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If enabled, the stock camera controller will provide audio prompts to assist in the scanning process:</p>
-
-<p>Default: NO</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableAudioPrompts</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableAudioPrompts</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L253">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.6.8/BlinkReceipt.framework/Headers/BRScanOptions.h#L239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1090,7 +1016,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2019-02-07)</p>
+          <p>&copy; 2019 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2019-04-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

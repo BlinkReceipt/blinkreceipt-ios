@@ -111,8 +111,18 @@
 @property (strong, nonatomic, readonly) NSString *upc;
 
 /**
+ *  If this product is part of a different product's `possibleProducts` array, then this property indicates an estimate of how likely this particular possible product is to match the description of the parent `BRProduct`
+ */
+@property (nonatomic, readonly) float probability;
+
+/**
  *  The product thumbnail URL (size may vary)
  */
 @property (strong, nonatomic, readonly) NSString *imgUrl;
+
+/**
+ *  If product intelligence is unable to return an exact product match, it may return an array of possible products. Each of these will have only the above product intelligence properties populated.
+ */
+@property (strong, nonatomic, readonly) NSArray<BRProduct*> *possibleProducts;
 
 @end

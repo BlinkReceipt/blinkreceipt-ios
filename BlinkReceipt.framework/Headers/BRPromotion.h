@@ -10,6 +10,8 @@
 
 #import "BRSerializable.h"
 
+typedef NSArray<NSNumber*>* BRPromotionQualification;
+
 /**
  *  Represents a promotion identified on the receipt
  */
@@ -52,5 +54,10 @@
  *  If this promotion qualified, this property contains the indexes of the products in the `BRScanResults.products` array which caused this promotion to qualify
  */
 @property (strong, nonatomic, readonly) NSArray<NSNumber*> *relatedProductIndexes;
+
+/**
+ *  If this promotion qualified, this property contains an array of each instance of qualification, and each instance is an array containing the indexes of the products in the `BRScanResults.products` array which caused this promotion to qualify
+ */
+@property (strong, nonatomic, readonly) NSArray<BRPromotionQualification> *qualifications;
 
 @end

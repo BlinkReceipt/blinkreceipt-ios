@@ -260,6 +260,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRPromotion.h",
+      "line": 13,
+      "symbol": "BRPromotionQualification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanOptions.h",
       "line": 16,
       "symbol": "WFRetailerId.WFRetailerUnknown",

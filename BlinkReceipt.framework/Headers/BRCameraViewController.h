@@ -94,9 +94,10 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *  Call this method to invoke the same processing that happens at the end of the scan session.
  *
  *  @param callback     This callback is invoked as soon as it is possible to return preliminary results
- *                      The client should return `YES` or `NO` depending on whether the results are satisfactory to end the scanning session
  *
  *      * `BRScanResults *scanResults` - The scan results up to this point
+ *
+ *      * Return value (`BOOL`): The client should return `YES` or `NO` depending on whether the results are satisfactory to end the scanning session. Client should *not* call `-[BRCameraViewController userFinishedScan]` afterwards; the SDK will take care of session cleanup at that point.
  */
 - (void)getPreliminaryResults:(BOOL(^)(BRScanResults *scanResults))callback;
 

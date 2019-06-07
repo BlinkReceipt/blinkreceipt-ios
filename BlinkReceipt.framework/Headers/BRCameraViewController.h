@@ -94,12 +94,11 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *  Call this method to invoke the same processing that happens at the end of the scan session.
  *
  *  @param callback     This callback is invoked as soon as it is possible to return preliminary results
+ *                      The client should return `YES` or `NO` depending on whether the results are satisfactory to end the scanning session
  *
  *      * `BRScanResults *scanResults` - The scan results up to this point
- *
- *      * `BOOL stillProcessing` - A flag indicating whether there are still frames processing in the pipeline
  */
-- (void)getPreliminaryResults:(void(^)(BRScanResults *scanResults, BOOL stillProcessing))callback;
+- (void)getPreliminaryResults:(BOOL(^)(BRScanResults *scanResults))callback;
 
 /**
  *  Call this method to notify the camera controller that the user has cancelled scanning.

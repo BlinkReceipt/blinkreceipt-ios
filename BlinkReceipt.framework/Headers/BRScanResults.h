@@ -224,9 +224,9 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL isDuplicate;
 
 /**
- *  If `isDuplicate` is true, this property contains the Blink Receipt ID of the duplicate receipt
+ *  If `isDuplicate` is true, this property contains the Blink Receipt ID(s) of the duplicate receipts
  */
-@property (strong, nonatomic, readonly) NSString *duplicateBlinkReceiptId;
+@property (strong, nonatomic, readonly) NSArray<NSString*> *duplicateBlinkReceiptIds;
 
 /**
  *  If promotion validation is enabled, this will contain all the promotions that were validated

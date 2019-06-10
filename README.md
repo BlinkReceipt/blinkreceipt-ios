@@ -18,10 +18,7 @@ target 'YourTarget' do
   pod 'BlinkReceipt', '~> 1.0'
 end
 ```
-- Note: If you plan to use Scandit barcode scanning, please also add the following line to your `Podfile`:
-```
-pod 'BRScandit', '~> 2.0'
-```
+
 After editing your Podfile, run `pod install` and then make sure to open the `.xcworkspace` file rather than the `.xcodeproj`
 
 ## Integration

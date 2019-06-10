@@ -1,3 +1,4 @@
 *.pdf
 *.md
 .DS_Store
+xcshareddata

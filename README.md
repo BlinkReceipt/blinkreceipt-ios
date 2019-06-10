@@ -38,12 +38,6 @@ After editing your Podfile, run `pod install` and then make sure to open the `.x
 [BRScanManager sharedManager].licenseKey = @"YOUR-LICENSE-KEY";
 ```
 
-- If you have a Scandit app key (and included the `BRScandit` pod above) then add it as follows:
-
-```obj-c
-[BRScanManager sharedManager].scanditAppKey = @"YOUR-SCANDIT-KEY";
-```
-
 - The simplest way to test the SDK is by launching our prepackaged scanning experience
 
 ### Prepackaged Scanning Experience

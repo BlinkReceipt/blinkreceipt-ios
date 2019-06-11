@@ -30,11 +30,6 @@
 @property (strong, nonatomic, nonnull) NSString *licenseKey;
 
 /**
- *  Scandit App Key (for more info see: https://www.scandit.com/)
- */
-@property (strong, nonatomic, nullable) NSString *scanditAppKey;
-
-/**
  *  Google Places Web Service API Key (for more info see: https://developers.google.com/places/web-service/get-api-key)
  */
 @property (strong, nonatomic, nullable) NSString *googlePlacesApiKey;

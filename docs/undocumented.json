@@ -1,83 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 14,
-      "symbol": "BRAmazonError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 14,
-      "symbol": "BRAmazonError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 15,
-      "symbol": "BRAmazonError.BRAmazonErrorNone",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 16,
-      "symbol": "BRAmazonError.BRAmazonErrorNoCredentials",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 17,
-      "symbol": "BRAmazonError.BRAmazonErrorInvalidEmail",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 18,
-      "symbol": "BRAmazonError.BRAmazonErrorInvalidPassword",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 19,
-      "symbol": "BRAmazonError.BRAmazonErrorInvalidCookie",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 20,
-      "symbol": "BRAmazonError.BRAmazonErrorVerificationNeeded",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 21,
-      "symbol": "BRAmazonError.BRAmazonErrorParsingFail",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 22,
-      "symbol": "BRAmazonError.BRAmazonErrorLoginTimeout",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRAmazonManager.h",
-      "line": 23,
-      "symbol": "BRAmazonError.BRAmazonErroriOS12",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
       "line": 13,
       "symbol": "BRDistanceStatus",
@@ -200,55 +123,6 @@
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
       "line": 16,
       "symbol": "BRCouponType.BRCouponTypeMfgr",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 14,
-      "symbol": "BREReceiptProvider",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 14,
-      "symbol": "BREReceiptProvider",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 15,
-      "symbol": "BREReceiptProvider.BREReceiptProviderNone",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 16,
-      "symbol": "BREReceiptProvider.BREReceiptProviderGmail",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 17,
-      "symbol": "BREReceiptProvider.BREReceiptProviderOutlook",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 18,
-      "symbol": "BREReceiptProvider.BREReceiptProviderYahoo",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BREReceiptManager.h",
-      "line": 19,
-      "symbol": "BREReceiptProvider.BREReceiptProviderAOL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },

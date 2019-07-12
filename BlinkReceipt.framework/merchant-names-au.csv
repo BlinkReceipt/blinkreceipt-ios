@@ -1,4 +1,4 @@
-﻿banner_id,merchant,merchant_string,tax_id
+﻿,merchant,merchant_string,tax_id
 ,Woolworths,Woolworths;woolworthsrewards,88000014675
 ,Wynyard Station Pharmacy,Wynyard Station,12912659862
 ,Urban Paddock Cafe,urban paddock cafe,57482066840
@@ -6,16 +6,16 @@
 ,The London,|The London|,40513447891
 ,The Nixon Hotel,The Nixon Hotel,47610928339
 ,The HOF Downtown,HOF Downtown,27115247621
-,The Commons Local Eating House,The Commons Local Eating House;|thecommons.com|,50817825578
+,The Commons Local Eating House,The Commons Local Eating House;thecommons.com,50817825578
 ,The Cidery Bar & Kitchen,The Cidery Bar & Kitchen,42639787451
-,Target,|Target|;|target.com|;|flybuys card|,75004250944
+,Target,|Target|;target.com;flybuys card,75004250944
 ,Sutcliffe Meats,Sutcliffe Meats,33167622577
-,Super Cheap Auto,|Super Cheap Auto|,64085395124
-,Sunlite Mitre 10,|Sunlite Hardware|;|Sunlite Mitre10|;|sunlitemitre10|,54003833716
+,Super Cheap Auto,Super Cheap Auto,64085395124
+,Sunlite Mitre 10,Sunlite Hardware;Sunlite Mitre10;sunlitemitre10,54003833716
 ,Strandbags,Strandbags,52002696915
 ,Squires Loft,Squires Loft,44119605648
 ,Shaver Shop,Shaver Shop;ADVANTAJ PTY LTD,15149220468
-,Roll'd,|Roll'd|;|rolld.com|,13614684114
+,Roll'd,Roll'd;rolld.com,13614684114
 ,Rebel,|Rebel|;Rebel Sport;,78003283823
 ,McDonald's,McDonalds;Mcdonald's,44057518948
 ,Ogalo,|Ogalo|,72501382950
@@ -23,18 +23,18 @@
 ,Priceline Pharmacy,Priceline Pharmacy,64393476237
 ,Petbarn,Petbarn,78001802759
 ,Officeworks,|Officeworks|,36004763526
-,Myer,|Myer|;|myer.com|,83004143239
+,Myer,|Myer|;myer.com,83004143239
 ,Mission Cafe,Mission Cafe;missioncafe,12152843153
 ,McDonald's,McDonalds;Mcdonald's,43008496928
-,K-Mart,|KMART|;|Kmail|;,73004700485
-,JB HI-FI,JB HI-FI;|JB HI FI|,37093114286
-,IKEA,|IKEA|,84006270757
+,K-Mart,KMART;Kmail;,73004700485
+,JB HI-FI,JB HI-FI;JB HI FI,37093114286
+,IKEA,|IKEA|;ikea.,84006270757
 ,Romeo's IGA,Romeosretail,11807080683
 ,Charlie Parker's,Charlie Parker's,29105332652
 ,Chemist Warehouse,Chemist Warehouse,38612674227
 ,The Grounds of the City,The Grounds of the City,92602515417
 ,The Rook,The Rook,81152412505
-,David Jones,|David Jones|;davidjones,75000074573
+,David Jones,David Jones;davidjones,75000074573
 ,Coles Express,Coles Expr;colesexpress,78104811216
 ,Coles Supermarket,Coles Supermarket,45004189708
 ,Chophouse,|Chophouse|;,52572738897
@@ -42,7 +42,6 @@
 ,Apple,Apple Pty Ltd;apple.com,46002510054
 ,Aldi,|Aldi|;aldi.com,90196565019
 ,Agostinis Restaurant,|Agostininis|,13153780333
-,GM Cabs,|GM Cabs|,
 ,7 ELEVEN,,89107777140
 ,7 ELEVEN,,48005299427
 ,7 ELEVEN,,34113631119
@@ -6629,7 +6628,7 @@
 ,BIG CAB ENTERPRISES PTY LTD,,54164583546
 ,BLACK & WHITE CAB,,79395384945
 ,BLACK & WHITE CAB,,55737465960
-,BLACK AND WHIT CAB,,25858279534
+,BLACK AND WHITE CAB,,25858279534
 ,BLACK CAB CULTURE PTY LTD,,62600437643
 ,BRIBIE BAYSIDE CAB CO PTY. LTD.,,25068146878
 ,BROWN CAB PRODUCTIONS PTY LTD,,92132562700
@@ -26227,3 +26226,304 @@
 ,Optus Business Centre East Brisbane,,36110558873
 ,Optus Business Direct Gold Coast,,16622170941
 ,Yes Optus Coffs Harbour CBD,,16108702647
+,Wests City,Wests City,
+,King George Square & Wickam Terrace Carparks,King George Square,72002765795
+,GM Cabs,GM Cabs;GM Ca8s;3M CABS;GM Cab5;GM Cabe;GM Cags;GM Cads;GM Cams;GMCabt;SM CABS,
+,Johnny's Green Room,,11326491067
+,90 Secondi,,72790585151
+,The Cheesecake Shop,The Cheesecake Shop,31110981612
+,Sumo Salad,Sumo Salad;sumosalad,44601296173
+,Vine Inn Hotel,Vine Inn Hotel,41007513493
+,Hurstville Times Plaza,Hurstville Times Plaza,28246476465
+,EzyMart,EzyMart,72609273627
+,Live Taxi,Live Taxi;Live ta*I;L ve taxi,61857548774
+,Bing Boy,Bing Boy,73170025401
+,Coles,Coles Supermarkets;flybuys.com,45004189708
+,ATF Avalon No1 Trust,,61287455702
+,McWhirters Secure Parking,McWhirters,31669236037
+,Cargo Bar & Café,,77328921628
+,The Aarli,The Aarli,39104383328
+,Tavern 42 Degrees South,Tavern 42 Degrees South,28080296886
+,My Fast Ferry,My Fast Ferry,90135008070
+,Nicks Lakes Entrance,Nicks Lakes Entrance,14917926745
+,Cabcharge,CABCHARGE;CABCH-ARGE;.ABCHARGE;CABCH;.ABCHARGE;C PCHARGE;CABcwARGE;CABCHARGR;CABCHARGF;BLACK&WHITE;CABCHLARGE;CABCH-ARGE;CABCHARGr;CABCHARG;CABCHLARGE;CABCHAR;CABCJICE;CABcwARGE;abcharge;cabcharg,
+,Melbourne Airport Parking,T123 Car Park;T123;LTCP Melro;T1 APM;Nested Parking,62076999114
+,Mitre Tavern,Mitre Tavern;mitretavern,19518851016
+,Street Chef Greenwood Pizza,Street Chef Greenwood Pizza,29165647713
+,Lismore Bowl,Lismore Bowl,49180176056
+,The Coffee Club,The Coffee Club,38159814141
+,Rhumbas,Rhumbas,57216142786
+,Tarts & Co,Tarts & Co,
+,Flinders Gate,Flinders Gate,
+,Guiseppe's Restaurant,Guiseppe's Restauran;Guiseppe's Restaurant,
+,Panzerotti,Panzerotti,18618716386
+,Taste Baguette,Taste Baguette;tastebaguette,51134499317
+,Misty Mug,Misty Mug,41121530265
+,Ecospray Carwash Café,Ecospray Carwash;ecospraycarwash,93003443007
+,Huntingdale Golf,Huntingdale Golf,
+,Elaines,|Elaines|,62551315901
+,13 Cabs,13Cabs;13 Cabs;13 ABS;13CAES;13CA8S;13CAB5,
+,Jo Sushi,Jo Sushi,58126794634
+,Spotto,|Spotto|;5POTTO;SPOITTO,
+,Rosso Espresso,Rosso Espresso;rossoespresso,64497205728
+,Greenwood Plaza,Greenwood Plaza,64145706967
+,Scentre Shopping Centre Management,Scentre Shopping Centre Management,55000712710
+,Clocktower,|Clocktower|,47083921215
+,Rag & Famish Hotel,Rag & Famish Hotel;ragandfamish;RAG & FAM1SH HOTEL;RAG & FA 4ISH HOTEL;RAG & FA MISH HOTEL;Rag & F,73285542881
+,Adelaide Airport Parking,Terminal Car Park,
+,Ingogo Taxi,Ingogo Taxi;ingogo;ingo9o;INGOG0;IHG0GO LTD;;ING0G0;INGOG0;IN 0G0;IN60G0,
+,Sylvia Deli,Sylvia Deli,
+,Coco Cubano Rouse,Coco Cubano Rouse,
+,Hatim Taxi Services,Hatim Taxi Services; Hatim Taxi,
+,Breadtop Adelaide,Breadtop Adelaide,
+,Comfort Transportation,Comfort Transportation,
+,Magic Hand Carwash,Magic Hand Carwash,79623683116
+,Marvel Stadium,Marvel Stadium,37098476594
+,Motown Coffee Brewers,,59607845107
+,MFY Side 1,MFY Side 2,
+,Café Fleur,,27368092313
+,Sanduba,Sanduba,89153723132
+,Cown Melbourne,Cown Melbourne,46006973262
+,Tukk & Co,hello@tukk;Tukk,28499208475
+,Blue 36,Blue 36,18615064447
+,Care Park TAS,Care Park TAS,47083921215
+,Suncorp,Taxi4UR; Suncorp;Dilma Taxi,86168140378
+,Pakington Pantry,Pakington Pantry,81159804225
+,Suncorp Stadium,Suncorp Stadium,29051538197
+,Booze Brothers,Booze Brothers;boozebros,72064137999
+,Hungry Jacks,Hungry Jacks,115741245
+,Giraffe Pmts,Giraffe Pmts;giraffepay,
+,Yellow Saigon,Yellow Saigon,36614625071
+,Drum Dining,Drum Dining,18620095794
+,Merrywell,Merrywell,35491489282
+,Argyle Street,,39055343428
+,Gold Coast Airport,Gold Coast Airport,91077200821
+,Wilson Parking,Wilson Parking;SYD177 GreenWood P1aza;SYD177 Greenwood Plaza,
+,Manly Bowling Club,Manly Bowling Club,98000458622
+,Hudson's Coffee,Hudsons Coffee;hudsonscoffee,76131473679
+,Velocity,|Velocity|,18008749031
+,Interpark Australia,Interpark Australia,83115170771
+,Bitter Sweet,Bitter Sweet,47141752838
+,Sakae Japanese Café,Sakae Japanese,59120656804
+,Mayfair Hotel Adelaide,Mayfair Hotel Adelaide,
+,WHSmith,WHSmith; WH Smith,70146430622
+,The Western,,70145817003
+,Secure Parking,Secure Parking PTY;secure parking,31669236037
+,Din Tai Fung,Din Tai Fung,97162706505
+,The Treehouse Hotel,The Treehouse Hotel,
+,MacArthur Central,MacArthur Central,31669236037
+,Good Company Café,Good Company Caf;Gcod Company Cafe;Gcod Company Cafe;Gcoc Comcan Cafe;Gcod Compam Cafe;Gcod Comoan) Cafe;Gcod Company;Gcod Com,
+,Krispy Kreme,Krispy Kreme;krispykreme,59099478663
+,Red Rooster,Red Rooster,
+,Wonda Bake Bakery,Wonda Bake Bakery,75244315300
+,Pullman Magenta Resort,Pullman Magenta Resort,
+,Arthur Daley's,Arthur Daley's,46077077153
+,KFC,|KFC|,11009701179
+,Car Park VIC,Car Park VIC,47083921215
+,LHM,lhmfoods;|LHM|;LHM North Sydney,
+,United Gas,,52995832068
+,Retro Café,RETRO CAF,
+,Translink,Translink,39407690291
+,Mr Grazier,Mr Grazier,62781236674
+,Yam Noodle,Yam Noodle,64163263829
+,Rydges,Rydges Kalgoorlie;Rydges;RYDCES,15813027872
+,Nashi Freshwater,Nashi Freshwater,44616518962
+,East Bar Grill Pizzeria,East Bar Grill Pizzeria,57780936789
+,Brisbane Airport Parking,,54076870650
+,World Square Café,World Square Caf,86164378312
+,Sushi Ever,Sushi Ever,
+,Mel311 Parking,Mel331,
+,Irish Pubs Australia,Irish Pubs Australia,
+,Hard Coffee,Hard Coffee;hard.coffee,15428103436
+,Bar Roma,Bar Roma,16008749031
+,Indooroopilly Shopping Parking,Indooroopilly Shopping,
+,Equity Valet Parking,Equity Valet Parking,73129112894
+,Commodore Hotel,Commodore Hotel;COMMDDORE HOTEL,41615333401
+,Primal Pantry,Primal Pantry,69624577386
+,Bluestones 520 Café,Bluestones 520,
+,Orso Gastronomia,Orso Gastronomia,68624271558
+,Number 5 Café,Number 5 Caf,99624408582
+,Veloce Paninoteca,Veloce Paninoteca,60493349138
+,Frasers Car Park,Frasers Car Park,79106802206
+,Soul Origin,Soul Origin,37519905182
+,Edgewater Dining and Loung,Edgewater Dining and Loung,44551330675
+,77 Social,78 Social;77social;#77social,42606811456
+,Four Cinq,Four Cinq,16629481661
+,Banjos Hobart,Banjos Hobart,31514289397
+,Cairns Airport,Cairns Airport,18132228221
+,Flock Espresso & Eats,Flock Espresso & Eats,40618511032
+,The Tuck Shop,,91121607056
+,First Choice Liquor Market,firstchoice,
+,V/Line Corporation,V/Line Corporation;vline.com;V/Line,91273289190
+,Harvest Coffee,Harvest Coffee,91564254677
+,Bar Corretto,Bar Corretto,16008749031
+,Focaccino,Focaccino,67562022854
+,Edward Street Car Park,Edward Street Multi,74149638164
+,SE Taxi Brokers,SE Taxi Brokers,18641395047
+,Miller St Car Park,Miller St Car Park,67052475911
+,Wagamama,Wagamama,
+,Macchina Espresso,,79429670889
+,Georges,georgesrestaurant;|GEORGES|,93059949174
+,Vodka Temple Bar & Restaurant,Vodka Temple,
+,Caths Cakes,Caths Cakes,13619877931
+,Citywest Carpark,Citywest Carpark,24936172035
+,Parkview Bakery,Parkview Bakery,69610277899
+,Hutt St Parking,,22098130128
+,Scribblers Café,Scribblers Caf,71824731878
+,Starbucks Coffee,Starbucks,73169062926
+,Hawker's Corner,Hawker's Corner,64812407535
+,Coco Bean,,36608940129
+,Delisio,Delisio,78101775848
+,Subway,Subway,
+,Baeckerei,Baeckerei;backerei.com,
+,Deli Delicious,Deli Delicious;DELI DELICI0US,87108246920
+,Think Asia,Think Asia,39279726400
+,The Meat & Wine Company,|MWCO|,
+,Red Spice Road,,46126393182
+,Gowings Grill,Gowings Grill,23140595624
+,Barista Sisters Coffee,Barista Sisters Coffee;Barista Sisters,35622495032
+,Sportsgirl,sportsgirl,77090049415
+,The Corner Larder,The Corner Larder,34679876108
+,Coffee Institute,Coffee Institute,82703061077
+,Squeekies Car Spa,Squeekies Car Spa;SQUEEKIE PREMIUM,78883684515
+,Designa VLT,Designa VLT;Designa ULT,
+,Chinatown Noodle Kin,Chinatown Noodle Kin,
+,Gondola Gondola,Gondola Gondola,
+,Patricia Coffee Brewers,Patricia Coffee Brewers;patriciacoffee;@Pcoffeebrewers,
+,Cest Bon French Restaurant,|Cest Bon|,83733191570
+,Guzman Y Gomez,Guzman Y Gomez;gyg.com,
+,Waverley Council Parking,Waverley Council,12502583608
+,myki,myki tax;myki card,
+,Gawler Place Car Park,Gawler Plae;Gawler Place;GAyLER;GAwLrR rrACr;GAULER PLACE,20903762572
+,CABBIEXPRESS,cabbiexpress,54074558558
+,Easy Wash,Easy Wash,28068679496
+,Miller St Café,Miller St Caf,41000683125
+,The Stirling Arms Hotel,The Stirling Arms Hotel,41627962677
+,Tuk Chop,Tuk Chop,76131473679
+,Rene's Dry Cleaners,Renes Dry Cleaners,
+,Black Hide Steakhouse,Black Hide Steakhouse,19157760775
+,Adina Apartment Hotel,Adina Apartment Hotel,31669236037
+,Consumable Solutions,Consumable Solutions,
+,Jasper's Corner,Jasper's Corner,
+,Café Banc,Café Banc,54828473144
+,Trappers Bakery,Trappers Bakery,52765225101
+,Ned's,,79609938749
+,Sydney Airport Parking Services,sydneyairport.com;pre-book your next,62082578809
+,Central Square Car Park,Central Square Car Park,47083921215
+,Café Allure,,91613037755
+,Westpoint Parking,|Westpoint|,620819502
+,Jamie's Italian,Jamie's Italian,67610172613
+,Rollie Olie,Rollie Olie;rollieolie,
+,St Kilda Sea Baths Parking,St Kilda Sea Baths,47083921215
+,Chefs Café,,29127747442
+,Greenwood Hotel,Greenwood Hotel;greenwoodhotel,36261882976
+,Nando's,Nando's,
+,Royce Hotel,,68622630871
+,Macquarie Centre Car Park,Macquarie Centre Car Park,13001595955
+,His Majesty's Car Park,His Majesty's Car Park,83780118628
+,4 Fingers Crispy Chicken,4fingers,91137598120
+,Village Lane Bar,Village Lane Bar,
+,McDonald's,McDonald's,67152074553
+,Anbar Taxi Broker,Anbar Taxi Broker,30228962136
+,Brew Bros,Brew Bros,71608943148
+,The Rocks NSW,The Rocks NSW,
+,Kitchen Republik,Kitchen Republik,26436818853
+,City of Perth Parking,City of Perth Parking,83780118628
+,La Camera,lacamera;,36441910990
+,Smartcab,Smartcab,63155974539
+,Kinfolk,Kinfolk,63142499741
+,Secure Parking,,31669263037
+,Café Natics,|Natics|,
+,Paco's Tacos,Paco's Tacos,34105179217
+,Compass Group,,41000683125
+,Momami Restaurant,Momami Restaurant,
+,Boost Juice Bars,Boost Juice Bars,79114679542
+,Goodies Espresso,Goodies Espresso,2.21E+11
+,Oporto,Oporto,97168464444
+,The Groove Train,The Groove Train,65652997455
+,Star Car Wash,,80129782823
+,Australia Post,Australia Post;A U S T R A L I A P O S T,
+,Airport Taxi Service,Airport Taxi Service;AIRPORT TAXI SERVIC,
+,Cabfare,Cabfare,
+,City of Melbourne,City of Melbourne,
+,Convention Centre,Convention Centre,83780118628
+,Coolmango Saladbar,Coolmango Saladbar,80924260680
+,Crown Melbourne,Crown Melbourne;Cro Melbourne,46006973262
+,Eat Street Car Park,Eat Street Car,
+,Izakaua Masuua,Izakaua Masuua;Izakaua Masuya,
+,Joe & The Juice,Joe & The Juice,
+,Macarthur Square,Macarthur Square,
+,MEL028 Collins Place,MEL028 Collins Place,
+,MEL204 Argus Centre,MEL204 Argus Centre,
+,MEL052 Grand Hyatt,MEL052 Grand Hyatt,
+,MEL187 Galleria,MEL187 Galleria,
+,Moneytech Payments,Moneytech Payments,38126015227
+,Movida Aqui,Movida Aqui,34105179217
+,Mr Benedict,Mr Benedict,55663156263
+,National Australia Bank Limited,National Australia Bank Limited;NationalAustralia Bank;National Au t alia Bank Limited;Nat onal Australia Bank Limited,
+,Newslink,|Newslink|,90003940350
+,NORMAN HOTEL,NORMAN HOTEL,
+,Palermo,|Palermo|,
+,Pasta Pantry,Pasta Pantry,
+,Phat Elephant,Phat Elephant,
+,PUIS KITCHEN,PUIS KITCHEN,
+,RETRO CAFE,RETRO CAFE,
+,Riverbar & Kitchen,Riverbar & Kitchen;River Bar & Kitchen,
+,Spice Temple Melbourne,Spice Temple Melbourne,
+,Street Chef Greenwood Plaza,Street Chef Greenwood Plaza,29615647713
+,STROZZI,STROZZI,93067976274
+,Stanley Street Cafe,Stanley Street Cafe,18620104618
+,Strike Wintergarden,Strike Wintergarden,42606795788
+,Sticky Rice Thai Restaurant,Sticky Rice Thai Restaurant,65903474899
+,SPUD BAR,SPUD BAR,
+,STEELF'S BAKERY CAFE,STEELF'S BAKERY CAFE,
+,STOCKMANS HOTEL,STOCKMANS HOTEL,
+,SUGAR BROWNING COFFEEROASTER,SUGAR BROWNING COFFEEROASTER,
+,St Kilda Hotel,St Kilda Hotel,
+,STONEY THE FISHMONGER,STONEY THE FISHMOHGER;STONEY THE FISHMONGER,
+,Stitch Bar,Stitch Bar,
+,Swan Taxis,Swan Taxis;Svan Taxis,
+,The Aarli,The Aarli,
+,THIS SIDE OF PARADISE,THIS SIDE OF PARADISE,
+,YELLOW SAIGON,YELLOW SAIGON,
+,THE TREEHOUSE HOTEL,THE TREEHOUSE HOTEL,
+,Waverley Council,Waverley Council,
+,VILLAGE LANE BAR PT,VILLAGE LANE BAR PT,
+,VERIFONE TAXI,VERIFONE TAXI,
+,The Groove Train,The Groove Train,
+,The Reject Shop,The Reject Shop,
+,Westfield Carousel,Westfield Carousel,
+,The Good Cartel,The Good Cartel,
+,The Lazy Dog Cafe,The Lazy Dog Cafe,
+,The Plough Inn,The Plough Inn,
+,VIZIO ESPRESSO,VIZIO ESPRESSO,
+,The Green Mango Cafe,The Green Mango Cafe,
+,THE BRUNSWICK HOTEL,THE BRUNSWICK HOTEL,
+,Wesfarmers House,Wesfarmers House,
+,Temaki Bar,Temaki Bar,
+,TROPICANA CAFE,TROPICANA CAFE,
+,The Royston Hotel,The Royston Hotel,
+,Wicklow Hotel,Wicklow Hotel,
+,THE TURF BAR,THE TURF BAR,
+,Wood and Smoke Bar,Wood and Smoke Bar,
+,The Broken Drum,The Broken Drum,
+,Two Sisters Cafe,Two Sisters Cafe,
+,THE LADY TAVERN,THE LADY TAVERN,
+,The Bavarian Biergarten,The Bavarian Biergarten,
+,The Malaya Restaurant,The Malaya Restaurant,
+,The Pacific Club,The Pacific Club,
+,Liquorland,Liquorland,
+,The Star,The Star Pty Ltd;THE#STAR,
+,SYD039 - The Denison,SYD039 - The Denison;SYD039,
+,eat Street Car Park,,
+,etaxi,etaxi,
+,CAFENATICS,CAFENATICS;CAFE NATICS,
+,BCEC,BCEC,40055184322
+,Mary Street Bakery Allendale,Mary Street Bakery Allendale,
+,YUMMY KITCHEN,YUMMY KITCHEN,
+,IPark,IPark,
+,COMMONWEALTH BANK,COMMONWEALTH BANK,
+,Ichimaki,Ichimaki,
+,TOP RYDE CITY,TOP RYDE CITY,
+,Restaurant Number,Restaurant Number,
+,City of Greater Geelong,City of Greater Geelong,

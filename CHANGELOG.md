@@ -1,4 +1,11 @@
-﻿# 1.7.7
+﻿# 1.7.8
+- Parsing improvements
+- Logo detection improvements
+- Consolidated merchant detection internationally
+- More reliable purchase validation
+- Ability to pass in a client user ID
+
+# 1.7.7
 - Updated internal OCR system
 - Improved memory management
 - Minor parser fixes

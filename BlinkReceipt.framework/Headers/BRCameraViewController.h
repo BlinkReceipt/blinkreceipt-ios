@@ -74,7 +74,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 /**
  *  Call this method to notify the camera controller that the user has attempted to snap a picture.
  *
- *  @param readyBlock   This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview.
+ *  @param readyBlock   This block will be invoked once the camera controller has obtained a suitable frame to display to the user as a preview. Be careful of retain cycles in this block!
  *
  *      * `UIImage *frameImg` - The frame to display as a preview
  *

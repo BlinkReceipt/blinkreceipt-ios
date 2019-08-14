@@ -45,8 +45,12 @@
 @property (strong, nonatomic, nullable) NSString *prodIntelKey;
 
 /**
+ *  A client-specified identifier for the current user
+ */
+@property (strong, nonatomic, nullable) NSString *clientUserId;
+
+/**
  *  An array of `NSString` filepaths corresponding to the user images, if any, which were confirmed by the user during the scanning session.
- *  Only applies to static camera UX
  */
 @property (strong, nonatomic, nullable) NSArray<NSString*> *userFramesFilepaths;
 
@@ -112,5 +116,13 @@
  *  @return The controller to display
  */
 - (nonnull MFMailComposeViewController*)createMailControllerWithDebugInfo;
+
+/**
+ *  For purchase validation, use these properties to indicate the date a user activated a specific promotion
+
+ @param activationDate      The date on which the user activated this promotion
+ @param promotionSlug       The promotion slug as set up in the web PVP interface
+ */
+- (void)setActivationDate:(nonnull NSDate*)activationDate forPromotion:(nonnull NSString*)promotionSlug;
 
 @end

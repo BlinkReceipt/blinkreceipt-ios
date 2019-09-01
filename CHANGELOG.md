@@ -1,4 +1,7 @@
-﻿# 1.7.8
+﻿# 1.7.9
+- Fix parser crash
+
+# 1.7.8
 - Parsing improvements
 - Logo detection improvements
 - Consolidated merchant detection internationally

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BRFloatValue Class Reference</title>
+    <title>BRMissedEarningsLookupResult Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/BRFloatValue" class="dashAnchor"></a>
-    <a title="BRFloatValue Class Reference"></a>
+    <a name="//apple_ref/objc/Enum/BRMissedEarningsLookupResult" class="dashAnchor"></a>
+    <a title="BRMissedEarningsLookupResult Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">BlinkReceipt iOS SDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BRFloatValue Class Reference
+        BRMissedEarningsLookupResult Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -142,32 +142,29 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BRFloatValue</h1>
+            <h1>BRMissedEarningsLookupResult</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFloatValue</span> <span class="p">:</span> <span class="nc"><a href="../Classes/BRValue.html">BRValue</a></span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="n">NS_ENUM</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">BRMissedEarningsLookupResult</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">BRMissedEarningsProductParticipates</span><span class="p">,</span>
+    <span class="n">BRMissedEarningsProductDoesNotParticipate</span><span class="p">,</span>
+    <span class="n">BRMissedEarningsUPCNotFound</span><span class="p">,</span>
+    <span class="n">BRMissedEarningsLookupFailed</span>
+<span class="p">}</span></code></pre>
 
                 </div>
               </div>
-            <p>Child class for all float values</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Properties"></a>
-                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties">
-                  <h3 class="section-name">Properties</h3>
-                </a>
-              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BRFloatValue(py)value"></a>
-                    <a name="//apple_ref/objc/Property/value" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRFloatValue(py)value">value</a>
+                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductParticipates"></a>
+                    <a name="//apple_ref/objc/Case/BRMissedEarningsProductParticipates" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductParticipates">BRMissedEarningsProductParticipates</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -175,26 +172,23 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <hr>
-
-<hr>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">value</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsProductParticipates</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">productParticipates</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRValue.h#L48">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -202,9 +196,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BRFloatValue(py)decimalValue"></a>
-                    <a name="//apple_ref/objc/Property/decimalValue" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRFloatValue(py)decimalValue">decimalValue</a>
+                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductDoesNotParticipate"></a>
+                    <a name="//apple_ref/objc/Case/BRMissedEarningsProductDoesNotParticipate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductDoesNotParticipate">BRMissedEarningsProductDoesNotParticipate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -212,24 +206,91 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Rounded to exactly 2 decimal places for currency</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDecimalNumber</span> <span class="o">*</span><span class="n">decimalValue</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsProductDoesNotParticipate</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">decimalValue</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">productDoesNotParticipate</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRValue.h#L53">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsUPCNotFound"></a>
+                    <a name="//apple_ref/objc/Case/BRMissedEarningsUPCNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsUPCNotFound">BRMissedEarningsUPCNotFound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsUPCNotFound</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">upcNotFound</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsLookupFailed"></a>
+                    <a name="//apple_ref/objc/Case/BRMissedEarningsLookupFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsLookupFailed">BRMissedEarningsLookupFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsLookupFailed</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">lookupFailed</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -1,4 +1,14 @@
-﻿# 1.7.9
+﻿# 1.8.0
+- Incorporate full price into product intelligence
+- Missed Earnings flow
+- iOS 13 UI fixes
+- Support for dark mode
+- Fix Costco date parsing
+- Fix foundTopEdge and foundBottomEdge properties
+- Updated OCR model
+- Parser improvements
+
+# 1.7.9
 - Fix parser crash
 
 # 1.7.8

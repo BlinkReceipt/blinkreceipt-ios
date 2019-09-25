@@ -54,6 +54,13 @@
  */
 @property (strong, nonatomic, nullable) NSArray<NSString*> *userFramesFilepaths;
 
+/**
+ *  If users should be able to correct historical receipts, this controls how long the receipt data will be stored locally to enable editing
+ *
+ *  Default: 0 (indicates receipt data will not be stored locally)
+ */
+@property (nonatomic) NSInteger daysToStoreReceiptData;
+
 ///---------------------
 /// @name Class Methods
 ///---------------------
@@ -94,20 +101,6 @@
               scanOptions:(nullable BRScanOptions*)scanOptions
              withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
-
-/**
- *  Initiates a scanning session using QR code to grab remote image and scan it
- *
- *  @param qrCodeText      The value of the QR code already scanned
- *  @param scanOptions     An instance of `BRScanOptions` specifying options for this scanning session
- *  @param delegate        An instance conforming to `BRScanResultsDelegate`
- *
- *  Notes: If there is an error retrieving the remote image for this QR code, `-[BRScanResultsDelegate scanningErrorOccurred:]` will be invoked on your scanning delegate with error code `WFErrorCodeFailToGrabImage`
- */
-- (void)scanFromQRCode:(nonnull NSString*)qrCodeText
-           scanOptions:(nonnull BRScanOptions*)scanOptions
-          withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
-
 /**
  *  Creates a new `MFMailComposeViewController` populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
  *
@@ -120,9 +113,53 @@
 /**
  *  For purchase validation, use these properties to indicate the date a user activated a specific promotion
 
- @param activationDate      The date on which the user activated this promotion
- @param promotionSlug       The promotion slug as set up in the web PVP interface
+ *  @param activationDate      The date on which the user activated this promotion
+ *  @param promotionSlug       The promotion slug as set up in the web PVP interface
  */
 - (void)setActivationDate:(nonnull NSDate*)activationDate forPromotion:(nonnull NSString*)promotionSlug;
+
+/**
+ *  Begin the receipt correction flow for a receipt stored on disk
+ *
+ *  @param blinkReceiptId      The receipt id of a receipt scanned within `daysToStoreReceiptData` days
+ *  @param vc                  The view controller from which to show this modal
+ *  @param customFont          Pass a non-null `UIFont` to style all of the elements in this flow
+ *  @param completion          This callback is invoked when the correction flow ends
+ *
+ *      * `BRScanResults *scanResults` - Updated scan results object containing any changes the user made to the products (including adding new products) as well as an updated `qualifiedPromotions` array containing the results of the purchase validation call made after the user's corrections
+ *
+ *      * `NSError *error` - If the correction flow failed for any reason (such as being unable to find the passed receipt id record on disk) this parameter will be non-null
+ */
+- (void)startReceiptCorrection:(nonnull NSString*)blinkReceiptId
+            fromViewController:(nonnull UIViewController*)vc
+               withCustomFont:(nullable UIFont*)customFont
+                withCompletion:(nullable void(^)(BRScanResults* _Nullable, NSError* _Nullable))completion;
+
+/**
+ * Retrieve resullts from disk for a specific receipt for custom user corrections flow
+ * @param blinkReceiptId    The receipt id to load from disk
+ *
+ * @return The full scan results object for this receipt or `nil` if it could not be found
+ */
+- (nullable BRScanResults*)getResultsForReceiptCorrection:(nonnull NSString*)blinkReceiptId;
+
+/**
+ * Retrieves images from disk for a specific receipt for custom user corrections flow
+ * @param blinkReceiptId    The receipt id to load from disk
+ *
+ * @return An array of images found for this receipt. Returns `nil` if none are found
+ */
+- (nullable NSArray<UIImage*> *)getImagesForReceiptCorrection:(nonnull NSString*)blinkReceiptId;
+
+/**
+ * After custom user correction flow, call this method to validate the new results against promotions
+ * @param scanResults   The results object that was obtained from `getResultsForReceiptCorrection:`
+ * @param completion    This callback is invoked once validation has been performed
+ *      * `BRScanResults *scanResults` - Updated scan results object containing any changes the user made to the products (including adding new products) as well as an updated `qualifiedPromotions` array containing the results of the purchase validation call made after the user's corrections
+ *
+ *      * `NSError *error` - If any error occurred during validation this will be non-null
+ */
+- (void)submitUpdatedResultsForValidation:(BRScanResults* _Nonnull)scanResults
+                           withCompletion:(nullable void(^)(BRScanResults* _Nonnull, NSError* _Nullable))completion;
 
 @end

@@ -254,8 +254,25 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *ereceiptRawHTML;
 
 /**
+ *  For an Amazon or e-receipt order, this is the type of purchase
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptPurchaseType;
+
+/**
  *  For an Amazon order only, this is an array of all the shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;
+
+/**
+ * For custom user corrections flow, if the user adds a new product, call this method to add it to this scan results object
+ * @param brand     The brand, if any, of the new product
+ * @param upc         The upc, if any, of the new product
+ * @param totalPrice The total price of the new product
+ * @param quantity The quantity of the new product
+ */
+- (void)addUserCorrectedProductWithBrand:(NSString*)brand
+                                     upc:(NSString*)upc
+                              totalPrice:(float)totalPrice
+                                quantity:(float)quantity;
 
 @end

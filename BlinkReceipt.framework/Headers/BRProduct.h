@@ -125,4 +125,28 @@
  */
 @property (strong, nonatomic, readonly) NSArray<BRProduct*> *possibleProducts;
 
+/**
+ *  Whether the user added this product during the receipt correction flow
+ */
+@property (nonatomic, readonly) BOOL userAdded;
+
+/**
+ *  Whether the user modified this product during the receipt corretion flow
+ */
+@property (nonatomic, readonly) BOOL userModified;
+
+/**
+ * For custom user corrections flow, when a user modifies an existing product, call this method to update the product's properties.
+ * Note: You should pass values for all the properties even if the user did not modify them
+ *
+ * @param brand     The brand, if any, of the modified product
+ * @param upc         The upc, if any, of the modified product
+ * @param totalPrice The total price of the modified product
+ * @param quantity The quantity of the modified product
+ */
+- (void)userCorrectedBrand:(NSString*)brand
+                       upc:(NSString*)upc
+                totalPrice:(float)totalPrice
+                  quantity:(float)quantity;
+
 @end

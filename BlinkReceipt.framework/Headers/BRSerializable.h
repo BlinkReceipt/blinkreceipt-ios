@@ -25,6 +25,8 @@
  */
 - (NSDictionary*)dictionaryForSerializing;
 
++ (instancetype)objectFromDictionary:(NSDictionary*)dict;
+
 @end
 
 #endif /* BRSerializable_h */

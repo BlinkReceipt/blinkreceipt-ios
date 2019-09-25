@@ -12,7 +12,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 11,Walmart,Walmart;Save Money. Live Better.;Low Prices You Can Trust;Walnart;Wal-mart,,,,,,,US,Walmart
 15,Home Depot,HOME DEPOT,,,,,,,US,Home Depot
 16,Lowe's Home Improvement,Lowe's,,,,,,,US,Lowe's Home Improvement
-17,Acme Markets,Acme,,,,,,,US,Acme Markets
+17,Acme Markets,Acme,,acmeoyster,,,,,US,Acme Markets
 18,Duane Reade,Duane Reade,,,,,,,US,Duane Reade
 19,Meijer,Meijer,,,,,,,US,Meijer
 20,Albertsons,Albertsons,,,,,,,US,Albertsons
@@ -38,7 +38,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 46,Stop & Shop,STOPANDSHOP;SHOP & SHOP,,,,,,,US,Stop & Shop
 47,Winn Dixie,Winn Dixie;Winn-Dixie,,,,,,,US,Winn Dixie
 48,Military Commissary,COMMISSARY;Commissaries,,,,,,,US,Military Commissary
-51,WinCo Foods,Winco;Winco Foods,,,,,,,US,WinCo Foods
+51,WinCo Foods,Winco;Winco Foods,,waremart,,,,,US,WinCo Foods
 52,Wegmans Food Markets,Wegmans,,,,,,,US,Wegmans Food Markets
 53,Fred Meyer,Fred Meyer,,,,,,,US,Fred Meyer
 54,Sprouts Farmers Market,SPROUTS,,,,,,,US,Sprouts Farmers Market
@@ -66,7 +66,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 85,PriceRite,PRICE RITE,,,,,,,US,PriceRite
 86,Rouses Markets,ROUSES,,,,,,,US,Rouses Markets
 87,Natural Grocers,NATURAL GROCERS,,,,,,,US,Natural Grocers
-89,Market Street,Market Street,,,,,,,US,Market Street
+89,Market Street,Market Street,,Exxon,,,,,US,Market Street
 90,Speedway,SPEEDWAY,,,,,,,US,Speedway
 91,Price Cutter,PRICE CUTTER,,,,,,,US,Price Cutter
 92,Shell,|SHELL|;|V-POWER|,,SHELL OR;SHELL COMP,YES,,,,US,Shell
@@ -83,7 +83,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 106,Marathon Oil,Marathon,,,,,,,US,
 108,CHEVRON,Chevron,,,,,,,US,CHEVRON
 109,Pilot Travel Centers,PILOT,,,,,,,US,Pilot Travel Centers
-110,MURPHY USA,MURPHY,,,,,,,US,MURPHY USA
+110,MURPHY USA,MURPHY USA,,,,,,,US,MURPHY USA
 111,Love's Travel Stop,LOVES TRAVEL;LOVE'S TRAVEL,,,,,,,US,Love's Travel Stop
 113,Stripes Convenience Stores,STRIPES,,,,,,,US,Stripes Convenience Stores
 114,Allsup's,|ALLSUP|,,,,,,,US,
@@ -99,14 +99,14 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 143,Rite Aid,Rite Aid,,,,,,,US,Rite Aid
 144,Giant Eagle,Giant Eagle,,,YES,,,,US,Giant Eagle
 145,Weis Markets,Weis Markets,,,,,,,US,Weis Markets
-146,Food City,FOOD CITY;F0OD CITY;FO0D CITY;F00D CITY,,Gas N Go,YES,,,,US,Food City
+146,Food City,FOOD CITY;F0OD CITY;FO0D CITY;F00D CITY,,Gas N Go;SEAFOOD CITY,YES,,,,US,Food City
 147,Big Y,|BIG Y|,,,,,,,US,Big Y
 148,Lowes Foods,|LOWES|,,,,,,,US,
 150,Redner's Markets,REDNERS,,,,,,,US,Redner's Markets
 152,Pick 'n Save,PICK N SAVE:PICK N' SAVE,,,,,,,US,Pick 'n Save
 153,Raley's Supermarkets,RALEYS,,|NOB HILL|,,,,,US,Raley's Supermarkets
 154,getGo,GETGO,,,,YES,,,US,GetGo
-156,Homeland,HOMELAND,,,,,,,US,Homeland
+156,Homeland,HOMELAND,,Homeland Security,,,,,US,Homeland
 158,Mariano's,MARIANO'S;MARIANO'S,,,,,,,US,Mariano's
 159,Bel Air,BEL AIR,,,,,,,US,BEL AIR
 160,Hannaford,HANNAFORD,,,,,,,US,Hannaford
@@ -146,7 +146,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 6217,Checkers Drive-In Restaurants,CHECKERS,,,,,,,US,
 6226,Harveys,Harveys,,,,,,,US,Harveys
 6229,In-N-Out Burger,IN-N-OUT,,,,,,,US,In-N-Out Burger
-6265,McDonald's,MCDONALD'S;MCDONALDS;MCDVOICE;Mcdonald;www.mcd;McMuffin;wwwmcd;mcdoralds;McConald;Mcronald;McDcnald,,,,,,,US,McDonald's
+6265,McDonald's,MCDONALD'S;MCDONALDS;MCDVOICE;Mcdonald;www.mcd;McMuffin;wwwmcd;mcdoralds;McConald;Mcronald;McDcnald,,Ship to;shipments,,,,,US,McDonald's
 6398,Ann Taylor,ANN TAYLOR,,,,,,,US,
 6589,Associated Supermarkets,Associated,,,,,,,US,Associated Supermarkets
 6677,Starbucks,STARBUCKS Rewards;Starbucks.com;|Starbucks|;SBUX Card,,,,,,,US,Starbucks
@@ -173,7 +173,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7437,Red Robin Gourmet Burgers,RED ROBIN,,,,,,,US,Red Robin Gourmet Burgers
 7485,TGI Fridays,TGI FRIDAY'S;TGI FRIDAYS,,,,,,,US,
 7504,Cracker Barrel,CRACKER BARREL,,,,,,,US,CRACKER BARREL
-7567,Fairway Market,FAIRWAY,,,,,,,US,Fairway Market
+7567,Fairway Market,FAIRWAY,,FAIRWAY DR,,,,,US,Fairway Market
 7569,99 Ranch Market,99 RANCH,,,,,,,US,99 Ranch Market
 7592,BI - MART,BI - Mart,,,,,,,US,BI - MART
 7595,Brookshire Brothers,BROOKSHIRE BROTHERS,,,,,,,US,Brookshire Brothers
@@ -211,7 +211,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7702,King Kullen,King Kullen,,,,,,,US,King Kullen
 7714,Lucky's Market,|LUCKYS|;|LUCKY'S|,,,,,,,US,Lucky's Market
 7717,Mac's Fresh Market,Mac's Fresh,,,,,,,US,Mac's Fresh Market
-7738,Metro Market,Metro Market,,,,,,,US,Metro Market
+7738,Metro Market,metromarket.net,,picknsave,,,,,US,Metro Market
 7766,Presidente Supermarkets,Presidente,,,,,,,US,Presidente Supermarkets
 7768,Price Less Foods,PRICE LESS FOODS,,,,,,,US,Price Less Foods
 7769,Price Less IGA,Price less iga,,,,,,,US,
@@ -220,7 +220,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7793,Seafood City,SEAFOOD CITY,,,,,,,US,Seafood City
 7794,Sedanos,SEDANOS;SEDANO'S,,,,,,,US,Sedanos
 7806,Spring Market,Spring Market,,,,,,,US,
-7817,Superior Grocers,SUPERIOR,,,,,,,US,Superior Grocers
+7817,Superior Grocers,superiorgr,,,,,,,US,Superior Grocers
 7823,Trader Joe's,Trader Joes;Trader Joe's,,,,,,,US,Trader Joe's
 7824,Vallarta Supermarkets,VALLARTA S,,,,,,,US,Vallarta Supermarkets
 7828,Western Beef,western beef,,,,,,,US,Western Beef
@@ -234,7 +234,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 8640,Food King,FOOD KING,,,,,,,US,Food King
 8654,Festival Foods,festfoods;Festival Foods,,,,,,,US,Festival Foods
 8656,Grocery Outlet Bargain Market,GROCERY OUTLET BARGAIN MARKET,,,,,,,US,Grocery Outlet Bargain Market
-8657,H Mart,H MART,,,,,,,US,H Mart
+8657,H Mart,|H MART|;|HMART|,,,,,,,US,H Mart
 8659,Cost Plus World Market,WORLDMARKET.com;Cost Plus World Market;World Market Explorer,,,,,,,US,Cost Plus World Market
 8660,Reasor's,REASOR'S;REASORS,,,,,,,US,Reasor's
 8662,Ulta Beauty,|ULTA|;ULTA.COM,,,,,,,US,Ulta Beauty
@@ -265,7 +265,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 8888,True Value,True Value,,,,,,,US,True Value
 8700,Hudson Group,Hudson News;hudson group,,,,,,,US,Hudson Group
 8701,Country Mart,Country Mart,,,,,,,US,Country Mart
-8702,Village Market,|V Market|;VillageMarket,,,,,,,US,Village Market
+8702,Village Market,|V Market|;|VillageMarket|;villmkt.com,,,,,,,US,Village Market
 8703,Pete's Fresh Market,PETE'S FRESH MARKET;PETES FRESH MARKET,,,,,,,US,Pete's Fresh Market
 8704,Woods Supermarket,WOODS SUPER,,,,,,,US,Woods Supermarket
 8500,Quiznos,Quiznos,,,,,,,US,Quiznos
@@ -299,7 +299,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7671,Gordon Food Service,Gordon Food Service,,,,,,,US,Gordon Food Service
 14,Toys R Us,Toys R Us,,,,,,,US,Toys R Us
 5942,Burlington Coat Factory,Burlington Coat Factory,,,,,,,US,Burlington Coat Factory
-7674,Giant Food Store,Giant Food Store,,GIANT E,,,|GIANT|,,US,Giant Food Store
+7674,Giant Food Store,Giant Food Store,,GIANT E;GIANT SUB,,,|GIANT|,,US,Giant Food Store
 8661,Hobby Lobby,Hobby Lobby,,,,,,,US,Hobby Lobby
 5858,AutoZone,AutoZone,,,,,,,US,AutoZone
 5937,Five Below,Five Below,,,,,,,US,Five Below
@@ -440,7 +440,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7761,PCC Natural Markets,PCC Natural Markets,,,,,,,US,PCC Natural Markets
 8472,Firehouse Subs,Firehouse Subs,,,,,,,US,Firehouse Subs
 8737,Kessler's Food & Liquor,Kessler's Food & Liquor,,,,,,,US,Kessler's Food & Liquor
-8399,Papa Murphy's,Papa Murphy's,,,,,,,US,Papa Murphy's
+8399,Papa Murphy's,Papa Murphy's;papamurphys,,,,,,,US,Papa Murphy's
 8738,Rulli Bros,Rulli Bros,,,,,,,US,Rulli Bros
 8739,Island Pacific Supermarket,Island Pacific Supermarket,,,,,,,US,Island Pacific Supermarket
 7779,Rancho San Miguel Markets,Rancho San Miguel Markets,,,,,,,US,Rancho San Miguel Markets
@@ -492,7 +492,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 8767,Hollister,Hollister,,,,,,,US,Hollister
 8768,Big Saver Foods,Big Saver Foods,,,,,,,US,Big Saver Foods
 6310,Bojangles',Bojangles,,,,,,,US,Bojangles'
-8769,Waremart by WinCo,Waremart,,,,,,,US,Waremart by WinCo
+8769,Waremart by WinCo,Waremart,,,,YES,,,US,Waremart by WinCo
 8770,NetCost Market,NetCost Market,,,,,,,US,NetCost Market
 8771,Savers,Savers.com;Super Savers Club,,,,,,,US,Savers
 7742,Morton Williams Supermarkets,Morton Williams,,,,,,,US,Morton Williams Supermarkets
@@ -572,7 +572,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 6223,Freddy's Frozen Custard & Steakburgers,Freddy's Frozen Custard,,,,,,,US,Freddy's Frozen Custard & Steakburgers
 6462,Hot Topic,Hot Topic,,,,,,,US,Hot Topic
 8819,Village Plaza Sparkle Market,Village Plaza Sparkle Market,,,,,,,US,Village Plaza Sparkle Market
-8820,AT&T,AT&T,,,,,,,US,AT&T
+8820,AT&T,AT&T,,AT&T Dealer,,,,,US,AT&T
 5960,Fry's Electronics,frys.com;fry's electronics;frys electronics,,,,YES,,,US,Fry's Electronics
 8821,Navarro Discount Pharmacies,Navarro Discount Pharmacies,,,,,,,US,Navarro Discount Pharmacies
 8822,Claiborne Hill Supermarket,Claiborne Hill,,,,,,,US,Claiborne Hill Supermarket
@@ -601,7 +601,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 8842,Bill's Family Foods Catering,Bill's Family Foods Catering,,,,,,,US,Bill's Family Foods Catering
 8843,Caraluzzi's Bethel Food Market,Caraluzzi's Bethel Food Market,,,,,,,US,Caraluzzi's Bethel Food Market
 8844,Murfins Market,Murfins Market,,,,,,,US,Murfins Market
-9150,Zara,|Zara|,,,,,,,US,Zara
+9150,Zara,|Zara|,,Server:,,,,,US,Zara
 8845,Superlo Foods,Superlo Foods,,,,,,,US,Superlo Foods
 6682,Tim Hortons,Tim Hortons,,,,,,,US,Tim Hortons
 8846,Aubuchon Hardware,Aubuchon Hardware,,,,,,,US,Aubuchon Hardware
@@ -676,8 +676,8 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7241,Road Ranger,Road Ranger,,,,,,,US,Road Ranger
 173,Hallmark Cards,Crown Rewards;Hallmark Creations,,,,,,,US,Hallmark Cards
 7506,California Pizza Kitchen,California Pizza Kitchen;cpk.com,,,,,,,US,
-9136,Amazon.com,Amazon.com,,Amazon Gift,,,,,US,
-9137,Uber,|Uber|,,,,,,,US,
+9136,Amazon.com,Amazon.com;amazoncom;mazon.com,,Amazon Gift,,,,,US,
+9137,Uber,|Uber|,,uber eats,,,,,US,
 6448,Eddie Bauer,Eddie Bauer,,,,,,,US,Eddie Bauer
 9138,Lyft,|Lyft|,,,,,,,US,
 6783,Boston Store,bostonstore,,,,,,,US,Boston Store
@@ -700,7 +700,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 7599,Calgary Co-op,|Co-Op|,,,,,,,CA,Calgary Co-Op
 6079,Chapters,|Chapters|,,,,,,,CA,
 5935,Dollarama,Dollarama,,,,,,,CA,Dollarama
-7629,Dominion,Dominion,,,,,,,CA,Dominion
+7629,Dominion,Dominion,,KINGS DOMINION,,,,,CA,Dominion
 9111,Farm Boy,Farm Boy;|Farm Boy|;farmboy;fbmail@,,,,,,,CA,Farm Boy
 7649,Food Basics,Food Basics,,,,,,,CA,Food Basics
 7665,Fortinos,Fortinos,,,,,,,CA,Fortinos
@@ -711,7 +711,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 8321,London Drugs,London Drugs,,,,,,,CA,London Drugs
 7710,Longos,|Longos|,,,,,,,CA,Longos
 7730,Maxi,|Maxi|,,,,,,,CA,Maxi
-7737,Metro,|Metro|,,,,,,,CA,Metro
+7737,Metro,Metro.ca;metrosurvey;metro plus;metrosondage;metro#,,,,,,,CA,Metro
 7750,No Frills Supermarket,No Frills,,,,,,,CA,
 8332,Pharmaprix,Pharmaprix,,,,,,,CA,Pharmaprix
 7771,Provigo,Provigo,,,,,,,CA,Provigo
@@ -830,7 +830,7 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 9026,Fulton's Foods,Fultons,698842462,,,,,,UK,Fulton's Foods
 9027,Farmfoods,"farmfoods;farmfoods.co.uk;larnfoods.co.uk;www.farmfoods.co.uk;FARMF00DS;farnfoods.co.uk;farmfoods,co.uk;|Farmfoods|;www.farnfoods.c0.uk;farnfoods,;Tarmfoods;www.farmfoods.oo.uk",265584625,,,,,,UK,Farmfoods
 7707,Lidl,Lidl;lidluk;|lidl|;@lidlgb;/lidlgb;Lid1;,614798608,,,,,,UK,Lidl
-8641,Waitrose,waitrose;waitrosehaveyoursay,232457280,,,,,,UK,Waitrose
+8641,Waitrose,waitrose;waitrosehaveyoursay,,,,,,,UK,Waitrose
 9028,The Works,The Works;theworks;Tne WorKS,135597879,,,,,,UK,The Works
 9029,Currys PC World,currys,226659933,,,,,,UK,Currys PC World
 6209,Burger King,Burger King;|Burger Klng|,118529506,,,,,Burger King;|Burger Klng|,UK,Burger King
@@ -1110,6 +1110,19 @@ Banner ID,Merchant Name,Allow String Matching,Tax id,Disallow string match,Nix i
 ,Stora Coop,Stora Coop;coop.se,,,,,,,SE,
 ,Tempo,Tempo,,,,,,,SE,
 ,Willys,Willys,,,,,,,SE,
+,Dirk,Dirk van den Broek;Dirk van;|Dirk|,008492529B01,,,,,,NL,
+,Lidl,Lidl,,,,,,,NL,
+,Vomar Voordeelmarkt,,,,,,,,NL,
+,Bruna,bruna.nl;|Bruna|,,,,,,,NL,
+,Yakhlaf,,,,,,,,NL,
+,Deen,deen.nl;|Deen|,,,,,,,NL,
+,Albert Heijn To Go,AH to go;de AH to,,,,,,,NL,
+,Albert Heijn,Albert Heijn,004371021B01,,,,,,NL,
+,Praxis,|Praxis|,,,,,,,NL,
+,Ikea,ikea.nl;|IKEA|,004445879B01,,,,,,NL,
+,Etos,|Etos|;de best drogist;etos.nl,,,,,,,NL,
+,Kruidvat,Kruidvat;kruidvat.nl,,,,,,,NL,
+,Jumbo,|Jumbo|;jumbo.com,,,,,,,NL,
 ,Woolworths,Woolworths;woolworthsrewards,8.80E+10,,,,,,AU,
 ,Wynyard Station Pharmacy,Wynyard Station,1.29E+10,,,,,,AU,
 ,Urban Paddock Cafe,urban paddock cafe,5.75E+10,,,,,,AU,

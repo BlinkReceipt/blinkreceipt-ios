@@ -1,4 +1,13 @@
-﻿# 1.8.0
+﻿# 1.8.1
+- Identify retailer loyalty programs
+- Return retail channel property
+- Fix UI bugs in stock camera controller in low memory conditions
+- Improved scanning of Costco + Walmart receipts
+- Fix crash in logging
+- Support for dynamically improving merchant detection without SDK update
+- Many parser improvements
+
+# 1.8.0
 - Incorporate full price into product intelligence
 - Missed Earnings flow
 - iOS 13 UI fixes

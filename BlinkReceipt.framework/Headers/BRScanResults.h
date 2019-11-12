@@ -189,6 +189,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *taxId;
 
 /**
+ *  The retail channel for this receipt, if any
+*/
+@property (strong, nonatomic, readonly) BRStringValue *channel;
+
+/**
+ *  Whether there is an indication of a loyalty program found on the receipt
+*/
+@property (nonatomic, readonly) BOOL loyaltyProgram;
+
+/**
  *  An average confidence (between 0 and 100) for the OCR performed on this receipt
  */
 @property (nonatomic, readonly) float ocrConfidence;

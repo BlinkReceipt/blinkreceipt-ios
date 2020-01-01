@@ -1,4 +1,7 @@
-﻿# 1.8.1
+﻿# 1.8.2
+- Fix for certain 2020 dates
+
+# 1.8.1
 - Identify retailer loyalty programs
 - Return retail channel property
 - Fix UI bugs in stock camera controller in low memory conditions

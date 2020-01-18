@@ -80,7 +80,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *
  *      * `BOOL isBlurry` - A flag indicating whether the frame is below the blurry threshold
  */
-- (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry))readyBlock;
+- (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry, BOOL isReceipt))readyBlock;
 
 /**
  *  Call this method to notify the camera controller that the user has indicated they have finished scanning.

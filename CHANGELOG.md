@@ -1,4 +1,9 @@
-﻿# 1.8.2
+﻿# 1.8.3
+- Fix for Target + CVS barcode scanning impacting dates
+- Add `isReceipt` parameter to user frame callback
+- Fix promotion validation bug 
+
+# 1.8.2
 - Fix for certain 2020 dates
 
 # 1.8.1

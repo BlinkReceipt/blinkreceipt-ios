@@ -1,4 +1,13 @@
-﻿# 1.8.3
+﻿# 1.8.4
+- Missed Earnings crash fixes + UI tweaks
+- Add property to indicate whether current device can process video frames
+- Fix slow camera load on older devices
+- Fix PVP crash for retailer promotions
+- Add `isReceipt` parameter to `didGetFrameStats` callback
+- Add method to retrieve PVP promotions for current user
+- Improve logic for detecting merchant during scan
+
+# 1.8.3
 - Fix for Target + CVS barcode scanning impacting dates
 - Add `isReceipt` parameter to user frame callback
 - Fix promotion validation bug 

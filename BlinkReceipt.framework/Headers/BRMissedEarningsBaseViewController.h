@@ -39,6 +39,13 @@ typedef NS_ENUM(NSUInteger, BRMissedEarningsLookupResult) {
 - (void)lookupUPC:(NSString*)upc withCompletion:(void(^)(BRMissedEarningsLookupResult lookupResult, NSDictionary *productInfo))completion;
 
 /**
+ *  Toggle the status of the torch
+ *
+ *  @param torchOn      Whether to turn the torch on or off
+ */
+- (void)setTorch:(BOOL)torchOn;
+
+/**
  * When a barcode is found, the capture session is automatically paused. Invoke this method to restart the capture session afterwards.
  */
 - (void)restartCaptureSession;

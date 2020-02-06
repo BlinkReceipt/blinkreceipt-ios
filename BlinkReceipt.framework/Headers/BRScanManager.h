@@ -12,6 +12,7 @@
 #import "BRScanOptions.h"
 #import "BRScanResultsDelegate.h"
 #import "BRCameraViewController.h"
+#import "BRPromotionInfo.h"
 
 @class MFMailComposeViewController;
 
@@ -60,6 +61,11 @@
  *  Default: 0 (indicates receipt data will not be stored locally)
  */
 @property (nonatomic) NSInteger daysToStoreReceiptData;
+
+/**
+*  Indicates whether the current device is capable of processing video frames
+*/
+@property (readonly, nonatomic) BOOL deviceCanProcessVideo;
 
 ///---------------------
 /// @name Class Methods
@@ -144,12 +150,13 @@
 - (nullable BRScanResults*)getResultsForReceiptCorrection:(nonnull NSString*)blinkReceiptId;
 
 /**
- * Retrieves images from disk for a specific receipt for custom user corrections flow
+ * Retrieves images from disk or remotely for a specific receipt for custom user corrections flow
  * @param blinkReceiptId    The receipt id to load from disk
- *
- * @return An array of images found for this receipt. Returns `nil` if none are found
+ * @param completion
+ *      * `NSArray<UIImage*>* images` - The images associated with this `blinkReceiptId`
  */
-- (nullable NSArray<UIImage*> *)getImagesForReceiptCorrection:(nonnull NSString*)blinkReceiptId;
+- (void)getImagesForReceiptCorrection:(nonnull NSString*)blinkReceiptId
+                       withCompletion:(nonnull void(^)(NSArray<UIImage*> * _Nonnull images))completion;
 
 /**
  * After custom user correction flow, call this method to validate the new results against promotions
@@ -161,5 +168,13 @@
  */
 - (void)submitUpdatedResultsForValidation:(BRScanResults* _Nonnull)scanResults
                            withCompletion:(nullable void(^)(BRScanResults* _Nonnull, NSError* _Nullable))completion;
+
+
+/**
+* Retrieves targeted and general promotions for current user
+* @param completion    This callback is invoked once validation has been performed
+*      * `NSArray<BRPromotionInfo*>* promos` - An array of promotion info objects for the current user
+*/
+- (void)getPromotionsWithCompletion:(nonnull void(^)(NSArray<BRPromotionInfo*>* _Nullable promos))completion;
 
 @end

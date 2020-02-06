@@ -70,6 +70,9 @@
                 <a href="../Classes/BRPromotion.html">BRPromotion</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BRPromotionInfo.html">BRPromotionInfo</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BRScanManager.html">BRScanManager</a>
               </li>
               <li class="nav-group-task">
@@ -167,6 +170,13 @@
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a></span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
 
 <span class="cm">/**
+ *  Toggle the status of the torch
+ *
+ *  @param torchOn      Whether to turn the torch on or off
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTorch</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">torchOn</span><span class="p">;</span>
+
+<span class="cm">/**
  * When a barcode is found, the capture session is automatically paused. Invoke this method to restart the capture session afterwards.
  */</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">restartCaptureSession</span><span class="p">;</span>
@@ -210,7 +220,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -245,7 +255,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L30">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L30">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -306,7 +316,61 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L39">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L39">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRMissedEarningsBaseViewController(im)setTorch:"></a>
+                    <a name="//apple_ref/objc/Method/-setTorch:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)setTorch:">-setTorch:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle the status of the torch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTorch</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">torchOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTorch</span><span class="p">(</span><span class="n">_</span> <span class="nv">torchOn</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>torchOn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to turn the torch on or off</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L46">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -341,7 +405,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L44">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -351,7 +415,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-01-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-02-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

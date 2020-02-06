@@ -70,6 +70,9 @@
                 <a href="Classes/BRPromotion.html">BRPromotion</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/BRPromotionInfo.html">BRPromotionInfo</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/BRScanManager.html">BRScanManager</a>
               </li>
               <li class="nav-group-task">
@@ -180,7 +183,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRCameraViewController.h#L32-L210">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRCameraViewController.h#L32-L215">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -220,7 +223,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRCoupon.h#L22-L65">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRCoupon.h#L22-L65">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -271,6 +274,13 @@
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a></span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
 
 <span class="cm">/**
+ *  Toggle the status of the torch
+ *
+ *  @param torchOn      Whether to turn the torch on or off
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTorch</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">torchOn</span><span class="p">;</span>
+
+<span class="cm">/**
  * When a barcode is found, the capture session is automatically paused. Invoke this method to restart the capture session afterwards.
  */</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">restartCaptureSession</span><span class="p">;</span>
@@ -285,7 +295,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L20-L46">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L20-L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -325,7 +335,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -365,7 +375,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRProduct.h#L18-L152">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRProduct.h#L18-L152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -405,7 +415,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -445,7 +455,47 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRPromotion.h#L18-L63">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRPromotion.h#L18-L63">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRPromotionInfo"></a>
+                    <a name="//apple_ref/objc/Class/BRPromotionInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRPromotionInfo">BRPromotionInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents information about a promotion retrieved for the current user</p>
+
+                        <a href="Classes/BRPromotionInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotionInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRPromotionInfo</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRPromotionInfo.h#L18-L30">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -485,7 +535,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRScanManager.h#L21-L165">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRScanManager.h#L22-L180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -525,7 +575,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L241">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L241">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -565,7 +615,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRScanResults.h#L44-L283">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRScanResults.h#L44-L283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -605,7 +655,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -645,7 +695,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -681,7 +731,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -717,7 +767,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -753,7 +803,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.2/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.8.3/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -763,7 +813,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-01-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-02-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

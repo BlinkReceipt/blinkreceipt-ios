@@ -79,6 +79,8 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *      * `UIImage *frameImg` - The frame to display as a preview
  *
  *      * `BOOL isBlurry` - A flag indicating whether the frame is below the blurry threshold
+ *
+ *      * `BOOL isReceipt` - A flag indicating whether the current frame is believed to contain a receipt
  */
 - (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry, BOOL isReceipt))readyBlock;
 
@@ -158,7 +160,10 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *  @param frameStats   A dictionary with the following keys:
  *
  *      `contentWidth` - a float indicating what percent (0-100) of the image the receipt appears in
+ *
  *      `edgeRect` - a `CGRect` wrapped in `NSNumber` indicating the location of edges found in percentages of image size
+ *
+ *      `isReceipt` - a `BOOL` wrapped in `NSNumber` indicating whether the current frame is believed to contain a receipt
  */
 - (void)didGetFrameStats:(NSDictionary*)frameStats;
 

@@ -144,19 +144,15 @@
 /**
  * Retrieve resullts from disk for a specific receipt for custom user corrections flow
  * @param blinkReceiptId    The receipt id to load from disk
+ * @param completion
+ *      * `BRScanResults `results` - The images associated with this `blinkReceiptId`
+ *      * `NSArray<UIImage*>* images` - The images associated with this `blinkReceiptId`
  *
  * @return The full scan results object for this receipt or `nil` if it could not be found
  */
-- (nullable BRScanResults*)getResultsForReceiptCorrection:(nonnull NSString*)blinkReceiptId;
+- (void)getResultsForReceiptCorrection:(nonnull NSString*)blinkReceiptId
+                        withCompletion:(nonnull void(^)(BRScanResults *results, NSArray<UIImage*> * _Nonnull images))completion;
 
-/**
- * Retrieves images from disk or remotely for a specific receipt for custom user corrections flow
- * @param blinkReceiptId    The receipt id to load from disk
- * @param completion
- *      * `NSArray<UIImage*>* images` - The images associated with this `blinkReceiptId`
- */
-- (void)getImagesForReceiptCorrection:(nonnull NSString*)blinkReceiptId
-                       withCompletion:(nonnull void(^)(NSArray<UIImage*> * _Nonnull images))completion;
 
 /**
  * After custom user correction flow, call this method to validate the new results against promotions

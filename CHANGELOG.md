@@ -1,4 +1,7 @@
-﻿# 1.8.4
+﻿# 1.8.5
+- Fix crash on McDonald's receipts
+
+# 1.8.4
 - Missed Earnings crash fixes + UI tweaks
 - Add property to indicate whether current device can process video frames
 - Fix slow camera load on older devices

@@ -145,7 +145,7 @@
  * Retrieve results from disk for a specific receipt for custom user corrections flow
  * @param blinkReceiptId    The receipt id to load from disk
  * @param completion        This callback is invoked once once the SDK has attempted to retrieve receipt info
- *      * `BRScanResults `results` - The images associated with this `blinkReceiptId`
+ *      * `BRScanResults *results` - The scan results associated with this `blinkReceiptId`
  *
  *      * `NSArray<UIImage*>* images` - The images associated with this `blinkReceiptId`
  *

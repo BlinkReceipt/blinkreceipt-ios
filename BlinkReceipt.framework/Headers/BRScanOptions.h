@@ -238,4 +238,11 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) NSInteger previousFrameOverlap;
 
+/**
+ *  If this property is enabled, subproducts will be returned in the `BRProduct.subProducts` array of the parent product
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL returnSubproducts;
+
 @end

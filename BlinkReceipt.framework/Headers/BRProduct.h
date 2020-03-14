@@ -126,6 +126,11 @@
 @property (strong, nonatomic, readonly) NSArray<BRProduct*> *possibleProducts;
 
 /**
+*  An array of sub products tied to the current product, if any. Generally only populated for restaurants
+*/
+@property (strong, nonatomic, readonly) NSArray<BRProduct*> *subProducts;
+
+/**
  *  Whether the user added this product during the receipt correction flow
  */
 @property (nonatomic, readonly) BOOL userAdded;

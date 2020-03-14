@@ -152,7 +152,7 @@
  * @return The full scan results object for this receipt or `nil` if it could not be found
  */
 - (void)getResultsForReceiptCorrection:(nonnull NSString*)blinkReceiptId
-                        withCompletion:(nonnull void(^)(BRScanResults *results, NSArray<UIImage*> * _Nonnull images))completion;
+                        withCompletion:(nonnull void(^)(BRScanResults* _Nullable results, NSArray<UIImage*> * _Nonnull images))completion;
 
 
 /**

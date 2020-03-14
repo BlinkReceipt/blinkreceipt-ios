@@ -1,4 +1,9 @@
-﻿# 1.8.5
+﻿# 1.8.6
+- Continuous autofocus for missed earnings barcode controller
+- Product intelligence for international + out of home merchants
+- Support for sub products
+
+# 1.8.5
 - Fix crash on McDonald's receipts
 
 # 1.8.4

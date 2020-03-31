@@ -264,6 +264,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *ereceiptPurchaseType;
 
 /**
+*  The name of the 3rd party service (like Instacart) that fulfilled this order, if any
+*/
+@property (strong, nonatomic, readonly) NSString *ereceiptFulfilledBy;
+
+/**
+*  Whether this e-receipt could be authenticated via DKIM or SPF headers
+*/
+@property (nonatomic, readonly) BOOL ereceiptAuthenticated;
+
+/**
  *  For an Amazon order only, this is an array of all the shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;

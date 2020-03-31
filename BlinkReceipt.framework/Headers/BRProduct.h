@@ -141,6 +141,11 @@
 @property (nonatomic, readonly) BOOL userModified;
 
 /**
+ *  If `BRScanOptions.filterSensitiveData` is enabled, then this flag will indicate whether the current product is from a sensitive category as determined by product intelligence
+ */
+@property (nonatomic, readonly) BOOL isSensitive;
+
+/**
  * For custom user corrections flow, when a user modifies an existing product, call this method to update the product's properties.
  * Note: You should pass values for all the properties even if the user did not modify them
  *

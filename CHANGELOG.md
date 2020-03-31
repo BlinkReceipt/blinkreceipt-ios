@@ -1,4 +1,11 @@
-﻿# 1.8.6
+﻿# 1.8.7
+- Support sub products in missed earnings
+- Serialize / deserialize `BRProduct.userAdded` and `BRProduct.userModified`
+- Update for BlinkEReceipt v0.0.9
+- Use AFNetworking subspec to avoid UIWebView submission rejection
+- Better duplicate detection
+
+# 1.8.6
 - Continuous autofocus for missed earnings barcode controller
 - Product intelligence for international + out of home merchants
 - Support for sub products

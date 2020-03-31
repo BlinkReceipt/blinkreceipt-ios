@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.8.6"
+  s.version      = "1.8.7"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -20,7 +20,7 @@ This is the BlinkReceipt SDK
 
   s.vendored_frameworks = ["BlinkReceipt.framework"]
   
-  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'AFNetworking/NSURLSession', '~> 3.0'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'GPUImage', '~> 0.1'
   s.dependency 'MBProgressHUD'

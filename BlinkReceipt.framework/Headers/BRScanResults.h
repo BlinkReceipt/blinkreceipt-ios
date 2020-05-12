@@ -269,6 +269,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *ereceiptFulfilledBy;
 
 /**
+*  The name of the sub-merchant (like "McDonald's" for some Uber Eats orders), if any
+*/
+@property (strong, nonatomic, readonly) NSString *ereceiptSubMerchant;
+
+/**
+*  The point of sale system used for this order, if any
+*/
+@property (strong, nonatomic, readonly) NSString *ereceiptPOSSystem;
+
+/**
 *  Whether this e-receipt could be authenticated via DKIM or SPF headers
 */
 @property (nonatomic, readonly) BOOL ereceiptAuthenticated;
@@ -282,12 +292,23 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  * For custom user corrections flow, if the user adds a new product, call this method to add it to this scan results object
  * @param brand     The brand, if any, of the new product
  * @param upc         The upc, if any, of the new product
+ * @param productName The name, if any, of the new product
+ * @param imgUrl    The image URL, if any, of the new product
  * @param totalPrice The total price of the new product
  * @param quantity The quantity of the new product
  */
 - (void)addUserCorrectedProductWithBrand:(NSString*)brand
                                      upc:(NSString*)upc
+                             productName:(NSString*)productName
+                                imageUrl:(NSString*)imgUrl
                               totalPrice:(float)totalPrice
                                 quantity:(float)quantity;
+
+/**
+ * For custom user corrections flow, when a user modifies the date, call this method to update the receipt's purchase date
+ *
+ * @param dateString     The date in MM/dd/yyyy format
+ */
+- (void)userCorrectedDate:(NSString*)dateString;
 
 @end

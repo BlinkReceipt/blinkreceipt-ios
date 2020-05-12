@@ -151,11 +151,15 @@
  *
  * @param brand     The brand, if any, of the modified product
  * @param upc         The upc, if any, of the modified product
+ * @param productName The name, if any, of the modified product
+ * @param imageUrl    The image URL, if any, of the modified product
  * @param totalPrice The total price of the modified product
  * @param quantity The quantity of the modified product
  */
 - (void)userCorrectedBrand:(NSString*)brand
                        upc:(NSString*)upc
+               productName:(NSString*)productName
+                  imageUrl:(NSString*)imageUrl
                 totalPrice:(float)totalPrice
                   quantity:(float)quantity;
 

@@ -1,4 +1,11 @@
-﻿# 1.8.7
+﻿# 1.8.8
+- Reduced memory usage by neural networks
+- Improved scanning accuracy
+- Expanded editable fields in missed earnings flow
+- Improved duplicate detection
+- Improved blurry receipt detection
+
+# 1.8.7
 - Support sub products in missed earnings
 - Serialize / deserialize `BRProduct.userAdded` and `BRProduct.userModified`
 - Update for BlinkEReceipt v0.0.9

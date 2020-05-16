@@ -1,4 +1,7 @@
-﻿# 1.8.8
+﻿# 1.8.9
+- Fix crash when logo detection is disabled
+
+# 1.8.8
 - Reduced memory usage by neural networks
 - Improved scanning accuracy
 - Expanded editable fields in missed earnings flow

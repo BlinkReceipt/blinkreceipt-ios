@@ -2,7 +2,7 @@
 
 ## Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like BlinkReceipt in your projects. If you do not have Cocoapods installed, see the [Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html#getting-started).
+[CocoaPods](http://cocoapods.org) is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries like BlinkReceipt in your projects. If you do not have Cocoapods installed, see the [Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html#getting-started).
 
 ### Podfile
 
@@ -19,7 +19,18 @@ target 'YourTarget' do
 end
 ```
 
-After editing your Podfile, run `pod install` and then make sure to open the `.xcworkspace` file rather than the `.xcodeproj`
+After editing your `Podfile`, run `pod install` and then make sure to open the `.xcworkspace` file rather than the `.xcodeproj`
+
+## Installation with Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for iOS. If you do not have Carthage installed see the [Quick Start](https://github.com/Carthage/Carthage#quick-start)
+
+### Cartfile
+```
+binary "https://raw.githubusercontent.com/BlinkReceipt/blinkreceipt-ios/master/BlinkReceiptStatic.json" ~> 1.8
+```
+
+After editing your `Cartfile`, run `carthage update` and then add the framework to your project as described in the Quick Start above
 
 ## Integration
 
@@ -80,4 +91,4 @@ This scanning mode simulates the user snapping a series of still photos although
 You can also build out your own UI that sits on top of our basic camera controller. Check out our [Custom Camera Controller](https://blinkreceipt.github.io/blinkreceipt-ios/custom-camera-controller.html) guide for further details.
 
 
-Copyright (c) 2017 BlinkReceipt. All rights reserved.
+Copyright (c) 2020 BlinkReceipt. All rights reserved.

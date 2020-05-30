@@ -150,11 +150,14 @@
 <p>If you would like your users to be able to correct receipt data (especially for purchase validation) after scanning you can achieve this using the Receipt Correction Flow.</p>
 <h2 id='storing-receipt-data-locally' class='heading'>Storing Receipt Data Locally</h2>
 
-<p>The first step is to tell the BlinkReceipt SDK to store receipt data (scan results + images) locally for a certain amount of time so that if a user wants to edit it after the fact, the data will still be available.</p>
+<p>The BlinkReceipt SDK can store receipt data (scan results + images) locally for a certain amount of time so that if a user wants to edit it after the fact, the data will be immediately available.</p>
 
 <p>Indicate how long you want receipt data to be stored with the following property:</p>
 <pre class="highlight objective_c"><code><span class="p">[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">].</span><span class="n">daysToStoreReceiptData</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
 </code></pre>
+<h2 id='retrieving-receipt-data-remotely' class='heading'>Retrieving Receipt Data Remotely</h2>
+
+<p>If you prefer not to store receipt data locally, we will attempt to fetch receipt data from our servers when you initiate the <q>Stock Receipt Correction UI</q> or when you explicitly request the results as described in <q>Custom Receipt Correction UI</q> below.</p>
 <h2 id='stock-receipt-correction-ui' class='heading'>Stock Receipt Correction UI</h2>
 
 <p>To begin receipt correction for a given BlinkReceipt ID, use the following to show the initial controller:</p>
@@ -183,23 +186,43 @@
 
 <p>You may create your own UI to capture user changes to an existing set of scan results.</p>
 
-<p>The first step is to load the scan results for a given Blink Receipt ID as follows:</p>
-<pre class="highlight objective_c"><code><span class="n">BRScanResults</span> <span class="o">*</span><span class="n">scanResults</span> <span class="o">=</span> <span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">getResultsForReceiptCorrection</span><span class="p">:</span><span class="s">@"old-blink-receipt-id"</span><span class="p">];</span>
+<p>The first step is to load the scan results and receipt images for a given Blink Receipt ID as follows:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">getResultsForReceiptCorrection</span><span class="p">:</span><span class="s">@"blink_receipt_id"</span><span class="p">]</span>
+                                               <span class="n">withCompletion</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BRScanResults</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">results</span><span class="p">,</span>
+                                                                               <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UIImage</span><span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">images</span><span class="p">))</span><span class="n">completion</span> <span class="p">{</span>
+
+                                                                               <span class="p">}</span>
 </code></pre>
 
-<p>If you&rsquo;d like to display the image(s) associated with this receipt you may grab them as follows:</p>
-<pre class="highlight plaintext"><code>NSArray&lt;UIImage*&gt; *receiptImages = [[BRScanManager sharedManager] getImagesForReceiptCorrection:@"old-blink-receipt-id"];
-</code></pre>
-
-<p>At this point you can display your own UI using these objects to show the user the old results and provide a way for them to modify certain properties (currently we only accept changes to brand, UPC, price, and quantity);</p>
+<p>At this point you can display your own UI using these objects to show the user the old results and provide a way for them to modify certain properties (only a limited number of receipt properties and product properties are editable).</p>
 
 <p>You may require a user to scan a product barcode (see section below on subclassing our barcode controller) to add or modify products or you may provide a different interface.</p>
 
-<p>To modify an existing product, call <code>-[BRProduct userCorrectedBrand:upc:totalPrice:quantity:]</code> on the existing <code><a href="Classes/BRProduct.html">BRProduct</a></code> object with the new values for this product.</p>
+<p>To modify an existing product, call:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userCorrectedBrand</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">brand</span>
+                       <span class="nf">upc</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span>
+               <span class="nf">productName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">productName</span>
+                  <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">imageUrl</span>
+                <span class="nf">totalPrice</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">totalPrice</span>
+                  <span class="nf">quantity</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quantity</span><span class="p">;</span>
+</code></pre>
 
-<p>To add a new product call <code>-[BRScanResults addUserCorrectedProductWithBrand:upc:totalPrice:quantity:]</code> on the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object you obtained above.</p>
+<p>on the existing <code><a href="Classes/BRProduct.html">BRProduct</a></code> object with the new values for this product.</p>
 
-<p>Once the user has finished modifying the scan results, call <code><a href="Classes/BRScanManager.html#/c:objc(cs)BRScanManager(im)submitUpdatedResultsForValidation:withCompletion:">-[BRScanManager submitUpdatedResultsForValidation:withCompletion:]</a></code> and pass in the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object that has been modified. The callback from this method will contain the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object with a potentially updated <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)qualifiedPromotions">BRScanResults.qualifiedPromotions</a></code> property if any promotions now validate after user corrections.</p>
+<p>To add a new product call:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addUserCorrectedProductWithBrand</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">brand</span>
+                                     <span class="nf">upc</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span>
+                             <span class="nf">productName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">productName</span>
+                                <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">imgUrl</span>
+                              <span class="nf">totalPrice</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">totalPrice</span>
+                                <span class="nf">quantity</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quantity</span><span class="p">;</span>
+</code></pre>
+
+<p>on the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object you obtained above.</p>
+
+<p>To edit the receipt date call <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(im)userCorrectedDate:">-[BRScanResults userCorrectedDate:]</a></code></p>
+
+<p>Once the user has finished modifying the scan results, call <code><a href="Classes/BRScanManager.html#/c:objc(cs)BRScanManager(im)submitUpdatedResultsForValidation:withCompletion:">-[BRScanManager submitUpdatedResultsForValidation:withCompletion:]</a></code> and pass in the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object that has been modified. The callback from this method will contain the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object with an updated <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)qualifiedPromotions">BRScanResults.qualifiedPromotions</a></code> property reflecting user corrections.</p>
 <h2 id='subclassing-barcode-scanning-controller' class='heading'>Subclassing Barcode Scanning Controller</h2>
 
 <p>The SDK also provides a base class called <code><a href="Classes/BRMissedEarningsBaseViewController.html">BRMissedEarningsBaseViewController</a></code> with barcode scanning capability that allows the user to scan the UPC from products they&rsquo;ve purchased. To use this:</p>
@@ -220,7 +243,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-05-12)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-05-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

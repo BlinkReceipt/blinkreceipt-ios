@@ -199,7 +199,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL disableOnDeviceProcessing;
 
 /**
- *  If this property is enabled, and the receipt is detected to be a duplicate, `BRScanResults.isDuplicate` will be set to true
+ *  If this property is enabled, and the receipt is detected to be a duplicate, `BRScanResults.isDuplicate` will be set to true. Also checks for fraudulent receipts and sets the `BRScanResults.isFraudulent` property
  *
  *  Default: NO
  */

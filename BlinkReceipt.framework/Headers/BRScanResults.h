@@ -229,6 +229,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL isDuplicate;
 
 /**
+ *  Indicate whether the receipt is believed to be fraudulent (depends on `BRScanOptions.detectDuplicates` being enabled)
+ */
+@property (nonatomic, readonly) BOOL isFraudulent;
+
+/**
  *  If `isDuplicate` is true, this property contains the Blink Receipt ID(s) of the duplicate receipts
  */
 @property (strong, nonatomic, readonly) NSArray<NSString*> *duplicateBlinkReceiptIds;

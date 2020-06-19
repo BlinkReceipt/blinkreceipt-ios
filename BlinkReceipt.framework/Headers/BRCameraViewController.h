@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BRScanOptions.h"
 #import "BRScanResults.h"
+#import "BRFrameAttributes.h"
 
 typedef NS_ENUM(NSUInteger, BRDistanceStatus) {
     BRDistanceStatusOK,
@@ -78,11 +79,9 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *
  *      * `UIImage *frameImg` - The frame to display as a preview
  *
- *      * `BOOL isBlurry` - A flag indicating whether the frame is below the blurry threshold
- *
- *      * `BOOL isReceipt` - A flag indicating whether the current frame is believed to contain a receipt
+ *      * `BRFrameAttributes *frameAttributes` - Various attributes about the current frame (blurriness, screen detection, etc see `BRFrameAttributes`)
  */
-- (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BOOL isBlurry, BOOL isReceipt))readyBlock;
+- (void)userSnappedPhotoOnReady:(void(^)(UIImage *frameImg, BRFrameAttributes *frameAttributes))readyBlock;
 
 /**
  *  Call this method to notify the camera controller that the user has indicated they have finished scanning.

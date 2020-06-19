@@ -1,4 +1,15 @@
-﻿# 1.8.9
+﻿# 1.9.0
+- Improvements to purchase validation during missed earnings flow
+- Many receipt parsing improvements
+- Refactor frame properties for user photos into separate class
+- ML model for detecting photos of screens
+- Fraud detection
+- Improved channel detection
+- Long tail merchant detection
+- Fix for scenarios where subproducts were missed
+- Fix crash where camera frame is null
+
+# 1.8.9
 - Fix crash when logo detection is disabled
 
 # 1.8.8

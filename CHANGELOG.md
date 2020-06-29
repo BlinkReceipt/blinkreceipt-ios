@@ -1,4 +1,7 @@
-﻿# 1.9.0
+﻿# 1.9.1
+- Fix bug overwriting user changes in missed earnings flow
+
+# 1.9.0
 - Improvements to purchase validation during missed earnings flow
 - Many receipt parsing improvements
 - Refactor frame properties for user photos into separate class

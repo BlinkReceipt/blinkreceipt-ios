@@ -1,4 +1,10 @@
-﻿# 1.9.1
+﻿# 1.9.2
+- Add Spanish + French localizations
+- Fix crash in merchant detection
+- Handle scenario of starting missed earnings flow with `BRScanResults` object immediately after scan session
+- Fix bug not populating `totalPrice` in missed earnings flow when getting `BRScanResults` object from server
+
+# 1.9.1
 - Fix bug overwriting user changes in missed earnings flow
 
 # 1.9.0

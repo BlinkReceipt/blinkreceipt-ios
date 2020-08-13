@@ -2,184 +2,100 @@
   "warnings": [
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 14,
-      "symbol": "BRDistanceStatus",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 14,
-      "symbol": "BRDistanceStatus",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 15,
+      "line": 16,
       "symbol": "BRDistanceStatus.BRDistanceStatusOK",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 16,
+      "line": 17,
       "symbol": "BRDistanceStatus.BRDistanceStatusTooFar",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 19,
-      "symbol": "BRWrongRetailerConfidence",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 19,
-      "symbol": "BRWrongRetailerConfidence",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 20,
+      "line": 22,
       "symbol": "BRWrongRetailerConfidence.BRWrongRetailerConfidencePhone",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 21,
+      "line": 23,
       "symbol": "BRWrongRetailerConfidence.BRWrongRetailerConfidencePhoneAndProducts",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 24,
-      "symbol": "BRLightingCondition",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 24,
-      "symbol": "BRLightingCondition",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 25,
+      "line": 28,
       "symbol": "BRLightingCondition.BRLightingConditionTerrible",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 26,
+      "line": 29,
       "symbol": "BRLightingCondition.BRLightingConditionLow",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 27,
+      "line": 30,
       "symbol": "BRLightingCondition.BRLightingConditionGood",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 13,
-      "symbol": "BRCouponType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 13,
-      "symbol": "BRCouponType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 14,
+      "line": 15,
       "symbol": "BRCouponType.BRCouponTypeUnknown",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 15,
+      "line": 16,
       "symbol": "BRCouponType.BRCouponTypeStore",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 16,
+      "line": 17,
       "symbol": "BRCouponType.BRCouponTypeMfgr",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRFrameAttributes.h",
-      "line": 13,
-      "symbol": "BRFrameAttributes",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
-      "line": 13,
-      "symbol": "BRMissedEarningsLookupResult",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
-      "line": 13,
-      "symbol": "BRMissedEarningsLookupResult",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
-      "line": 14,
-      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductParticipates",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
       "line": 15,
-      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductDoesNotParticipate",
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductParticipates",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
       "line": 16,
-      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsUPCNotFound",
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductDoesNotParticipate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
       "line": 17,
-      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsLookupFailed",
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsUPCNotFound",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
-      "line": 20,
-      "symbol": "BRMissedEarningsBaseViewController",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "line": 18,
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsLookupFailed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
@@ -555,42 +471,28 @@
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 13,
-      "symbol": "BRErrorCodes",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 13,
-      "symbol": "BRErrorCodes",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 14,
+      "line": 15,
       "symbol": "BRErrorCodes.BRErrorInvalidLicenseKey",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 15,
+      "line": 16,
       "symbol": "BRErrorCodes.BRErrorFailToGrabImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 16,
+      "line": 17,
       "symbol": "BRErrorCodes.BRErrorFailToWriteToDisk",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 17,
+      "line": 18,
       "symbol": "BRErrorCodes.BRErrorCameraPermission",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"

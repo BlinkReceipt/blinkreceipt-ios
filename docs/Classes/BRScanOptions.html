@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/BRScanOptions" class="dashAnchor"></a>
     <a title="BRScanOptions Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.10.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -136,10 +144,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -151,21 +159,32 @@
             <h1>BRScanOptions</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRScanOptions</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
             <p>Create an instance of this class to specify the scanning options for a session</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L248">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Properties"></a>
                 <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties">
-                  <h3 class="section-name">Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -188,8 +207,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n"><a href="../Enums/WFRetailerId.html">WFRetailerId</a></span> <span class="n">retailerId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/WFRetailerId.html">WFRetailerId</a></span> <span class="n">retailerId</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -199,7 +217,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L77">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L77">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -226,7 +244,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnRawText</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnRawText</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -236,7 +254,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L85">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -263,7 +281,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">storeUserFrames</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">storeUserFrames</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -273,7 +291,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L92">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L92">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -300,8 +318,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">clientUsesScanditCamera</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">clientUsesScanditCamera</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -311,7 +328,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L99">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -338,7 +355,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">debugMode</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">debugMode</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -348,7 +365,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L107">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -375,8 +392,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="kt">float</span> <span class="n">jpegCompressionQuality</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">jpegCompressionQuality</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -386,7 +402,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L115">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -404,7 +420,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This controls when the <q>Move Closer</q> message appears. The threshold is a percentage expressed as an integer between 1 and 99. If edges are detected such that the width of the receipt divided by the width of the full image is below this threshold, the <q>too far</q> flag will be passed to the client.</p>
+                        <p>This controls when the &ldquo;Move Closer&rdquo; message appears. The threshold is a percentage expressed as an integer between 1 and 99. If edges are detected such that the width of the receipt divided by the width of the full image is below this threshold, the &ldquo;too far&rdquo; flag will be passed to the client.</p>
 
 <p>Default: 80</p>
 
@@ -413,8 +429,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSInteger</span> <span class="n">tooFarThreshold</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">tooFarThreshold</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -424,7 +439,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L123">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -451,8 +466,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSInteger</span> <span class="n">edgesEveryNthFrame</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">edgesEveryNthFrame</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -462,7 +476,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L131">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -489,8 +503,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">detectDistanceWithEdges</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectDistanceWithEdges</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -500,7 +513,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L139">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -527,8 +540,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSInteger</span> <span class="n">numGoodFramesToStopEdges</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">numGoodFramesToStopEdges</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -538,7 +550,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L147">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -565,8 +577,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">restartEdgesAfterUserConfirm</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">restartEdgesAfterUserConfirm</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -576,7 +587,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L154">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -603,8 +614,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">enableEdgesAfterUserPhoto</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableEdgesAfterUserPhoto</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -614,7 +624,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L161">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L161">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -641,8 +651,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">detectWrongRetailer</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectWrongRetailer</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -652,7 +661,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L168">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L168">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -683,7 +692,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">countryCode</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">countryCode</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -693,7 +702,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L177">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -720,7 +729,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectLogo</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectLogo</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -730,7 +739,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L184">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L184">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -757,8 +766,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">manualTorchControl</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">manualTorchControl</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -768,7 +776,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L192">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L192">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -795,8 +803,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">disableOnDeviceProcessing</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">disableOnDeviceProcessing</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -806,7 +813,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L199">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L199">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -833,8 +840,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">detectDuplicates</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectDuplicates</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -844,7 +850,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L206">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L206">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -871,8 +877,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">returnVoidedProducts</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnVoidedProducts</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -882,7 +887,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L213">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L213">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -909,8 +914,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">validatePromotions</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">validatePromotions</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -920,7 +924,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L220">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -945,7 +949,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">promotionSlugs</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">promotionSlugs</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -955,7 +959,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L225">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -982,8 +986,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">enableDynamicTextSizing</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableDynamicTextSizing</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -993,7 +996,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L232">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1020,8 +1023,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSInteger</span> <span class="n">previousFrameOverlap</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">previousFrameOverlap</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1031,7 +1033,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L239">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1058,8 +1060,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">returnSubproducts</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnSubproducts</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -1069,7 +1070,7 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanOptions.h#L246">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanOptions.h#L246">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1079,8 +1080,8 @@ Format is ISO 2 character country code for the receipts which will be scanned (f
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-07-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-08-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

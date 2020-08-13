@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/BRMissedEarningsBaseViewController" class="dashAnchor"></a>
     <a title="BRMissedEarningsBaseViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.10.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -136,10 +144,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -151,44 +159,20 @@
             <h1>BRMissedEarningsBaseViewController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRMissedEarningsBaseViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRMissedEarningsBaseViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span></code></pre>
 
-<span class="cm">/**
-*  This property restricts the region in which barcode will be detected. The parametesr are specified as percentages of the view size. The default value is `(0.0, 0.0, 1.0, 1.0)`
-*/</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span>
-
-<span class="cm">/**
- * Override this method to be notified when a barcode is detected. Supports 12 digit and 6 digit UPC's.
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didDetectBarcode</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">barcode</span><span class="p">;</span>
-
-<span class="cm">/**
- * Perform server lookup of this UPC
- *
- * @param completion This callback is invoked when the lookup completes (or fails)
- *      * `BRMissedEarningsLookupResult lookupResult` - The status of the lookup indicating whether the supplied UPC participates in the program, does not participate, was not found, or if the lookup failed
- *      * `NSDictionary *productInfo` - If the UPC was found, this dictionary contains information about the product. The keys are: `productName`, `brand`, `image_url`, and `brand_participates`, which is a boolean indicating whether this product's brand is part of the program. This helps identify scenarios where some products in a brand participate in the program, but the provided UPC does not. Additionally a `message` key which can contain a custom message for a given product
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a></span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
-
-<span class="cm">/**
- *  Toggle the status of the torch
- *
- *  @param torchOn      Whether to turn the torch on or off
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTorch</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">torchOn</span><span class="p">;</span>
-
-<span class="cm">/**
- * When a barcode is found, the capture session is automatically paused. Invoke this method to restart the capture session afterwards.
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">restartCaptureSession</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRMissedEarningsBaseViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                 </div>
               </div>
             
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L22-L55">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -213,8 +197,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -224,7 +207,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -234,7 +217,7 @@
                     <code>
                     <a name="/c:objc(cs)BRMissedEarningsBaseViewController(im)didDetectBarcode:"></a>
                     <a name="//apple_ref/objc/Method/-didDetectBarcode:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)didDetectBarcode:">-didDetectBarcode:</a>
+                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)didDetectBarcode:">-didDetectBarcode:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -259,7 +242,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L30">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -269,7 +252,7 @@
                     <code>
                     <a name="/c:objc(cs)BRMissedEarningsBaseViewController(im)lookupUPC:withCompletion:"></a>
                     <a name="//apple_ref/objc/Method/-lookupUPC:withCompletion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)lookupUPC:withCompletion:">-lookupUPC:withCompletion:</a>
+                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)lookupUPC:withCompletion:">-lookupUPC:<wbr>withCompletion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -320,7 +303,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L39">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -330,7 +313,7 @@
                     <code>
                     <a name="/c:objc(cs)BRMissedEarningsBaseViewController(im)setTorch:"></a>
                     <a name="//apple_ref/objc/Method/-setTorch:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)setTorch:">-setTorch:</a>
+                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(im)setTorch:">-setTorch:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -374,7 +357,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L46">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -409,7 +392,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L51">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -419,8 +402,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-07-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-08-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

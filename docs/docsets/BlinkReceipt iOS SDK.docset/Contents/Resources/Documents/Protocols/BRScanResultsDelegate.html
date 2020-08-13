@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Protocol/BRScanResultsDelegate" class="dashAnchor"></a>
     <a title="BRScanResultsDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.10.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -136,10 +144,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -151,21 +159,32 @@
             <h1>BRScanResultsDelegate</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BRScanResultsDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BRScanResultsDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
             <p>Implement this protocol to receive callbacks from a scanning session</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L24-L72">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Methods"></a>
                 <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods">
-                  <h3 class="section-name">Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Methods"></a>
+                  <h3 class="section-name"><p>Methods</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -173,7 +192,7 @@
                     <code>
                     <a name="/c:objc(pl)BRScanResultsDelegate(im)didFinishScanning:withScanResults:"></a>
                     <a name="//apple_ref/objc/Method/-didFinishScanning:withScanResults:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didFinishScanning:withScanResults:">-didFinishScanning:withScanResults:</a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didFinishScanning:withScanResults:">-didFinishScanning:<wbr>withScanResults:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -230,7 +249,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L37">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L38">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -240,7 +259,7 @@
                     <code>
                     <a name="/c:objc(pl)BRScanResultsDelegate(im)didCancelScanning:"></a>
                     <a name="//apple_ref/objc/Method/-didCancelScanning:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didCancelScanning:">-didCancelScanning:</a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didCancelScanning:">-didCancelScanning:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -284,7 +303,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L44">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -294,7 +313,7 @@
                     <code>
                     <a name="/c:objc(pl)BRScanResultsDelegate(im)didOutputRawText:"></a>
                     <a name="//apple_ref/objc/Method/-didOutputRawText:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didOutputRawText:">-didOutputRawText:</a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didOutputRawText:">-didOutputRawText:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -338,7 +357,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L51">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -348,7 +367,7 @@
                     <code>
                     <a name="/c:objc(pl)BRScanResultsDelegate(im)scanningErrorOccurred:"></a>
                     <a name="//apple_ref/objc/Method/-scanningErrorOccurred:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)scanningErrorOccurred:">-scanningErrorOccurred:</a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)scanningErrorOccurred:">-scanningErrorOccurred:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -392,7 +411,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L59">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -402,7 +421,7 @@
                     <code>
                     <a name="/c:objc(pl)BRScanResultsDelegate(im)didOutputDebugInfo:"></a>
                     <a name="//apple_ref/objc/Method/-didOutputDebugInfo:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didOutputDebugInfo:">-didOutputDebugInfo:</a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didOutputDebugInfo:">-didOutputDebugInfo:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -448,7 +467,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L69">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -458,8 +477,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-07-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-08-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

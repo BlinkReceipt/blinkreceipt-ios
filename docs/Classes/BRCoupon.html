@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/BRCoupon" class="dashAnchor"></a>
     <a title="BRCoupon Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.10.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -136,10 +144,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -151,21 +159,32 @@
             <h1>BRCoupon</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCoupon</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRCoupon</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                 </div>
               </div>
             <p>Describes one coupon or discount on a receipt</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L23-L85">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Properties"></a>
                 <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties">
-                  <h3 class="section-name">Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -198,7 +217,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L31">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -233,7 +252,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L36">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -268,7 +287,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L41">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -303,7 +322,147 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L47">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L47">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRCoupon(py)couponDescPrefix"></a>
+                    <a name="//apple_ref/objc/Property/couponDescPrefix" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRCoupon(py)couponDescPrefix">couponDescPrefix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The prefix found before the coupon description if any</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">couponDescPrefix</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">couponDescPrefix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRCoupon(py)couponDescPostfix"></a>
+                    <a name="//apple_ref/objc/Property/couponDescPostfix" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRCoupon(py)couponDescPostfix">couponDescPostfix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The postfix found after the coupon description if any</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">couponDescPostfix</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">couponDescPostfix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L57">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRCoupon(py)couponSkuPrefix"></a>
+                    <a name="//apple_ref/objc/Property/couponSkuPrefix" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRCoupon(py)couponSkuPrefix">couponSkuPrefix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The prefix found before the coupon SKU if any</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">couponSkuPrefix</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">couponSkuPrefix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L62">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRCoupon(py)couponSkuPostfix"></a>
+                    <a name="//apple_ref/objc/Property/couponSkuPostfix" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRCoupon(py)couponSkuPostfix">couponSkuPostfix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The postfix found after the coupon SKU if any</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">couponSkuPostfix</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">couponSkuPostfix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L67">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -340,7 +499,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L54">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -351,9 +510,11 @@
               <div class="task-name-container">
                 <a name="/Class%20Methods"></a>
                 <a name="//apple_ref/objc/Section/Class Methods" class="dashAnchor"></a>
-                <a href="#/Class%20Methods">
-                  <h3 class="section-name">Class Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Class%20Methods"></a>
+                  <h3 class="section-name"><p>Class Methods</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -361,7 +522,7 @@
                     <code>
                     <a name="/c:objc(cs)BRCoupon(cm)friendlyNameForCouponType:"></a>
                     <a name="//apple_ref/objc/Method/+friendlyNameForCouponType:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCoupon(cm)friendlyNameForCouponType:">+friendlyNameForCouponType:</a>
+                    <a class="token" href="#/c:objc(cs)BRCoupon(cm)friendlyNameForCouponType:">+friendlyNameForCouponType:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -386,7 +547,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCoupon.h#L63">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCoupon.h#L83">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -396,8 +557,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-07-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-08-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/BRCameraViewController" class="dashAnchor"></a>
     <a title="BRCameraViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.10.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -136,10 +144,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -151,21 +159,32 @@
             <h1>BRCameraViewController</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCameraViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRCameraViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                 </div>
               </div>
             <p>Base camera controller class. Subclass to build your own UI on top of the fullscreen camera view</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L36-L217">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Properties"></a>
                 <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties">
-                  <h3 class="section-name">Properties</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -190,8 +209,7 @@ It is recommended to set the scanning region equal to the area of the screen tha
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -201,7 +219,7 @@ It is recommended to set the scanning region equal to the area of the screen tha
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L45">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -236,7 +254,7 @@ It is recommended to set the scanning region equal to the area of the screen tha
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L50">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -271,7 +289,7 @@ It is recommended to set the scanning region equal to the area of the screen tha
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L55">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L58">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -306,7 +324,7 @@ It is recommended to set the scanning region equal to the area of the screen tha
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L60">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -332,8 +350,7 @@ You will be responsible for manually calling <code><a href="../Classes/BRCameraV
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">manualCaptureSession</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">manualCaptureSession</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -343,7 +360,7 @@ You will be responsible for manually calling <code><a href="../Classes/BRCameraV
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L67">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -354,9 +371,11 @@ You will be responsible for manually calling <code><a href="../Classes/BRCameraV
               <div class="task-name-container">
                 <a name="/Base%20Class%20Methods"></a>
                 <a name="//apple_ref/objc/Section/Base Class Methods" class="dashAnchor"></a>
-                <a href="#/Base%20Class%20Methods">
-                  <h3 class="section-name">Base Class Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Base%20Class%20Methods"></a>
+                  <h3 class="section-name"><p>Base Class Methods</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -364,7 +383,7 @@ You will be responsible for manually calling <code><a href="../Classes/BRCameraV
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)userSnappedPhotoOnReady:"></a>
                     <a name="//apple_ref/objc/Method/-userSnappedPhotoOnReady:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userSnappedPhotoOnReady:">-userSnappedPhotoOnReady:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userSnappedPhotoOnReady:">-userSnappedPhotoOnReady:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -414,7 +433,7 @@ You will be responsible for manually calling <code><a href="../Classes/BRCameraV
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L84">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L87">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -450,7 +469,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L90">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L93">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -460,7 +479,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)getPreliminaryResults:"></a>
                     <a name="//apple_ref/objc/Method/-getPreliminaryResults:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)getPreliminaryResults:">-getPreliminaryResults:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)getPreliminaryResults:">-getPreliminaryResults:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -509,7 +528,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L102">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -545,7 +564,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L108">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L111">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -555,7 +574,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)userConfirmedFrame:"></a>
                     <a name="//apple_ref/objc/Method/-userConfirmedFrame:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userConfirmedFrame:">-userConfirmedFrame:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userConfirmedFrame:">-userConfirmedFrame:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -600,7 +619,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L116">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -610,7 +629,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)setTorch:"></a>
                     <a name="//apple_ref/objc/Method/-setTorch:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)setTorch:">-setTorch:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)setTorch:">-setTorch:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -654,7 +673,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L123">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L126">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -689,7 +708,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L128">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -724,7 +743,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L134">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -734,7 +753,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)confirmCorrectRetailer:"></a>
                     <a name="//apple_ref/objc/Method/-confirmCorrectRetailer:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)confirmCorrectRetailer:">-confirmCorrectRetailer:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)confirmCorrectRetailer:">-confirmCorrectRetailer:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -778,7 +797,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L142">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -789,9 +808,11 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
               <div class="task-name-container">
                 <a name="/Subclass%20Methods"></a>
                 <a name="//apple_ref/objc/Section/Subclass Methods" class="dashAnchor"></a>
-                <a href="#/Subclass%20Methods">
-                  <h3 class="section-name">Subclass Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Subclass%20Methods"></a>
+                  <h3 class="section-name"><p>Subclass Methods</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -799,7 +820,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)userDistanceChanged:"></a>
                     <a name="//apple_ref/objc/Method/-userDistanceChanged:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userDistanceChanged:">-userDistanceChanged:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)userDistanceChanged:">-userDistanceChanged:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -843,7 +864,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L153">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -853,7 +874,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)didGetFrameStats:"></a>
                     <a name="//apple_ref/objc/Method/-didGetFrameStats:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetFrameStats:">-didGetFrameStats:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetFrameStats:">-didGetFrameStats:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -903,7 +924,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L167">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L170">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -913,7 +934,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)didDetectWrongRetailer:withConfidence:"></a>
                     <a name="//apple_ref/objc/Method/-didDetectWrongRetailer:withConfidence:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didDetectWrongRetailer:withConfidence:">-didDetectWrongRetailer:withConfidence:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didDetectWrongRetailer:withConfidence:">-didDetectWrongRetailer:<wbr>withConfidence:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -970,7 +991,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L176">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L179">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -980,7 +1001,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)didGetFrameResults:"></a>
                     <a name="//apple_ref/objc/Method/-didGetFrameResults:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetFrameResults:">-didGetFrameResults:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetFrameResults:">-didGetFrameResults:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1025,7 +1046,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L185">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1035,7 +1056,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)receiptValidityEstimate:"></a>
                     <a name="//apple_ref/objc/Method/-receiptValidityEstimate:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)receiptValidityEstimate:">-receiptValidityEstimate:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)receiptValidityEstimate:">-receiptValidityEstimate:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1079,7 +1100,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L193">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1089,7 +1110,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)didGetLightingCondition:"></a>
                     <a name="//apple_ref/objc/Method/-didGetLightingCondition:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetLightingCondition:">-didGetLightingCondition:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetLightingCondition:">-didGetLightingCondition:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1134,7 +1155,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L202">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L205">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1144,7 +1165,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                     <code>
                     <a name="/c:objc(cs)BRCameraViewController(im)didGetHorizontalEdges:andBottomEdge:"></a>
                     <a name="//apple_ref/objc/Method/-didGetHorizontalEdges:andBottomEdge:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetHorizontalEdges:andBottomEdge:">-didGetHorizontalEdges:andBottomEdge:</a>
+                    <a class="token" href="#/c:objc(cs)BRCameraViewController(im)didGetHorizontalEdges:andBottomEdge:">-didGetHorizontalEdges:<wbr>andBottomEdge:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1201,7 +1222,7 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.9.1/BlinkReceipt.framework/Headers/BRCameraViewController.h#L212">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.10.0/BlinkReceipt.framework/Headers/BRCameraViewController.h#L215">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1211,8 +1232,8 @@ This will perform some cleanup and then call <code><a href="../Protocols/BRScanR
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-07-13)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2020-08-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

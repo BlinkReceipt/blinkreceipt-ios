@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+///
 @interface BRFrameAttributes : NSObject
 
 /// Indicates whether this frame is blurry

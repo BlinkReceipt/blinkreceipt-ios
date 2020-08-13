@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+///
 typedef NS_ENUM(NSUInteger, BRMissedEarningsLookupResult) {
     BRMissedEarningsProductParticipates,
     BRMissedEarningsProductDoesNotParticipate,
@@ -17,6 +18,7 @@ typedef NS_ENUM(NSUInteger, BRMissedEarningsLookupResult) {
     BRMissedEarningsLookupFailed
 };
 
+///
 @interface BRMissedEarningsBaseViewController : UIViewController
 
 /**

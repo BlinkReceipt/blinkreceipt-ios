@@ -10,6 +10,7 @@
 #import "BRProduct.h"
 #import "BRScanResults.h"
 
+///
 typedef NS_ENUM(NSUInteger, BRErrorCodes) {
     BRErrorInvalidLicenseKey,
     BRErrorFailToGrabImage,

@@ -75,6 +75,26 @@
 @property (strong, nonatomic, readonly) NSString *shippingStatus;
 
 /**
+ *  The prefix found before the product description if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *prodDescPrefix;
+
+/**
+ *  The postfix found after the product description if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *prodDescPostfix;
+
+/**
+ *  The prefix found before the product number if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *prodNumPrefix;
+
+/**
+ *  The postfix found after the product number if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *prodNumPostfix;
+
+/**
  *  Additional product fields
  */
 @property (strong, nonatomic, readonly) NSDictionary *extendedFields;

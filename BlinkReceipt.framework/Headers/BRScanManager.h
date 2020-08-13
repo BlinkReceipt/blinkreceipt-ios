@@ -143,6 +143,7 @@
 
 /**
  * Retrieve resullts from disk or remotely for a specific receipt for custom user corrections flow
+ *
  * @param blinkReceiptId    The receipt id to load from disk
  * @param completion    This callback is invoked once the SDK has attempted to retrieve results for this receipt
  *      * `BRScanResults *results` - The scan results associated with this `blinkReceiptId`
@@ -155,6 +156,7 @@
 
 /**
  * After custom user correction flow, call this method to validate the new results against promotions
+ *
  * @param scanResults   The results object that was obtained from `getResultsForReceiptCorrection:`
  * @param completion    This callback is invoked once validation has been performed
  *      * `BRScanResults *scanResults` - Updated scan results object containing any changes the user made to the products (including adding new products) as well as an updated `qualifiedPromotions` array containing the results of the purchase validation call made after the user's corrections
@@ -166,10 +168,11 @@
 
 
 /**
-* Retrieves targeted and general promotions for current user
-* @param completion    This callback is invoked once validation has been performed
-*      * `NSArray<BRPromotionInfo*>* promos` - An array of promotion info objects for the current user
-*/
-- (void)getPromotionsWithCompletion:(nonnull void(^)(NSArray<BRPromotionInfo*>* _Nullable promos))completion;
+ * Retrieves targeted and general promotions for current user
+ *
+ * @param completion    This callback is invoked once promotions have been retrieved
+ *      * `NSArray<BRPromotionInfo*>* promos` - An array of promotion info objects for the current user
+ */
+- (void)getPromotionsWithCompletion:(nonnull void(^)(NSArray<BRPromotionInfo*> * _Nullable promos))completion;
 
 @end

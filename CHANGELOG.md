@@ -1,4 +1,10 @@
-﻿# 1.9.2
+﻿# 1.10.0
+- Support prefixes and postfixes for product and coupon descriptions and skus
+- Improved screen fraud detection
+- Fix crash in merchant detection
+- Automatic corrections to product descriptions + skus based on historical scanning data
+
+# 1.9.2
 - Add Spanish + French localizations
 - Fix crash in merchant detection
 - Handle scenario of starting missed earnings flow with `BRScanResults` object immediately after scan session

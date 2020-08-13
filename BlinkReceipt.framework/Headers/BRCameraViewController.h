@@ -11,16 +11,19 @@
 #import "BRScanResults.h"
 #import "BRFrameAttributes.h"
 
+///
 typedef NS_ENUM(NSUInteger, BRDistanceStatus) {
     BRDistanceStatusOK,
     BRDistanceStatusTooFar
 };
 
+///
 typedef NS_ENUM(NSUInteger, BRWrongRetailerConfidence) {
     BRWrongRetailerConfidencePhone,
     BRWrongRetailerConfidencePhoneAndProducts
 };
 
+///
 typedef NS_ENUM(NSUInteger, BRLightingCondition) {
     BRLightingConditionTerrible,
     BRLightingConditionLow,

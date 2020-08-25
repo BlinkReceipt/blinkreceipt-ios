@@ -18,7 +18,6 @@ typedef NS_ENUM(NSUInteger, BRMissedEarningsLookupResult) {
     BRMissedEarningsLookupFailed
 };
 
-///
 @interface BRMissedEarningsBaseViewController : UIViewController
 
 /**

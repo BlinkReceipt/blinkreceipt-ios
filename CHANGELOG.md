@@ -1,4 +1,7 @@
-﻿# 1.10.0
+﻿# 1.10.1
+- Fix bug parsing products without prices
+
+# 1.10.0
 - Support prefixes and postfixes for product and coupon descriptions and skus
 - Improved screen fraud detection
 - Fix crash in merchant detection

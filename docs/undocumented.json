@@ -99,6 +99,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
+      "line": 21,
+      "symbol": "BRMissedEarningsBaseViewController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRProduct.h",
       "line": 60,
       "symbol": "BRProduct.priceAfterCoupons",

@@ -95,7 +95,7 @@
 
 
 /**
- *  Initiates a scanning session using your own subclass of `BRCameraViewController`
+ *  Initiates a scanning session using your own subclass of `BRCameraViewController` which is presented as modal from the supplied `UIViewController`
  *
  *  @param customController Your custom subclass of `BRCameraViewController`
  *  @param viewController   The parent view controller from which to display the camera controller modally
@@ -106,6 +106,19 @@
            fromController:(nonnull UIViewController*)viewController
               scanOptions:(nullable BRScanOptions*)scanOptions
              withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
+
+/**
+ *  Initiates a scanning session using your own subclass of `BRCameraViewController` which is pushed from the supplied `UINavigationController`
+ *
+ *  @param customController Your custom subclass of `BRCameraViewController`
+ *  @param viewController   The parent view controller from which to display the camera controller modally
+ *  @param scanOptions      An instance of `BRScanOptions` specifying options for this scanning session
+ *  @param delegate         An instance conforming to `BRScanResultsDelegate`
+ */
+- (void)pushCustomCamera:(nonnull BRCameraViewController*)customController
+       fromNavController:(nonnull UINavigationController*)navCon
+             scanOptions:(nullable BRScanOptions*)scanOptions
+            withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
 /**
  *  Creates a new `MFMailComposeViewController` populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.

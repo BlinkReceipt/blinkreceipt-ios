@@ -161,6 +161,13 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 @property (nonatomic) BOOL enableEdgesAfterUserPhoto;
 
 /**
+ *  Whether the SDK should begin edge detection immediately at the start of the scan session (as opposed to establishing frame quality baselines before starting edge detection)
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL beginEdgesImmediately;
+
+/**
  *  Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, `-[BRCameraViewController didDetectWrongRetailer:withConfidence:]` will be triggered, which allows the client to determine if scanning should continue with the new retailer
  *
  *  Default: NO

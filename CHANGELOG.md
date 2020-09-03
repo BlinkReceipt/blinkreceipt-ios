@@ -1,4 +1,9 @@
-﻿# 1.10.1
+﻿# 1.10.2
+- Ability to push custom camera controller from navigation controller
+- Scan option to start returning edge detection results at beginning of scan
+- Fix bugs in missed earnings validation
+
+# 1.10.1
 - Fix bug parsing products without prices
 
 # 1.10.0

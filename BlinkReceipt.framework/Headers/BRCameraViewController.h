@@ -163,7 +163,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
  *
  *      `contentWidth` - a float indicating what percent (0-100) of the image the receipt appears in
  *
- *      `edgeRect` - a `CGRect` wrapped in `NSNumber` indicating the location of edges found in percentages of image size
+ *      `edgesRect` - a `CGRect` wrapped in `NSNumber` indicating the location of edges found in percentages of image size
  *
  *      `isReceipt` - a `BOOL` wrapped in `NSNumber` indicating whether the current frame is believed to contain a receipt
  */

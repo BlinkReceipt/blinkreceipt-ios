@@ -14,7 +14,7 @@ This is the BlinkReceipt SDK
 
   s.author             = { "Darren Bassman" => "darren.bassman@microblink.com" }
   s.platform     = :ios
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "10.0"
   
   s.source       = { :git => "https://github.com/BlinkReceipt/blinkreceipt-ios.git", :tag => "#{s.version}" }
 

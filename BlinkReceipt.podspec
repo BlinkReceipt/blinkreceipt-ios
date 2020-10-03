@@ -29,4 +29,7 @@ This is the BlinkReceipt SDK
 
   s.user_target_xcconfig = { 'BLINKRECEIPT_VERSION' => s.version }
 
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
 end

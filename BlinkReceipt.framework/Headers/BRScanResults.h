@@ -259,6 +259,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *ereceiptOrderNum;
 
 /**
+ *  For an e-receipt order, this is the order status
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptOrderStatus;
+
+/**
  *  For an Amazon or e-receipt order, this is the raw HTML that was parsed
  */
 @property (strong, nonatomic, readonly) NSString *ereceiptRawHTML;
@@ -282,6 +287,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 *  The point of sale system used for this order, if any
 */
 @property (strong, nonatomic, readonly) NSString *ereceiptPOSSystem;
+
+/**
+ * The internal identifier of this email message from the provider
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptEmailId;
 
 /**
 *  Whether this e-receipt could be authenticated via DKIM or SPF headers

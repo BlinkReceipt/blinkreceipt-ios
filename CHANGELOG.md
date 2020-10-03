@@ -1,4 +1,10 @@
-﻿# 1.10.2
+﻿# 1.11.0
+- Parsing improvements
+- Migrate to AFNetworking 4.0
+- Fix bugs related to `nil` dictionary values
+- Improved screen detection
+
+# 1.10.2
 - Ability to push custom camera controller from navigation controller
 - Scan option to start returning edge detection results at beginning of scan
 - Fix bugs in missed earnings validation

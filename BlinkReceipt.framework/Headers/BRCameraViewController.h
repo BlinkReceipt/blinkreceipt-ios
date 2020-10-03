@@ -111,8 +111,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
 - (void)userCancelledScan;
 
 /**
- *  Call this method to notify the camera controller that the user has confirmed a particular frame. This will mark the frame internally as a user frame
- *  and after the scanning session it will be saved to disk if `BRScanOptions.storeUserFrames` is set
+ *  Call this method to notify the camera controller that the user has confirmed a particular frame. This will mark the frame internally as a user frame which allows it to be saved remotely after the scan session, and also saved to disk if `BRScanOptions.storeUserFrames` is set
  *
  *  @param frameImg     The image the user has confirmed. Should be the same as the image passed to the `readyBlock` of `userSnappedPhotoOnReady:` above
  */

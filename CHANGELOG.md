@@ -1,4 +1,4 @@
-﻿# 1.11.0
+﻿# 1.11.1
 - Parsing improvements
 - Migrate to AFNetworking 4.0
 - Fix bugs related to `nil` dictionary values

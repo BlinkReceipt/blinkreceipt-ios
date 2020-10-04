@@ -11,7 +11,7 @@ Here is a sample barebones `Podfile` which imports the BlinkReceipt pod:
 ```ruby
 #You must include this additional source as the BlinkReceipt pod is hosted in a private spec repository
 source 'https://github.com/BlinkReceipt/PodSpecRepo.git'
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 platform :ios, '9.0'
 

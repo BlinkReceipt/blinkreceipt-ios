@@ -1,4 +1,7 @@
-﻿# 1.11.1
+﻿# 1.12.0
+- Add `BRScanResults.ereceiptComponentEmails` property to support BlinKEReceipt SDK 2.2.0
+
+# 1.11.1
 - Parsing improvements
 - Migrate to AFNetworking 4.0
 - Fix bugs related to `nil` dictionary values

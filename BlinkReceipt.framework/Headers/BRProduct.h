@@ -95,6 +95,11 @@
 @property (strong, nonatomic, readonly) BRStringValue *prodNumPostfix;
 
 /**
+ *  If this product is fuel, this will be the type of fuel (e.g. "Regular", "Unleaded", etc)
+ */
+@property (strong, nonatomic, readonly) NSString *fuelType;
+
+/**
  *  Additional product fields
  */
 @property (strong, nonatomic, readonly) NSDictionary *extendedFields;

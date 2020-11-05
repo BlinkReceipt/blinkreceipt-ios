@@ -1,4 +1,9 @@
-﻿# 1.12.0
+﻿# 1.13.0
+- Add `BRProduct.fuelType` property to identify receipts where fuel was purchased
+- Improvements to merchant detection for fuel receipts
+- Parsing improvements
+
+# 1.12.0
 - Add `BRScanResults.ereceiptComponentEmails` property to support BlinKEReceipt SDK 2.2.0
 
 # 1.11.1

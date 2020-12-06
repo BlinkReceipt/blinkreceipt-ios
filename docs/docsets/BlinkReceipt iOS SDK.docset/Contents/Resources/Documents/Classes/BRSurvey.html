@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BRMissedEarningsLookupResult Enumeration Reference</title>
+    <title>BRSurvey Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/BRMissedEarningsLookupResult" class="dashAnchor"></a>
-    <a title="BRMissedEarningsLookupResult Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Class/BRSurvey" class="dashAnchor"></a>
+    <a title="BRSurvey Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">BlinkReceipt iOS SDK 1.14.0 Docs</a></p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">BlinkReceipt iOS SDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BRMissedEarningsLookupResult Enumeration Reference
+        BRSurvey Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -171,33 +171,43 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BRMissedEarningsLookupResult</h1>
+            <h1>BRSurvey</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">BRMissedEarningsLookupResult</span> <span class="p">{}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurvey</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BRMissedEarningsLookupResult</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRSurvey</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Represents a survey consisting of a series of multiple choice or open ended questions</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L14-L19">Show on GitHub</a>
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L17-L48">Show on GitHub</a>
               </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductParticipates"></a>
-                    <a name="//apple_ref/objc/Case/BRMissedEarningsProductParticipates" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductParticipates">BRMissedEarningsProductParticipates</a>
+                    <a name="/c:objc(cs)BRSurvey(py)slug"></a>
+                    <a name="//apple_ref/objc/Property/slug" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey(py)slug">slug</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -205,23 +215,24 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Identifier for this survey</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsProductParticipates</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">slug</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">productParticipates</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">slug</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L26">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -229,9 +240,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductDoesNotParticipate"></a>
-                    <a name="//apple_ref/objc/Case/BRMissedEarningsProductDoesNotParticipate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsProductDoesNotParticipate">BRMissedEarningsProductDoesNotParticipate</a>
+                    <a name="/c:objc(cs)BRSurvey(py)startDate"></a>
+                    <a name="//apple_ref/objc/Property/startDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey(py)startDate">startDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -239,23 +250,24 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Survey start date, or <code>nil</code> if no start date</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsProductDoesNotParticipate</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">startDate</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">productDoesNotParticipate</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -263,9 +275,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsUPCNotFound"></a>
-                    <a name="//apple_ref/objc/Case/BRMissedEarningsUPCNotFound" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsUPCNotFound">BRMissedEarningsUPCNotFound</a>
+                    <a name="/c:objc(cs)BRSurvey(py)endDate"></a>
+                    <a name="//apple_ref/objc/Property/endDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey(py)endDate">endDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -273,23 +285,24 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Survey end date, or <code>nil</code> if no end date</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsUPCNotFound</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">endDate</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">upcNotFound</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -297,9 +310,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsLookupFailed"></a>
-                    <a name="//apple_ref/objc/Case/BRMissedEarningsLookupFailed" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BRMissedEarningsLookupResult@BRMissedEarningsLookupFailed">BRMissedEarningsLookupFailed</a>
+                    <a name="/c:objc(cs)BRSurvey(py)rewardValue"></a>
+                    <a name="//apple_ref/objc/Property/rewardValue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey(py)rewardValue">rewardValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -307,23 +320,59 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Reward value for participating in survey</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BRMissedEarningsLookupFailed</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">float</span> <span class="n">rewardValue</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">lookupFailed</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rewardValue</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L41">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRSurvey(py)questions"></a>
+                    <a name="//apple_ref/objc/Property/questions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey(py)questions">questions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of questions contained in this survey</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/BRSurveyQuestion.html">BRSurveyQuestion</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">questions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">questions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/BRSurveyQuestion.html">BRSurveyQuestion</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.14.0/BlinkReceipt.framework/Headers/BRSurvey.h#L46">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -510,6 +510,34 @@
       "symbol": "BRSerializable.+objectFromDictionary:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 13,
+      "symbol": "BRSurveyQuestionType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 13,
+      "symbol": "BRSurveyQuestionType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 14,
+      "symbol": "BRSurveyQuestionType.BRSurveyQuestionTypeMultipleChoice",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 15,
+      "symbol": "BRSurveyQuestionType.BRSurveyQuestionTypeOpenEnded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/dpanzer/Projects/blinkreceipt-ios"

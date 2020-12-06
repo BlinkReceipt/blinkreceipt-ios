@@ -49,15 +49,15 @@
 /**
  *  The total price paid for this line item, taking into account quantities, weights, and discounts
  */
-@property (nonatomic, readonly) float totalPrice;
-
+@property (strong, nonatomic, readonly) BRFloatValue *totalPrice;
 
 /**
  *  The total price before any savings were applied to this item (to compute the discount on this item, subtract totalPrice from fullPrice)
  */
-@property (nonatomic, readonly) float fullPrice;
+@property (strong, nonatomic, readonly) BRFloatValue *fullPrice;
 
-@property (nonatomic, readonly) float priceAfterCoupons;
+
+@property (strong, nonatomic, readonly) BRFloatValue *priceAfterCoupons;
 
 /**
  *  An array of any additional lines connected to this product that were scanned (can be above or below). This array can be nil if no lines were found

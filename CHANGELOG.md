@@ -1,4 +1,9 @@
-﻿# 1.13.0
+﻿# 1.14.0
+- Add survey functionality
+- Convert `totalPrice`, `fullPrice`, and `priceAfterCoupons` properties of `BRProduct` to `BRFloatValue` wrapper type
+- Improved scanning accuracy
+
+# 1.13.0
 - Add `BRProduct.fuelType` property to identify receipts where fuel was purchased
 - Improvements to merchant detection for fuel receipts
 - Parsing improvements

@@ -13,6 +13,7 @@
 #import "BRScanResultsDelegate.h"
 #import "BRCameraViewController.h"
 #import "BRPromotionInfo.h"
+#import "BRSurvey.h"
 
 @class MFMailComposeViewController;
 
@@ -187,5 +188,32 @@
  *      * `NSArray<BRPromotionInfo*>* promos` - An array of promotion info objects for the current user
  */
 - (void)getPromotionsWithCompletion:(nonnull void(^)(NSArray<BRPromotionInfo*> * _Nullable promos))completion;
+
+/**
+ * Retrieves surveys for current user
+ *
+ * @param completion    This callback is invoked once surveys have been retrieved
+ *      * `NSArray<BRSurvey*>* promos` - An array of survey objects for the current user
+ */
+- (void)getSurveysWithCompletion:(nonnull void(^)(NSArray<BRSurvey*> * _Nullable surveys))completion;
+
+/**
+ * Displays a given survey using the prepackaged flow
+ *
+ * @param survey            The survey to display
+ * @param viewController    The view controller from which to display the survey
+ * @param completion        This callback is invoked after the user has completed or cancelled the survey
+ *      * `BOOL cancelled` - whether the user cancelled the survey or not
+ */
+- (void)startSurvey:(nonnull BRSurvey*)survey
+ fromViewController:(nonnull UIViewController*)viewController
+     withCompletion:(nullable void(^)(BOOL userCancelled))completion;
+
+/**
+ * When displaying a survey using a custom UI, call this method after the user has completed the survey to post the results
+ *
+ * @param survey    This is the completed `BRSurvey` object containing the user's responses
+ */
+- (void)submitSurveyResults:(nonnull BRSurvey*)survey;
 
 @end

@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addUserResponse:(BRSurveyResponse*)response;
 
 /**
- *  When displaying the survey with a custom UI, after adding the user's response to the current question, call this method to get the next question index to display (since the flow may be dynamic based on the user's responses)
+ *  When displaying the survey with a custom UI, after adding the user's response to the current question, call this method to get the next question index to display (since the flow may be dynamic based on the user's responses). A return value of `-1` indicates there are no further questions.
  */
 - (NSInteger)getNextQuestionIndex;
 

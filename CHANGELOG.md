@@ -1,4 +1,10 @@
-﻿# 1.14.0
+﻿# 1.15.0
+- Fix 2021 date bug
+- Fix OCR confidences bug
+- Ability to disable prod intel by passing in a null key
+- Fix various prod intel edge cases
+
+# 1.14.0
 - Add survey functionality
 - Convert `totalPrice`, `fullPrice`, and `priceAfterCoupons` properties of `BRProduct` to `BRFloatValue` wrapper type
 - Improved scanning accuracy

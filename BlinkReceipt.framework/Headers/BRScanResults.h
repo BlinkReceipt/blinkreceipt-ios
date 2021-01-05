@@ -17,6 +17,7 @@
 #import "BRShipment.h"
 #import "BRValue.h"
 #import "BRSerializable.h"
+#import "BRSurvey.h"
 
 /**
  *  Represents a single method of identifying the merchant on the receipt
@@ -247,6 +248,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  If promotion validation is enabled, this will contain all the promotions that were NOT validated
  */
 @property (strong, nonatomic, readonly) NSArray<BRPromotion*> *unqualifiedPromotions;
+
+/**
+*  If promotion validation is enabled, this will contain all the surveys that were validated
+*/
+@property (strong, nonatomic, readonly) NSArray<BRSurvey*> *qualifiedSurveys;
 
 /**
  *  Additional product fields

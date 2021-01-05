@@ -450,28 +450,28 @@
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResults.h",
-      "line": 25,
+      "line": 26,
       "symbol": "BRMerchantSource.BRMerchantSourcePhone",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResults.h",
-      "line": 26,
+      "line": 27,
       "symbol": "BRMerchantSource.BRMerchantSourceStoreId",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResults.h",
-      "line": 27,
+      "line": 28,
       "symbol": "BRMerchantSource.BRMerchantSourceTaxId",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.framework/Headers/BRScanResults.h",
-      "line": 28,
+      "line": 29,
       "symbol": "BRMerchantSource.BRMerchantSourceAddress",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"

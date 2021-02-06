@@ -17,7 +17,7 @@
     <a title="BRMissedEarningsBaseViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK 1.15.0 Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.16.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right">
           <form role="search" action="../search.json">
@@ -181,9 +181,14 @@
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRMissedEarningsBaseViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
 
 <span class="cm">/**
-*  This property restricts the region in which barcode will be detected. The parametesr are specified as percentages of the view size. The default value is `(0.0, 0.0, 1.0, 1.0)`
-*/</span>
+ *  This property restricts the region in which barcode will be detected. The parametesr are specified as percentages of the view size. The default value is `(0.0, 0.0, 1.0, 1.0)`
+ */</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">scanningRegion</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Due to differences in barcode lengths, specifying the country code helps determine the correct barcode length the SDK should detect
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">countryCode</span><span class="p">;</span>
 
 <span class="cm">/**
  * Override this method to be notified when a barcode is detected. Supports 12 digit and 6 digit UPC's.
@@ -222,7 +227,7 @@
               </div>
             
               <div class="slightly-smaller">
-                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L54">Show on GitHub</a>
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L59">Show on GitHub</a>
               </div>
           </section>
           <section class="section task-group-section">
@@ -258,7 +263,42 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L26">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L26">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRMissedEarningsBaseViewController(py)countryCode"></a>
+                    <a name="//apple_ref/objc/Property/countryCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRMissedEarningsBaseViewController(py)countryCode">countryCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Due to differences in barcode lengths, specifying the country code helps determine the correct barcode length the SDK should detect</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">countryCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">countryCode</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -293,7 +333,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L31">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -354,7 +394,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L40">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -408,7 +448,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L47">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -443,7 +483,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.15.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L52">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.16.0/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -453,7 +493,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-01-04)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-02-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

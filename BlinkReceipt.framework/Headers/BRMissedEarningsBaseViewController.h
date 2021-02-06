@@ -21,9 +21,14 @@ typedef NS_ENUM(NSUInteger, BRMissedEarningsLookupResult) {
 @interface BRMissedEarningsBaseViewController : UIViewController
 
 /**
-*  This property restricts the region in which barcode will be detected. The parametesr are specified as percentages of the view size. The default value is `(0.0, 0.0, 1.0, 1.0)`
-*/
+ *  This property restricts the region in which barcode will be detected. The parametesr are specified as percentages of the view size. The default value is `(0.0, 0.0, 1.0, 1.0)`
+ */
 @property (nonatomic) CGRect scanningRegion;
+
+/**
+ *  Due to differences in barcode lengths, specifying the country code helps determine the correct barcode length the SDK should detect
+ */
+@property (nonatomic, strong) NSString *countryCode;
 
 /**
  * Override this method to be notified when a barcode is detected. Supports 12 digit and 6 digit UPC's.

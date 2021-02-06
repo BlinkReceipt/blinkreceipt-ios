@@ -1,4 +1,11 @@
-﻿# 1.15.0
+﻿# 1.16.0
+- Parsing improvements
+- Expanded support for retailers that print part of the receipt in inverted colors
+- Add `countryCode` parameter to receipt correction flow to account for differences in barcode lengths
+- Fix prod intel bug failing some requests with many products
+- Fix crash in duplicate detection
+
+# 1.15.0
 - Fix 2021 date bug
 - Fix OCR confidences bug
 - Ability to disable prod intel by passing in a null key

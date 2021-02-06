@@ -143,6 +143,7 @@
  *
  *  @param blinkReceiptId      The receipt id of a receipt scanned within `daysToStoreReceiptData` days
  *  @param vc                  The view controller from which to show this modal
+ *  @param countryCode         Current country (this helps with barcode scanning)
  *  @param customFont          Pass a non-null `UIFont` to style all of the elements in this flow
  *  @param completion          This callback is invoked when the correction flow ends
  *
@@ -152,6 +153,7 @@
  */
 - (void)startReceiptCorrection:(nonnull NSString*)blinkReceiptId
             fromViewController:(nonnull UIViewController*)vc
+               withCountryCode:(nullable NSString*)countryCode
                withCustomFont:(nullable UIFont*)customFont
                 withCompletion:(nullable void(^)(BRScanResults* _Nullable, NSError* _Nullable))completion;
 

@@ -262,7 +262,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 /**
  *  For an Amazon or e-receipt order, this is the order number
  */
-@property (strong, nonatomic, readonly) NSString *ereceiptOrderNum;
+@property (strong, nonatomic, readonly) NSString *ereceiptOrderNumber;
 
 /**
  *  For an e-receipt order, this is the order status
@@ -273,6 +273,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  For an Amazon or e-receipt order, this is the raw HTML that was parsed
  */
 @property (strong, nonatomic, readonly) NSString *ereceiptRawHTML;
+
+/**
+ *  The name of the email provider from which this e-receipt was obtained
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptEmailProvider;
 
 /**
  *  For e-receipt orders, if aggregation is turned on, this property will contain the scan results objects from each component email for a given order. However, please note that for emails related to the same order that were originally seen in a different scrape session, the only property of the `BRScanResults` object that will be populated is the `blinkReceiptId`

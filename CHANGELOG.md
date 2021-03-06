@@ -1,4 +1,9 @@
-﻿# 1.16.0
+﻿# 1.17.0
+- Add additional barcode formats for missed earnings scanning in ZA
+- Safety check to address infrequent crash
+- Improved product intelligence for quick service retailers
+
+# 1.16.0
 - Parsing improvements
 - Expanded support for retailers that print part of the receipt in inverted colors
 - Add `countryCode` parameter to receipt correction flow to account for differences in barcode lengths

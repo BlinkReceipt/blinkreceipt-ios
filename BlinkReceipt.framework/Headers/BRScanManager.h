@@ -180,6 +180,7 @@
  *      * `NSError *error` - If any error occurred during validation this will be non-null
  */
 - (void)submitUpdatedResultsForValidation:(BRScanResults* _Nonnull)scanResults
+                          withCountryCode:(nullable NSString*)countryCode
                            withCompletion:(nullable void(^)(BRScanResults* _Nonnull, NSError* _Nullable))completion;
 
 

@@ -1,4 +1,11 @@
-﻿# 1.17.0
+﻿# 1.18.1
+- Add `countryCode` param for custom missed earnings flow
+- Ensure correct country code is used for product intelligence during missed earnings
+- Fix rare crash due to race condition
+- Additional prod intel properties: `sector`, `department`, `majorCategory`, `subCategory`, `attributes`, `itemType`
+- Improve logo detection for Target and other retailers
+
+# 1.17.0
 - Add additional barcode formats for missed earnings scanning in ZA
 - Safety check to address infrequent crash
 - Improved product intelligence for quick service retailers

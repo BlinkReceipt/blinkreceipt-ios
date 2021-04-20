@@ -121,9 +121,29 @@
 @property (strong, nonatomic, readonly) NSString *brand;
 
 /**
- *  The product category
+ *  The product category (this is a legacy property - it is recommended to use `BRProduct.sector`, `BRProduct.department`, `BRProduct.majorCategory` and `BRProduct.subCategory` instead
  */
 @property (strong, nonatomic, readonly) NSString *category;
+
+/**
+ * The product sector (highest level of taxonomy)
+ */
+@property (strong, nonatomic, readonly) NSString *sector;
+
+/**
+ * The product department
+ */
+@property (strong, nonatomic, readonly) NSString *department;
+
+/**
+ * The product major category
+ */
+@property (strong, nonatomic, readonly) NSString *majorCategory;
+
+/**
+ * The product sub category
+ */
+@property (strong, nonatomic, readonly) NSString *subCategory;
 
 /**
  *  The product size
@@ -134,6 +154,16 @@
  *  The product UPC
  */
 @property (strong, nonatomic, readonly) NSString *upc;
+
+/**
+ * The product item type
+ */
+@property (strong, nonatomic, readonly) NSString *itemType;
+
+/**
+ * Zero or more attributes related to the product. Each attribute is a dictionary with a single key-value pair, representing the name of the attribute and its value
+ */
+@property (strong, nonatomic, readonly) NSArray<NSDictionary*> *attributes;
 
 /**
  *  If this product is part of a different product's `possibleProducts` array, then this property indicates an estimate of how likely this particular possible product is to match the description of the parent `BRProduct`

@@ -220,6 +220,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL subtotalMatches;
 
 /**
+ * The currency for this receipt, if identified
+ */
+@property (strong, nonatomic, readonly) NSString *currencyCode;
+
+/**
  *  Indicates how many products were still awaiting product intelligence results when the scan session ended
  */
 @property (nonatomic, readonly) NSInteger productsPendingLookup;
@@ -280,6 +285,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *ereceiptEmailProvider;
 
 /**
+ * The sender address for this e-receipt
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptMerchantEmail;
+
+/**
+ * The subject of the e-receipt email
+ */
+@property (strong, nonatomic, readonly) NSString *ereceiptEmailSubject;
+
+/**
  *  For e-receipt orders, if aggregation is turned on, this property will contain the scan results objects from each component email for a given order. However, please note that for emails related to the same order that were originally seen in a different scrape session, the only property of the `BRScanResults` object that will be populated is the `blinkReceiptId`
  */
 @property (strong, nonatomic, readonly) NSArray<BRScanResults*> *ereceiptComponentEmails;
@@ -308,6 +323,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  * The internal identifier of this email message from the provider
  */
 @property (strong, nonatomic, readonly) NSString *ereceiptEmailId;
+
+/**
+ * The shipping costs for this e-receipt, if any
+ */
+@property (nonatomic, readonly) float ereceiptShippingCosts;
 
 /**
 *  Whether this e-receipt could be authenticated via DKIM or SPF headers

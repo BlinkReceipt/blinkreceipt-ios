@@ -1,4 +1,7 @@
-﻿# 1.18.1
+﻿# 1.19.0
+- Alleviate memory consumption on iPhone 6 and below
+
+# 1.18.1
 - Add `countryCode` param for custom missed earnings flow
 - Ensure correct country code is used for product intelligence during missed earnings
 - Fix rare crash due to race condition

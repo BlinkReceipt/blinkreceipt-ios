@@ -112,7 +112,7 @@
  *  Initiates a scanning session using your own subclass of `BRCameraViewController` which is pushed from the supplied `UINavigationController`
  *
  *  @param customController Your custom subclass of `BRCameraViewController`
- *  @param viewController   The parent view controller from which to display the camera controller modally
+ *  @param navCon   The navigation controller from which to push the camera controller
  *  @param scanOptions      An instance of `BRScanOptions` specifying options for this scanning session
  *  @param delegate         An instance conforming to `BRScanResultsDelegate`
  */
@@ -174,6 +174,7 @@
  * After custom user correction flow, call this method to validate the new results against promotions
  *
  * @param scanResults   The results object that was obtained from `getResultsForReceiptCorrection:`
+ * @param countryCode The country code to use for product intelligence on the updated results (default is @"US")
  * @param completion    This callback is invoked once validation has been performed
  *      * `BRScanResults *scanResults` - Updated scan results object containing any changes the user made to the products (including adding new products) as well as an updated `qualifiedPromotions` array containing the results of the purchase validation call made after the user's corrections
  *

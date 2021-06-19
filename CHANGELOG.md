@@ -1,4 +1,8 @@
-﻿# 1.19.0
+﻿# 1.20.0
+- Parsing improvements
+- Support prod intel for subproducts
+
+# 1.19.0
 - Alleviate memory consumption on iPhone 6 and below
 
 # 1.18.1

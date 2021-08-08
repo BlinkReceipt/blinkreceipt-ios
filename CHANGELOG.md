@@ -1,4 +1,7 @@
-﻿# 1.20.0
+﻿# 1.21.1
+- Parsing improvements
+
+# 1.20.0
 - Parsing improvements
 - Support prod intel for subproducts
 

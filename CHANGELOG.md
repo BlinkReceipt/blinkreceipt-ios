@@ -1,5 +1,6 @@
 ﻿# 1.21.2
-- Diagnostic for crash
+- Improved stack traces
+- Fix for parser crash and infinite loop
 
 # 1.21.1
 - Parsing improvements

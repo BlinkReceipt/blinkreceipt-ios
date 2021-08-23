@@ -1,4 +1,7 @@
-﻿# 1.21.1
+﻿# 1.21.2
+- Diagnostic for crash
+
+# 1.21.1
 - Parsing improvements
 
 # 1.20.0

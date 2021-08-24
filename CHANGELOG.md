@@ -5,6 +5,9 @@
 # 1.21.1
 - Parsing improvements
 
+# 1.20.1
+- Rebuild of 1.21.2 for compatibility with older BlinkEReceipt SDKs
+
 # 1.20.0
 - Parsing improvements
 - Support prod intel for subproducts

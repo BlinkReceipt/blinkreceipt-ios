@@ -17,7 +17,7 @@
     <a title="BRProduct Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK 1.21.2 Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.22.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right">
           <form role="search" action="../search.json">
@@ -102,16 +102,10 @@
                 <a href="../Classes/BRStringValue.html">BRStringValue</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/BRSurvey.html">BRSurvey</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/BRSurveyResponse.html">BRSurveyResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/BRValue.html">BRValue</a>
@@ -119,34 +113,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Enums.html">Enumerations</a>
+            <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/BRCouponType.html">BRCouponType</a>
+                <a href="../Constants.html#/c:@NS_ASSUME_NONNULL_BEGIN">NS_ASSUME_NONNULL_BEGIN</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/BRDistanceStatus.html">BRDistanceStatus</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRErrorCodes.html">BRErrorCodes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRLightingCondition.html">BRLightingCondition</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRMerchantSource.html">BRMerchantSource</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/WFRetailerId.html">WFRetailerId</a>
+                <a href="../Constants.html#/c:@qualifications">qualifications</a>
               </li>
             </ul>
           </li>
@@ -162,10 +135,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+                <a href="../Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
               </li>
             </ul>
           </li>
@@ -177,20 +150,15 @@
             <h1>BRProduct</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRProduct</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
             <p>Describes one product on a receipt</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L18-L221">Show on GitHub</a>
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L18-L221">Show on GitHub</a>
               </div>
           </section>
           <section class="section task-group-section">
@@ -228,14 +196,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">productNumber</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">productNumber</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L27">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -263,14 +226,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">productDescription</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">productDescription</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L32">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -298,14 +256,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span> <span class="o">*</span><span class="n">quantity</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L37">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -333,14 +286,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span> <span class="o">*</span><span class="n">unitPrice</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">unitPrice</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L42">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -368,14 +316,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">unitOfMeasure</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">unitOfMeasure</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L47">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L47">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -403,14 +346,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span> <span class="o">*</span><span class="n">totalPrice</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalPrice</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L52">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -438,14 +376,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span> <span class="o">*</span><span class="n">fullPrice</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fullPrice</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L57">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -472,49 +405,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span> <span class="o">*</span><span class="n">priceAfterCoupons</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">priceAfterCoupons</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRFloatValue.html">BRFloatValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BRProduct(py)additionalLines"></a>
-                    <a name="//apple_ref/objc/Property/additionalLines" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRProduct(py)additionalLines">additionalLines</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of any additional lines connected to this product that were scanned (can be above or below). This array can be nil if no lines were found</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/BRProductAdditionalLine.html">BRProductAdditionalLine</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">additionalLines</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">additionalLines</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/BRProductAdditionalLine.html">BRProductAdditionalLine</a></span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L65">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -539,17 +432,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isVoided</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isVoided</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="n">isVoided</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L70">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -574,17 +462,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">shippingStatus</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shippingStatus</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">shippingStatus</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L75">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L75">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -612,14 +495,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">prodDescPrefix</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">prodDescPrefix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L80">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -647,14 +525,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">prodDescPostfix</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">prodDescPostfix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L85">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -682,14 +555,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">prodNumPrefix</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">prodNumPrefix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L90">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L90">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -717,14 +585,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BRStringValue.html">BRStringValue</a></span> <span class="o">*</span><span class="n">prodNumPostfix</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">prodNumPostfix</span><span class="p">:</span> <span class="kt"><a href="../Classes/BRStringValue.html">BRStringValue</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L95">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -749,17 +612,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">fuelType</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fuelType</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">fuelType</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L100">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -784,17 +642,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">extendedFields</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">extendedFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">extendedFields</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L105">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -832,17 +685,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">productName</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">productName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">productName</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L116">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -867,17 +715,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">brand</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">brand</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">brand</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L121">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L121">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -902,17 +745,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">category</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">category</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L126">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L126">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -937,17 +775,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">sector</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sector</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">sector</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L131">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,17 +805,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">department</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">department</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">department</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L136">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1007,17 +835,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">majorCategory</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">majorCategory</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">majorCategory</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L141">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L141">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1042,17 +865,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">subCategory</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subCategory</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">subCategory</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L146">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1077,17 +895,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">size</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">size</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L151">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1112,17 +925,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">upc</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">upc</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">upc</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L156">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1147,52 +955,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">itemType</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">itemType</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">itemType</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L161">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BRProduct(py)attributes"></a>
-                    <a name="//apple_ref/objc/Property/attributes" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRProduct(py)attributes">attributes</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Zero or more attributes related to the product. Each attribute is a dictionary with a single key-value pair, representing the name of the attribute and its value</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSDictionary</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">attributes</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L166">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L161">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1210,7 +978,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If this product is part of a different product&rsquo;s <code><a href="../Classes/BRProduct.html#/c:objc(cs)BRProduct(py)possibleProducts">possibleProducts</a></code> array, then this property indicates an estimate of how likely this particular possible product is to match the description of the parent <code>BRProduct</code></p>
+                        <p>If this product is part of a different product&rsquo;s <code>possibleProducts</code> array, then this property indicates an estimate of how likely this particular possible product is to match the description of the parent <code>BRProduct</code></p>
 
                       </div>
                       <div class="declaration">
@@ -1220,14 +988,9 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">float</span> <span class="n">probability</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">probability</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L171">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L171">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1252,87 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">imgUrl</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">imgUrl</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">imgUrl</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L176">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BRProduct(py)possibleProducts"></a>
-                    <a name="//apple_ref/objc/Property/possibleProducts" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRProduct(py)possibleProducts">possibleProducts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If product intelligence is unable to return an exact product match, it may return an array of possible products. Each of these will have only the above product intelligence properties populated.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">BRProduct</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">possibleProducts</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">possibleProducts</span><span class="p">:</span> <span class="p">[</span><span class="kt">BRProduct</span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L181">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BRProduct(py)subProducts"></a>
-                    <a name="//apple_ref/objc/Property/subProducts" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BRProduct(py)subProducts">subProducts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An array of sub products tied to the current product, if any. Generally only populated for restaurants</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">BRProduct</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">subProducts</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subProducts</span><span class="p">:</span> <span class="p">[</span><span class="kt">BRProduct</span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L186">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L176">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1357,17 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">userAdded</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userAdded</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="n">userAdded</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L191">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1392,17 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">userModified</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userModified</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="n">userModified</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L196">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1427,17 +1105,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isSensitive</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isSensitive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="n">isSensitive</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L201">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L201">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1463,17 +1136,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userCorrectedBrand</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">brand</span>
-                       <span class="nf">upc</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">upc</span>
-               <span class="nf">productName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">productName</span>
-                  <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">imageUrl</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userCorrectedBrand</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">brand</span>
+                       <span class="nf">upc</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">upc</span>
+               <span class="nf">productName</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">productName</span>
+                  <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">imageUrl</span>
                 <span class="nf">totalPrice</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">totalPrice</span>
                   <span class="nf">quantity</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quantity</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userCorrectedBrand</span><span class="p">(</span><span class="n">_</span> <span class="nv">brand</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">upc</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">productName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">totalPrice</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1557,7 +1225,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.21.2/BlinkReceipt.framework/Headers/BRProduct.h#L214-L219">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L214-L219">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1567,7 +1235,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-08-23)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-09-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

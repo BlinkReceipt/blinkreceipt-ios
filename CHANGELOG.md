@@ -1,4 +1,7 @@
-﻿# 1.21.2
+﻿# 1.22.0
+- Move to `XCFramework` packaging to support M1 processors
+
+# 1.21.2
 - Improved stack traces
 - Fix for parser crash and infinite loop
 

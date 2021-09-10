@@ -18,7 +18,7 @@ platform :ios, '9.0'
 target 'YourTarget' do
   use_frameworks!
   
-  pod 'BlinkReceipt', '~> 1.8' 
+  pod 'BlinkReceipt', '~> 1.22' 
 end
 ```
 
@@ -33,15 +33,15 @@ After editing your `Podfile`, run `pod install` and then make sure to open the `
 binary "https://raw.githubusercontent.com/BlinkReceipt/blinkreceipt-ios/master/BlinkReceiptStatic.json" ~> 1.8
 ```
 
-After editing your `Cartfile`, run `carthage update` and then add the framework to your project as described in the Quick Start above
+After editing your `Cartfile`, run `carthage update --use-xcframeworks` and then add the framework to your project as described in the Quick Start above
 
 ## Standalone Installation
 
 If you do not use a dependency manager:
 
 - Download the latest release from the [Releases](https://github.com/BlinkReceipt/blinkreceipt-ios/releases) tab
-- Unzip and drag `BlinkReceiptStatic.framework` into your XCode project
-- In your target's settings, in the General tab, scroll down to `Frameworks, Libraries, and Embedded Content` and change the `Embed` value for `BlinkReceiptStatic.framework` to `Embed & Sign`
+- Unzip and drag `BlinkReceiptStatic.xcframework` into your XCode project
+- In your target's settings, in the General tab, scroll down to `Frameworks, Libraries, and Embedded Content` and change the `Embed` value for `BlinkReceiptStatic.xcframework` to `Embed & Sign`
 
 
 ## Integration

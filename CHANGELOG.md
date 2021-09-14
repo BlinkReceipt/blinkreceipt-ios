@@ -8,6 +8,9 @@
 # 1.21.1
 - Parsing improvements
 
+# 1.20.2
+- Fix parser crashes
+
 # 1.20.1
 - Rebuild of 1.21.2 for compatibility with older BlinkEReceipt SDKs
 

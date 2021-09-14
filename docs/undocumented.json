@@ -2,37 +2,100 @@
   "warnings": [
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 18,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 16,
+      "symbol": "BRDistanceStatus.BRDistanceStatusOK",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 24,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 17,
+      "symbol": "BRDistanceStatus.BRDistanceStatusTooFar",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 31,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 22,
+      "symbol": "BRWrongRetailerConfidence.BRWrongRetailerConfidencePhone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 23,
+      "symbol": "BRWrongRetailerConfidence.BRWrongRetailerConfidencePhoneAndProducts",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 28,
+      "symbol": "BRLightingCondition.BRLightingConditionTerrible",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 29,
+      "symbol": "BRLightingCondition.BRLightingConditionLow",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 30,
+      "symbol": "BRLightingCondition.BRLightingConditionGood",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCoupon.h",
-      "line": 18,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 15,
+      "symbol": "BRCouponType.BRCouponTypeUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCoupon.h",
+      "line": 16,
+      "symbol": "BRCouponType.BRCouponTypeStore",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCoupon.h",
+      "line": 17,
+      "symbol": "BRCouponType.BRCouponTypeMfgr",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
-      "line": 19,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 15,
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductParticipates",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
+      "line": 16,
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsProductDoesNotParticipate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
+      "line": 17,
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsUPCNotFound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h",
+      "line": 18,
+      "symbol": "BRMissedEarningsLookupResult.BRMissedEarningsLookupFailed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
@@ -51,30 +114,394 @@
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRPromotion.h",
-      "line": 61,
-      "symbol": "qualifications",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "line": 13,
+      "symbol": "BRPromotionQualification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
-      "line": 63,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 16,
+      "symbol": "WFRetailerId.WFRetailerUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 17,
+      "symbol": "WFRetailerId.WFRetailerAcme",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 18,
+      "symbol": "WFRetailerId.WFRetailerBJSWholesale",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 19,
+      "symbol": "WFRetailerId.WFRetailerCostco",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 20,
+      "symbol": "WFRetailerId.WFRetailerCVS",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 21,
+      "symbol": "WFRetailerId.WFRetailerDuaneReade",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 22,
+      "symbol": "WFRetailerId.WFRetailerFredMeyer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 23,
+      "symbol": "WFRetailerId.WFRetailerHEB",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 24,
+      "symbol": "WFRetailerId.WFRetailerJewelOsco",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 25,
+      "symbol": "WFRetailerId.WFRetailerKroger",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 26,
+      "symbol": "WFRetailerId.WFRetailerMeijer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 27,
+      "symbol": "WFRetailerId.WFRetailerMilitaryCommissary",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 28,
+      "symbol": "WFRetailerId.WFRetailerPublix",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 29,
+      "symbol": "WFRetailerId.WFRetailerSamsClub",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 30,
+      "symbol": "WFRetailerId.WFRetailerShaws",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 31,
+      "symbol": "WFRetailerId.WFRetailerStarMarket",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 32,
+      "symbol": "WFRetailerId.WFRetailerTarget",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 33,
+      "symbol": "WFRetailerId.WFRetailerWalgreens",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 34,
+      "symbol": "WFRetailerId.WFRetailerWalmart",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 35,
+      "symbol": "WFRetailerId.WFRetailerWinco",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 36,
+      "symbol": "WFRetailerId.WFRetailerShoprite",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 37,
+      "symbol": "WFRetailerId.WFRetailerWinnDixie",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 38,
+      "symbol": "WFRetailerId.WFRetailerWegmans",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 39,
+      "symbol": "WFRetailerId.WFRetailerWholeFoods",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 40,
+      "symbol": "WFRetailerId.WFRetailerHyVee",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 41,
+      "symbol": "WFRetailerId.WFRetailerSprouts",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 42,
+      "symbol": "WFRetailerId.WFRetailerAlbertsons",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 43,
+      "symbol": "WFRetailerId.WFRetailerSafeway",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 44,
+      "symbol": "WFRetailerId.WFRetailerGiant",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 45,
+      "symbol": "WFRetailerId.WFRetailerStopNShop",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 46,
+      "symbol": "WFRetailerId.WFRetailerHarrisTeeter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 47,
+      "symbol": "WFRetailerId.WFRetailerFrys",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 48,
+      "symbol": "WFRetailerId.WFRetailerSmiths",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 49,
+      "symbol": "WFRetailerId.WFRetailerBakers",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 50,
+      "symbol": "WFRetailerId.WFRetailerOwens",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 51,
+      "symbol": "WFRetailerId.WFRetailerPayLess",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 52,
+      "symbol": "WFRetailerId.WFRetailerGerbes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 53,
+      "symbol": "WFRetailerId.WFRetailerJayC",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 54,
+      "symbol": "WFRetailerId.WFRetailerRulerFoods",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 55,
+      "symbol": "WFRetailerId.WFRetailerQFC",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 56,
+      "symbol": "WFRetailerId.WFRetailerCityMarket",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 57,
+      "symbol": "WFRetailerId.WFRetailerFood4Less",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 58,
+      "symbol": "WFRetailerId.WFRetailerDillons",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 59,
+      "symbol": "WFRetailerId.WFRetailerRalphs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 60,
+      "symbol": "WFRetailerId.WFRetailerKingSoopers",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 61,
+      "symbol": "WFRetailerId.WFRetailerWalmartQR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h",
+      "line": 62,
+      "symbol": "WFRetailerId.WFRetailerFoodsCo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResults.h",
-      "line": 40,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 26,
+      "symbol": "BRMerchantSource.BRMerchantSourcePhone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResults.h",
+      "line": 27,
+      "symbol": "BRMerchantSource.BRMerchantSourceStoreId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResults.h",
+      "line": 28,
+      "symbol": "BRMerchantSource.BRMerchantSourceTaxId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResults.h",
+      "line": 29,
+      "symbol": "BRMerchantSource.BRMerchantSourceAddress",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
-      "line": 19,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 15,
+      "symbol": "BRErrorCodes.BRErrorInvalidLicenseKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
+      "line": 16,
+      "symbol": "BRErrorCodes.BRErrorFailToGrabImage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
+      "line": 17,
+      "symbol": "BRErrorCodes.BRErrorFailToWriteToDisk",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h",
+      "line": 18,
+      "symbol": "BRErrorCodes.BRErrorCameraPermission",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
@@ -85,31 +512,31 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurvey.h",
-      "line": 72,
-      "symbol": "NS_ASSUME_NONNULL_BEGIN",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 13,
+      "symbol": "BRSurveyQuestionType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
-      "line": 16,
-      "symbol": "",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "line": 13,
+      "symbol": "BRSurveyQuestionType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
-      "line": 34,
-      "symbol": "NS_ENUM",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "line": 14,
+      "symbol": "BRSurveyQuestionType.BRSurveyQuestionTypeMultipleChoice",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyResponse.h",
-      "line": 29,
-      "symbol": "NS_ASSUME_NONNULL_BEGIN",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h",
+      "line": 15,
+      "symbol": "BRSurveyQuestionType.BRSurveyQuestionTypeOpenEnded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     }
   ],

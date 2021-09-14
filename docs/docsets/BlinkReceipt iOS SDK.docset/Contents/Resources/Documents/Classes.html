@@ -102,10 +102,16 @@
                 <a href="Classes/BRStringValue.html">BRStringValue</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/BRSurvey.html">BRSurvey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BRSurveyResponse.html">BRSurveyResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BRValue.html">BRValue</a>
@@ -113,13 +119,34 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Constants.html">Constants</a>
+            <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@NS_ASSUME_NONNULL_BEGIN">NS_ASSUME_NONNULL_BEGIN</a>
+                <a href="Enums/BRCouponType.html">BRCouponType</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@qualifications">qualifications</a>
+                <a href="Enums/BRDistanceStatus.html">BRDistanceStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRErrorCodes.html">BRErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRLightingCondition.html">BRLightingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRMerchantSource.html">BRMerchantSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/WFRetailerId.html">WFRetailerId</a>
               </li>
             </ul>
           </li>
@@ -135,10 +162,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
+            <a href="Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+                <a href="Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -175,7 +202,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCameraViewController</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCameraViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -206,7 +233,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCoupon</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCoupon</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -236,7 +263,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFrameAttributes</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFrameAttributes</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -290,7 +317,7 @@
  *      * `BRMissedEarningsLookupResult lookupResult` - The status of the lookup indicating whether the supplied UPC participates in the program, does not participate, was not found, or if the lookup failed
  *      * `NSDictionary *productInfo` - If the UPC was found, this dictionary contains information about the product. The keys are: `productName`, `brand`, `image_url`, and `brand_participates`, which is a boolean indicating whether this product's brand is part of the program. This helps identify scenarios where some products in a brand participate in the program, but the provided UPC does not. Additionally a `message` key which can contain a custom message for a given product
  */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BRMissedEarningsLookupResult</span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a></span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
 
 <span class="cm">/**
  *  Toggle the status of the torch
@@ -335,7 +362,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPaymentMethod</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPaymentMethod</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -366,7 +393,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -397,7 +424,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProductAdditionalLine</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProductAdditionalLine</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -428,7 +455,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotion</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotion</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -459,7 +486,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotionInfo</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotionInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -490,7 +517,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanManager</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -521,7 +548,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -552,7 +579,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanResults</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanResults</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -583,12 +610,43 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRShipment</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRShipment</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRSurvey"></a>
+                    <a name="//apple_ref/objc/Class/BRSurvey" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey">BRSurvey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a survey consisting of a series of multiple choice or open ended questions</p>
+
+                        <a href="Classes/BRSurvey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurvey</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurvey.h#L17-L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -614,7 +672,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyAnswer</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyAnswer</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -645,12 +703,43 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyQuestion</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyQuestion</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h#L23-L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRSurveyResponse"></a>
+                    <a name="//apple_ref/objc/Class/BRSurveyResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurveyResponse">BRSurveyResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a user response to a survey question</p>
+
+                        <a href="Classes/BRSurveyResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyResponse</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.22.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyResponse.h#L16-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -676,7 +765,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRValue</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRValue</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -784,7 +873,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-09-02)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-09-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -1,4 +1,7 @@
-﻿# 1.22.0
+﻿# 1.22.1
+- Parsing improvements
+
+# 1.22.0
 - Move to `XCFramework` packaging to support M1 processors
 
 # 1.21.2

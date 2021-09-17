@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.20.2"
+  s.version      = "1.22.1"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ This is the BlinkReceipt SDK
   
   s.source       = { :git => "https://github.com/BlinkReceipt/blinkreceipt-ios.git", :tag => "#{s.version}" }
 
-  s.vendored_frameworks = ["BlinkReceipt.framework"]
+  s.vendored_frameworks = ["BlinkReceipt.xcframework"]
   
   s.dependency 'AFNetworking/NSURLSession', '~> 4.0'
   s.dependency 'libextobjc', '~> 0.4'
@@ -28,8 +28,5 @@ This is the BlinkReceipt SDK
   s.dependency 'CHCSVParser', '~> 2.1'
 
   s.user_target_xcconfig = { 'BLINKRECEIPT_VERSION' => s.version }
-
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end

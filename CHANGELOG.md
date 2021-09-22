@@ -11,6 +11,9 @@
 # 1.21.1
 - Parsing improvements
 
+# 1.20.3
+- Fix parser crashes
+
 # 1.20.2
 - Fix parser crashes
 

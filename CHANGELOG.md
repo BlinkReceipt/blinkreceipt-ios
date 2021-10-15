@@ -1,4 +1,8 @@
-﻿# 1.22.1
+﻿# 1.23.0
+- Support XCFramework build of `BlinkEReceipt`
+- Fix rare crashes
+
+# 1.22.1
 - Parsing improvements
 
 # 1.22.0

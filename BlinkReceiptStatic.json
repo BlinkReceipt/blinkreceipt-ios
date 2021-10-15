@@ -29,5 +29,6 @@
         "1.21.1": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.21.1/BlinkReceiptStatic.framework-1.21.1.zip",
         "1.21.2": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.21.2/BlinkReceiptStatic.framework-1.21.2.zip",
         "1.22.0": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.22.0/BlinkReceiptStatic.xcframework-1.22.0.zip",
-        "1.22.1": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.22.1/BlinkReceiptStatic.xcframework-1.22.1.zip"
+        "1.22.1": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.22.1/BlinkReceiptStatic.xcframework-1.22.1.zip",
+        "1.23.0": "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.23.0/BlinkReceiptStatic.xcframework-1.23.0.zip"
 }

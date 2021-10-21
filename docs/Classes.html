@@ -18,18 +18,18 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">BlinkReceipt iOS SDK 1.23.0 Docs</a></p>
-        <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right">
+        <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="index.html">BlinkReceipt iOS SDK Reference</a>
-        <img id="carat" src="img/carat.png" />
+        <img id="carat" src="img/carat.png" alt=""/>
         Classes  Reference
       </p>
     </div>
@@ -102,10 +102,16 @@
                 <a href="Classes/BRStringValue.html">BRStringValue</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/BRSurvey.html">BRSurvey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BRSurveyResponse.html">BRSurveyResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BRValue.html">BRValue</a>
@@ -113,13 +119,34 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Constants.html">Constants</a>
+            <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@NS_ASSUME_NONNULL_BEGIN">NS_ASSUME_NONNULL_BEGIN</a>
+                <a href="Enums/BRCouponType.html">BRCouponType</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@qualifications">qualifications</a>
+                <a href="Enums/BRDistanceStatus.html">BRDistanceStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRErrorCodes.html">BRErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRLightingCondition.html">BRLightingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRMerchantSource.html">BRMerchantSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/WFRetailerId.html">WFRetailerId</a>
               </li>
             </ul>
           </li>
@@ -135,10 +162,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
+            <a href="Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+                <a href="Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
               </li>
             </ul>
           </li>
@@ -175,12 +202,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCameraViewController</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCameraViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRCameraViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCameraViewController.h#L36-L216">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRCameraViewController.h#L36-L216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -206,12 +238,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCoupon</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRCoupon</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRCoupon</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRCoupon.h#L23-L85">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRCoupon.h#L23-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -236,12 +273,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFrameAttributes</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFrameAttributes</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRFrameAttributes</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRFrameAttributes.h#L14-L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRFrameAttributes.h#L14-L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -290,7 +332,7 @@
  *      * `BRMissedEarningsLookupResult lookupResult` - The status of the lookup indicating whether the supplied UPC participates in the program, does not participate, was not found, or if the lookup failed
  *      * `NSDictionary *productInfo` - If the UPC was found, this dictionary contains information about the product. The keys are: `productName`, `brand`, `image_url`, and `brand_participates`, which is a boolean indicating whether this product's brand is part of the program. This helps identify scenarios where some products in a brand participate in the program, but the provided UPC does not. Additionally a `message` key which can contain a custom message for a given product
  */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BRMissedEarningsLookupResult</span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lookupUPC</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span> <span class="nf">withCompletion</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a></span> <span class="n">lookupResult</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">productInfo</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span>
 
 <span class="cm">/**
  *  Toggle the status of the torch
@@ -307,9 +349,14 @@
 <span class="k">@end</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRMissedEarningsBaseViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L59">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -335,12 +382,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPaymentMethod</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPaymentMethod</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRPaymentMethod</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -366,12 +418,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProduct</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRProduct</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProduct.h#L18-L221">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRProduct.h#L18-L221">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -397,12 +454,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProductAdditionalLine</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRProductAdditionalLine</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRProductAdditionalLine</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -428,12 +490,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotion</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotion</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRPromotion</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRPromotion.h#L18-L63">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRPromotion.h#L18-L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -459,12 +526,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotionInfo</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRPromotionInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRPromotionInfo</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRPromotionInfo.h#L18-L30">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRPromotionInfo.h#L18-L30">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -490,12 +562,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanManager</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRScanManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanManager.h#L23-L223">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRScanManager.h#L23-L223">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -521,12 +598,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRScanOptions</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L255">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L255">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -552,12 +634,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanResults</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanResults</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRScanResults</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRScanResults.h#L45-L365">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRScanResults.h#L45-L365">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -583,12 +670,53 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRShipment</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRShipment</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRShipment</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRSurvey"></a>
+                    <a name="//apple_ref/objc/Class/BRSurvey" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurvey">BRSurvey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a survey consisting of a series of multiple choice or open ended questions</p>
+
+                        <a href="Classes/BRSurvey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurvey</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRSurvey</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRSurvey.h#L17-L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -614,12 +742,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyAnswer</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyAnswer</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRSurveyAnswer</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyAnswer.h#L16-L27">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRSurveyAnswer.h#L16-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -645,12 +778,53 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyQuestion</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyQuestion</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRSurveyQuestion</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRSurveyQuestion.h#L23-L70">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRSurveyQuestion.h#L23-L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRSurveyResponse"></a>
+                    <a name="//apple_ref/objc/Class/BRSurveyResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRSurveyResponse">BRSurveyResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a user response to a survey question</p>
+
+                        <a href="Classes/BRSurveyResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRSurveyResponse</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRSurveyResponse</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRSurveyResponse.h#L16-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -676,12 +850,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRValue</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRValue</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BRSerializable.html">BRSerializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRValue</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BRSerializable.html">BRSerializable</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -710,9 +889,14 @@
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRStringValue</span> <span class="p">:</span> <span class="nc"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRStringValue</span> <span class="p">:</span> <span class="kt"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -741,9 +925,14 @@
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRFloatValue</span> <span class="p">:</span> <span class="nc"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRFloatValue</span> <span class="p">:</span> <span class="kt"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -772,9 +961,14 @@
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRIntValue</span> <span class="p">:</span> <span class="nc"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRIntValue</span> <span class="p">:</span> <span class="kt"><a href="Classes/BRValue.html">BRValue</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_i386_x86_64-simulator/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.23.0/BlinkReceipt.xcframework/ios-arm64_armv7/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -784,11 +978,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-10-15)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2021-10-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

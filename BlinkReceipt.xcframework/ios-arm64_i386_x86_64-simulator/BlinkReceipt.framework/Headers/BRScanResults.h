@@ -112,6 +112,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *merchantName;
 
 /**
+ *  If there is client-specific version of a particular merchant, it will be passed back in this property
+ */
+@property (strong, nonatomic, readonly) BRStringValue *clientMerchantName;
+
+/**
  *  An array of `NSNumber` objects wrapping `BRMerchantSource` values indicating which merchant detection method(s) succeeded in identifying the current merchant.
  *  This will be `nil` if no merchant was detected (i.e. `merchantName == nil`)
  */
@@ -195,6 +200,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *channel;
 
 /**
+ *  Whether there is an indication of a loyalty program found on the receipt
+*/
+@property (nonatomic, readonly) BOOL loyaltyProgram;
+
+/**
  *  An average confidence (between 0 and 100) for the OCR performed on this receipt
  */
 @property (nonatomic, readonly) float ocrConfidence;
@@ -260,7 +270,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSArray<BRSurvey*> *qualifiedSurveys;
 
 /**
- *  Additional product fields
+ *  Additional receipt fields
  */
 @property (strong, nonatomic, readonly) NSDictionary *extendedFields;
 

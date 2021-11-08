@@ -1,4 +1,8 @@
-﻿# 1.23.0
+﻿# 1.24.0
+- Parsing improvements
+- Handle more receipts with inverted text colors
+
+# 1.23.0
 - Support XCFramework build of `BlinkEReceipt`
 - Fix rare crashes
 

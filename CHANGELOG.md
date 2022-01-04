@@ -1,4 +1,8 @@
-﻿# 1.24.0
+﻿# 1.25.0
+- Parsing improvements
+- Eliminate all c++ memory leaks
+
+# 1.24.0
 - Parsing improvements
 - Handle more receipts with inverted text colors
 

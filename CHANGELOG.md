@@ -1,4 +1,9 @@
-﻿# 1.25.0
+﻿# 1.26.0
+- Parsing improvements for Canadian receipts
+- Improved OCR + logo detection
+- Update minimum supported iOS version to iOS 11
+
+# 1.25.0
 - Parsing improvements
 - Eliminate all c++ memory leaks
 

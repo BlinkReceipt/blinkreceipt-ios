@@ -14,7 +14,7 @@
 ///
 typedef NS_ENUM(NSUInteger, BRDistanceStatus) {
     BRDistanceStatusOK,
-    BRDistanceStatusTooFar
+    BRDistanceStatusTooFar,
 };
 
 ///
@@ -28,6 +28,11 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
     BRLightingConditionTerrible,
     BRLightingConditionLow,
     BRLightingConditionGood
+};
+
+typedef NS_ENUM(NSUInteger, BRCameraType) {
+    BRCameraUXStandard,
+    BRCameraUXEnhanced
 };
 
 /**

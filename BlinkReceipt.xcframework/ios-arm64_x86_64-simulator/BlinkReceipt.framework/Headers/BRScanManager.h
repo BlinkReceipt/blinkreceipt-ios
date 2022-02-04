@@ -87,13 +87,14 @@
  *  Initiates a static camera scanning experience (in which the user appears to be snapping static photos)
  *
  *  @param viewController The parent view controller from which to display the camera controller modally
+ *  @param cameraType       User can choose to use standard (old) or enhanced (latest) camera UI
  *  @param scanOptions    An instance of `BRScanOptions` specifying options for this scanning session
  *  @param delegate       An instance conforming to `BRScanResultsDelegate`
  */
 - (void)startStaticCameraFromController:(nonnull UIViewController*)viewController
+                             cameraType:(BRCameraType)cameraType
                             scanOptions:(nullable BRScanOptions*)scanOptions
                            withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
-
 
 /**
  *  Initiates a scanning session using your own subclass of `BRCameraViewController` which is presented as modal from the supplied `UIViewController`

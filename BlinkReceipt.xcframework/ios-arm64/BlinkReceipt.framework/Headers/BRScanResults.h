@@ -372,4 +372,18 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  */
 - (void)userCorrectedDate:(NSString*)dateString;
 
+/**
+ * For custom user corrections flow, when a user modifies the total, call this method to update the receipt's purchase total
+ *
+ * @param total
+ */
+- (void)userCorrectedTotal:(float)total;
+
+/**
+ * For custom user corrections flow, when a user modifies the merchant, call this method to update the receipt's purchase merchant name
+ *
+ * @param name
+ */
+- (void)userCorrectedMerchant:(NSString*)name;
+
 @end

@@ -8,13 +8,21 @@
 		<data>
 		wg2KCXHae6QeiMus96e1jKuLxfk=
 		</data>
+		<key>BRNewStaticScanViewController.nib</key>
+		<data>
+		+nyZcpl8VQDzIPrRYM3xQCgwUeI=
+		</data>
 		<key>BRStaticScanViewController.nib</key>
 		<data>
-		OZwDXviAgbwsY3FEB96D/9ZKxQc=
+		YOUF3XargQIg+tFioA3A/oN/gYc=
+		</data>
+		<key>ChipsView.nib</key>
+		<data>
+		Xd1Ra0D+UIkWb4xje6Inn31UE2Y=
 		</data>
 		<key>Headers/BRCameraViewController.h</key>
 		<data>
-		J5aNdMSUOVSUQ0FBUVXTJoxjUUI=
+		pdWfAL8YUGRylZHCHk/eYgzZsms=
 		</data>
 		<key>Headers/BRCoupon.h</key>
 		<data>
@@ -50,15 +58,15 @@
 		</data>
 		<key>Headers/BRScanManager.h</key>
 		<data>
-		+ehbOOzek6hrhCaGdwmnUpLr0Ws=
+		QmKx/w2ekyKM4MfjEiRQhKkqyy4=
 		</data>
 		<key>Headers/BRScanOptions.h</key>
 		<data>
-		RsnZ66vGaN0o+DFFBf4FdWHPUMg=
+		mmLkAIGuvZNT2yyVvlPYnXcqVmA=
 		</data>
 		<key>Headers/BRScanResults.h</key>
 		<data>
-		+3ykSg/TOwdREnqOIQyx8xSXtXE=
+		7vQcEYZlgJakjTyE9AB1+cfcTaI=
 		</data>
 		<key>Headers/BRScanResultsDelegate.h</key>
 		<data>
@@ -98,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pmLdADUPb3JeEA74UyU+xbfbln0=
+		J00bGHd/+oAkm+KP2NDD+N042/s=
 		</data>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/objects-11.0+.nib</key>
 		<data>
@@ -212,6 +220,18 @@
 		<data>
 		3kNEActNqpb8psHar5aC9H7SCOY=
 		</data>
+		<key>box_arrow_blue.png</key>
+		<data>
+		4YYDy/BLIYu9oeQVHmUsRw42pFA=
+		</data>
+		<key>box_arrow_blue@2x.png</key>
+		<data>
+		ZpgH3SrrFmb6gdosBzD1sEQfkSA=
+		</data>
+		<key>box_arrow_blue@3x.png</key>
+		<data>
+		UNQKx9+BBYmrwiq66vUIy82KIIU=
+		</data>
 		<key>btnPlus.png</key>
 		<data>
 		dEZYDCuwM6xMI+laNk7ebYwTECw=
@@ -248,6 +268,66 @@
 		<data>
 		pjUUB9sEz98KTAjfbWBgSRUHRV0=
 		</data>
+		<key>btn_close.png</key>
+		<data>
+		Kf97Ixeg92A9i83eegCX8rr4YDk=
+		</data>
+		<key>btn_close@2x.png</key>
+		<data>
+		he8WbBoSiEtN0ok56WMzSaatHSI=
+		</data>
+		<key>btn_close@3x.png</key>
+		<data>
+		lq6/Akhv1QY4Oqjz1Y0sNjvtb5o=
+		</data>
+		<key>btn_finish.png</key>
+		<data>
+		X7zinEWGS+Ryf4K2XfzWn0gePKc=
+		</data>
+		<key>btn_finish@2x.png</key>
+		<data>
+		BAEly3CulGBdZmd79R5Kn3jpWqY=
+		</data>
+		<key>btn_finish@3x.png</key>
+		<data>
+		FvOrcoHMatbxSQcv5S/nmA+e15o=
+		</data>
+		<key>btn_finish_blue.png</key>
+		<data>
+		/mbsiz4Xb1xbYGUR1EJs2/EsY8E=
+		</data>
+		<key>btn_finish_blue@2x.png</key>
+		<data>
+		2M8qJMqzUQBHPEK67ncck1alLFA=
+		</data>
+		<key>btn_finish_blue@3x.png</key>
+		<data>
+		u/c9K3X7+2eEuWbXjTsuVlgFFzo=
+		</data>
+		<key>btn_retake.png</key>
+		<data>
+		3+B+0CDD9KMicN4i46HO0k+uHUE=
+		</data>
+		<key>btn_retake@2x.png</key>
+		<data>
+		M6XoxdF57wtcLDYogsZ431h3GoA=
+		</data>
+		<key>btn_retake@3x.png</key>
+		<data>
+		nEpD7OD4yAvktht8VJ2oSsjNzBU=
+		</data>
+		<key>btn_retake_blue.png</key>
+		<data>
+		d/hLYihlFWVoT8JSVOeLNLV2XsA=
+		</data>
+		<key>btn_retake_blue@2x.png</key>
+		<data>
+		1LGraBPtujDT6Tq9dndzVA2NJ3c=
+		</data>
+		<key>btn_retake_blue@3x.png</key>
+		<data>
+		CcuqtEXJ0mwjpijTJ/njcASRNyM=
+		</data>
 		<key>camera.wav</key>
 		<data>
 		3+LNH1z8MxleLX8ClFC2iKPejuw=
@@ -268,7 +348,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lhCI5HH6TveAy/PnPnAFdbsVDjI=
+			TPkKjSVwEPtVYZm3Ew0CCSW/O+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -277,7 +357,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaOKGUjyH+b5U3Jt//UTIPQlqEY=
+			GqmXoj6/iaaKk3OAEBkHN9WEX8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -286,7 +366,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XFXhkCCVeiWN/hcnbYISRPAcidM=
+			1DSzkU48WE/jpZlXmQocBxG3uDc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -319,6 +399,46 @@
 		<data>
 		T50+xv7S4O445hoNoWkI9Ww+k98=
 		</data>
+		<key>ic_search.png</key>
+		<data>
+		8VzRJRxvtDgDvGmBxhKFrE9voH4=
+		</data>
+		<key>ic_search@2x.png</key>
+		<data>
+		ivNDcOpPXSFqhHywQRP1ayKnl/w=
+		</data>
+		<key>ic_search@3x.png</key>
+		<data>
+		RVGP42UBBUsAPHtKRkTq5W7pCyQ=
+		</data>
+		<key>keypoints_check.png</key>
+		<data>
+		I3Aru2+3yKf64oo1ZBFktIv5WFk=
+		</data>
+		<key>keypoints_check@2x.png</key>
+		<data>
+		7zFrhxsEHfuVsaimmYuuy11Rkvk=
+		</data>
+		<key>keypoints_check@3x.png</key>
+		<data>
+		xUER3RH55c6yBACV60JxqPtGRGA=
+		</data>
+		<key>keypoints_uncheck.circle.png</key>
+		<data>
+		4h4TVDkkuGidVVftejr8SuaGZSo=
+		</data>
+		<key>keypoints_uncheck.png</key>
+		<data>
+		oF303Jp5+7f0UtTAsTOLN8dQU6k=
+		</data>
+		<key>keypoints_uncheck@2x.png</key>
+		<data>
+		452s4CTITzojtsW4avXYYQ8JamA=
+		</data>
+		<key>keypoints_uncheck@3x.png</key>
+		<data>
+		Rln/Pn3u99i08+L3Hwgf/VILrPE=
+		</data>
 		<key>merchant-names-all.alp</key>
 		<data>
 		GPmFPE/1K2R4JzIx+I12a1H04Ck=
@@ -326,6 +446,114 @@
 		<key>movecloser.mp3</key>
 		<data>
 		1om0mkMbj92j/NDJMDHFHnjdxEo=
+		</data>
+		<key>newBtnPlus.png</key>
+		<data>
+		qxCbnib0/6jB9VIcJvfyEgoLf9U=
+		</data>
+		<key>newBtnPlus@2x.png</key>
+		<data>
+		M/LE7FujeXE+q7lHShiyLfCL4oI=
+		</data>
+		<key>newBtnPlus@3x.png</key>
+		<data>
+		reFMRgfa9k6z2cRIJvk+VNchlpw=
+		</data>
+		<key>newBtnPlus_disabled.png</key>
+		<data>
+		ekp86KsHLj1s5SOagnsNTU/4a0o=
+		</data>
+		<key>newBtnPlus_disabled@2x.png</key>
+		<data>
+		CUwJq4U69nUc7Zrv8YxmWlPU/CA=
+		</data>
+		<key>newBtnPlus_disabled@3x.png</key>
+		<data>
+		PE/0JpkD6KV+lFB2tiJvfJgN6pI=
+		</data>
+		<key>new_btn_cam.png</key>
+		<data>
+		z7ji4PZ9J7mRdmPNK9MO0gBtspY=
+		</data>
+		<key>new_btn_cam@2x.png</key>
+		<data>
+		9aLfnv0itDuS0KgNbQT4iEMkqxs=
+		</data>
+		<key>new_btn_cam@3x.png</key>
+		<data>
+		3eIDbsFFR5xWlTRQ9INlz/JuzTQ=
+		</data>
+		<key>new_btn_cam_pressed.png</key>
+		<data>
+		z7ji4PZ9J7mRdmPNK9MO0gBtspY=
+		</data>
+		<key>new_btn_cam_pressed@2x.png</key>
+		<data>
+		9aLfnv0itDuS0KgNbQT4iEMkqxs=
+		</data>
+		<key>new_btn_cam_pressed@3x.png</key>
+		<data>
+		3eIDbsFFR5xWlTRQ9INlz/JuzTQ=
+		</data>
+		<key>new_btn_close.png</key>
+		<data>
+		Kf97Ixeg92A9i83eegCX8rr4YDk=
+		</data>
+		<key>new_btn_close@2x.png</key>
+		<data>
+		he8WbBoSiEtN0ok56WMzSaatHSI=
+		</data>
+		<key>new_btn_close@3x.png</key>
+		<data>
+		lq6/Akhv1QY4Oqjz1Y0sNjvtb5o=
+		</data>
+		<key>new_btn_finish.png</key>
+		<data>
+		X7zinEWGS+Ryf4K2XfzWn0gePKc=
+		</data>
+		<key>new_btn_finish@2x.png</key>
+		<data>
+		BAEly3CulGBdZmd79R5Kn3jpWqY=
+		</data>
+		<key>new_btn_finish@3x.png</key>
+		<data>
+		FvOrcoHMatbxSQcv5S/nmA+e15o=
+		</data>
+		<key>new_btn_retake.png</key>
+		<data>
+		3+B+0CDD9KMicN4i46HO0k+uHUE=
+		</data>
+		<key>new_btn_retake@2x.png</key>
+		<data>
+		M6XoxdF57wtcLDYogsZ431h3GoA=
+		</data>
+		<key>new_btn_retake@3x.png</key>
+		<data>
+		nEpD7OD4yAvktht8VJ2oSsjNzBU=
+		</data>
+		<key>new_ic_flash_off.png</key>
+		<data>
+		3sHVB6ONjad0Veu22cTJ7zi9bD8=
+		</data>
+		<key>new_ic_flash_off@2x.png</key>
+		<data>
+		O2yuhPdokN0Dbq1T+slTLXZ3eGs=
+		</data>
+		<key>new_ic_flash_off@3x.png</key>
+		<data>
+		N3MiBDVpiWyf5JypzsS2oSRvxNI=
+		</data>
+		<key>new_ic_flash_on.png</key>
+		<data>
+		EHEusC85X/A6NzFegs7g2s2s46E=
+		</data>
+		<key>new_ic_flash_on@2x.png</key>
+		<data>
+		xTRjHZvfWl6Hx5bLjY/P0dgC62I=
+		</data>
+		<key>new_ic_flash_on@3x.png</key>
+		<data>
+		6mMSRNQqs2AFp4QQJQtG7j6sMxc=
 		</data>
 		<key>not selected.png</key>
 		<data>
@@ -369,18 +597,32 @@
 			5ebL/YEaIU2hkTUx0QD5Ac0RrWxUdvalYp/kmb/KmOg=
 			</data>
 		</dict>
+		<key>BRNewStaticScanViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aLN55lOrHdWOVRRU69NvXWx9uQje2B9/WEncN5Ad4po=
+			</data>
+		</dict>
 		<key>BRStaticScanViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			joV9Dagdk7VZTDgQyMwo3RPq+LUGbfUcL+7Lo1/IE8o=
+			2Shlj1lETWgwVtLkVoYgp0jvg9a37HXxfeR6P4luYsw=
+			</data>
+		</dict>
+		<key>ChipsView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BTeLQf7vHW1Pk5/4ofPjZNBix1DhaULsBh5ECg72hTU=
 			</data>
 		</dict>
 		<key>Headers/BRCameraViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AxJpq7Rs+TdNnDiFTtU7sMgskzHsZnKao6Ha/hQdTLE=
+			Bq83bzD/tW1IUYNlbA6V30U1UHGYbZIysP4IPrXbsAQ=
 			</data>
 		</dict>
 		<key>Headers/BRCoupon.h</key>
@@ -443,21 +685,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SviJX8bhZQiriISOzXgR/d5AawLrB6lvyWZL/ux3Ss4=
+			aWmOIMEvWrufPtppOcP1Op3whTOYwIOGKi5wVWHajho=
 			</data>
 		</dict>
 		<key>Headers/BRScanOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sq22uxB2qRsyWeCJMHXnPwIWHj9A2GD2hh5I7KPEHVk=
+			cdDFa5Sx9Go68A4jKl9fgaMq2LvrjmNdnXaRnxz6cqc=
 			</data>
 		</dict>
 		<key>Headers/BRScanResults.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VqWQEmw2r+N93nI4zOVH15c4WNPjL7h4z6m7jG7EEO0=
+			zdghwg2V8c5cnLtw3te2nyRf+7cYIqU22yNtYKNHUzo=
 			</data>
 		</dict>
 		<key>Headers/BRScanResultsDelegate.h</key>
@@ -719,6 +961,27 @@
 			UrgNhgMVvqf4jSex5UJjV7gvEEvB+QOkKRmJto5QFPY=
 			</data>
 		</dict>
+		<key>box_arrow_blue.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0dNFqY64reFxB3Jxxz/lAvkT3MkHYxKpZiL1x2UAPHM=
+			</data>
+		</dict>
+		<key>box_arrow_blue@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NfL6kL6X0TQUBVzoaotIs9rgc663xyrurk+vj1q0vAA=
+			</data>
+		</dict>
+		<key>box_arrow_blue@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cv7/AKzU0Jtv9HnVsSdG+Le+KdxEO9xvP9uewSJTMEs=
+			</data>
+		</dict>
 		<key>btnPlus.png</key>
 		<dict>
 			<key>hash2</key>
@@ -782,6 +1045,111 @@
 			h4WTcDKtQnVZSJdGeQKXr17BIx5LIgsmEFzlfK0DrOk=
 			</data>
 		</dict>
+		<key>btn_close.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kWyWT6l726szlIrLq0qaOKyNELPDxZvsAk2g10fEETE=
+			</data>
+		</dict>
+		<key>btn_close@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkKIqNs/P1TdjJKpBvaC2iV+L5A2AJYqwZovYjeRcxk=
+			</data>
+		</dict>
+		<key>btn_close@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fmL4ptcIhq3sg+n+G9qdlK/JNDJaR1Z1wWStgA+FHyA=
+			</data>
+		</dict>
+		<key>btn_finish.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ODxwnrgvuEupKzRBI6BJuO2mnSYWHrP7FpimN/mewmA=
+			</data>
+		</dict>
+		<key>btn_finish@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DQOt6g0UCj+89YIgy0/pg/wnK3jkJSfC1PnFHThuxXA=
+			</data>
+		</dict>
+		<key>btn_finish@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qcxBtWVf2/lND341q6gBiuL3rc5ztpF+qIPpTOYjVAU=
+			</data>
+		</dict>
+		<key>btn_finish_blue.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vrPFU7x8LNc/h8VXAMDamylF4Y5O7XinAv1QQlaMYvs=
+			</data>
+		</dict>
+		<key>btn_finish_blue@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QWX58xYH7sHBIGWYVzTU7krjtcpfFaZ0fce93JSDOZQ=
+			</data>
+		</dict>
+		<key>btn_finish_blue@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vgMOaSJvxSrqILxFBrKz6TDt01/3xuGAUM424lYEWP4=
+			</data>
+		</dict>
+		<key>btn_retake.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZCyHitZNbzENjuOwz/AOjxdKJSu6C4+lO3vNrntjRR0=
+			</data>
+		</dict>
+		<key>btn_retake@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RDPBuoiZpFcKBbu7ZUWKqoLe4+AxpEw+s4LEu3PL3p4=
+			</data>
+		</dict>
+		<key>btn_retake@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47w+SPD2cDKaGZGneU7faex1kwFXj8C52xVeRrpkmjE=
+			</data>
+		</dict>
+		<key>btn_retake_blue.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zVMQlTr8fF5yEosgfcifTc0HmszGaXGF56bfE8psNjQ=
+			</data>
+		</dict>
+		<key>btn_retake_blue@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1Yp4fy4kapAROAlADd/clIG2y4SpC50fj57B5AdktI=
+			</data>
+		</dict>
+		<key>btn_retake_blue@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3RnxqICk+lnQNAtf/vgVdQy3qhNPr6cDtKjE+q0Plmk=
+			</data>
+		</dict>
 		<key>camera.wav</key>
 		<dict>
 			<key>hash2</key>
@@ -814,7 +1182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L8pdn5Zj/owxkCsnFn+tdpxfoZ9+9M4ixxeWdPNpVCc=
+			1k1LJRmJo0RO3Ns3biTDehGoq78K5RLvtVpx3JuUunA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -823,7 +1191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELvA9rtdWSXzfh6wXVysAEdS73/ejRQ+UXyPOuXbCW8=
+			BUp1yHIQ79PsEXbl70wlDA5dPt4tmJaYtzpJKZQxf0c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -832,7 +1200,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8InbHlfw25xgrbUXJjDpAsmUfk5Dd2cbtmWSQ8A9II=
+			8OX3HendjjJeSv+cC7WHN7HAA1BoOAei0SqMp+vL4ZE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -886,6 +1254,76 @@
 			0BmiHaenuGnC3kTuk8zJ+u7xn0K9kE7RXeZfKKPjLUs=
 			</data>
 		</dict>
+		<key>ic_search.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1qt/FE8Wx1jWt3AU1uCxXxMoL74gZ9P8Ay6xjrxtOlI=
+			</data>
+		</dict>
+		<key>ic_search@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pC4GC6dzOrO3GB/avdvb83Ekv5CBaECspQAJPNcZubQ=
+			</data>
+		</dict>
+		<key>ic_search@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UiVNPHXPLm5myMKGhCwEb3oM55Ze4a2CEoCXAQ9ShfU=
+			</data>
+		</dict>
+		<key>keypoints_check.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wng7t5D2aHtSYD/YWs1cwLB1INkuE+rbnMNK1ZZQTtg=
+			</data>
+		</dict>
+		<key>keypoints_check@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VHi6SPt29vE0IyndGcradoiYOQc9ZGXQuedUYIPE/KA=
+			</data>
+		</dict>
+		<key>keypoints_check@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RlonDJ+dnABfchaRV/2xr6ahgz3JUqilPScsUKP/y7M=
+			</data>
+		</dict>
+		<key>keypoints_uncheck.circle.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mw3pLMFiGcE3r9+LgYS37E815tBS/R3x1vn3j1YVyFs=
+			</data>
+		</dict>
+		<key>keypoints_uncheck.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lzaie88JLJJy5CyykAdFlsb2YJ0UzeDWb6bBzOk+m5k=
+			</data>
+		</dict>
+		<key>keypoints_uncheck@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CI5CiLbBepv28y1LY5hduNysu1sNLxqFo8d8zRPI8QU=
+			</data>
+		</dict>
+		<key>keypoints_uncheck@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xrjF4ZIa+iokdh1Qc6SfvpOgDQjDVr0L/IXGYtstV/4=
+			</data>
+		</dict>
 		<key>merchant-names-all.alp</key>
 		<dict>
 			<key>hash2</key>
@@ -898,6 +1336,195 @@
 			<key>hash2</key>
 			<data>
 			v6Uvtsvlzot42mCY+aN9MVW/2vps9Yan8AUEhzLQ7Vw=
+			</data>
+		</dict>
+		<key>newBtnPlus.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			szNchi3HqY9JqpRjSrdbNnpOBeH+tMmVvTz9+ffU0W0=
+			</data>
+		</dict>
+		<key>newBtnPlus@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			waTkhOd+bUblXHm65YlZ6CDRCv/HnC5glgQf4nKBlno=
+			</data>
+		</dict>
+		<key>newBtnPlus@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xycxKlZOdRJTQ/kCXBNfJlfhRT9Qqnf46DlHVbcE2wY=
+			</data>
+		</dict>
+		<key>newBtnPlus_disabled.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VnKxFVAyTVXuMiL059DR4knLkES0n4z7ce5TtZjAuKg=
+			</data>
+		</dict>
+		<key>newBtnPlus_disabled@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OrpH96f/Uz9UupctSM04+5RTx0DnHh6afHXj2uKUihc=
+			</data>
+		</dict>
+		<key>newBtnPlus_disabled@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rS5eiWhjigyP+U/LmvMyYDpfEAWh+6zjgabrAKrKPJU=
+			</data>
+		</dict>
+		<key>new_btn_cam.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i/OT22tC56Pq/8GOK0GojC7woKFbW8A09swqm5eDSpc=
+			</data>
+		</dict>
+		<key>new_btn_cam@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tYdscK+QLDvAp8NhtncRYurbnaC20M87GRNhApYlh4w=
+			</data>
+		</dict>
+		<key>new_btn_cam@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dObyoyTPCIJWzjPyqN7r99V5KV99VBuXaFvPBUGUeu0=
+			</data>
+		</dict>
+		<key>new_btn_cam_pressed.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i/OT22tC56Pq/8GOK0GojC7woKFbW8A09swqm5eDSpc=
+			</data>
+		</dict>
+		<key>new_btn_cam_pressed@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tYdscK+QLDvAp8NhtncRYurbnaC20M87GRNhApYlh4w=
+			</data>
+		</dict>
+		<key>new_btn_cam_pressed@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dObyoyTPCIJWzjPyqN7r99V5KV99VBuXaFvPBUGUeu0=
+			</data>
+		</dict>
+		<key>new_btn_close.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kWyWT6l726szlIrLq0qaOKyNELPDxZvsAk2g10fEETE=
+			</data>
+		</dict>
+		<key>new_btn_close@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkKIqNs/P1TdjJKpBvaC2iV+L5A2AJYqwZovYjeRcxk=
+			</data>
+		</dict>
+		<key>new_btn_close@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fmL4ptcIhq3sg+n+G9qdlK/JNDJaR1Z1wWStgA+FHyA=
+			</data>
+		</dict>
+		<key>new_btn_finish.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ODxwnrgvuEupKzRBI6BJuO2mnSYWHrP7FpimN/mewmA=
+			</data>
+		</dict>
+		<key>new_btn_finish@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DQOt6g0UCj+89YIgy0/pg/wnK3jkJSfC1PnFHThuxXA=
+			</data>
+		</dict>
+		<key>new_btn_finish@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qcxBtWVf2/lND341q6gBiuL3rc5ztpF+qIPpTOYjVAU=
+			</data>
+		</dict>
+		<key>new_btn_retake.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZCyHitZNbzENjuOwz/AOjxdKJSu6C4+lO3vNrntjRR0=
+			</data>
+		</dict>
+		<key>new_btn_retake@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RDPBuoiZpFcKBbu7ZUWKqoLe4+AxpEw+s4LEu3PL3p4=
+			</data>
+		</dict>
+		<key>new_btn_retake@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47w+SPD2cDKaGZGneU7faex1kwFXj8C52xVeRrpkmjE=
+			</data>
+		</dict>
+		<key>new_ic_flash_off.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			39IRGImFwJ1FVMGNNUcZ7zCWTJ13jNdmdR+WpJbEGoE=
+			</data>
+		</dict>
+		<key>new_ic_flash_off@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X0ta8wj4jCe/0Vs5GYMeF8+3rVSHbAF2QMqxMkm9dLM=
+			</data>
+		</dict>
+		<key>new_ic_flash_off@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rzJIv7/LeRwMJBQ11JVsaW0D40QIS1pCNWtdMPg7Bxk=
+			</data>
+		</dict>
+		<key>new_ic_flash_on.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vKtA6KoPCT4TJAKsAkHcd+oEH5KUXE2ViVFdCNh6whY=
+			</data>
+		</dict>
+		<key>new_ic_flash_on@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GGB1XuIayQN2/vZLt0Qvpj9hs9ei4JNEAcgs/B+ih/E=
+			</data>
+		</dict>
+		<key>new_ic_flash_on@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CvNO39hTpKRNL0PAYhi2RtwpQNlDglM0LKQe3e9/IBk=
 			</data>
 		</dict>
 		<key>not selected.png</key>

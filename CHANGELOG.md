@@ -1,4 +1,8 @@
-﻿# 1.26.0
+﻿# 1.27.0
+- New prepackaged camera controller
+- Improve merchant detection in `didGetFrameResults:` subclass method of `BRCameraViewController`
+
+# 1.26.0
 - Parsing improvements for Canadian receipts
 - Improved OCR + logo detection
 - Update minimum supported iOS version to iOS 11

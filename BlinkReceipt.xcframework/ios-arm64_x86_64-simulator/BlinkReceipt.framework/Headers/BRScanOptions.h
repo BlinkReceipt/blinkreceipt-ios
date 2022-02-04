@@ -252,4 +252,26 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL returnSubproducts;
 
+/**
+ *  If enabled, date chip will show whether the date is recognized after scan
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL enableDateChip;
+
+/**
+ *  If enabled, total chip will show whether the total is recognized after scan
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL enableTotalChip;
+
+/**
+ *  If enabled, merchant chip will show whether the merchant is recognized after scan
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL enableMerchantChip;
+
+
 @end

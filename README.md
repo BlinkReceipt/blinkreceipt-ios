@@ -13,12 +13,12 @@ Here is a sample barebones `Podfile` which imports the BlinkReceipt pod:
 source 'https://github.com/BlinkReceipt/PodSpecRepo.git'
 source 'https://cdn.cocoapods.org/'
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'YourTarget' do
   use_frameworks!
   
-  pod 'BlinkReceipt', '~> 1.22' 
+  pod 'BlinkReceipt', '~> 1.27' 
 end
 ```
 
@@ -30,7 +30,7 @@ After editing your `Podfile`, run `pod install` and then make sure to open the `
 
 ### Cartfile
 ```
-binary "https://raw.githubusercontent.com/BlinkReceipt/blinkreceipt-ios/master/BlinkReceiptStatic.json" ~> 1.8
+binary "https://raw.githubusercontent.com/BlinkReceipt/blinkreceipt-ios/master/BlinkReceiptStatic.json" ~> 1.27
 ```
 
 After editing your `Cartfile`, run `carthage update --use-xcframeworks` and then add the framework to your project as described in the Quick Start above

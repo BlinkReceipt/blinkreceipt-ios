@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Type Definitions  Reference</title>
+    <title>Enhanced Camera UX  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,7 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Section/Type Definitions" class="dashAnchor"></a>
-    <a title="Type Definitions  Reference"></a>
+    <a title="Enhanced Camera UX  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">BlinkReceipt iOS SDK 1.27.0 Docs</a></p>
@@ -30,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="index.html">BlinkReceipt iOS SDK Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Type Definitions  Reference
+        Enhanced Camera UX  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -180,49 +179,33 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Type Definitions</h1>
-            <p>The following type definitions are available globally.</p>
+            
+            <h1 id='enhanced-camera-ux' class='heading'>Enhanced Camera UX</h1>
 
-          </section>
-          <section class="section task-group-section">
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:BRPromotion.h@T@BRPromotionQualification"></a>
-                    <a name="//apple_ref/objc/Type/BRPromotionQualification" class="dashAnchor"></a>
-                    <a class="token" href="#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span><span class="o">*&gt;*</span> <span class="n">BRPromotionQualification</span></code></pre>
+<p>We have updated our prepackaged camera controller with a new UI/UX. There are changes to the graphics, the messaging, the animations, and some added features. To test it out try this:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">IBAction</span><span class="p">)</span><span class="nf">btnTouched</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span> <span class="p">{</span>
+  <span class="n">BRScanOptions</span> <span class="o">*</span><span class="n">scanOptions</span> <span class="o">=</span> <span class="p">[</span><span class="n">BRScanOptions</span> <span class="nf">new</span><span class="p">];</span>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">BRPromotionQualification</span> <span class="o">=</span> <span class="kt">NSArray</span></code></pre>
+  <span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">startStaticCameraFromController</span><span class="p">:</span><span class="n">self</span>
+                                                      <span class="nl">cameraType:</span><span class="n">BRCameraUXEnhanced</span>
+                                                     <span class="nl">scanOptions:</span><span class="n">scanOptions</span>
+                                                    <span class="nl">withDelegate:</span><span class="n">self</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='data-chips' class='heading'>Data Chips</h2>
 
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.27.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPromotion.h#L13">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
+<p>The enhanced UX supports 3 &ldquo;chips&rdquo; which indicate to the user whether the date, total, or merchant has been successfully detected in the receipt. By default, all these chips are disabled. You can enable them by setting their respective properties in the <code><a href="Classes/BRScanOptions.html">BRScanOptions</a></code> object:</p>
+
+<ul>
+<li><code><a href="Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)enableDateChip">BRScanOptions.enableDateChip</a></code></li>
+<li><code><a href="Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)enableTotalChip">BRScanOptions.enableTotalChip</a></code></li>
+<li><p><code><a href="Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)enableMerchantChip">BRScanOptions.enableMerchantChip</a></code></p></li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Certain methods for detecting merchant are only performed at the end of the scan session so it will occasionally occur that the merchant chip is not filled in, but when the user ends the scan session, a merchant will then be detected and returned in the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object</p>
+
+</div>
+
           </section>
         </section>
         <section id="footer">

@@ -51,14 +51,28 @@
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 35,
+      "line": 33,
+      "symbol": "BRCameraType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 33,
+      "symbol": "BRCameraType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h",
+      "line": 34,
       "symbol": "BRCameraType.BRCameraUXStandard",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/dpanzer/Projects/blinkreceipt-ios/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h",
-      "line": 36,
+      "line": 35,
       "symbol": "BRCameraType.BRCameraUXEnhanced",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"

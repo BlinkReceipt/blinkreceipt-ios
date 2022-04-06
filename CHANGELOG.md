@@ -1,4 +1,8 @@
-﻿# 1.27.0
+﻿# 1.28.0
+- Parsing improvements
+- Improve OTA resource downloads
+
+# 1.27.0
 - New prepackaged camera controller
 - Improve merchant detection in `didGetFrameResults:` subclass method of `BRCameraViewController`
 

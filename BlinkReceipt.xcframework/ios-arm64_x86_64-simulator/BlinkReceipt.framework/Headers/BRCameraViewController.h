@@ -30,6 +30,7 @@ typedef NS_ENUM(NSUInteger, BRLightingCondition) {
     BRLightingConditionGood
 };
 
+///
 typedef NS_ENUM(NSUInteger, BRCameraType) {
     BRCameraUXStandard,
     BRCameraUXEnhanced

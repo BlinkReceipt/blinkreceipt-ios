@@ -345,6 +345,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL ereceiptAuthenticated;
 
 /**
+*  Whether the email was successfully identified as an e-receipt or related message (as opposed to a marketing message, etc)
+*/
+@property (nonatomic, readonly) BOOL ereceiptIsValid;
+
+/**
  *  For an Amazon order only, this is an array of all the shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;

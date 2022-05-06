@@ -350,6 +350,12 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL ereceiptIsValid;
 
 /**
+ *  Additional fees / charges for this e-receipt, if any (like tips, bag / bottle fees, etc...)
+ *  Each key-value pair, represents the name of the fee and its amount { "Tips": "2.19", "Bag Fee": "0.05" }
+ */
+@property (strong, nonatomic, readonly) NSDictionary *ereceiptAdditionalFees;
+
+/**
  *  For an Amazon order only, this is an array of all the shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;

@@ -1,4 +1,7 @@
-﻿# 1.28.0
+﻿# 1.29.0
+- Parsing improvements
+
+# 1.28.0
 - Parsing improvements
 - Improve OTA resource downloads
 

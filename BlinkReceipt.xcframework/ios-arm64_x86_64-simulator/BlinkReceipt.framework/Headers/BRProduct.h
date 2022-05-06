@@ -104,6 +104,31 @@
  */
 @property (strong, nonatomic, readonly) NSDictionary *extendedFields;
 
+/**
+ *  The product reseller, if any
+ */
+@property (strong, nonatomic, readonly) NSString *seller;
+
+/**
+ *  The product condition, if any  (e.g. "New", "Used", etc)
+ */
+@property (strong, nonatomic, readonly) NSString *condition;
+
+/**
+ *  The product url, if any  (usually found in ereceipts)
+ */
+@property (strong, nonatomic, readonly) NSString *productUrl;
+
+/**
+ *  The currency for this product, if identified. It can be different from BRScanResults.currencyCode
+ */
+@property (strong, nonatomic, readonly) NSString *currencyCode;
+
+/**
+ *  The subscription frequency for this product, if identified (e.g. every week, every month, etc...)
+ */
+@property (strong, nonatomic, readonly) NSString *subscriptionFrequency;
+
 ///---------------------------------------
 /// @name Product Intelligence Properties
 ///---------------------------------------

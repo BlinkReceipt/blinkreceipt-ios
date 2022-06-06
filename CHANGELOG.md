@@ -1,4 +1,9 @@
-﻿# 1.29.0
+﻿# 1.30.0
+- Improved logo detection model
+- Add `paymentTerminalId` and `paymentTransactionID` properties to `BRScanResults`
+- Parsing improvements
+
+# 1.29.0
 - Parsing improvements
 
 # 1.28.0

@@ -61,6 +61,7 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 
 /**
  *  An array of `BRProduct` objects representing the products that were detected on the receipt, if any
+ *  Some e-receipts may return `shipments` with products instead of products list directly.
  */
 @property (strong, nonatomic, readonly) NSArray<BRProduct*> *products;
 
@@ -198,6 +199,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  The retail channel for this receipt, if any
 */
 @property (strong, nonatomic, readonly) BRStringValue *channel;
+
+/**
+ * The unique identifier associated with the payment processor’s terminal
+ */
+@property (strong, nonatomic, readonly) BRStringValue *paymentTerminalId;
+
+/**
+ * The unique identifier associated with the payment processor’s transaction
+ */
+@property (strong, nonatomic, readonly) BRStringValue *paymentTransactionId;
 
 /**
  *  Whether there is an indication of a loyalty program found on the receipt
@@ -353,10 +364,10 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  Additional fees / charges for this e-receipt, if any (like tips, bag / bottle fees, etc...)
  *  Each key-value pair, represents the name of the fee and its amount { "Tips": "2.19", "Bag Fee": "0.05" }
  */
-@property (strong, nonatomic, readonly) NSDictionary *ereceiptAdditionalFees;
+@property (strong, nonatomic, readonly) NSDictionary<NSString*,NSString*> *ereceiptAdditionalFees;
 
 /**
- *  For an Amazon order only, this is an array of all the shipments discovered in this order
+ *  An array of `BRShipment` objects representing all shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;
 

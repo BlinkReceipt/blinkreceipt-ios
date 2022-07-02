@@ -1,4 +1,9 @@
-﻿# 1.30.0
+﻿# 1.31.0
+- Removed `GPUImage` dependency which was causing a memory leak and used the deprecated OpenGLES framework
+- Closed a memory leak holding on to user-snapped frames from the most recent scan session
+- Speed up initial camera load
+
+# 1.30.0
 - Improved logo detection model
 - Add `paymentTerminalId` and `paymentTransactionID` properties to `BRScanResults`
 - Parsing improvements

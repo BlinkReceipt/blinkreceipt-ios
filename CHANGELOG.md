@@ -1,4 +1,7 @@
-﻿# 1.31.0
+﻿# 1.31.1
+- Fix linker flags causing crashes related to address sanitizer
+
+# 1.31.0
 - Removed `GPUImage` dependency which was causing a memory leak and used the deprecated OpenGLES framework
 - Closed a memory leak holding on to user-snapped frames from the most recent scan session
 - Speed up initial camera load

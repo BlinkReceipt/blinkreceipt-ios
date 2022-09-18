@@ -1,4 +1,14 @@
-﻿# 1.31.1
+﻿# 1.32.0
+- Improvements to merchant detection
+- New card types
+- Parsing improvements
+- Upgrade to SimpleKeychain 1.0
+- Fix for logo detection in Germany
+- Add `BRScanResults.tip` property
+- Add `BRScanResults.isInstacartShopper` property
+- Pass more memory debugging info back to client via delegate callbacks
+
+# 1.31.1
 - Fix linker flags causing crashes related to address sanitizer
 
 # 1.31.0

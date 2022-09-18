@@ -87,6 +87,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BRFloatValue *taxes;
 
 /**
+ *  The tip detected on the receipt, if any
+ */
+@property (nonatomic, readonly) BRFloatValue *tip;
+
+/**
  *  The purchase date found on the receipt formatted as MM/dd/yyyy, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *receiptDate;
@@ -214,6 +219,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  Whether there is an indication of a loyalty program found on the receipt
 */
 @property (nonatomic, readonly) BOOL loyaltyProgram;
+
+/**
+ *  Whether the purchase was made by an Instacart shopper
+*/
+@property (nonatomic, readonly) BOOL isInstacartShopper;
 
 /**
  *  An average confidence (between 0 and 100) for the OCR performed on this receipt

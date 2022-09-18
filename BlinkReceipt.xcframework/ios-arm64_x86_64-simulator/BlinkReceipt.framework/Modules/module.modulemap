@@ -4,3 +4,8 @@ framework module BlinkReceipt {
   export *
   module * { export * }
 }
+
+module BlinkReceipt.Swift {
+    header "BlinkReceipt-Swift.h"
+    requires objc
+}

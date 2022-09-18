@@ -61,12 +61,22 @@ typedef NS_ENUM(NSUInteger, BRErrorCodes) {
 
 
 /**
- *  This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Crashlytics, this can be passed along as follows:
+ *  This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Firebase Crashlytics, this can be passed along as follows:
  *
- *  `CLSLog(@"%@", debugInfo);`
+ *  `[[FIRCrashlytics crashlytics] log:debugInfo];`
  *
  *  @param debugInfo    The encrypted debugging information
  */
 - (void)didOutputDebugInfo:(NSString*)debugInfo;
+
+/**
+ *  This callback provides debugging information as key value pairs. For example, if the client app uses Firebase Crashlytics, this can be passed as a custom attribute as follows:
+ *
+ *  `[[FIRCrashlytics crashlytics] setCustomValue:val forKey:key];`
+ *
+ *  @param key    Description of the type of debugging information
+ *  @param val    The information itself
+ */
+- (void)didOutputDebugKey:(NSString*)key withValue:(id)val;
 
 @end

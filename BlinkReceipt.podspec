@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.31.1"
+  s.version      = "1.32.0"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ This is the BlinkReceipt SDK
 
   s.author             = { "Darren Bassman" => "darren.bassman@microblink.com" }
   s.platform     = :ios
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "12.0"
   
   s.source       = { :git => "https://github.com/BlinkReceipt/blinkreceipt-ios.git", :tag => "#{s.version}" }
 
@@ -23,7 +23,7 @@ This is the BlinkReceipt SDK
   s.dependency 'AFNetworking/NSURLSession', '~> 4.0'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'MBProgressHUD', '~> 1.0'
-  s.dependency 'SimpleKeychain', '~> 0.7'
+  s.dependency 'SimpleKeychain', '~> 1.0'
   s.dependency 'CHCSVParser', '~> 2.1'
   s.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
 

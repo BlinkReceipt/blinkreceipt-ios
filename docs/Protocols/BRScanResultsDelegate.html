@@ -17,7 +17,7 @@
     <a title="BRScanResultsDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BlinkReceipt iOS SDK 1.31.1 Docs</a></p>
+        <p><a href="../index.html">BlinkReceipt iOS SDK 1.32.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/BlinkReceipt/blinkreceipt-ios"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
         <div class="header-right">
           <form role="search" action="../search.json">
@@ -196,7 +196,7 @@
             <p>Implement this protocol to receive callbacks from a scanning session</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L24-L72">Show on GitHub</a>
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L24-L82">Show on GitHub</a>
               </div>
           </section>
           <section class="section task-group-section">
@@ -273,7 +273,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L38">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L38">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -327,7 +327,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L45">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -381,7 +381,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L52">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -435,7 +435,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L60">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -453,9 +453,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Crashlytics, this can be passed along as follows:</p>
+                        <p>This callback provides encrypted debugging information that can be used to help identify crashes. For example, if the client app uses Firebase Crashlytics, this can be passed along as follows:</p>
 
-<p><code>CLSLog(@&quot;%@&quot;, debugInfo);</code></p>
+<p><code>[[FIRCrashlytics crashlytics] log:debugInfo];</code></p>
 
                       </div>
                       <div class="declaration">
@@ -491,7 +491,75 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.31.1/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L70">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BRScanResultsDelegate(im)didOutputDebugKey:withValue:"></a>
+                    <a name="//apple_ref/objc/Method/-didOutputDebugKey:withValue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BRScanResultsDelegate(im)didOutputDebugKey:withValue:">-didOutputDebugKey:<wbr>withValue:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This callback provides debugging information as key value pairs. For example, if the client app uses Firebase Crashlytics, this can be passed as a custom attribute as follows:</p>
+
+<p><code>[[FIRCrashlytics crashlytics] setCustomValue:val forKey:key];</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didOutputDebugKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span> <span class="nf">withValue</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">val</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didOutputDebugKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">withValue</span> <span class="nv">val</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of the type of debugging information</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>val</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The information itself</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.32.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResultsDelegate.h#L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -501,7 +569,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2022 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2022-07-28)</p>
+          <p>&copy; 2022 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2022-09-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

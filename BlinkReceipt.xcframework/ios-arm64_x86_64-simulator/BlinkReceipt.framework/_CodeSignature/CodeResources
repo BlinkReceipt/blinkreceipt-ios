@@ -10,7 +10,7 @@
 		</data>
 		<key>BRNewStaticScanViewController.nib</key>
 		<data>
-		NWeDCPjeVtB3mD/RLEiAdQMoEk4=
+		+kbp1LvIgxYKoLUTNJQScS2nWfA=
 		</data>
 		<key>BRStaticScanViewController.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ChipsView.nib</key>
 		<data>
-		mu2LeoYgF1PckV79dPoNhFbHWwU=
+		5IDFf5jr3GHyJZLP2wz21r/qWZs=
 		</data>
 		<key>Headers/BRCameraViewController.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/BRScanResults.h</key>
 		<data>
-		hqFqmXpdlCXXFH7vjCkn/F4QO/w=
+		Pd09/saGRxwutQM4bPtDsv1gvXc=
 		</data>
 		<key>Headers/BRScanResultsDelegate.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/BlinkReceipt-Swift.h</key>
 		<data>
-		VxTzr6BfCFqDvw3q9qpvMk/UYVs=
+		Z7W9OAiZbYlYZ4DjlRBxhOG/mbk=
 		</data>
 		<key>Headers/BlinkReceipt.h</key>
 		<data>
@@ -110,15 +110,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UISa3uoKlui/jFaYL4xIz/HlNEg=
+		LzFXEn+pcKJQ1PV8i1MAKUiCZMM=
+		</data>
+		<key>Loading.png</key>
+		<data>
+		Y5og4wWM0fHnQndo99lGZD9yxl8=
 		</data>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/objects-11.0+.nib</key>
 		<data>
-		hLSNDRBM2ClJLlWZyRKwxEuZ0Xw=
+		0U1UihE/GCJWtrm5MJAXqGue0hU=
 		</data>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/runtime.nib</key>
 		<data>
-		DuC2p5MABKoIeJq2c5FEqlI2iqE=
+		zXQ2d5vurszYEGCMDLr1Tv3SPFo=
 		</data>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsCameraViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -130,11 +134,11 @@
 		</data>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsMainViewController.nib/objects-11.0+.nib</key>
 		<data>
-		wgNzcAIHYihHW0nSL5frg4oZM2o=
+		W3RIUdN9Cs8gHLvYdVo79ywEaAA=
 		</data>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsMainViewController.nib/runtime.nib</key>
 		<data>
-		wgNzcAIHYihHW0nSL5frg4oZM2o=
+		W3RIUdN9Cs8gHLvYdVo79ywEaAA=
 		</data>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -146,11 +150,11 @@
 		</data>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/objects-11.0+.nib</key>
 		<data>
-		nlJXjlklHTKVHkdz9kKuqSNVBTY=
+		DuOXYddbwbh8b8Z8udHOeMZFl8Q=
 		</data>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/runtime.nib</key>
 		<data>
-		s8Nil7mG5Q5/GYPG6qPDhdbhMGw=
+		u8+T+qDYM0Slndxgq8u3DmBjiUg=
 		</data>
 		<key>MissedEarnings.storyboardc/Info.plist</key>
 		<data>
@@ -164,73 +168,109 @@
 		<data>
 		Uk/7BqZAfF1V+FnrcSXmeERYLcE=
 		</data>
+		<key>Model_16bda327cfe295fedebc943e1134d7ac41c497dd445fe7a9bdb5487b3444fb54.strop</key>
+		<data>
+		iOAxbnzjswl+7KqtAzrZyanA3zQ=
+		</data>
+		<key>Model_2688b5ec0df2d55db85e3345e615c2724838280c2aa77e11ae9779b5d5fef29e.strop</key>
+		<data>
+		b81VbUH9H4cXrBaSZRCpSFxep2c=
+		</data>
 		<key>Model_2756a93a8fff231a14b1ea8d04f61e8879e0120688eeb80540cedfc9ee37db7c.strop</key>
 		<data>
-		O9nshR67nmfZLZqhLS9IsZ1Vn6Q=
+		qjnlzMtdD7lqEP/62TCW3tx5viI=
 		</data>
 		<key>Model_46cab52a23503494c9b3f7108ba5607c8264b6af8d0741a15d2d7b953c435317.strop</key>
 		<data>
-		7gm4xp5wMmhBWqvUGhsdxz4V1+M=
+		NY8E05dpoC9dkeXh5WmqhLjJRHs=
 		</data>
 		<key>Model_491cc6508d69dc8e296c89d60e86251bafd309cd60c34f9dc36733b773a050aa.strop</key>
 		<data>
-		q5fwmHfmoKPMy4B/eCKClpaaVv8=
+		b4DWdGSC+WenfkYGs/5PLuusi/g=
+		</data>
+		<key>Model_509cb91ee92b2f5ce3f680520faf92f9f499583d2ccd3c1984230a08a4fdc48c.strop</key>
+		<data>
+		t1Pe017EBhZijmhOGTICPtWKWhc=
 		</data>
 		<key>Model_542c998edd5d5a8b10e50ea21fdbcff91775be9871d57d6e3ab6258d7b375c6e.strop</key>
 		<data>
-		SoYxaZ60h/2pohNrjum71/Pdbwo=
+		Rk0fn7uEd93FW+JNSkbdRtXGBTI=
 		</data>
 		<key>Model_783f5466b9eabd00c12d8cda3973dacf8e08876cd236fed493ac9f798da423e2.strop</key>
 		<data>
-		8gVphW6vvdn0qTqdA1YSc0jtM4g=
+		B8+TZ9Vi8THCiKUfKGt2ovgJE8U=
 		</data>
 		<key>Model_81f74f9fcaeb247522be85b91ca28c4eb8884e579d5320cb2ed1fbe06b911b84.strop</key>
 		<data>
-		fPYtf4LCjYJ7JB2WkriyWQfO1eQ=
+		Ws4dfMhqPHe4N1MGdwXlG+4OaSk=
 		</data>
 		<key>Model_997235f65143669429cc122c75b7335d02a02969048a2c5e13f70c6c83165b5f.strop</key>
 		<data>
-		UN4AslXNns+vOjcS1D1SetaEOKA=
+		zjCPYwUUL7qoQZJ+/+NhIbDqUIg=
+		</data>
+		<key>Model_bc187b4b3e27a6768a060715ab126e14d810da3ff3941a62c74bf64edbcb0145.strop</key>
+		<data>
+		/fwaC40orp4lEe2KGkGXo4IaI2g=
 		</data>
 		<key>Model_d70a1096cc46a82bb45bb3add90df24ecafef5900c4c185c0923c5e96f0966e7.strop</key>
 		<data>
-		fI1HOSoUwHGcYWYH5gOT+M+0BgQ=
+		jOE3/ZfihVvRIAFba5uaKwI9tx0=
+		</data>
+		<key>Model_f949ea942bc19dcc1e72e100c973ba8aa3ea24344643cb17a7bbf7b4a6b32918.strop</key>
+		<data>
+		3xSLIPPApMCSGMP+NiPdYRS2Ls0=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gHwxnaE0ADhLl6cgV0QBDbILW0I=
+		ifDECghDXI+9e4IhZsdWUWSmEN8=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LyVDpKIdY5ETRD/y0DkjqSyOc0U=
+		xO9uF8J96yrBXeeaK8QPkB6ftpU=
+		</data>
+		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		2EPBjAIzi89WwuEiC/dKIByb30I=
+		</data>
+		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		unxfviGJarlkdm4p0A+a+1vWDnU=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		hudEi2IYWzdJz7rnrrX9aeGhz8E=
+		I80mpL4KycF5BIduhBERyvhA7Jc=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ijnbB12SThViGgINk/9LvqyvB/Q=
+		unxfviGJarlkdm4p0A+a+1vWDnU=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q2X++8Dax2S/ovPEeXFzbvsrGag=
+		TIL+03N9F0ZJIIULA64PpBGH9Aw=
+		</data>
+		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		2EPBjAIzi89WwuEiC/dKIByb30I=
+		</data>
+		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		F5Zg/L6EMpf/XxuvMWGMFyofsv0=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kfmmminpfHqvauxxMBxj3nqksyg=
+		AkC7TnJSvF9qR8BU0GvmUXYBvU8=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xPMlBRPiYB6SXokifI8TQiisb6A=
+		F5Zg/L6EMpf/XxuvMWGMFyofsv0=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ime3ieIhzGaBVqimTX3gObrBgbY=
+		WFQcrFPnhCDzt+UZ6NG5GIGckOw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		28i8qZbR85g2x67eAjQCSL4SdsY=
+		Mk04cDNFfAT8SSjVg2jcnJMQJcw=
 		</data>
 		<key>NunitoSans-Black.ttf</key>
 		<data>
@@ -254,19 +294,19 @@
 		</data>
 		<key>Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
-		dpaZuvAqi6DTAqUEHtZdvMxWt5A=
+		St5/pfD8bV1paGuWL//dAqXGsss=
 		</data>
 		<key>box_arrow_blue.png</key>
 		<data>
-		4YYDy/BLIYu9oeQVHmUsRw42pFA=
+		QRRhFMVe7NRTAEw+EPAA9lBl0bk=
 		</data>
 		<key>box_arrow_blue@2x.png</key>
 		<data>
-		ZpgH3SrrFmb6gdosBzD1sEQfkSA=
+		7tamXkxcqGnu5Zk3zdHYibC3YeI=
 		</data>
 		<key>box_arrow_blue@3x.png</key>
 		<data>
-		UNQKx9+BBYmrwiq66vUIy82KIIU=
+		bCtn0Z2kt76jP1fyFKYNfOOVYN4=
 		</data>
 		<key>btnPlus.png</key>
 		<data>
@@ -358,11 +398,11 @@
 		</data>
 		<key>btn_retake_blue@2x.png</key>
 		<data>
-		1LGraBPtujDT6Tq9dndzVA2NJ3c=
+		6O+boydLcbgfGuZ7HG5JXMlDjDc=
 		</data>
 		<key>btn_retake_blue@3x.png</key>
 		<data>
-		CcuqtEXJ0mwjpijTJ/njcASRNyM=
+		aiR63u9lk5pK9v9d0RxKoQaNyrc=
 		</data>
 		<key>camera.wav</key>
 		<data>
@@ -453,11 +493,11 @@
 		</data>
 		<key>keypoints_check@2x.png</key>
 		<data>
-		7zFrhxsEHfuVsaimmYuuy11Rkvk=
+		mR/en5gn4mMRTU3AvFJSLo2wo3g=
 		</data>
 		<key>keypoints_check@3x.png</key>
 		<data>
-		xUER3RH55c6yBACV60JxqPtGRGA=
+		lzY0CSIaMGcPV2R6dx0vvXG+qXg=
 		</data>
 		<key>keypoints_uncheck.circle.png</key>
 		<data>
@@ -501,11 +541,11 @@
 		</data>
 		<key>newBtnPlus_disabled@2x.png</key>
 		<data>
-		CUwJq4U69nUc7Zrv8YxmWlPU/CA=
+		akKenArZIxcg2pQlE5BZ4NCX7hI=
 		</data>
 		<key>newBtnPlus_disabled@3x.png</key>
 		<data>
-		PE/0JpkD6KV+lFB2tiJvfJgN6pI=
+		A+meZManeHRqHnQscOkrMjDlk/s=
 		</data>
 		<key>new_btn_cam.png</key>
 		<data>
@@ -545,15 +585,15 @@
 		</data>
 		<key>new_btn_finish.png</key>
 		<data>
-		X7zinEWGS+Ryf4K2XfzWn0gePKc=
+		q4liLvxx2TBzkZoAke54oePygxI=
 		</data>
 		<key>new_btn_finish@2x.png</key>
 		<data>
-		BAEly3CulGBdZmd79R5Kn3jpWqY=
+		Qws9MVtVVY5rpajkyYcSxW0VGXY=
 		</data>
 		<key>new_btn_finish@3x.png</key>
 		<data>
-		FvOrcoHMatbxSQcv5S/nmA+e15o=
+		AJyMyYcgK8xNpvRQp5tQI7CW+mU=
 		</data>
 		<key>new_btn_retake.png</key>
 		<data>
@@ -581,15 +621,15 @@
 		</data>
 		<key>new_ic_flash_on.png</key>
 		<data>
-		EHEusC85X/A6NzFegs7g2s2s46E=
+		B0/e8Ywwo0A0AqLuJOaARDcbqUw=
 		</data>
 		<key>new_ic_flash_on@2x.png</key>
 		<data>
-		xTRjHZvfWl6Hx5bLjY/P0dgC62I=
+		sQgYd3p6mBTLFSkr/DJtQEHnOOY=
 		</data>
 		<key>new_ic_flash_on@3x.png</key>
 		<data>
-		6mMSRNQqs2AFp4QQJQtG7j6sMxc=
+		jfdGzcAefafKpfcsO3b3kv+vHuc=
 		</data>
 		<key>not selected.png</key>
 		<data>
@@ -637,7 +677,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSU2e2N+6rJsXjnE+ksIuAHFIRq7+lSContQ1G1BJh4=
+			FWDbKM7uHtOoarHG/KQvolbrHhwCywXVA7IYM3fCvuw=
 			</data>
 		</dict>
 		<key>BRStaticScanViewController.nib</key>
@@ -651,7 +691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dj8USLUPotijPlvF8XpiqSIL9Pym5KX2u6oVbvkpFc=
+			N2WggEBrnOz2/W4UaVrwUdcQ5ch9KvgFNUgIPM7EjKM=
 			</data>
 		</dict>
 		<key>Headers/BRCameraViewController.h</key>
@@ -735,7 +775,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/2++/WrMSKLk6xlMADu/exFLBG0Al1/Z0Y2EtVsC/nE=
+			kbpSBhqF5NFM5fEOCHHDD/zFbo9cjZjnwMK91ZB/ins=
 			</data>
 		</dict>
 		<key>Headers/BRScanResultsDelegate.h</key>
@@ -798,7 +838,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7/qfLK/+BNU3S6bvJZSZis7wXf+vrFp6n8cYFvVRyk=
+			JrKLriuNNDZuegPzdhGdc8cGGH+WLPaPIfolXaLwhlE=
 			</data>
 		</dict>
 		<key>Headers/BlinkReceipt.h</key>
@@ -808,18 +848,25 @@
 			gpVcc90hRq6TGj0XZb/tc0WSXq2SF8vz04s1hAGUzJM=
 			</data>
 		</dict>
+		<key>Loading.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pqxt0xQtzuFyBZ61W2K3ZBWngZp0jUGp/8b/zEp1NA0=
+			</data>
+		</dict>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NVIMhw2+ju8cqu3faZGHuck2tAfL9vtPyZOEbfuDbVQ=
+			JxFWYZyt8+NBHhrSBtbqf4bpO0S9fyicwAjvniPjJWc=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fBH6qhZV8d0ZTlotkfYDAgOSsz69ZmAOechY/24TZ/g=
+			BmhphTmSzOV53DsHHI1OSubd7yh1ipJ37LZRJXhrWsI=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsCameraViewController.nib/objects-11.0+.nib</key>
@@ -840,14 +887,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+dL24aOGtjlRF06KTXTb5GkExhSwbfTCQIWgf6JGgmI=
+			p68AvhjJy59e1a+OnlFE5zys7dbshiFj9EOCJg8Epi0=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsMainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+dL24aOGtjlRF06KTXTb5GkExhSwbfTCQIWgf6JGgmI=
+			p68AvhjJy59e1a+OnlFE5zys7dbshiFj9EOCJg8Epi0=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsViewController.nib/objects-11.0+.nib</key>
@@ -868,14 +915,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XuznGBfFImUTA5064FTIC30cdx1biSnM7Y+XT3FLKjE=
+			XqASSb/hSDm2Hc9vsHznpJnP0NNf8dNHwhUKxlS+1qo=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OO82/S9hzn50XdJurKRDgjht3oYBV3qINiIzNXoN3bo=
+			6o9F/ptmnLp+hpLWcrmtrJDmSEbkJdjnxVJ/MStXsCg=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/Info.plist</key>
@@ -899,123 +946,186 @@
 			WPLeIqUWmWlmnPvaDHuTQUqLBQlHWdVEdKatecXmh5w=
 			</data>
 		</dict>
+		<key>Model_16bda327cfe295fedebc943e1134d7ac41c497dd445fe7a9bdb5487b3444fb54.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lxwzUtyi2jEJvDJCIexN/uOQO4ow2YQJOHroAkEtNNA=
+			</data>
+		</dict>
+		<key>Model_2688b5ec0df2d55db85e3345e615c2724838280c2aa77e11ae9779b5d5fef29e.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ENAO6quhi9wj+cxrWbIhtMMnVVzT5uH5TSO7rPzoTng=
+			</data>
+		</dict>
 		<key>Model_2756a93a8fff231a14b1ea8d04f61e8879e0120688eeb80540cedfc9ee37db7c.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4eAWMdvtLyDQNMO6xpWSJXlQW8A69SHUzcT7226z9m8=
+			NBFtVxTlT2YUE1XxEj868JT6m6uONsCy9k1Jb2j4syw=
 			</data>
 		</dict>
 		<key>Model_46cab52a23503494c9b3f7108ba5607c8264b6af8d0741a15d2d7b953c435317.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hyJL/TJe/B+uMM8iIq8Xxo6y1TTW3zLc4Gv5VOkSD2w=
+			IAtS7n6EYeLKEkQ8OZLXiQwDh/ESwcVz6lAA4TjkM48=
 			</data>
 		</dict>
 		<key>Model_491cc6508d69dc8e296c89d60e86251bafd309cd60c34f9dc36733b773a050aa.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w7lCQLh/Qhvd0dRyFONBG42qi0KIztMAl7zVaVzvFng=
+			UX0e5sGOknpyo4SmNUz8d9YPrSTX8B2VQTLhWRFUYBw=
+			</data>
+		</dict>
+		<key>Model_509cb91ee92b2f5ce3f680520faf92f9f499583d2ccd3c1984230a08a4fdc48c.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+vnIwC5jTCNvdLqZPKhiOPu5AWvsf+XNiWhIK6M6yKQ=
 			</data>
 		</dict>
 		<key>Model_542c998edd5d5a8b10e50ea21fdbcff91775be9871d57d6e3ab6258d7b375c6e.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VFLsm2nfe08PSwvxjouqCTrl+t/bdaRKHUjQIQj7Bjw=
+			R9kYyZ4La9GJRe7IPjxakPACsNYLaXE1xAel9uKk99s=
 			</data>
 		</dict>
 		<key>Model_783f5466b9eabd00c12d8cda3973dacf8e08876cd236fed493ac9f798da423e2.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0YtwhAw9nv+ykZSvE9K9EeB372ACxB28VAAK4HtJwmw=
+			MrQxxxhLCaZy6o9Zg7XKw6Rvh1mghTsGOkuWggaAjwY=
 			</data>
 		</dict>
 		<key>Model_81f74f9fcaeb247522be85b91ca28c4eb8884e579d5320cb2ed1fbe06b911b84.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iuIgPkFkWFnJkf4MPPlkEhXPNvXV2CncaqTjrfB20Ck=
+			GqlqxTef9fd0KoYToxTYS9j8rpTeWfccKF4Oy0Hb3hg=
 			</data>
 		</dict>
 		<key>Model_997235f65143669429cc122c75b7335d02a02969048a2c5e13f70c6c83165b5f.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f1ELoUXqJsPeiZxH7mSiuFgdZ/TFHX6WR131bAMu+vI=
+			YGeM33jyPnDmP9cyJ4YqdQz/jVsPEQmaNpD8y3I7TvE=
+			</data>
+		</dict>
+		<key>Model_bc187b4b3e27a6768a060715ab126e14d810da3ff3941a62c74bf64edbcb0145.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			25Ec4fSyw+WyE0tp2cKRdClxI1EdM1Wj2eXN/w8Nzes=
 			</data>
 		</dict>
 		<key>Model_d70a1096cc46a82bb45bb3add90df24ecafef5900c4c185c0923c5e96f0966e7.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rujz4lakU8KaW3V/3vv00kB+3t5PTepcwiakI3DtCsM=
+			16hzLhgo64OQ8IEyRo3vYh9xUlTurnQZYMmdnL+6deU=
+			</data>
+		</dict>
+		<key>Model_f949ea942bc19dcc1e72e100c973ba8aa3ea24344643cb17a7bbf7b4a6b32918.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lZZ3eyQ9sw2ZJMYiKl2BchQPBTLEScQ81diJRpqwLDQ=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOCzZ1baXgbaSbsACq9uBd8Hmm9pL4VwRpWR5gOT6Q0=
+			nIFFLeeW3VD06tjDBYKHWwE+N60FnjuVJFCNKF7Lp4A=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oJiib9QHj7I+O1ZGYuw6fPaX9Hw+iC13+xG3M1Px+sw=
+			9CR2t9VoHRy7k6ILhsMnKk1JxAMcz7Yy5dKPmi7yGe4=
+			</data>
+		</dict>
+		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nmnJJoCyjiasBB5mHezcIYtk+OnJSd7Slu9TPcGWRDE=
+			</data>
+		</dict>
+		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tdghQs7aiQ13KOIMseFojq+pIcp6+BCMC564gfbPOGE=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LsVbXq0dZgFuEfFnvaxKjtdXAnRB4hxNSKzrETyc3r0=
+			rDxAfQgpWLIzaAJK1n2QuFLP3BCDQNDqDdyyYMF+Byc=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RvONOKj0TxNYYOrpLEQ3svsGQJPiGIow/MHIgx3gla8=
+			tdghQs7aiQ13KOIMseFojq+pIcp6+BCMC564gfbPOGE=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MJv/MSnpC9qfHPyWttIn3SMxzPsMIkff/6ZQOofcMfs=
+			vQmbvI6fL1WFPQH0lCOrzWV+1uxf2W/uxI7g2zxYzL4=
+			</data>
+		</dict>
+		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nmnJJoCyjiasBB5mHezcIYtk+OnJSd7Slu9TPcGWRDE=
+			</data>
+		</dict>
+		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R/f1oOEriX0RL15ujej7iX6y47WEdj4cc+STlhAB1/A=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FA54EDKkknyNJPrXIXVEpgbze1egFo4RUeHcrg6qwt0=
+			crGr0CdUgBSpIH+JxcJWsd8EXSYJu09pDgXQcuA+GbY=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2CNatJNTcb54RFezr2evgJhzJ0tJTzzos/MPtP+j1M8=
+			R/f1oOEriX0RL15ujej7iX6y47WEdj4cc+STlhAB1/A=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IoCLCaK8oivqvyR47rEq395eK6RiQS/RMwk8sztN9eY=
+			6bD9cKXCnV0gbCC+HhQ5a8H3ckWSBEV3B3bRUzXDGv8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILcTqQLGMehDK7tWzbywySz5Zer6cQKdteoJusoMwV4=
+			Kx1aDd9nmbDx8JgdTWo2maPcptb3pf1EDiaK2vkE3Ko=
 			</data>
 		</dict>
 		<key>NunitoSans-Black.ttf</key>
@@ -1057,28 +1167,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQ3me987V8dVQe7ewdSHm58sCM+uRYtB6gwBQa0zaLg=
+			Uaa3Z5Mtbz6RU6/1GaRe9cvT1rhJzn3aHD3KtVvOrJY=
 			</data>
 		</dict>
 		<key>box_arrow_blue.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0dNFqY64reFxB3Jxxz/lAvkT3MkHYxKpZiL1x2UAPHM=
+			nkVjww3xh8Q6YsNyAL+YHLRBq1nhFh9t1IovZEQxSmM=
 			</data>
 		</dict>
 		<key>box_arrow_blue@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NfL6kL6X0TQUBVzoaotIs9rgc663xyrurk+vj1q0vAA=
+			Hi1Z6+Ee11R8oTF9kEzDqaM1AVEEt7tnpx0ZsnuadTo=
 			</data>
 		</dict>
 		<key>box_arrow_blue@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cv7/AKzU0Jtv9HnVsSdG+Le+KdxEO9xvP9uewSJTMEs=
+			VPgwHhJ85eoYLluwbRtndZ+UAtgt4/eU/5Z0mjeml4g=
 			</data>
 		</dict>
 		<key>btnPlus.png</key>
@@ -1239,14 +1349,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W1Yp4fy4kapAROAlADd/clIG2y4SpC50fj57B5AdktI=
+			StyUs5qLaDanbyrdLdNgyflPHszE+eoFBaUwFoGY2g0=
 			</data>
 		</dict>
 		<key>btn_retake_blue@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3RnxqICk+lnQNAtf/vgVdQy3qhNPr6cDtKjE+q0Plmk=
+			UcBf1J0Fy5pF300JREczodnNDeREbXKw+rrEj+z9zZQ=
 			</data>
 		</dict>
 		<key>camera.wav</key>
@@ -1385,14 +1495,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VHi6SPt29vE0IyndGcradoiYOQc9ZGXQuedUYIPE/KA=
+			xJozOqZmQF17dyHvvEzmYRYKXBnuEzA1mJp9kDaBG2U=
 			</data>
 		</dict>
 		<key>keypoints_check@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RlonDJ+dnABfchaRV/2xr6ahgz3JUqilPScsUKP/y7M=
+			CgjyElEwWK1cy3IiZrOGr7xAojrQqvVX4SkzjBNISko=
 			</data>
 		</dict>
 		<key>keypoints_uncheck.circle.png</key>
@@ -1469,14 +1579,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OrpH96f/Uz9UupctSM04+5RTx0DnHh6afHXj2uKUihc=
+			lIQiIkXPNNu9DilLr5mrPWN/QjOfYqlRKZI5Od2LKKg=
 			</data>
 		</dict>
 		<key>newBtnPlus_disabled@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rS5eiWhjigyP+U/LmvMyYDpfEAWh+6zjgabrAKrKPJU=
+			8r38xNhVS9SwYXRxMsqWKUn1rtRQjpOBeqzmhuMdm2s=
 			</data>
 		</dict>
 		<key>new_btn_cam.png</key>
@@ -1546,21 +1656,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODxwnrgvuEupKzRBI6BJuO2mnSYWHrP7FpimN/mewmA=
+			tQi+YkeTrH3F4DgUuQulRiOQ7bFMUUaQXE0TBSnxtXE=
 			</data>
 		</dict>
 		<key>new_btn_finish@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQOt6g0UCj+89YIgy0/pg/wnK3jkJSfC1PnFHThuxXA=
+			4h8ZhmlbZg11gbAY60h3VoVK3d/dUCMz2kyjY6wkrZ0=
 			</data>
 		</dict>
 		<key>new_btn_finish@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qcxBtWVf2/lND341q6gBiuL3rc5ztpF+qIPpTOYjVAU=
+			9pcnDK8jNOqVRwgrRGsfUok5S5HUGBEe471HZqYa/Sk=
 			</data>
 		</dict>
 		<key>new_btn_retake.png</key>
@@ -1609,21 +1719,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKtA6KoPCT4TJAKsAkHcd+oEH5KUXE2ViVFdCNh6whY=
+			DVWuyG4lWIDgbT51jySZRy2ylv8iZDuaUtnnuzft2es=
 			</data>
 		</dict>
 		<key>new_ic_flash_on@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GGB1XuIayQN2/vZLt0Qvpj9hs9ei4JNEAcgs/B+ih/E=
+			XLundnQ7l+J5+QCvfa5cI6t1ev4rmu0nidSvgdoBTtA=
 			</data>
 		</dict>
 		<key>new_ic_flash_on@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CvNO39hTpKRNL0PAYhi2RtwpQNlDglM0LKQe3e9/IBk=
+			y8Icxi2W09GkLArtd3akZejk3BXwdsAmIp/th4nPO0Y=
 			</data>
 		</dict>
 		<key>not selected.png</key>

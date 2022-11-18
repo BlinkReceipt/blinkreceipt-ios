@@ -216,6 +216,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *paymentTransactionId;
 
 /**
+*  Represents the type of purchase
+*/
+@property (strong, nonatomic, readonly) NSString *purchaseType;
+
+/**
  *  Whether there is an indication of a loyalty program found on the receipt
 */
 @property (nonatomic, readonly) BOOL loyaltyProgram;
@@ -380,6 +385,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
  *  An array of `BRShipment` objects representing all shipments discovered in this order
  */
 @property (strong, nonatomic, readonly) NSArray<BRShipment*> *shipments;
+
+/**
+ *  NSString representing cumulative set of raw results
+ */
+@property (strong, nonatomic, readonly) NSString *combinedRawText;
 
 /**
  * For custom user corrections flow, if the user adds a new product, call this method to add it to this scan results object

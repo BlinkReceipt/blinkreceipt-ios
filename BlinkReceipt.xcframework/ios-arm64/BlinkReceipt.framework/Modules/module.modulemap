@@ -6,6 +6,6 @@ framework module BlinkReceipt {
 }
 
 module BlinkReceipt.Swift {
-    header "BlinkReceipt-Swift.h"
-    requires objc
+  header "BlinkReceipt-Swift.h"
+  requires objc
 }

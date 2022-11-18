@@ -1,4 +1,11 @@
-﻿# 1.32.0
+﻿# 1.33.0
+- Parsing improvements
+- Remove `MaterialComponents` dependency
+- Add `combinedRawText` property
+- Improved debugging of OCR related crashes
+- Add `purchaseType` property for physical receipts
+
+# 1.32.0
 - Improvements to merchant detection
 - New card types
 - Parsing improvements

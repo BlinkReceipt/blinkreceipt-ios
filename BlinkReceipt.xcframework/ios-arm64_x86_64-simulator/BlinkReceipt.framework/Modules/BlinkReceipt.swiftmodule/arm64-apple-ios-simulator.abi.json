@@ -1,0 +1,828 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlinkReceipt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SimpleKeychain",
+        "printedName": "SimpleKeychain",
+        "declKind": "Import",
+        "moduleName": "BlinkReceipt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BRSimpleKeychain",
+        "printedName": "BRSimpleKeychain",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getValueFromKeychain",
+            "printedName": "getValueFromKeychain(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)getValueFromKeychainForKey:",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC012getValueFromD06forKeySSSgSS_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "getValueFromKeychainForKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDataFromKeychain",
+            "printedName": "getDataFromKeychain(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)getDataFromKeychainForKey:",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC011getDataFromD06forKeySo6NSDataCSgSS_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "getDataFromKeychainForKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setKeychain",
+            "printedName": "setKeychain(value:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)setKeychainWithValue:forKey:",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC03setD05value6forKeyySS_SStF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "setKeychainWithValue:forKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setKeychain",
+            "printedName": "setKeychain(data:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)setKeychainWithData:forKey:",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC03setD04data6forKeyySo6NSDataC_SStF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "setKeychainWithData:forKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteKeychainValue",
+            "printedName": "deleteKeychainValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)deleteKeychainValueForKey:",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC06deleteD5Value6forKeyySS_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "deleteKeychainValueForKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BRSimpleKeychain",
+                "printedName": "BlinkReceipt.BRSimpleKeychain",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain(im)init",
+            "mangledName": "$s12BlinkReceipt16BRSimpleKeychainCACycfc",
+            "moduleName": "BlinkReceipt",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BlinkReceipt@objc(cs)BRSimpleKeychain",
+        "mangledName": "$s12BlinkReceipt16BRSimpleKeychainC",
+        "moduleName": "BlinkReceipt",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlinkReceipt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BlinkReceipt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BRDebugFileManager",
+        "printedName": "BRDebugFileManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urlsOfImageFiles",
+            "printedName": "urlsOfImageFiles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(py)urlsOfImageFiles",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC16urlsOfImageFilesSay10Foundation3URLVGvp",
+            "moduleName": "BlinkReceipt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)urlsOfImageFiles",
+                "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC16urlsOfImageFilesSay10Foundation3URLVGvg",
+                "moduleName": "BlinkReceipt",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlsOfOCRResultsFiles",
+            "printedName": "urlsOfOCRResultsFiles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(py)urlsOfOCRResultsFiles",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC21urlsOfOCRResultsFilesSay10Foundation3URLVGvp",
+            "moduleName": "BlinkReceipt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)urlsOfOCRResultsFiles",
+                "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC21urlsOfOCRResultsFilesSay10Foundation3URLVGvg",
+                "moduleName": "BlinkReceipt",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "markerFileExists",
+            "printedName": "markerFileExists",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(py)markerFileExists",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC06markerD6ExistsSbvp",
+            "moduleName": "BlinkReceipt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)markerFileExists",
+                "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC06markerD6ExistsSbvg",
+                "moduleName": "BlinkReceipt",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fileManager:device:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BRDebugFileManager",
+                "printedName": "BlinkReceipt.BRDebugFileManager",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileManager",
+                "printedName": "Foundation.FileManager",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSFileManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDevice",
+                "printedName": "UIKit.UIDevice",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIDevice"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)initWithFileManager:device:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC04fileE06deviceACSo06NSFileE0C_So8UIDeviceCtcfc",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "initWithFileManager:device:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "saveData",
+            "printedName": "saveData(_:fileExtension:additionalMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)saveData:fileExtension:additionalMetadata:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC8saveData_13fileExtension18additionalMetadataSSSg10Foundation0G0VSg_SSypSgtF",
+            "moduleName": "BlinkReceipt",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteFile",
+            "printedName": "deleteFile(named:fileExtension:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)deleteFileWithNamed:fileExtension:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC06deleteD05named13fileExtensionySSSg_SStF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "deleteFileWithNamed:fileExtension:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteFiles",
+            "printedName": "deleteFiles(withExtension:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)deleteFilesWithExtension:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC11deleteFiles13withExtensionySS_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "deleteFilesWithExtension:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteFile",
+            "printedName": "deleteFile(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)deleteFileAt:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC06deleteD02aty10Foundation3URLV_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "deleteFileAt:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "metadataForFile",
+            "printedName": "metadataForFile(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)metadataForFileAt:",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC011metadataForD02atSSSg10Foundation3URLV_tF",
+            "moduleName": "BlinkReceipt",
+            "objc_name": "metadataForFileAt:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BRDebugFileManager",
+                "printedName": "BlinkReceipt.BRDebugFileManager",
+                "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager(im)init",
+            "mangledName": "$s12BlinkReceipt18BRDebugFileManagerCACycfc",
+            "moduleName": "BlinkReceipt",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BlinkReceipt@objc(cs)BRDebugFileManager",
+        "mangledName": "$s12BlinkReceipt18BRDebugFileManagerC",
+        "moduleName": "BlinkReceipt",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/dpanzer\/Projects\/WindfallSDK-Pod\/BRDebugFileManager.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 10,
+      "value": "\"metadata\""
+    },
+    {
+      "filePath": "\/Users\/dpanzer\/Projects\/WindfallSDK-Pod\/BRDebugFileManager.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 18,
+      "value": "\"BlinkReceipt.BRDebugFileManager\""
+    }
+  ]
+}

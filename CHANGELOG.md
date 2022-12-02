@@ -1,4 +1,6 @@
-﻿# 1.33.0
+# 1.33.1
+- Remove `SimpleKeychain` dependency
+# 1.33.0
 - Parsing improvements
 - Remove `MaterialComponents` dependency
 - Add `combinedRawText` property

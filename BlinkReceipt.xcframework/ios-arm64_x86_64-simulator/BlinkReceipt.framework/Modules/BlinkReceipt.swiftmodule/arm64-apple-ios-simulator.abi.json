@@ -15,13 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "SimpleKeychain",
-        "printedName": "SimpleKeychain",
-        "declKind": "Import",
-        "moduleName": "BlinkReceipt"
-      },
-      {
         "kind": "TypeDecl",
         "name": "BRSimpleKeychain",
         "printedName": "BRSimpleKeychain",
@@ -811,14 +804,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dpanzer\/Projects\/WindfallSDK-Pod\/BRDebugFileManager.swift",
+      "filePath": "\/Users\/adincebic\/developer\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 10,
       "value": "\"metadata\""
     },
     {
-      "filePath": "\/Users\/dpanzer\/Projects\/WindfallSDK-Pod\/BRDebugFileManager.swift",
+      "filePath": "\/Users\/adincebic\/developer\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 18,

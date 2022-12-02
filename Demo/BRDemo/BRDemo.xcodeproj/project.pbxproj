@@ -107,7 +107,6 @@
 				B9EC9D2D204F6C6100E13E95 /* Frameworks */,
 				B9EC9D2E204F6C6100E13E95 /* Resources */,
 				2D5F96231989D48850EDC8EA /* [CP] Embed Pods Frameworks */,
-				57CCC2EF709EFC7BDD0D7CFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,96 +170,24 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework",
 				"${BUILT_PRODUCTS_DIR}/CHCSVParser/CHCSVParser.framework",
-				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BlinkReceipt/BlinkReceipt.framework/BlinkReceipt",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlinkReceipt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHCSVParser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlinkReceipt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57CCC2EF709EFC7BDD0D7CFF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-resources.sh",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/deep_ocr_model_internal_5.1.0.zzip",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/deep_ocr_model_walmart_scanned_5.1.3.zzip",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/logo_detection_model_production_5.1.1.zzip",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/googlevision.der",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/windfall-intermediate.der",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/BRLiveScanViewController.nib",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/BRStaticScanViewController.nib",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus@2x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus@3x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam@2x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam@3x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed@2x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed@3x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off@2x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off@3x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on@2x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on@3x.png",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/camera.wav",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/logo-mappings.csv",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/merchant-names.csv",
-				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/singapore-mall.csv",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/deep_ocr_model_internal_5.1.0.zzip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/deep_ocr_model_walmart_scanned_5.1.3.zzip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logo_detection_model_production_5.1.1.zzip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/googlevision.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/windfall-intermediate.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRLiveScanViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRStaticScanViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/camera.wav",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logo-mappings.csv",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/merchant-names.csv",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/singapore-mall.csv",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BRDemo/Pods-BRDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BRDemo/Pods-BRDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A6A9134DA0F43FBE1D39F478 /* [CP] Check Pods Manifest.lock */ = {
@@ -426,7 +353,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGLYPUD2HQ;
 				INFOPLIST_FILE = BRDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.blinkreceipt.BRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +369,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGLYPUD2HQ;
 				INFOPLIST_FILE = BRDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.blinkreceipt.BRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

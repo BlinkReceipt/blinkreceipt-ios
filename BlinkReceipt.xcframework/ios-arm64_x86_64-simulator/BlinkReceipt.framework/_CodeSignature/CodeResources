@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/BlinkReceipt-Swift.h</key>
 		<data>
-		gRvBzh7iHMPzUVFnAXylKSzSVeY=
+		qF8OY0EwxO+Sqo8DojQkogvutO4=
 		</data>
 		<key>Headers/BlinkReceipt.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vY8ZMwCfBmoah/5o9m0fIemV6mE=
+		1/Xi0qcUwzswo8jR1t72nr/rbMs=
 		</data>
 		<key>Loading.png</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		N1eq2TKGEg3KmvclRfn+pYZPEVw=
+		5sj2xeznnpmfKZNEglICo/SfjAc=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		iowuc50cGJAMi/fNuDm8zDVoIaQ=
+		aAAuwgVfE7taAv7eBKdzo602nQM=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -254,19 +254,19 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4wsSTTqFlT+TIERKxOibuTCWpT4=
+		+Wn4mXZDxc7+VFG2oVJMzDhzgBQ=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OS121mE8fM/qZlulShJTBXcmJSM=
+		wiuUYqvlMxGCh722bpSxONR2CAg=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4wsSTTqFlT+TIERKxOibuTCWpT4=
+		+Wn4mXZDxc7+VFG2oVJMzDhzgBQ=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FUNoakHtXmNH3qtuyAEEE60W8q8=
+		ceUN1rNkwoEgDFdpwPkOUh/vOpQ=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -274,19 +274,19 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kd8FEgjTJif7YF6sLHmGcr1E/6k=
+		+Sg0S0H/q4/jwbeLyf94Zl7Cc70=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uE5PD6VhtlKylT+HiWgPNCPBigw=
+		GpIOAlwGohAF4D0Z/I545rT8pJ8=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kd8FEgjTJif7YF6sLHmGcr1E/6k=
+		+Sg0S0H/q4/jwbeLyf94Zl7Cc70=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fd8Sy0H4ledan21hPYrcHEu0cW4=
+		gaegclacUvdIsp12SCS5SHHZx5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -858,7 +858,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/hwCLLVMdofGrtXSN3aSgV7CfIMqgxFk13hn4BlX8jA=
+			icnMVcsvA9SV7Z/EXnrWs+ccCNH74MgsD3MqdrJ4MKk=
 			</data>
 		</dict>
 		<key>Headers/BlinkReceipt.h</key>
@@ -1096,14 +1096,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iC44Q93Oe3kZkQU1PLhxBgFv8Nvy5aGm6DuaPPY4dPU=
+			eTj2u3Hzjr7s0uX5aNZwYIRN7rRoIJRMrLR5gshnVfY=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JgcBAQmZiXX3yJBAWIxCckFsaO1FU1IcUnIfFMks8ks=
+			RlyLM68MxcKoRAQojiZR2o6Nj37ul+1fzN7YurWYU7M=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -1117,28 +1117,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WwrTo33vZy0VmkNFVqy/cFBXdRUIz19YTPhue+TP9zs=
+			vSphkpvt0lCBcGpiQ6WXBwWmwRBJVTa5N/V/nW82otM=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0SHd2LXyu8EM95XnXoq6VzTPMX+9vqozhBq8+KT9UtI=
+			EEEGkOHAmbDE/cOIxvTuGL+Aaq4a0D8YzbUD+kJ0IGI=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WwrTo33vZy0VmkNFVqy/cFBXdRUIz19YTPhue+TP9zs=
+			vSphkpvt0lCBcGpiQ6WXBwWmwRBJVTa5N/V/nW82otM=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			botgBAy1SW2mIL5lpJti8W8nsnjYL+tGz2hZr/2m/RA=
+			qVUku3TX5obik4odLNg69QyillGPOlV6wX5ZdEmxYGs=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1152,28 +1152,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h+YobLRK3fevEoIGfLmvM9N0Tap5mA/ry8ZyYCVedpg=
+			ZsZUrdQW3r/qaAFqR+6WMlQXIN4NK57YuAW25hXpgjE=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ProXSgSttSZ4kuia8vxk3Y/0YljT4DfVeF1X6J0hO9Q=
+			b41l8C2g2Ap9LPKbA3jwcN8dif5UKXo2SC2hOH3nubk=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h+YobLRK3fevEoIGfLmvM9N0Tap5mA/ry8ZyYCVedpg=
+			ZsZUrdQW3r/qaAFqR+6WMlQXIN4NK57YuAW25hXpgjE=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y2w0WQajNKGM47RqWZLneo7SDcZXMdJGnWOcxPdOTM8=
+			lZtav1QkhDCDkPkupB19W1Nkb/ROYBvba2M/41jXFeE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,5 +1,23 @@
 # BlinkReceipt Integration Instructions
 
+## Installation with Swift Package Manager
+
+The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the swift compiler and Xcode.
+
+We provide a URL to the public package repository that you can add in Xcode:
+
+```shell
+https://github.com/blinkreceipt/blinkreceipt-ios/
+```
+
+In Xcode:
+
+* File > Add Packages
+* Enter `https://github.com/blinkreceipt/blinkreceipt-ios/` in the search box in top right corner
+* Select "BlinkReceiptStatic" from the list of search results
+* For the version strategy choose "branch""""" and make sure that "master" branch is selected""
+* Click "Add Package"""
+
 ## Installation with CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries like BlinkReceipt in your projects. If you do not have Cocoapods installed, see the [Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html#getting-started).

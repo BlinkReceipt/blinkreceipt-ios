@@ -1,5 +1,9 @@
+# 1.34.0
+- Parsing improvements
+
 # 1.33.1
 - Remove `SimpleKeychain` dependency
+
 # 1.33.0
 - Parsing improvements
 - Remove `MaterialComponents` dependency

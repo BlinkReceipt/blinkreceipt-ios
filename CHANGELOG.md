@@ -1,3 +1,11 @@
+# 1.35.0
+- Add support for new fuel product properties
+- Fixed bug in some fuel receipt prices
+- Add support for special Canada dates
+- UK fixes for total detection
+- Fix bug with some Walgreens quantities
+- Minor fixes for Panera and Dollar General receipts
+
 # 1.34.0
 - Parsing improvements
 

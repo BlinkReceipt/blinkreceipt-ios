@@ -804,14 +804,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/adincebic\/developer\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
+      "filePath": "\/Users\/stanislav\/Microblink\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 10,
       "value": "\"metadata\""
     },
     {
-      "filePath": "\/Users\/adincebic\/developer\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
+      "filePath": "\/Users\/stanislav\/Microblink\/WindfallSDK-Pod\/WindfallCore\/BRDebugFileManager.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 18,

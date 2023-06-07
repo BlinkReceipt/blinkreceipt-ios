@@ -1,3 +1,12 @@
+# 1.36.0
+- Improved accuracy of FullPrice property
+- Improved detection of unusual price formats
+- Improved fake receipts detection
+- Improved total detection on UK receipts
+- Added support for special date format for some Canada merchants
+- Fixed Walgreens quantities detection
+- Binary size optimizations
+
 # 1.35.0
 - Add support for new fuel product properties
 - Fixed bug in some fuel receipt prices

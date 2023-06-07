@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		brvjJ+q2m7LQwWdxhS7glqGTZAM=
+		hP+vnBeo4gMh7R1eKRese9W6128=
 		</data>
 		<key>Loading.png</key>
 		<data>
@@ -168,14 +168,6 @@
 		<data>
 		Uk/7BqZAfF1V+FnrcSXmeERYLcE=
 		</data>
-		<key>Model_0a98992a52394df6c615e35ba413c7b2b41654f8bd429b71a6ae0090c51e7290.strop</key>
-		<data>
-		91z0nOATEkRk3gOmy/tJAwF3SnE=
-		</data>
-		<key>Model_16bda327cfe295fedebc943e1134d7ac41c497dd445fe7a9bdb5487b3444fb54.strop</key>
-		<data>
-		Q3NqYrw7+xTpheg+WBwXQO8N5TY=
-		</data>
 		<key>Model_2756a93a8fff231a14b1ea8d04f61e8879e0120688eeb80540cedfc9ee37db7c.strop</key>
 		<data>
 		1fJOjJFyhfsabYLcTWhtwCPk1ro=
@@ -188,18 +180,6 @@
 		<data>
 		HKHk40e+BBZprRiZpib9AOY62mQ=
 		</data>
-		<key>Model_4c68baf48c6c43379b8e068081282d9561860b4bd39125637dbc21327d3a446e.strop</key>
-		<data>
-		Cp/xUpKN1DmXZUFe5a2XDPssYpw=
-		</data>
-		<key>Model_4cd1e5d02dc21e757102851d88912bbc03beaf847d36c922bf2e4cbdad00724a.strop</key>
-		<data>
-		oG0NOdrJULIe0X66HF0j5+8u8Q0=
-		</data>
-		<key>Model_509cb91ee92b2f5ce3f680520faf92f9f499583d2ccd3c1984230a08a4fdc48c.strop</key>
-		<data>
-		aZFgodYd8dgW1ccc6Nz0HPQu5BM=
-		</data>
 		<key>Model_542c998edd5d5a8b10e50ea21fdbcff91775be9871d57d6e3ab6258d7b375c6e.strop</key>
 		<data>
 		w+6orTk795BjKnxOesRdWkr6vpY=
@@ -208,26 +188,6 @@
 		<data>
 		MTgPBU3K+caOT+DU50Lrbcoz36U=
 		</data>
-		<key>Model_81f74f9fcaeb247522be85b91ca28c4eb8884e579d5320cb2ed1fbe06b911b84.strop</key>
-		<data>
-		zBfE8zPhhqpNJdXpUYBE4dIeCi8=
-		</data>
-		<key>Model_8f98d48fdfb8c95ffda5ef45d1e649744e6e50bb3100632ccfd66f5a9da5c010.strop</key>
-		<data>
-		gmGVhG5ZykUAUOa+AlzRbWAHEHc=
-		</data>
-		<key>Model_997235f65143669429cc122c75b7335d02a02969048a2c5e13f70c6c83165b5f.strop</key>
-		<data>
-		JShdtNenkWAvmsqDV8NaNExRjwA=
-		</data>
-		<key>Model_bc187b4b3e27a6768a060715ab126e14d810da3ff3941a62c74bf64edbcb0145.strop</key>
-		<data>
-		Vk1Ee586CIMRgalP79fNx8u/iSE=
-		</data>
-		<key>Model_c1b13a338b3198bf8694bd92428cfbd8d8c6e497e768b20e929d1efbbc913bba.strop</key>
-		<data>
-		5bRtmOXvVMwdutoiiA+d6/m3T5I=
-		</data>
 		<key>Model_d70a1096cc46a82bb45bb3add90df24ecafef5900c4c185c0923c5e96f0966e7.strop</key>
 		<data>
 		HHSoAW9s2k4vEGuUeAv976x0feE=
@@ -235,10 +195,6 @@
 		<key>Model_dcb7228306947017ab888a87248bda58849c4cc54de9899a3737423c5b6d7f97.strop</key>
 		<data>
 		p4bPkd0GRL6L3cLvRB4u5fy5PNM=
-		</data>
-		<key>Model_f949ea942bc19dcc1e72e100c973ba8aa3ea24344643cb17a7bbf7b4a6b32918.strop</key>
-		<data>
-		JknofS+ygEg/ti6TMD+MIopwDoM=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
@@ -537,7 +493,7 @@
 		</data>
 		<key>merchant-names-all.alp</key>
 		<data>
-		sl7hR0YzZzP6AYrCMX3lHrbaTMo=
+		qZjiy3tSUAQORcLCYJqFY41dbsU=
 		</data>
 		<key>movecloser.mp3</key>
 		<data>
@@ -966,20 +922,6 @@
 			WPLeIqUWmWlmnPvaDHuTQUqLBQlHWdVEdKatecXmh5w=
 			</data>
 		</dict>
-		<key>Model_0a98992a52394df6c615e35ba413c7b2b41654f8bd429b71a6ae0090c51e7290.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nXS/1ougnU1xw2JGHYSkbgnJ1+a02bN/Nd+zl2sx8Uw=
-			</data>
-		</dict>
-		<key>Model_16bda327cfe295fedebc943e1134d7ac41c497dd445fe7a9bdb5487b3444fb54.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DH3KTG02J8yr5H8CPznuUFyndXEblclVe8vP3wZw8Aw=
-			</data>
-		</dict>
 		<key>Model_2756a93a8fff231a14b1ea8d04f61e8879e0120688eeb80540cedfc9ee37db7c.strop</key>
 		<dict>
 			<key>hash2</key>
@@ -1001,27 +943,6 @@
 			qAtUKfUufI8loAOT0kTm6AFlc759Bcx+oQaGrGRjp/A=
 			</data>
 		</dict>
-		<key>Model_4c68baf48c6c43379b8e068081282d9561860b4bd39125637dbc21327d3a446e.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/mumXU3hAjYNJ5X7NutRSzBLTFSKMu9Qb7MmefZOXrQ=
-			</data>
-		</dict>
-		<key>Model_4cd1e5d02dc21e757102851d88912bbc03beaf847d36c922bf2e4cbdad00724a.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xAq8GEZCME/35dYaZ6W4oOvMq3z9QdR4gz2tSs5XPh8=
-			</data>
-		</dict>
-		<key>Model_509cb91ee92b2f5ce3f680520faf92f9f499583d2ccd3c1984230a08a4fdc48c.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LjvKVY2dHMO3TPWn2S+1ySyU1KmpxNGuqADshJtSj3A=
-			</data>
-		</dict>
 		<key>Model_542c998edd5d5a8b10e50ea21fdbcff91775be9871d57d6e3ab6258d7b375c6e.strop</key>
 		<dict>
 			<key>hash2</key>
@@ -1036,41 +957,6 @@
 			TJRrZFNInV5i91mN6WV7z7D7hLcp+ziABorGgcfP+M0=
 			</data>
 		</dict>
-		<key>Model_81f74f9fcaeb247522be85b91ca28c4eb8884e579d5320cb2ed1fbe06b911b84.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			W8NwVZ9YqjByb7OEMKtvf5N13eRBK3WkZrcpxAUvi+g=
-			</data>
-		</dict>
-		<key>Model_8f98d48fdfb8c95ffda5ef45d1e649744e6e50bb3100632ccfd66f5a9da5c010.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9jSmdr2bh9PkVIhAeDYveFujY5TOv3RfHug7jjChA9I=
-			</data>
-		</dict>
-		<key>Model_997235f65143669429cc122c75b7335d02a02969048a2c5e13f70c6c83165b5f.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VHdrFW2SLzEc0Cs2kpLHz6M29YKoh3TLd8s9bCHH7pM=
-			</data>
-		</dict>
-		<key>Model_bc187b4b3e27a6768a060715ab126e14d810da3ff3941a62c74bf64edbcb0145.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tVt/yMW1GbhWlCPbzLt2OXvR9s98gJcwJ4c1vbsKxN8=
-			</data>
-		</dict>
-		<key>Model_c1b13a338b3198bf8694bd92428cfbd8d8c6e497e768b20e929d1efbbc913bba.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZplEvI9RDgTgarOkFfJQ95oMm+PUKZ/Pm+PTEk5l8Cg=
-			</data>
-		</dict>
 		<key>Model_d70a1096cc46a82bb45bb3add90df24ecafef5900c4c185c0923c5e96f0966e7.strop</key>
 		<dict>
 			<key>hash2</key>
@@ -1083,13 +969,6 @@
 			<key>hash2</key>
 			<data>
 			daQDcG4iEll6xlngtgJziMgQi0N12/T/Iw+zzYH4roU=
-			</data>
-		</dict>
-		<key>Model_f949ea942bc19dcc1e72e100c973ba8aa3ea24344643cb17a7bbf7b4a6b32918.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oHY+4VUEHqx57qcKOhFTxT//2kwLcpc3ZXbzhs9t3kk=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
@@ -1592,7 +1471,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m2fpz9rJWR/crrb76W8oHdBdapk4piUfVVmTCGToff4=
+			ziDxYZgMG5g1WgWUPu9Bkj4zQ5a4eNWFrMimAydDWhE=
 			</data>
 		</dict>
 		<key>movecloser.mp3</key>

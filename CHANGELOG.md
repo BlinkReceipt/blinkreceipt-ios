@@ -1,3 +1,7 @@
+# 1.37.0
+- Tag long transaction ID for Walmart
+- Binary optimizations
+
 # 1.36.0
 - Improved accuracy of FullPrice property
 - Improved detection of unusual price formats

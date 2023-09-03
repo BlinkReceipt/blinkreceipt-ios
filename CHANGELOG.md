@@ -1,3 +1,6 @@
+# 1.38.0
+- Capture manufacturer coupons below products
+
 # 1.37.0
 - Tag long transaction ID for Walmart
 - Binary optimizations

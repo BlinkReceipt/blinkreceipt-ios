@@ -1,3 +1,8 @@
+# 1.40.0
+- Basket and trip improvements for Germany
+- Merchant detection improvements in Germany, US, UK
+- Added support for `rawTripHeaderText`, `rawBasketText` and `rawTripFooterText` properties in `BRScanResults`
+
 # 1.39.0
 - Binary optimizations
 

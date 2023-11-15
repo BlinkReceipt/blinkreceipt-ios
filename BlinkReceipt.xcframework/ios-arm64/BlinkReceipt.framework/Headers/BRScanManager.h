@@ -123,6 +123,24 @@
             withDelegate:(nonnull NSObject<BRScanResultsDelegate>*)delegate;
 
 /**
+ *  Scans a PDF receipt
+ *
+ *  @param pdfData      The raw PDF data
+ *  @param countryCode         Country of receipt
+ *  @param completion          This callback is invoked when the correction flow ends
+ *
+ *      * `BRScanResults *scanResults` - If PDF parsing was successful, this will contain the parsed results
+ *
+ *      * `NSError *error` - If PDF parsing failed, this will indicate the reason.
+ *
+ *  Note: PDF max size is 10mb
+ *
+ */
+- (void)scanPDFReceipt:(nonnull NSData*)pdfData
+       withCountryCode:(nonnull NSString*)countryCode
+        withCompletion:(nonnull void(^)(BRScanResults * _Nullable results , NSError * _Nullable error ))completion;
+
+/**
  *  Creates a new `MFMailComposeViewController` populated with debug information about the most recent scan. Caller is responsible for setting the mailComposeDelegate and presenting/dismissing the view controller.
  *
  *  Note: If this method is invoked on the simulator or a device with no email supported, it will output the message body to the console and return `nil`.

@@ -392,6 +392,21 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *combinedRawText;
 
 /**
+ *  A set of raw product data results
+ */
+@property (strong, nonatomic, readonly) NSString *rawBasketText;
+
+/**
+ *  A set of raw trip results found on top of receipt
+ */
+@property (strong, nonatomic, readonly) NSString *rawTripHeaderText;
+
+/**
+ *  A set of raw trip results found on bottom of receipt
+ */
+@property (strong, nonatomic, readonly) NSString *rawTripFooterText;
+
+/**
  * For custom user corrections flow, if the user adds a new product, call this method to add it to this scan results object
  * @param brand     The brand, if any, of the new product
  * @param upc         The upc, if any, of the new product

@@ -1,3 +1,6 @@
+# 1.41.0
+- Binary optimizations
+
 # 1.40.0
 - Basket and trip improvements for Germany
 - Merchant detection improvements in Germany, US, UK

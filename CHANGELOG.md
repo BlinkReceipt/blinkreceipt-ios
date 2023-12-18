@@ -1,3 +1,9 @@
+# 1.42.0
+- Fuel product improvements (Upside)
+- Last 4 CC digits fixes (Upside)
+- Germany (DE) improvement
+- General basket & trip fixes
+
 # 1.41.0
 - Binary optimizations
 

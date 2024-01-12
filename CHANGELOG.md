@@ -4,7 +4,6 @@
 - Improved support for extracting longTransactionId for Walmart, Costco, Target, Walgreens and Sam’s Club US receipts
 - Gas product extraction improvements in the US
 - Overall extraction improvements
-- Return cashback value
 - Added support for extracting cashback via new property, if found on a receipt
 
 # 1.42.0

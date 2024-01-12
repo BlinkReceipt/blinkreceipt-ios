@@ -392,6 +392,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *combinedRawText;
 
 /**
+ *  Float value representing cashback amount
+ */
+@property (nonatomic, readonly) float cashback;
+
+/**
  *  A set of raw product data results
  */
 @property (strong, nonatomic, readonly) NSString *rawBasketText;

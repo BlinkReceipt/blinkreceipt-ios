@@ -1,3 +1,10 @@
+# 1.44.0
+- Product QTY improvements for Albertsons banners in the US
+- Merchant detection improvements in US, UK and DE
+- Overall extraction improvements
+- Improvements to long_transaction_id extraction
+- Resolved main thread error related crash
+
 # 1.43.0
 - Merchant detection improvements in DE, ZA
 - Total extraction improvements for M&S in the UK

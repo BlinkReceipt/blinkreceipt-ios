@@ -1,3 +1,9 @@
+# 1.45.0
+- Product QTY improvements in the US
+- Improvements to tip extraction
+- Overall extraction improvements
+- Improvements to long_transaction_id extraction
+
 # 1.44.0
 - Product QTY improvements for Albertsons banners in the US
 - Merchant detection improvements in US, UK and DE

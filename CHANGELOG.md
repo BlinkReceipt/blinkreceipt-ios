@@ -1,3 +1,8 @@
+# 1.46.0
+- Overall extraction improvements in the UK
+- Add German localization
+- Added support for extracting loyalty member number via new property, if found on a receipt
+
 # 1.45.0
 - Product QTY improvements in the US
 - Improvements to tip extraction

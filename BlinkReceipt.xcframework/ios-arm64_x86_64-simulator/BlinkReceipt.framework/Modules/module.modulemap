@@ -1,7 +1,7 @@
 framework module BlinkReceipt {
   umbrella header "BlinkReceipt.h"
-
   export *
+
   module * { export * }
 }
 

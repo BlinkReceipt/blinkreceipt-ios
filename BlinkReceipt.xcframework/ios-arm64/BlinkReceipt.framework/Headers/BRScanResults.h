@@ -412,6 +412,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) NSString *rawTripFooterText;
 
 /**
+ *  Loyalty member number detected on the receipt, if any
+ */
+@property (strong, nonatomic, readonly) NSString *memberNumber;
+
+/**
  * For custom user corrections flow, if the user adds a new product, call this method to add it to this scan results object
  * @param brand     The brand, if any, of the new product
  * @param upc         The upc, if any, of the new product

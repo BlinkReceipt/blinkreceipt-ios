@@ -15,7 +15,7 @@ In Xcode:
 * File > Add Packages
 * Enter `https://github.com/blinkreceipt/blinkreceipt-ios/` in the search box in top right corner
 * Select "BlinkReceiptStatic" from the list of search results
-* For the version strategy choose "branch""""" and make sure that "master" branch is selected""
+* For the version strategy choose "branch""""" and make sure that "master" branch is selected"". You can also pick the exact version or choos version range.
 * Click "Add Package"""
 
 ## Installation with CocoaPods

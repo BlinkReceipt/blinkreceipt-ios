@@ -1,3 +1,8 @@
+# 1.47.0
+- Overall extraction improvements in US, including product weights and quantities
+- Date extraction improvements in DE & US
+- Added Privacy Manifest
+
 # 1.46.0
 - Overall extraction improvements in the UK
 - Add German localization

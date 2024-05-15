@@ -1,3 +1,8 @@
+# 1.48.0
+- Improvements to date accuracy in CA
+- Improvements to QTY and weighed product extraction for H-E-B, Walgreens and various US merchants
+- Improvements to long_transaction_id extraction for Walmart in US
+
 # 1.47.0
 - Overall extraction improvements in US, including product weights and quantities
 - Date extraction improvements in DE & US

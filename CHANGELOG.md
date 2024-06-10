@@ -1,3 +1,9 @@
+# 1.49.0
+- Improvements to Tax extraction for Ahold Banners in the US
+- Improvements to Last 4 CC extraction
+- Improvements to basket/product extraction in US and ZA for various merchants
+- Improvements to phone number extraction in DE
+
 # 1.48.0
 - Improvements to date accuracy in CA
 - Improvements to QTY and weighed product extraction for H-E-B, Walgreens and various US merchants

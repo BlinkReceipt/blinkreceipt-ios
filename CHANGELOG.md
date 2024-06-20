@@ -1,3 +1,6 @@
+# 1.50.0
+- Improvements to Last 4 CC extraction
+
 # 1.49.0
 - Improvements to Tax extraction for Ahold Banners in the US
 - Improvements to Last 4 CC extraction

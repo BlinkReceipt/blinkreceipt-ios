@@ -124,7 +124,7 @@ pre code {
   display: flex;
   padding: 8px;
   font-size: 0.875em;
-  background: #444;
+  background: #142641;
   color: #999; }
 
 .header-col {
@@ -158,8 +158,6 @@ pre code {
   @media (min-width: 768px) {
     .navigation {
       order: 1;
-      width: 25%;
-      max-width: 300px;
       padding-bottom: 64px;
       overflow: hidden;
       word-wrap: normal;
@@ -171,7 +169,7 @@ pre code {
 
 .nav-group-name {
   border-bottom: 1px solid #ddd;
-  padding: 8px 0 8px 16px; }
+  padding: 8px 16px 8px 16px; }
 
 .nav-group-name-link {
   color: #333; }
@@ -346,7 +344,7 @@ pre code {
 
 .footer {
   padding: 8px 16px;
-  background: #444;
+  background: #142641;
   color: #ddd;
   font-size: 0.8em; }
   .footer p {

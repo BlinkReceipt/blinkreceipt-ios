@@ -1,3 +1,9 @@
+## 1.51.0
+- Improvements to basket/product extraction for Loblaws Banners in Canada (CA)
+- Improvements to date extraction in CA, US
+- Improvements to Last 4 CC extraction in US
+- Improvements to merchant detection in UK
+
 # 1.50.0
 - Improvements to Last 4 CC extraction
 

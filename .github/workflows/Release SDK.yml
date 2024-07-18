@@ -22,7 +22,7 @@ on:
 
 jobs:
   Release SDK:
-    runs-on: [ubuntu-latest]
+    runs-on: [macos-latest]
     env:
       SDK_NAME: ${{ github.event.inputs.SDK_NAME }}
       SDK_VERSION: ${{ github.event.inputs.SDK_VERSION }}

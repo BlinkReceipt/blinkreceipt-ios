@@ -24,8 +24,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "\(frameworkName)Static",
-            url: "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.51.0/BlinkReceiptStatic.xcframework-1.51.0.zip",
-            checksum: "3ca78637057df72689fea11ca7dd82c2728a91bc8e59b89afbc5059a0bd7bacb"
+            url: "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.52.0/BlinkReceiptStatic.xcframework-1.52.0.zip",
+            checksum: "4731796d3955defd450b5a22d828fa2bd7d70ae34e4aa38aca604dbf91aa3b74"
         )
     ]
 )

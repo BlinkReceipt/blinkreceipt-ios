@@ -226,6 +226,11 @@
 @property (nonatomic, readonly) BOOL isSensitive;
 
 /**
+ *  Found after a price if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *pricePostfix;
+
+/**
  * For custom user corrections flow, when a user modifies an existing product, call this method to update the product's properties.
  * Note: You should pass values for all the properties even if the user did not modify them
  *

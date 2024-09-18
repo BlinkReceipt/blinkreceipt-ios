@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BlinkReceipt"
-  s.version      = "1.52.0"
+  s.version      = "1.53.0"
   s.summary      = "BlinkReceipt SDK"
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ This is the BlinkReceipt SDK
 
   s.author             = { "Darren Bassman" => "darren.bassman@microblink.com" }
   s.platform     = :ios
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "13.0"
   
   s.source       = { :git => "https://github.com/BlinkReceipt/blinkreceipt-ios.git", :tag => "#{s.version}" }
 

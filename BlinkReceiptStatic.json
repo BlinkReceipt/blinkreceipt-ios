@@ -62,5 +62,6 @@
   "1.49.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.49.0/BlinkReceiptStatic.xcframework-1.49.0.zip",
   "1.50.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.50.0/BlinkReceiptStatic.xcframework-1.50.0.zip",
   "1.51.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.51.0/BlinkReceiptStatic.xcframework-1.51.0.zip",
-  "1.52.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.52.0/BlinkReceiptStatic.xcframework-1.52.0.zip"
+  "1.52.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.52.0/BlinkReceiptStatic.xcframework-1.52.0.zip",
+  "1.53.0" : "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.53.0/BlinkReceiptStatic.xcframework-1.53.0.zip"
 }

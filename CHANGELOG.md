@@ -1,3 +1,9 @@
+## 1.53.0
+### ADDED
+- Improvements to basket/product extraction for Loblaws Banners in Canada (CA)
+- Improvements to QTY extraction in US for Albertsons banners and various retailers
+- Improvements to Last 4 CC extraction in US
+
 ## 1.52.0
 ### ADDED
 - Support to localize data chips, which indicate to the user whether the date, total, or merchant has been successfully detected in the receipt.

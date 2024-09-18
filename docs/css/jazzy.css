@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #fff;
   color: #333;
-  font: 16px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.7 Satoshi, sans-serif;
   letter-spacing: .2px;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box; }
@@ -359,7 +359,7 @@ html.dash .height-container {
   display: block; }
 
 form[role=search] input {
-  font: 16px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.7 Satoshi, sans-serif;
   font-size: 14px;
   line-height: 24px;
   padding: 0 10px;
@@ -380,7 +380,7 @@ form[role=search] .tt-highlight {
   font-weight: bold; }
 
 form[role=search] .tt-suggestion {
-  font: 16px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.7 Satoshi, sans-serif;
   padding: 0 8px; }
   form[role=search] .tt-suggestion span {
     display: table-cell;
@@ -401,3 +401,11 @@ form[role=search] .tt-suggestion.tt-cursor {
 form[role=search] .tt-suggestion:hover .doc-parent-name,
 form[role=search] .tt-suggestion.tt-cursor .doc-parent-name {
   color: #fff; }
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 2px; }

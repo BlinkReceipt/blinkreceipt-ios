@@ -1,3 +1,9 @@
+## 1.54.0
+### ADDED
+- Improvements to QTY extraction in US for various retailers
+- Improvements to Last 4 CC extraction in US
+- ExposedblinkReceiptId as a property on BRCameraViewController
+
 ## 1.53.0
 ### ADDED
 - Improvements to basket/product extraction for Loblaws Banners in Canada (CA)

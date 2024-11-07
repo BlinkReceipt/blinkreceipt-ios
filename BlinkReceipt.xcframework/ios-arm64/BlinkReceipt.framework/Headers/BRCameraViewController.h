@@ -75,6 +75,11 @@ typedef NS_ENUM(NSUInteger, BRCameraType) {
  */
 @property (nonatomic) BOOL manualCaptureSession;
 
+/**
+ *  Unique ID of the current receipt
+ */
+@property (strong, nonatomic, readonly) NSString *blinkReceiptId;
+
 
 
 ///--------------------------

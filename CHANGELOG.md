@@ -1,3 +1,10 @@
+## 1.55.0
+### ADDED
+- Improvements to QTY extraction for various US retailers
+- Improvements Taxes extraction
+- Improvements to Full Price extraction for various US retailers
+- Added support for Returns/ Refund receipts
+
 ## 1.54.0
 ### ADDED
 - Improvements to QTY extraction in US for various retailers

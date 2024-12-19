@@ -1,3 +1,11 @@
+## 1.54.1
+### ADDED
+- Improving data extraction for German receipts, focusing on quantities, weights, and full price.
+- Improving basket extraction (QTY, weights) for German receipts.
+- Enhancing QTY extraction for various US retailers.
+- Improving tax extraction accuracy for various US retailers.
+- Enhancing full price extraction for US retailers and for German receipts.
+
 ## 1.54.0
 ### ADDED
 - Improvements to QTY extraction in US for various retailers

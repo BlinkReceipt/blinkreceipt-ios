@@ -1,3 +1,7 @@
+## 1.54.2
+### ADDED
+- Stability improvements
+
 ## 1.54.1
 ### ADDED
 - Improving data extraction for German receipts, focusing on quantities, weights, and full price.

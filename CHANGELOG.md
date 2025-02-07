@@ -1,3 +1,12 @@
+## 1.54.3
+### ADDED
+- Fee and Bag Extraction in the US
+- QTY and Product Description Extraction for ALDI, Sprouts, Jewel-Osco
+- QTY and Phone Number Extraction for German Retailers
+- Date Extraction in the UK
+- Total Extraction in the UK
+- Licensing mechanism updates
+
 ## 1.54.2
 ### ADDED
 - Stability improvements

@@ -1,3 +1,7 @@
+## 1.55.0
+### ADDED
+- Scan Pipeline Improvements
+
 ## 1.54.3
 ### ADDED
 - Fee and Bag Extraction in the US

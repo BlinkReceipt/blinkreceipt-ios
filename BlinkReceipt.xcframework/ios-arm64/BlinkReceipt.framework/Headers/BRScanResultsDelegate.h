@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BRProduct.h"
 #import "BRScanResults.h"
+#import "BRFrameAttributes.h"
 
 ///
 typedef NS_ENUM(NSUInteger, BRErrorCodes) {
@@ -80,5 +81,7 @@ typedef NS_ENUM(NSUInteger, BRErrorCodes) {
  *  @param val    The information itself
  */
 - (void)didOutputDebugKey:(NSString*)key withValue:(id)val;
+
+- (void)didReturnAttributes:(BRFrameAttributes*)attributes forImageIndex:(NSInteger)index;
 
 @end

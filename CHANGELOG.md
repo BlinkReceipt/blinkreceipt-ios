@@ -1,3 +1,9 @@
+## 1.56.0
+### ADDED
+- Overall improvements in basket accuracy, including:
+  - US Market: Improved extraction of product descriptions, part numbers, and basket details for better accuracy across various retailers.
+  - Germany Market: Enhanced capture of product information, including quantity and full price details for German receipts.
+
 ## 1.55.0
 ### ADDED
 - Scan Pipeline Improvements

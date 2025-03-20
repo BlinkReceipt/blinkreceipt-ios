@@ -10,6 +10,8 @@
   - **New Class**: `BRQualifiedProduct`, which includes:
     - `productIndex` (integer)
     - `productGroups` (array of strings)
+- **Receipt Image Quality**
+  - We've improved how we detect receipts taken from a screen, reducing false positives for more accurate results.
 
 ## 1.56.0
 ### ADDED

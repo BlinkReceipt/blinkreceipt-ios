@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "BRSerializable.h"
+#import "BRQualifiedProduct.h"
 
 typedef NSArray<NSNumber*>* BRPromotionQualification;
 
@@ -59,5 +60,10 @@ typedef NSArray<NSNumber*>* BRPromotionQualification;
  *  If this promotion qualified, this property contains an array of each instance of qualification, and each instance is an array containing the indexes of the products in the `BRScanResults.products` array which caused this promotion to qualify
  */
 @property (strong, nonatomic, readonly) NSArray<BRPromotionQualification> *qualifications;
+
+/**
+ *  If this promotion qualified, this property contains an array of each qualified product along with its index in the main `products` result structure and any product groups it is part of
+ */
+@property (strong, nonatomic, readonly) NSArray<BRQualifiedProduct*> *qualifiedProductLists;
 
 @end

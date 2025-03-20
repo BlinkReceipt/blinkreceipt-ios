@@ -1,3 +1,16 @@
+## 1.56.1
+### ADDED
+- **Receipt Extraction**
+  - **Fuel Products**: Better accuracy in fuel receipt data, including pricing and transaction details.
+  - **Product Descriptions**: Improved accuracy for **Hannaford, Meijer, Kroger**, and other retailers.
+  - **Merchant Detection**: Enhanced recognition of merchants in the **US and Germany**.
+  - **Receipt Time Capture**: More precise extraction of receipt timestamps.
+- **Promotion Validation** - We’ve introduced a new property in the SDK for better promotion validation:
+  - **New Property**: `BRPromotion.qualifiedProductLists`. This property will return promoted products and the associated Product List to improve how qualified products are categorized.
+  - **New Class**: `BRQualifiedProduct`, which includes:
+    - `productIndex` (integer)
+    - `productGroups` (array of strings)
+
 ## 1.56.0
 ### ADDED
 - Overall improvements in basket accuracy, including:

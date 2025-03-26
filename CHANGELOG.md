@@ -1,3 +1,7 @@
+## 1.56.2
+### FIXED
+- Code signing issue
+
 ## 1.56.1
 ### ADDED
 - **Receipt Extraction**

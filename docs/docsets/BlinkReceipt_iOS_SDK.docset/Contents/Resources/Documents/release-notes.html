@@ -28,7 +28,7 @@
       </p>
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          BlinkReceipt iOS SDK 1.56.1 Docs
+          BlinkReceipt iOS SDK 1.56.2 Docs
         </a>
         
       </p>
@@ -267,7 +267,66 @@
   }
 </style>
 <h1 id='release-notes' class='heading'>Release Notes</h1>
-<h2 id='feb-13-2024' class='heading'>Feb 13, 2024</h2>
+<h2 id='mar-20-2025' class='heading'>Mar 20, 2025</h2>
+
+<div class="note">
+  <div class="note-type">
+    <span class="added">ADDED</span>
+  </div>
+  <div class="note-content">
+    <p><strong>Receipt Extraction</strong></p>
+    <div style="padding-left: 20px">
+      <div class="bullet"></div>
+      <strong>Fuel Products:</strong> Better accuracy in fuel receipt data, including pricing and transaction details.
+    </div>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div>
+      <strong>Product Descriptions:</strong> Improved accuracy for <strong>Hannaford</strong>, <strong>Meijer</strong>, <strong>Kroger</strong>, and other retailers.
+    </div>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div>
+      <strong>Merchant Detection:</strong> Enhanced recognition of merchants in the <strong>US</strong> and <strong>Germany</strong>.
+    </div>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div>
+      <strong>Receipt Time Capture:</strong> More precise extraction of receipt timestamps.
+    </div>
+    <p><strong>Promotion Validation</strong> - We’ve introduced a new property in the SDK for better promotion validation:</p>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div> 
+      <strong>New Property:</strong> <span style="background-color: #818b981f;border-radius: 5px;padding: 5px;font-size: 85%;">BRPromotion.qualifiedProductLists</span>. This property will return promoted products and the associated Product List to improve how qualified products are categorized.
+    </div>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div> 
+      <strong>New Class:</strong> <span style="background-color: #818b981f;border-radius: 5px;padding: 5px;font-size: 85%;">BRQualifiedProduct</span>, which includes:
+    </div>
+    <p style="padding-left: 40px;">- <span style="background-color: #818b981f;border-radius: 5px;padding: 5px;font-size: 85%;">productIndex</span> (integer)</p>
+    <p style="padding-left: 40px;">- <span style="background-color: #818b981f;border-radius: 5px;padding: 5px;font-size: 85%;">productGroups</span> (array of strings)</p>
+    <p><strong>Receipt Image Quality</strong></p>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div> We&rsquo;ve improved how we detect receipts taken from a screen, reducing false positives for more accurate results.
+    </div>
+  </div>
+</div>
+<h2 id='mar-10-2025' class='heading'>Mar 10, 2025</h2>
+
+<div class="note">
+  <div class="note-type">
+    <span class="added">ADDED</span>
+  </div>
+  <div class="note-content">
+    <p><strong>Overall improvements in basket accuracy, including:</strong></p>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div> 
+      <strong>US Market:</strong> Improved extraction of product descriptions, part numbers, and basket details for better accuracy across various retailers.
+    </div>
+    <div style="padding-left: 20px;">
+      <div class="bullet"></div> 
+      <strong>Germany Market:</strong> Enhanced capture of product information, including quantity and full price details for German receipts.
+    </div>
+  </div>
+</div>
+<h2 id='feb-13-2025' class='heading'>Feb 13, 2025</h2>
 
 <div class="note">
   <div class="note-type">
@@ -399,7 +458,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2025 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2025-03-20)</p>
+      <p>&copy; 2025 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2025-03-26)</p>
       
     </section>
   </body>

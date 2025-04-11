@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yTvlkyDU0s9yw7unLKwPrWl+yzU=
+		zAVLSpt6Yp7xPIeeIEB8Ec48uAY=
 		</data>
 		<key>Loading.png</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NJgLVrDG2gBsQOhKuRVDXPAT8so=
+		UOd+F6KvMJclAhEZHhKRc6oRAJ4=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oFNPha9OqHlWs4+PBLF5FlMseYM=
+		7ypIhZttzzSUAAlRoH4OmoGfHrk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -493,7 +493,7 @@
 		</data>
 		<key>merchant-names-all.alp</key>
 		<data>
-		XSI2+6KKn2eieciNraGXoXZYSEU=
+		wz6ke84VexyLldnCA+QrfF3Q6ZI=
 		</data>
 		<key>movecloser.mp3</key>
 		<data>
@@ -1030,7 +1030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hhim0Ct2yr7qEXKvoOJc23LERxc06RR1LpQpyPzX2yE=
+			rou2EyxOaV02i5+eNVT4D5F2eJKfHCH2VtZxtlis7G0=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1065,7 +1065,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GvQIBxT5C4xhKwOVOyTw8rs9FJoGnZpI41+DUrc/cXI=
+			LMGffozkALpIIk6Dl9aMvQHjdyNz5Q58uaZkKpqXInk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1491,7 +1491,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bV2jVHd9Sd21IVDc+v8TxE+omeSvCHIBpknESh8YHu0=
+			bBKzk50qmIWIl+kfQx65VBqim2Q0gu8zP8ayyidFhlQ=
 			</data>
 		</dict>
 		<key>movecloser.mp3</key>

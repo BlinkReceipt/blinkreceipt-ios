@@ -1,3 +1,9 @@
+## 1.57.0
+### ADDED
+- **UK Merchants**: Enhanced product description, quantity (QTY), and price extraction for improved accuracy.
+- **Phone Extraction**: Improved phone number extraction capabilities for receipts from both Germany and the UK.
+- **US Receipts**: Enhanced accuracy in capturing transaction IDs and taxes for US-based receipts.
+
 ## 1.56.2
 ### FIXED
 - Code signing issue

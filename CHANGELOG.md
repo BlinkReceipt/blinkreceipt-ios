@@ -1,3 +1,9 @@
+## 1.58.0
+### ADDED
+- **UK Merchants**: Improved extraction of product descriptions, quantities (QTY), and dates for enhanced accuracy across top UK retailers.
+- **US Receipts**:
+    - **Fuel Products**: Resolved an issue where fuel items were incorrectly flagged, ensuring more reliable product categorization for US-based receipts.
+
 ## 1.57.0
 ### ADDED
 - **UK Merchants**: Enhanced product description, quantity (QTY), and price extraction for improved accuracy.

@@ -1,3 +1,12 @@
+## 1.59.0
+### ADDED
+**Full Price and Discount Improvements - US**
+- Improvements on Full Price extraction (price before any discounts).
+- Enhanced detection, extraction and mapping of discounts to individual products. 
+**Improvements to Australian Receipts**
+- Enhanced receipt extraction for Australian transactions.
+- Optimized handling of GST and other tax-related fields.
+
 ## 1.58.0
 ### ADDED
 - **UK Merchants**: Improved extraction of product descriptions, quantities (QTY), and dates for enhanced accuracy across top UK retailers.

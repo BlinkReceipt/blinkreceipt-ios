@@ -1,3 +1,10 @@
+## 1.60.0
+### ADDED
+- Improved detection of discounts and promotions
+- More accurate extraction of product quantities, even when listed in less common formats
+- Enhanced capture of the last 4 digits of credit card numbers across a wider range of receipt layouts
+- Camera stability improvements
+
 ## 1.59.0
 ### ADDED
 **Full Price and Discount Improvements - US**

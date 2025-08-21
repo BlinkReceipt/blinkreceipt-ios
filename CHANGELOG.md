@@ -1,3 +1,14 @@
+## 1.61.0
+### ADDED
+**Merchant Detection Improvements**
+- Enhanced merchant detection models for the US, The Netherlands, and Germany, improving accuracy and consistency across regions.
+
+**Stability Improvements**
+- Addressed an issue that could cause unexpected crashes in certain scenarios, improving overall reliability
+
+**Basket Data Enhancements – Germany**
+- Improved extraction accuracy for basket-level details, including product quantities, promotions, and pricing.
+
 ## 1.60.0
 ### ADDED
 - Improved detection of discounts and promotions

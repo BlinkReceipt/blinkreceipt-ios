@@ -1,3 +1,13 @@
+## 1.61.1
+### ADDED
+**Improvements**
+- **French Canadian Date Support**
+  - Enhanced date recognition to support French Canadian formats in Canada
+- **Promotion Detection in German Receipts**
+  - Improved accuracy when identifying promotions on German receipts.
+- **Camera UX**
+  - Added stability improvements to camera experience
+
 ## 1.61.0
 ### ADDED
 **Merchant Detection Improvements**

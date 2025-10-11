@@ -1,3 +1,7 @@
+## 1.61.2
+### ADDED
+- Stability fixes and improvements
+
 ## 1.61.1
 ### ADDED
 **Improvements**

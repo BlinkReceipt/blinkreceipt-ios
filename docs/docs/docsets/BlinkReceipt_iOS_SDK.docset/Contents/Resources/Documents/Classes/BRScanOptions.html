@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BRScanOptions Class Reference</title>
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-180x180.png" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/BRScanOptions" class="dashAnchor"></a>
+
+    <a title="BRScanOptions Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col">
+        <img weight="20" height="20" src="https://microblink.com/wp-content/themes/microblink/assets/images/microblink-logo-animated.webp"/>
+      </p>
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          BlinkReceipt iOS SDK 1.61.2 Docs
+        </a>
+        
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/BlinkReceipt/blinkreceipt-ios">
+            <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">BlinkReceipt iOS SDK</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      <a class="breadcrumb" href="../Classes.html">Classes</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      BRScanOptions Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../custom-camera-controller.html">Custom Camera Controller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../enhanced-camera-ux.html">Enhanced Camera UX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../localization.html">Localization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../receipt-correction.html">Receipt Correction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../release-notes.html">Release Notes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../surveys.html">Surveys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRCameraViewController.html">BRCameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRCoupon.html">BRCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRFloatValue.html">BRFloatValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRFrameAttributes.html">BRFrameAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRIntValue.html">BRIntValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRMissedEarningsBaseViewController.html">BRMissedEarningsBaseViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRPaymentMethod.html">BRPaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRProduct.html">BRProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRProductAdditionalLine.html">BRProductAdditionalLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRPromotion.html">BRPromotion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRPromotionInfo.html">BRPromotionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRQualifiedProduct.html">BRQualifiedProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRScanManager.html">BRScanManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRScanOptions.html">BRScanOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRScanResults.html">BRScanResults</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRShipment.html">BRShipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRStringValue.html">BRStringValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRSurvey.html">BRSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRSurveyResponse.html">BRSurveyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BRValue.html">BRValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRCameraType.html">BRCameraType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRCouponType.html">BRCouponType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRDistanceStatus.html">BRDistanceStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRErrorCodes.html">BRErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRLightingCondition.html">BRLightingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRMerchantSource.html">BRMerchantSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WFRetailerId.html">WFRetailerId</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BRScanResultsDelegate.html">BRScanResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BRSerializable.html">BRSerializable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>BRScanOptions</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRScanOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRScanOptions</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Create an instance of this class to specify the scanning options for a session</p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L277">Show on GitHub</a>
+              </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)retailerId"></a>
+                    <a name="//apple_ref/objc/Property/retailerId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)retailerId">retailerId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the retailer is known in advance pass in a value from the <code><a href="../Enums/WFRetailerId.html">WFRetailerId</a></code> enum</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/WFRetailerId.html">WFRetailerId</a></span> <span class="n">retailerId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">retailerId</span><span class="p">:</span> <span class="kt"><a href="../Enums/WFRetailerId.html">WFRetailerId</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L77">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)returnRawText"></a>
+                    <a name="//apple_ref/objc/Property/returnRawText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)returnRawText">returnRawText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to return the raw OCR text. If this property is true, <code><a href="../Protocols/BRScanResultsDelegate.html#/c:objc(pl)BRScanResultsDelegate(im)didOutputRawText:">-[BRScanResultsDelegate didOutputRawText:]</a></code> will be called</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnRawText</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">returnRawText</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L85">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)storeUserFrames"></a>
+                    <a name="//apple_ref/objc/Property/storeUserFrames" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)storeUserFrames">storeUserFrames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to write the user-confirmed frames to disk. If this property is true, after a scanning session <code><a href="../Classes/BRScanManager.html#/c:objc(cs)BRScanManager(py)userFramesFilepaths">BRScanManager.userFramesFilepaths</a></code> will contain the local paths of the user frames. You are responsible for deleting these images from disk when you are done with them.</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">storeUserFrames</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">storeUserFrames</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)clientUsesScanditCamera"></a>
+                    <a name="//apple_ref/objc/Property/clientUsesScanditCamera" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)clientUsesScanditCamera">clientUsesScanditCamera</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the client uses a Scandit camera independently of the BlinkReceipt SDK. If this is the case, BlinkReceipt will incorporate a fix to an inconsistent camera bug that occurs in this scenario.</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">clientUsesScanditCamera</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">clientUsesScanditCamera</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)debugMode"></a>
+                    <a name="//apple_ref/objc/Property/debugMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)debugMode">debugMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to store up all the frames that the SDK parsed for inclusion in the debug email after the scan</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">debugMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">debugMode</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L107">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)jpegCompressionQuality"></a>
+                    <a name="//apple_ref/objc/Property/jpegCompressionQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)jpegCompressionQuality">jpegCompressionQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The compression quality parameter to pass into <code>UIImageJPEGRepresentation</code> for saving user images to disk</p>
+
+<p>Default: 0.9</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">jpegCompressionQuality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">jpegCompressionQuality</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L115">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)tooFarThreshold"></a>
+                    <a name="//apple_ref/objc/Property/tooFarThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)tooFarThreshold">tooFarThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This controls when the &ldquo;Move Closer&rdquo; message appears. The threshold is a percentage expressed as an integer between 1 and 99. If edges are detected such that the width of the receipt divided by the width of the full image is below this threshold, the &ldquo;too far&rdquo; flag will be passed to the client.</p>
+
+<p>Default: 80</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">tooFarThreshold</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tooFarThreshold</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L123">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)edgesEveryNthFrame"></a>
+                    <a name="//apple_ref/objc/Property/edgesEveryNthFrame" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)edgesEveryNthFrame">edgesEveryNthFrame</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This controls how often edge detection is run on frames returned by the camera. Must be an even integer between 2 and 30. For example, setting this to 8 means edge detection will be run every 8th frame</p>
+
+<p>Default: 6</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">edgesEveryNthFrame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">edgesEveryNthFrame</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L131">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)detectDistanceWithEdges"></a>
+                    <a name="//apple_ref/objc/Property/detectDistanceWithEdges" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)detectDistanceWithEdges">detectDistanceWithEdges</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls whether edge detection is used to make determinations of user&rsquo;s distance from the receipt</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectDistanceWithEdges</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detectDistanceWithEdges</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L139">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)numGoodFramesToStopEdges"></a>
+                    <a name="//apple_ref/objc/Property/numGoodFramesToStopEdges" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)numGoodFramesToStopEdges">numGoodFramesToStopEdges</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of consecutive frames above the <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)tooFarThreshold">tooFarThreshold</a></code> before we stop running edge detection</p>
+
+<p>Default: 2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">numGoodFramesToStopEdges</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">numGoodFramesToStopEdges</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L147">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)restartEdgesAfterUserConfirm"></a>
+                    <a name="//apple_ref/objc/Property/restartEdgesAfterUserConfirm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)restartEdgesAfterUserConfirm">restartEdgesAfterUserConfirm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code><a href="../Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)numGoodFramesToStopEdges">numGoodFramesToStopEdges</a></code> is greater than 0, this property allows edge detection to restart after a user confirms a frame</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">restartEdgesAfterUserConfirm</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">restartEdgesAfterUserConfirm</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L154">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)enableEdgesAfterUserPhoto"></a>
+                    <a name="//apple_ref/objc/Property/enableEdgesAfterUserPhoto" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableEdgesAfterUserPhoto">enableEdgesAfterUserPhoto</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the SDK should continue edge detection after the first user snapped photo</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableEdgesAfterUserPhoto</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableEdgesAfterUserPhoto</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L161">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)beginEdgesImmediately"></a>
+                    <a name="//apple_ref/objc/Property/beginEdgesImmediately" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)beginEdgesImmediately">beginEdgesImmediately</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the SDK should begin edge detection immediately at the start of the scan session (as opposed to establishing frame quality baselines before starting edge detection)</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">beginEdgesImmediately</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">beginEdgesImmediately</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L168">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)detectWrongRetailer"></a>
+                    <a name="//apple_ref/objc/Property/detectWrongRetailer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)detectWrongRetailer">detectWrongRetailer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the SDK should attempt to verify that the user is in fact scanning a receipt from the specified retailer. If this property is true and the SDK detects a different retailer than specified, <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)didDetectWrongRetailer:withConfidence:">-[BRCameraViewController didDetectWrongRetailer:withConfidence:]</a></code> will be triggered, which allows the client to determine if scanning should continue with the new retailer</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectWrongRetailer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detectWrongRetailer</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L175">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)countryCode"></a>
+                    <a name="//apple_ref/objc/Property/countryCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)countryCode">countryCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>If specified, the SDK will assume all receipts scanned are from a particular country.
+Format is ISO 2 character country code for the receipts which will be scanned (full list here: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements</a> )
+*</li>
+<li>Default: nil</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">countryCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">countryCode</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L184">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)detectLogo"></a>
+                    <a name="//apple_ref/objc/Property/detectLogo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)detectLogo">detectLogo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to enable logo detection</p>
+
+<p>Default: YES</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectLogo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detectLogo</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L191">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)manualTorchControl"></a>
+                    <a name="//apple_ref/objc/Property/manualTorchControl" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)manualTorchControl">manualTorchControl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the client will control the torch manually (should only be used with custom <code><a href="../Classes/BRCameraViewController.html">BRCameraViewController</a></code> subclass). When this is enabled, <code><a href="../Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)didGetLightingCondition:">-[BRCameraViewController didGetLightingCondition:]</a></code> will be invoked to notify the client of lighting changes</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">manualTorchControl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">manualTorchControl</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L199">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)disableOnDeviceProcessing"></a>
+                    <a name="//apple_ref/objc/Property/disableOnDeviceProcessing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)disableOnDeviceProcessing">disableOnDeviceProcessing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If this property is enabled, the SDK will not perform any on-device frame processing</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">disableOnDeviceProcessing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">disableOnDeviceProcessing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L206">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)detectDuplicates"></a>
+                    <a name="//apple_ref/objc/Property/detectDuplicates" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)detectDuplicates">detectDuplicates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If this property is enabled, and the receipt is detected to be a duplicate, <code><a href="../Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)isDuplicate">BRScanResults.isDuplicate</a></code> will be set to true. Also checks for fraudulent receipts and sets the <code><a href="../Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)isFraudulent">BRScanResults.isFraudulent</a></code> property</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectDuplicates</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detectDuplicates</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L213">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)returnVoidedProducts"></a>
+                    <a name="//apple_ref/objc/Property/returnVoidedProducts" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)returnVoidedProducts">returnVoidedProducts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If this property is enabled, voided products will be returned with the <code><a href="../Classes/BRProduct.html#/c:objc(cs)BRProduct(py)isVoided">BRProduct.isVoided</a></code> property set to <code>YES</code></p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnVoidedProducts</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">returnVoidedProducts</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L220">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)validatePromotions"></a>
+                    <a name="//apple_ref/objc/Property/validatePromotions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)validatePromotions">validatePromotions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to attempt to validate scan results against specified promotions</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">validatePromotions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">validatePromotions</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L227">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)promotionSlugs"></a>
+                    <a name="//apple_ref/objc/Property/promotionSlugs" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)promotionSlugs">promotionSlugs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>One or more promotion slugs to validate against</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">promotionSlugs</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">promotionSlugs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L232">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)enableDynamicTextSizing"></a>
+                    <a name="//apple_ref/objc/Property/enableDynamicTextSizing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableDynamicTextSizing">enableDynamicTextSizing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If enabled, the stock camera controller&rsquo;s UI will adjust based on the user&rsquo;s text size preference from the Settings or Accessibility screens</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableDynamicTextSizing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableDynamicTextSizing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L239">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)previousFrameOverlap"></a>
+                    <a name="//apple_ref/objc/Property/previousFrameOverlap" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)previousFrameOverlap">previousFrameOverlap</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This property controls how much of the previous frame is visible in the stock controller once a user has touched to add an additional frame. Specified in pixels</p>
+
+<p>Default: 72</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">previousFrameOverlap</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">previousFrameOverlap</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L246">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)returnSubproducts"></a>
+                    <a name="//apple_ref/objc/Property/returnSubproducts" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)returnSubproducts">returnSubproducts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If this property is enabled, subproducts will be returned in the <code><a href="../Classes/BRProduct.html#/c:objc(cs)BRProduct(py)subProducts">BRProduct.subProducts</a></code> array of the parent product</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">returnSubproducts</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">returnSubproducts</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L253">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)enableDateChip"></a>
+                    <a name="//apple_ref/objc/Property/enableDateChip" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableDateChip">enableDateChip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If enabled, date chip will show whether the date is recognized after scan</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableDateChip</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableDateChip</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L260">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)enableTotalChip"></a>
+                    <a name="//apple_ref/objc/Property/enableTotalChip" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableTotalChip">enableTotalChip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If enabled, total chip will show whether the total is recognized after scan</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableTotalChip</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableTotalChip</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L267">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BRScanOptions(py)enableMerchantChip"></a>
+                    <a name="//apple_ref/objc/Property/enableMerchantChip" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRScanOptions(py)enableMerchantChip">enableMerchantChip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If enabled, merchant chip will show whether the merchant is recognized after scan</p>
+
+<p>Default: NO</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableMerchantChip</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableMerchantChip</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.61.2/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L274">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2025 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2025-10-11)</p>
+      
+    </section>
+  </body>
+</html>

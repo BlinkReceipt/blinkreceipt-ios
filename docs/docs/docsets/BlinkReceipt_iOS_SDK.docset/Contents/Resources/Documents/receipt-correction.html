@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Receipt Correction  Reference</title>
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-180x180.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="Receipt Correction  Reference"></a>
+
+    <header class="header">
+      <p class="header-col">
+        <img weight="20" height="20" src="https://microblink.com/wp-content/themes/microblink/assets/images/microblink-logo-animated.webp"/>
+      </p>
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          BlinkReceipt iOS SDK 1.61.2 Docs
+        </a>
+        
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/BlinkReceipt/blinkreceipt-ios">
+            <img class="header-icon" src="img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">BlinkReceipt iOS SDK</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      <a class="breadcrumb" href="Guides.html">Guides</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      Receipt Correction  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="custom-camera-controller.html">Custom Camera Controller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="enhanced-camera-ux.html">Enhanced Camera UX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="localization.html">Localization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="receipt-correction.html">Receipt Correction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="release-notes.html">Release Notes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="surveys.html">Surveys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRCameraViewController.html">BRCameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRCoupon.html">BRCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRFloatValue.html">BRFloatValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRFrameAttributes.html">BRFrameAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRIntValue.html">BRIntValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRMissedEarningsBaseViewController.html">BRMissedEarningsBaseViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPaymentMethod.html">BRPaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRProduct.html">BRProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRProductAdditionalLine.html">BRProductAdditionalLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPromotion.html">BRPromotion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPromotionInfo.html">BRPromotionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRQualifiedProduct.html">BRQualifiedProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanManager.html">BRScanManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanOptions.html">BRScanOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanResults.html">BRScanResults</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRShipment.html">BRShipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRStringValue.html">BRStringValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurvey.html">BRSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyResponse.html">BRSurveyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRValue.html">BRValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRCameraType.html">BRCameraType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRCouponType.html">BRCouponType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRDistanceStatus.html">BRDistanceStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRErrorCodes.html">BRErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRLightingCondition.html">BRLightingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRMerchantSource.html">BRMerchantSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/WFRetailerId.html">WFRetailerId</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BRScanResultsDelegate.html">BRScanResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BRSerializable.html">BRSerializable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='receipt-correction-flow' class='heading'>Receipt Correction Flow</h1>
+
+<p>If you would like your users to be able to correct receipt data (especially for purchase validation) after scanning you can achieve this using the Receipt Correction Flow.</p>
+<h2 id='storing-receipt-data-locally' class='heading'>Storing Receipt Data Locally</h2>
+
+<p>The BlinkReceipt SDK can store receipt data (scan results + images) locally for a certain amount of time so that if a user wants to edit it after the fact, the data will be immediately available.</p>
+
+<p>Indicate how long you want receipt data to be stored with the following property:</p>
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">].</span><span class="n">daysToStoreReceiptData</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</code></pre>
+<h2 id='retrieving-receipt-data-remotely' class='heading'>Retrieving Receipt Data Remotely</h2>
+
+<p>If you prefer not to store receipt data locally, we will attempt to fetch receipt data from our servers when you initiate the &ldquo;Stock Receipt Correction UI&rdquo; or when you explicitly request the results as described in &ldquo;Custom Receipt Correction UI&rdquo; below.</p>
+<h2 id='stock-receipt-correction-ui' class='heading'>Stock Receipt Correction UI</h2>
+
+<p>To begin receipt correction for a given BlinkReceipt ID, use the following to show the initial controller:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">startReceiptCorrection</span><span class="p">:</span><span class="s">@"DCA68D70-A4DD-4FE0-83D6-D4F6AE442777"</span>
+                                   <span class="nl">fromViewController:</span><span class="n">self</span>
+                                       <span class="nl">withCustomFont:</span><span class="nb">nil</span>
+                                       <span class="nl">withCompletion:</span><span class="o">^</span><span class="p">(</span><span class="n">BRScanResults</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">results</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+                                           <span class="p">[</span><span class="n">self</span> <span class="nf">dismissViewControllerAnimated</span><span class="p">:</span><span class="nb">YES</span> <span class="nf">completion</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+                                       <span class="p">}];</span>
+</code></pre>
+
+<ul>
+<li>You may pass your own <code>UIFont</code> instance to help style the receipt correction elements to look more like your own app. Don&rsquo;t worry about the size of the font you pass; it will be ignored and all the elements will retain their original font sizes, but will use your font name.</li>
+</ul>
+
+<p>The initial controller displays a list of the products and prices that were scanned. The user can touch any product to edit it, or can choose to add a new product that was missed entirely.</p>
+
+<p>When a user edits a product or adds a new product, a modal controller is shown which prompts the user to scan the barcode of the item.</p>
+
+<p>When a barcode is successfully scanned, if you participate in the purchase validation platform, the SDK will make a request to validate the UPC against your list of participating products.</p>
+
+<p>If a matching product is found, the user will have the opportunity to adjust the quantity and price and save the record.</p>
+
+<p>The callback from the method above passes back to you a fully populated <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object after the user&rsquo;s corrections and the attempt to validate these results against promotions. See the section below for new fields to pay attention to specifically.</p>
+<h2 id='custom-receipt-correction-ui' class='heading'>Custom Receipt Correction UI</h2>
+
+<p>You may create your own UI to capture user changes to an existing set of scan results.</p>
+
+<p>The first step is to load the scan results and receipt images for a given Blink Receipt ID as follows:</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">getResultsForReceiptCorrection</span><span class="p">:</span><span class="s">@"blink_receipt_id"</span><span class="p">]</span>
+                                               <span class="n">withCompletion</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BRScanResults</span><span class="o">*</span> <span class="n">_Nullable</span> <span class="n">results</span><span class="p">,</span>
+                                                                               <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UIImage</span><span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">images</span><span class="p">))</span><span class="n">completion</span> <span class="p">{</span>
+
+                                                                               <span class="p">}</span>
+</code></pre>
+
+<p>At this point you can display your own UI using these objects to show the user the old results and provide a way for them to modify certain properties (only a limited number of receipt properties and product properties are editable).</p>
+
+<p>You may require a user to scan a product barcode (see section below on subclassing our barcode controller) to add or modify products or you may provide a different interface.</p>
+
+<p>To modify an existing product, call:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userCorrectedBrand</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">brand</span>
+                       <span class="nf">upc</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span>
+               <span class="nf">productName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">productName</span>
+                  <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">imageUrl</span>
+                <span class="nf">totalPrice</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">totalPrice</span>
+                  <span class="nf">quantity</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quantity</span><span class="p">;</span>
+</code></pre>
+
+<p>on the existing <code><a href="Classes/BRProduct.html">BRProduct</a></code> object with the new values for this product.</p>
+
+<p>To add a new product call:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addUserCorrectedProductWithBrand</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">brand</span>
+                                     <span class="nf">upc</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">upc</span>
+                             <span class="nf">productName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">productName</span>
+                                <span class="nf">imageUrl</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">imgUrl</span>
+                              <span class="nf">totalPrice</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">totalPrice</span>
+                                <span class="nf">quantity</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quantity</span><span class="p">;</span>
+</code></pre>
+
+<p>on the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object you obtained above.</p>
+
+<p>To edit the receipt date call <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(im)userCorrectedDate:">-[BRScanResults userCorrectedDate:]</a></code></p>
+
+<p>Once the user has finished modifying the scan results, call <code>-[BRScanManager submitUpdatedResultsForValidation:withCompletion:]</code> and pass in the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object that has been modified. The callback from this method will contain the <code><a href="Classes/BRScanResults.html">BRScanResults</a></code> object with an updated <code><a href="Classes/BRScanResults.html#/c:objc(cs)BRScanResults(py)qualifiedPromotions">BRScanResults.qualifiedPromotions</a></code> property reflecting user corrections.</p>
+<h2 id='subclassing-barcode-scanning-controller' class='heading'>Subclassing Barcode Scanning Controller</h2>
+
+<p>The SDK also provides a base class called <code><a href="Classes/BRMissedEarningsBaseViewController.html">BRMissedEarningsBaseViewController</a></code> with barcode scanning capability that allows the user to scan the UPC from products they&rsquo;ve purchased. To use this:</p>
+
+<ol>
+<li><p>Create your own view controller which is a subclass of this class to build your own UI on top of the basic barcode scanning experience.</p></li>
+<li><p><em>(optional)</em> Set the <code><a href="Classes/BRMissedEarningsBaseViewController.html#/c:objc(cs)BRMissedEarningsBaseViewController(py)scanningRegion">BRMissedEarningsBaseViewController.scanningRegion</a></code> property to indicate what portion of the screen should be used for detecting barcodes.</p></li>
+<li><p>Override the <code><a href="Classes/BRMissedEarningsBaseViewController.html#/c:objc(cs)BRMissedEarningsBaseViewController(im)didDetectBarcode:">-[BRMissedEarningsBaseViewController didDetectBarcode:]</a></code> method to be notified when a barcode is successfully captured</p></li>
+<li><p>Call the method <code><a href="Classes/BRMissedEarningsBaseViewController.html#/c:objc(cs)BRMissedEarningsBaseViewController(im)lookupUPC:withCompletion:">-[BRMissedEarningsBaseViewController lookupUPC:withCompletion:]</a></code> to make a network call which indicates whether the given UPC participates in your rewards program.</p></li>
+</ol>
+<h2 id='new-product-fields-for-corrected-results' class='heading'>New Product Fields for Corrected Results</h2>
+
+<ol>
+<li><p><code><a href="Classes/BRProduct.html#/c:objc(cs)BRProduct(py)userAdded">BRProduct.userAdded</a></code> - indicates that this product was added by the user during the receipt correction flow</p></li>
+<li><p><code><a href="Classes/BRProduct.html#/c:objc(cs)BRProduct(py)userModified">BRProduct.userModified</a></code> - indicates that one or more properties of this product were modified by the user during the receipt correction flow</p></li>
+</ol>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2025 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2025-10-11)</p>
+      
+    </section>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Camera Controller  Reference</title>
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://microblink.com/wp-content/uploads/2022/01/cropped-Microblink_Favicon-180x180.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="Custom Camera Controller  Reference"></a>
+
+    <header class="header">
+      <p class="header-col">
+        <img weight="20" height="20" src="https://microblink.com/wp-content/themes/microblink/assets/images/microblink-logo-animated.webp"/>
+      </p>
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          BlinkReceipt iOS SDK 1.61.2 Docs
+        </a>
+        
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/BlinkReceipt/blinkreceipt-ios">
+            <img class="header-icon" src="img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">BlinkReceipt iOS SDK</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      <a class="breadcrumb" href="Guides.html">Guides</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      Custom Camera Controller  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="custom-camera-controller.html">Custom Camera Controller</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="enhanced-camera-ux.html">Enhanced Camera UX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="localization.html">Localization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="receipt-correction.html">Receipt Correction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="release-notes.html">Release Notes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="surveys.html">Surveys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRCameraViewController.html">BRCameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRCoupon.html">BRCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRFloatValue.html">BRFloatValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRFrameAttributes.html">BRFrameAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRIntValue.html">BRIntValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRMissedEarningsBaseViewController.html">BRMissedEarningsBaseViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPaymentMethod.html">BRPaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRProduct.html">BRProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRProductAdditionalLine.html">BRProductAdditionalLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPromotion.html">BRPromotion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRPromotionInfo.html">BRPromotionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRQualifiedProduct.html">BRQualifiedProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanManager.html">BRScanManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanOptions.html">BRScanOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRScanResults.html">BRScanResults</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRShipment.html">BRShipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRStringValue.html">BRStringValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurvey.html">BRSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyAnswer.html">BRSurveyAnswer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyQuestion.html">BRSurveyQuestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRSurveyResponse.html">BRSurveyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRValue.html">BRValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRCameraType.html">BRCameraType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRCouponType.html">BRCouponType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRDistanceStatus.html">BRDistanceStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRErrorCodes.html">BRErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRLightingCondition.html">BRLightingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRMerchantSource.html">BRMerchantSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRMissedEarningsLookupResult.html">BRMissedEarningsLookupResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRSurveyQuestionType.html">BRSurveyQuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRWrongRetailerConfidence.html">BRWrongRetailerConfidence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/WFRetailerId.html">WFRetailerId</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BRScanResultsDelegate.html">BRScanResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BRSerializable.html">BRSerializable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:BRPromotion.h@T@BRPromotionQualification">BRPromotionQualification</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='custom-camera-controller-ui' class='heading'>Custom Camera Controller UI</h1>
+
+<p>For greater control you can build out your own UI that sits on top of our base camera controller. To do so, subclass <code><a href="Classes/BRCameraViewController.html">BRCameraViewController</a></code> and create your UI programmatically or in Interface Builder.</p>
+<pre class="highlight objective_c"><code><span class="cp">#import &lt;BlinkReceipt/BlinkReceipt.h&gt;
+</span>
+<span class="k">@interface</span> <span class="nc">MyCameraController</span> <span class="p">:</span> <span class="nc">BRCameraViewController</span>
+</code></pre>
+
+<p>Your camera controller interacts with properties and methods of its superclass to facilitate the scanning experience.</p>
+<h2 id='initial-setup' class='heading'>Initial Setup</h2>
+
+<ul>
+<li>You must set the background of your view to be transparent so that the camera preview underneath will be visible.</li>
+</ul>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLoad</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLoad</span><span class="p">];</span>
+
+    <span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">clearColor</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre>
+
+<ul>
+<li>It is recommended to set <code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(py)scanningRegion">BRCameraViewController.scanningRegion</a></code> so that the area of the camera preview that is visible to the user corresponds to the region that is cropped out of the full camera frame for scanning. For example, to indicate that your UI uses margins of 10% screen width on the left and right, a margin of 5% on top, and some controls that occupy 30% on the bottom, you would use the following:</li>
+</ul>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLayoutSubviews</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLayoutSubviews</span><span class="p">];</span>
+
+    <span class="n">self</span><span class="p">.</span><span class="n">scanningRegion</span> <span class="o">=</span> <span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mo">05</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">65</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The components of this property are <em>percentages</em> not absolute pixel values. They must all be between 0.0 and 1.0.
+
+</div>
+<h2 id='basic-scanning' class='heading'>Basic Scanning</h2>
+
+<p>There are 3 base class methods for which you should provide UI in order to enable basic scanning functionality:</p>
+
+<ol>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userSnappedPhotoOnReady:">-[BRCameraViewController userSnappedPhotoOnReady:]</a></code> - Call this method when the user attempts to snap a picture (such as a press on a camera button)</li>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userConfirmedFrame:">-[BRCameraViewController userConfirmedFrame:]</a></code> - Call this method when the user has indicated they are satisfied with the image that was returned by the previous call (this is necessary to ensure the image is saved properly at session end)</li>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userFinishedScan">-[BRCameraViewController userFinishedScan]</a></code> - Call this method when the user indicates the scan session is complete</li>
+<li><code><a href="Classes/BRCameraViewController.html#/c:objc(cs)BRCameraViewController(im)userCancelledScan">-[BRCameraViewController userCancelledScan]</a></code> - Call this method when the user cancels the scan session</li>
+</ol>
+<h2 id='extended-functionality' class='heading'>Extended Functionality</h2>
+
+<p>See the <code><a href="Classes/BRCameraViewController.html">BRCameraViewController</a></code> documentation for extended functionality:</p>
+
+<ul>
+<li><p>&ldquo;Base Class Methods&rdquo; are methods you can call to control aspects of the scan session</p></li>
+<li><p>&ldquo;Subclass Methods&rdquo; are methods you can implement that allow the base class to notify your subclass of various conditions during the scan session</p></li>
+</ul>
+<h2 id='starting-a-scan-session-with-a-custom-controller' class='heading'>Starting a Scan Session with a Custom Controller</h2>
+
+<p>To begin a scan session with your custom controller use the following:</p>
+<pre class="highlight objective_c"><code><span class="n">MyCameraController</span> <span class="o">*</span><span class="n">cameraController</span> <span class="o">=</span> <span class="p">[</span><span class="n">MyCameraController</span> <span class="nf">new</span><span class="p">];</span> <span class="c1">//or instantiate from storyboard</span>
+
+<span class="p">[[</span><span class="n">BRScanManager</span> <span class="nf">sharedManager</span><span class="p">]</span> <span class="nf">startCustomCamera</span><span class="p">:</span><span class="n">cameraController</span>
+                                  <span class="nl">fromController:</span><span class="n">self</span>
+                                     <span class="nl">scanOptions:</span><span class="n">scanOptions</span>
+                                    <span class="nl">withDelegate:</span><span class="n">self</span><span class="p">];</span>
+</code></pre>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2025 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2025-10-11)</p>
+      
+    </section>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+# Our config requires a framework to be available in the same folder
+cp -R ../BlinkReceipt.xcframework BlinkReceipt.xcframework
+
+# Generate documentation
+jazzy
+
+# Remove undocumented functionality file because it contains build machine paths
+rm -rf docs/undocumented.json
+
+# Remove the framework used to build the docs
+rm -rf BlinkReceipt.xcframework

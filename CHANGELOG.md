@@ -1,3 +1,15 @@
+## 1.62.0
+### ADDED
+**Improvements**
+- **Extraction Enhancements (United States)**
+  - Improved handling of fuel receipts from gas and convenience retailers, increased accuracy of item and quantity extraction (including Dollar General), and overall improvements to product data consistency.
+- **Promotion Detection (Germany)** 
+  - Refinements to promotion matching and validation workflows to improve detection accuracy across receipt types.
+- **Sales Tax Extraction (Australia)**
+  - Improved parsing of sales tax fields for better consistency.
+- **Overall Stability Improvements**
+  - General enhancements to improve reliability and performance across extraction workflows.
+
 ## 1.61.2
 ### ADDED
 - Stability fixes and improvements

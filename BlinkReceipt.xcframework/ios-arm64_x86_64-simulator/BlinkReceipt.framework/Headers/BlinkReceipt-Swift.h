@@ -368,21 +368,6 @@ SWIFT_CLASS("_TtC12BlinkReceipt16BRSimpleKeychain")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIViewController;
-SWIFT_CLASS("_TtC12BlinkReceipt18BlinkEngageWrapper")
-@interface BlinkEngageWrapper : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BlinkEngageWrapper * _Nonnull shared;)
-+ (BlinkEngageWrapper * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, copy) void (^ _Nullable onMonetizationSessionCompleted)(void);
-- (void)setMbDeviceId:(NSInteger)mbDeviceId;
-- (void)setClientUserId:(NSString * _Nonnull)clientUserId;
-- (void)scanSessionBegan;
-- (void)scanSessionEndedWithViewController:(UIViewController * _Nonnull)viewController;
-- (void)scanResultsAvailableWithResults:(NSDictionary<NSString *, id> * _Nonnull)results;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -759,21 +744,6 @@ SWIFT_CLASS("_TtC12BlinkReceipt16BRSimpleKeychain")
 - (void)setKeychainWithData:(NSData * _Nonnull)data forKey:(NSString * _Nonnull)key;
 - (void)deleteKeychainValueForKey:(NSString * _Nonnull)key;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIViewController;
-SWIFT_CLASS("_TtC12BlinkReceipt18BlinkEngageWrapper")
-@interface BlinkEngageWrapper : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BlinkEngageWrapper * _Nonnull shared;)
-+ (BlinkEngageWrapper * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, copy) void (^ _Nullable onMonetizationSessionCompleted)(void);
-- (void)setMbDeviceId:(NSInteger)mbDeviceId;
-- (void)setClientUserId:(NSString * _Nonnull)clientUserId;
-- (void)scanSessionBegan;
-- (void)scanSessionEndedWithViewController:(UIViewController * _Nonnull)viewController;
-- (void)scanResultsAvailableWithResults:(NSDictionary<NSString *, id> * _Nonnull)results;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif

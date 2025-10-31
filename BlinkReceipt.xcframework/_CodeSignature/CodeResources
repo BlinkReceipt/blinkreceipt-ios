@@ -6,19 +6,19 @@
 	<dict>
 		<key>ios-arm64/BlinkReceipt.framework/BRLiveScanViewController.nib</key>
 		<data>
-		UTyFvNqvO7WjT6HA2VO92PfFcFU=
+		l3W7ypwgaEGP17kGN6N1AVLlrD8=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/BRNewStaticScanViewController.nib</key>
 		<data>
-		967LQxgjXiLlJ5nc/AbDU3Fcjoo=
+		khoQlOhLuMoiQXvt3M7NcHPcPDc=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/BRStaticScanViewController.nib</key>
 		<data>
-		8fTsp7TvyGg8k7d2AaITZy/peOY=
+		TdHo2/8izdf+DpvUWe96+T4vVFY=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/BlinkReceipt</key>
 		<data>
-		VnKS5rtKobynZB1/tOLTAiAAOtU=
+		geeU7VqgGmzEvVWwoVbx/1o28ak=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/ChipsView.nib</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/Info.plist</key>
 		<data>
-		DDBctKH0AzTLMFTHjavTj1lxE2g=
+		l3qcIbenICHiUrcPfEGdy76HLCs=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/Loading.png</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
-		TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+		6AviSttfxnb/t4OLZJGeuY+2Zb8=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/box_arrow_blue.png</key>
 		<data>
@@ -641,19 +641,19 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BRLiveScanViewController.nib</key>
 		<data>
-		UTyFvNqvO7WjT6HA2VO92PfFcFU=
+		l3W7ypwgaEGP17kGN6N1AVLlrD8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BRNewStaticScanViewController.nib</key>
 		<data>
-		967LQxgjXiLlJ5nc/AbDU3Fcjoo=
+		khoQlOhLuMoiQXvt3M7NcHPcPDc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BRStaticScanViewController.nib</key>
 		<data>
-		8fTsp7TvyGg8k7d2AaITZy/peOY=
+		TdHo2/8izdf+DpvUWe96+T4vVFY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BlinkReceipt</key>
 		<data>
-		uFiQfOH39T+Gl6sMo2unPapgblE=
+		3NFFqLVxG/uHm2PsLk/lF2wHXzw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/ChipsView.nib</key>
 		<data>
@@ -753,7 +753,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Info.plist</key>
 		<data>
-		Qv4h2mxiHSAOZ+3UbNbSv5y/UTk=
+		f40EgEJshAmgb3hB8Tz1wCL9cIU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Loading.png</key>
 		<data>
@@ -901,11 +901,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
-		TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+		6AviSttfxnb/t4OLZJGeuY+2Zb8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/_CodeSignature/CodeResources</key>
 		<data>
-		dhf59FKEgNh7O2ei956IFGAAP3M=
+		XFNTVX466c/8toQEPmjNsZu5rKM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/box_arrow_blue.png</key>
 		<data>
@@ -1301,44 +1301,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UTyFvNqvO7WjT6HA2VO92PfFcFU=
+			l3W7ypwgaEGP17kGN6N1AVLlrD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			KVwASKh3/BWleeYkLAT6PRALx/tklVoqX5XTcMlm1m0=
+			p247Iq2Kt2ifA+x1iaSwovzX+0Qvym1H8jGMuev6vBM=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/BRNewStaticScanViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			967LQxgjXiLlJ5nc/AbDU3Fcjoo=
+			khoQlOhLuMoiQXvt3M7NcHPcPDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			bEtQUZj/3MhSgvHFQ6P61IFfXD/k4T2F0vpDbnkvP3w=
+			DSk35B8TJPmjW2+/QwunmV4f6bgDfE7w3DW0bpgQ/ic=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/BRStaticScanViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8fTsp7TvyGg8k7d2AaITZy/peOY=
+			TdHo2/8izdf+DpvUWe96+T4vVFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Ig/wvtZ5Qo+ytElaCGQ+OvqQmbn16sFGeUCdfcgmFw=
+			2Kve+Fc6hdQI91DGcV9N1rrHB5ZqrdTbbuIL5Nd1ekA=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/BlinkReceipt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VnKS5rtKobynZB1/tOLTAiAAOtU=
+			geeU7VqgGmzEvVWwoVbx/1o28ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			ddgxonAfv2kGgDghHjUFBmi62J9Z60Ub/rD58sCwV+0=
+			Fs9wbSeaeKYGUjE/D12lPsMGoqL9vC+Zuq5C/YS8PfQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/ChipsView.nib</key>
@@ -1609,11 +1609,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DDBctKH0AzTLMFTHjavTj1lxE2g=
+			l3qcIbenICHiUrcPfEGdy76HLCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			SgXypp2/F7yB68Agzvw327J0fsPWsDA8FbaB4wYXEEY=
+			lS39VrbONGYD1bFop8blmWT+EOQewzGn7H92XeOLcM4=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/Loading.png</key>
@@ -1972,11 +1972,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+			6AviSttfxnb/t4OLZJGeuY+2Zb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wwjTcXuRHudsluNYwYuAtMPOGt1tbWeEkw/GViuphIw=
+			xh+1EY7u96VwP0uZhU0QPxKIq88TYDIb+i5yk0NOv+0=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/box_arrow_blue.png</key>
@@ -3012,44 +3012,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UTyFvNqvO7WjT6HA2VO92PfFcFU=
+			l3W7ypwgaEGP17kGN6N1AVLlrD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			KVwASKh3/BWleeYkLAT6PRALx/tklVoqX5XTcMlm1m0=
+			p247Iq2Kt2ifA+x1iaSwovzX+0Qvym1H8jGMuev6vBM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BRNewStaticScanViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			967LQxgjXiLlJ5nc/AbDU3Fcjoo=
+			khoQlOhLuMoiQXvt3M7NcHPcPDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			bEtQUZj/3MhSgvHFQ6P61IFfXD/k4T2F0vpDbnkvP3w=
+			DSk35B8TJPmjW2+/QwunmV4f6bgDfE7w3DW0bpgQ/ic=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BRStaticScanViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8fTsp7TvyGg8k7d2AaITZy/peOY=
+			TdHo2/8izdf+DpvUWe96+T4vVFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Ig/wvtZ5Qo+ytElaCGQ+OvqQmbn16sFGeUCdfcgmFw=
+			2Kve+Fc6hdQI91DGcV9N1rrHB5ZqrdTbbuIL5Nd1ekA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BlinkReceipt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uFiQfOH39T+Gl6sMo2unPapgblE=
+			3NFFqLVxG/uHm2PsLk/lF2wHXzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OT1/dePvwDBIQ0hOKVRJuDyIz9D/rCH4oLQ3h5NcmbU=
+			wSlKo8OP35UzmqOBMsV1yfvavfdJXcjqZW0wyCkmR9w=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/ChipsView.nib</key>
@@ -3320,11 +3320,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qv4h2mxiHSAOZ+3UbNbSv5y/UTk=
+			f40EgEJshAmgb3hB8Tz1wCL9cIU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nu4RK5P2iZDwhMir3ufjGQT2yS7jGa6oCM9WZWruJKo=
+			yni7XZdSWnUWYvxti7EdX/vkZYB6W2cQdRbNvvntm6c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Loading.png</key>
@@ -3727,22 +3727,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+			6AviSttfxnb/t4OLZJGeuY+2Zb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wwjTcXuRHudsluNYwYuAtMPOGt1tbWeEkw/GViuphIw=
+			xh+1EY7u96VwP0uZhU0QPxKIq88TYDIb+i5yk0NOv+0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dhf59FKEgNh7O2ei956IFGAAP3M=
+			XFNTVX466c/8toQEPmjNsZu5rKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FZRLPpp4abO5XI+Obco2sThf2aRoGyg0SkVwPCiFWYM=
+			40RuKWnZjp6/z1Kkh+e1U62UDr3D5eIIMDnv/WGrJC8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/box_arrow_blue.png</key>

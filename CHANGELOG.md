@@ -1,3 +1,7 @@
+## 1.63.0
+### ADDED
+This update improves camera session stability and performance with better error handling and modernized code. It also enhances session management for smoother and more reliable camera operation.
+
 ## 1.62.1
 ### ADDED
 - Stability fixes and improvements

@@ -6,15 +6,15 @@
 	<dict>
 		<key>BRLiveScanViewController.nib</key>
 		<data>
-		l3W7ypwgaEGP17kGN6N1AVLlrD8=
+		UTyFvNqvO7WjT6HA2VO92PfFcFU=
 		</data>
 		<key>BRNewStaticScanViewController.nib</key>
 		<data>
-		khoQlOhLuMoiQXvt3M7NcHPcPDc=
+		967LQxgjXiLlJ5nc/AbDU3Fcjoo=
 		</data>
 		<key>BRStaticScanViewController.nib</key>
 		<data>
-		TdHo2/8izdf+DpvUWe96+T4vVFY=
+		8fTsp7TvyGg8k7d2AaITZy/peOY=
 		</data>
 		<key>ChipsView.nib</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f40EgEJshAmgb3hB8Tz1wCL9cIU=
+		WX9P2+/9ix8zpocJMJhmgQc6shc=
 		</data>
 		<key>Loading.png</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gWmfmJQnnlXB+JTf8dE0A1RKLyw=
+		8wrwMdzj7f2XzmVs5di5KjbGHrI=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Xiv4JhD7POkzs+8VWtHvcnv7ylI=
+		K2FR0OsJSjPqEqnBwpPKM0KnvSw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
-		6AviSttfxnb/t4OLZJGeuY+2Zb8=
+		TXTowUmBDXTgoNYf/qYjqjPIWPQ=
 		</data>
 		<key>box_arrow_blue.png</key>
 		<data>
@@ -666,21 +666,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p247Iq2Kt2ifA+x1iaSwovzX+0Qvym1H8jGMuev6vBM=
+			KVwASKh3/BWleeYkLAT6PRALx/tklVoqX5XTcMlm1m0=
 			</data>
 		</dict>
 		<key>BRNewStaticScanViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DSk35B8TJPmjW2+/QwunmV4f6bgDfE7w3DW0bpgQ/ic=
+			bEtQUZj/3MhSgvHFQ6P61IFfXD/k4T2F0vpDbnkvP3w=
 			</data>
 		</dict>
 		<key>BRStaticScanViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Kve+Fc6hdQI91DGcV9N1rrHB5ZqrdTbbuIL5Nd1ekA=
+			3Ig/wvtZ5Qo+ytElaCGQ+OvqQmbn16sFGeUCdfcgmFw=
 			</data>
 		</dict>
 		<key>ChipsView.nib</key>
@@ -1030,7 +1030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTK+/qe2WuS6TS/36jdnpcIMRHortaGvkgti2jvocqs=
+			pNGBNuIOQqZBIg5NPjbOa97UbYCou0EfWI+etwat6S0=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1065,7 +1065,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			APNlxPJRGh2MT+dboZVjsvNzOmVifDAZ0dDZFso+BBI=
+			sE6QYSvb+QuEPAUH9RCENFjJJ0yq+rupUd+AubTbHoc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1121,7 +1121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xh+1EY7u96VwP0uZhU0QPxKIq88TYDIb+i5yk0NOv+0=
+			wwjTcXuRHudsluNYwYuAtMPOGt1tbWeEkw/GViuphIw=
 			</data>
 		</dict>
 		<key>box_arrow_blue.png</key>

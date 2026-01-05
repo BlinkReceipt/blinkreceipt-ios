@@ -1,3 +1,11 @@
+## 1.63.1
+### ADDED
+Extraction Enhancements (United States, Germany, France)
+Overall improvements to receipt extraction to improve consistency and reliability across supported receipt formats and regions.
+
+Overall Stability Improvements
+Routine maintenance and performance updates
+
 ## 1.63.0
 ### ADDED
 This update improves camera session stability and performance with better error handling and modernized code. It also enhances session management for smoother and more reliable camera operation.

@@ -1,3 +1,15 @@
+## 1.64.0
+### ADDED
+**Extraction Enhancements**
+
+We’ve shipped overall extraction improvements across the United States, France, and Germany. These updates improve consistency and accuracy across core receipt fields.
+
+**Overall Stability Improvements**
+
+Updated internal SDK components to improve overall stability and performance
+
+Improved handling of edge-case system interactions on iOS
+
 ## 1.63.1
 ### ADDED
 Extraction Enhancements (United States, Germany, France)

@@ -2,7 +2,7 @@ name: AI Label Validate
 
 on:
   pull_request:
-    types: [opened, reopened, labeled, unlabeled]
+    types: [opened, reopened, labeled, unlabeled, synchronize, ready_for_review]
 
 jobs:
   ai-label-validate:

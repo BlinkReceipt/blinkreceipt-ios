@@ -31,7 +31,7 @@ Here is a sample barebones `Podfile` which imports the BlinkReceipt pod:
 source 'https://github.com/BlinkReceipt/PodSpecRepo.git'
 source 'https://cdn.cocoapods.org/'
 
-platform :ios, '11.0'
+platform :ios, '15.0'
 
 target 'YourTarget' do
   use_frameworks!

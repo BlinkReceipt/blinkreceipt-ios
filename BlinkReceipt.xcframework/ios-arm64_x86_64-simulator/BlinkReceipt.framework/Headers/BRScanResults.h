@@ -102,6 +102,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *receiptTime;
 
 /**
+ *  The purchase time's seconds found on the receipt formatted as SS, if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *receiptTimeSeconds;
+
+/**
  *  The barcode detected on the receipt, if any.
  *  Currently we recognize Code 39, Code 128, and ITF formats
  */

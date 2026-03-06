@@ -6,7 +6,7 @@ let frameworkName = "BlinkReceipt"
 let package = Package(
     name: frameworkName,
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -24,8 +24,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "\(frameworkName)Static",
-            url: "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.64.0/BlinkReceiptStatic.xcframework-1.64.0.zip",
-            checksum: "9c4b4562c78b2cc6e51975680953a3396c917c2466af2612b91191cbdac49afe"
+            url: "https://github.com/BlinkReceipt/blinkreceipt-ios/releases/download/1.65.0/BlinkReceiptStatic.xcframework-1.65.0.zip",
+            checksum: "de089252c6a89e7c2daffb6f8f258af4b3f938e5ae716452a3567c192cf402f4"
         )
     ]
 )

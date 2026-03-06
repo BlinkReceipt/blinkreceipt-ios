@@ -1,3 +1,10 @@
+## 1.65.0
+### CHANGED
+- Minimum iOS version raised to iOS 15. iOS 13 and 14 are no longer supported. This aligns with current Xcode toolchain requirements and improves long-term stability.
+
+### ADDED
+- `time_seconds` added to receipt trip extraction metrics. Surfaces seconds value (formatted as 00), enabling more precise timestamp data for reporting and deduplication logic.
+
 ## 1.64.0
 ### ADDED
 **Extraction Enhancements**

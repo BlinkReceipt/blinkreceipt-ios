@@ -1,3 +1,7 @@
+## 1.65.1
+### CHANGED
+- General stability improvements.
+
 ## 1.65.0
 ### CHANGED
 - Minimum iOS version raised to iOS 15. iOS 13 and 14 are no longer supported. This aligns with current Xcode toolchain requirements and improves long-term stability.

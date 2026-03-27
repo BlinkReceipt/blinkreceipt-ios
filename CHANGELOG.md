@@ -1,3 +1,10 @@
+## 1.66.0
+### CHANGED
+- Improved camera experience stability.
+- Resolved an issue that could impact camera teardown after scanning.
+- General reliability improvements and bug fixes.
+- Improvements to Date extraction in Canada
+
 ## 1.65.1
 ### CHANGED
 - General stability improvements.

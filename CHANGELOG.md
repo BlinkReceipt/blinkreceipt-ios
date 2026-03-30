@@ -1,3 +1,7 @@
+## 1.66.1
+### CHANGED
+- Stability improvements and performance enhancements
+
 ## 1.66.0
 ### CHANGED
 - Improved camera experience stability.

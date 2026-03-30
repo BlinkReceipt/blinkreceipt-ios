@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/BlinkReceipt</key>
 		<data>
-		v3U26YuR204fGA7mWQBhoLukN8Y=
+		Zko9EwABjpfq4pZxz6Nmm2DFK+w=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/ChipsView.nib</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/Info.plist</key>
 		<data>
-		ipJ5f5STYlgcZ0m2qrakh/BjdNc=
+		2CCErmdahNqVpH5JWxBLSxgjPp0=
 		</data>
 		<key>ios-arm64/BlinkReceipt.framework/Loading.png</key>
 		<data>
@@ -689,7 +689,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/BlinkReceipt</key>
 		<data>
-		4fbzQJkSCbVjfLNj0lYcfSQbCLc=
+		5RkyHquAqYkplgIHuNpoRq5JmGM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/ChipsView.nib</key>
 		<data>
@@ -789,7 +789,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Info.plist</key>
 		<data>
-		5Fb70FR78xIzOY+wW8F5CKiwamg=
+		DPVyuCN7UP/HEmA3Wi4qZ/756Jo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Loading.png</key>
 		<data>
@@ -969,7 +969,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/_CodeSignature/CodeResources</key>
 		<data>
-		cjuypXX1ezh+gCO9aO4aWW0IXo4=
+		cYi1QhvrdaQAPmNJc3NB27Iy+8E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/box_arrow_blue.png</key>
 		<data>
@@ -1393,7 +1393,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RKcRiZMAVOWyygKyG7hltVG2PJrRETgU2/ZN1HLCPN0=
+			vivvnv+okLfpE3MlrlI6ElEF1gFLwBBlWgB/vQT0JH8=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/ChipsView.nib</key>
@@ -1568,7 +1568,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ks1NzNBODs+U5IfObT38h/0pekWLxzZTEWxSTeXIjQs=
+			ZbOvx1my5Qxg7gLBdn91YsC2z4tnApGSrtgHAAfJ2K8=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkReceipt.framework/Loading.png</key>
@@ -2540,7 +2540,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gbloA+DvuHuD9Rw89PSv8GKYLpzG+zpifDH+PUGynpw=
+			/jW4q1efJdSWySLPYFh61+YfdB6mdhxy99YBouhUb7c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/ChipsView.nib</key>
@@ -2715,7 +2715,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NFFRjuEdjK9cusT57xSs/CUTMSoYhLbxqZQF/i34n/4=
+			1MtLCuCXzm3E57T4V8N95v+OkT+PD85feYHULON2PVY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/Loading.png</key>
@@ -3030,7 +3030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nYK0qW2riImUyykt3coYgSVhJoJ7gwOl+HezCO8xeFs=
+			iOB3i6NIAbCt5/dIWd/HzyrsEW8gqpelkvUcJP4lbco=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkReceipt.framework/box_arrow_blue.png</key>

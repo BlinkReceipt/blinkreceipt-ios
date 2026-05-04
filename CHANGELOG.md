@@ -1,3 +1,10 @@
+## 1.68.0
+### CHANGED
+- Overall improvements to barcode extraction
+- Enhanced payment detail extraction
+- Improved total extraction accuracy
+- Added support for Fuel products in Germany
+
 ## 1.67.0
 ### CHANGED
 - Overall extraction improvements

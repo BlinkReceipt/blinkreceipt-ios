@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BRProduct.h"
+#import "BRAppearanceTheme.h"
 
 /**
  *  If retailer is known in advance, setting `BRScanOptions.retailerId` to one of these values can increase scanning accuracy.
@@ -273,5 +274,13 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL enableMerchantChip;
 
+///------------------
+/// @name Appearance
+///------------------
+
+/**
+ *  Optional styling for the SDK's stock scan UI (help sheet, onboarding, camera toolbar, and related surfaces). Assign a `BRAppearanceTheme` subclass that overrides `colorForKey:` and / or `imageForKey:` to customize individual colors and icons; return `nil` from those methods for any key you do not customize and the SDK keeps its built-in value. Leave this property `nil` to use built-in styling everywhere.
+ */
+@property (nonatomic, strong, nullable) BRAppearanceTheme *appearance;
 
 @end

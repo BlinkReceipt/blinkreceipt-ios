@@ -24,6 +24,10 @@
 		<data>
 		7mSLE6Cw+njBqzzTz5kYPQMoKg0=
 		</data>
+		<key>Headers/BRAppearanceTheme.h</key>
+		<data>
+		v8yYODswDVSKCrhpX/00hjw+NQY=
+		</data>
 		<key>Headers/BRCameraViewController.h</key>
 		<data>
 		v25+8Jxb7zZEq/19eZoZmEKVaXI=
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/BRScanOptions.h</key>
 		<data>
-		mmLkAIGuvZNT2yyVvlPYnXcqVmA=
+		1ZzwiEz1ZL01feh0I/Cc5kq+N4g=
 		</data>
 		<key>Headers/BRScanResults.h</key>
 		<data>
@@ -118,7 +122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4h2pI6cssuAYt0o1OEBvXda6S1g=
+		hl0cSTw4AGpl2SuPOlJC2Gpc2O8=
 		</data>
 		<key>Loading.png</key>
 		<data>
@@ -280,18 +284,6 @@
 		<data>
 		kWiWPPXYps33TElzxspLlFDbX6A=
 		</data>
-		<key>ScanHelp.png</key>
-		<data>
-		DWTXazkUTSkuMUNRQXeshKCTLk0=
-		</data>
-		<key>ScanHelp@2x.png</key>
-		<data>
-		W96QNYWbRkqy/aOsIXmwiaLZHNc=
-		</data>
-		<key>ScanHelp@3x.png</key>
-		<data>
-		QVDYulvXquypA/Ldx30Ygu2inIs=
-		</data>
 		<key>Surveys.storyboardc/BRSurveyViewControllerStoryboardId.nib</key>
 		<data>
 		mctfBNXidycCFsDUB3eTPh/G/nA=
@@ -303,6 +295,30 @@
 		<key>Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
 		TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+		</data>
+		<key>add_receipt_frame.png</key>
+		<data>
+		3bQWlzX+cmnlfQqdN/FChEjmV38=
+		</data>
+		<key>add_receipt_frame@2x.png</key>
+		<data>
+		XIzRoAAL9TT85xi/RokN1dkjTzg=
+		</data>
+		<key>add_receipt_frame@3x.png</key>
+		<data>
+		YwVszdMyVApVYQdF7pR0vTLcFSE=
+		</data>
+		<key>align_receipt.png</key>
+		<data>
+		ICxK+vKYfE5RsPn2ShQtLPq7gP4=
+		</data>
+		<key>align_receipt@2x.png</key>
+		<data>
+		D2MO6vA7h8B9fhYEVsPAmhv2byA=
+		</data>
+		<key>align_receipt@3x.png</key>
+		<data>
+		FdHCASVzaN3UoOMokwq/u6+aVno=
 		</data>
 		<key>box_arrow_blue.png</key>
 		<data>
@@ -651,6 +667,18 @@
 		<data>
 		E+lp9j1uADXDW5peWVc0EhY/urI=
 		</data>
+		<key>receipt_guides.png</key>
+		<data>
+		tCWnIh7gu2iDIQev2qRi1fN1T0Y=
+		</data>
+		<key>receipt_guides@2x.png</key>
+		<data>
+		LuRRcXxHazjsV7A9vi+PuYdFtUo=
+		</data>
+		<key>receipt_guides@3x.png</key>
+		<data>
+		knPr6kTHY0RohO57tsNLKu0MgJ0=
+		</data>
 		<key>select.png</key>
 		<data>
 		ezSnvsDSjfBcfguv08ml0482+S4=
@@ -727,6 +755,13 @@
 			<key>hash2</key>
 			<data>
 			JLl0xnzGdVeqPUqp5cRZHqUgggY3bFO4Rt7zwGV/cAE=
+			</data>
+		</dict>
+		<key>Headers/BRAppearanceTheme.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/0w/jPsxf84rbc3QDse/NdXde0JKvwTOF+QZ+048910=
 			</data>
 		</dict>
 		<key>Headers/BRCameraViewController.h</key>
@@ -810,7 +845,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cdDFa5Sx9Go68A4jKl9fgaMq2LvrjmNdnXaRnxz6cqc=
+			j4wwam7igYte6YFAucIbkxvkj6CnicV73JqEtphMgzE=
 			</data>
 		</dict>
 		<key>Headers/BRScanResults.h</key>
@@ -1170,27 +1205,6 @@
 			ca8Xs7xr4hsEqMygrxLQMbMwpxSqJlWt9WuaUDHcyM8=
 			</data>
 		</dict>
-		<key>ScanHelp.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2ZT2+u3i99wkMS0uAIa63h6US6RBywpDvTFGUhz5JwA=
-			</data>
-		</dict>
-		<key>ScanHelp@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0SiCJxEm6KPg9HevgpTh+va9O9DVhlPFS+6nfcSLTFU=
-			</data>
-		</dict>
-		<key>ScanHelp@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wA2Xz+KvQ+KIm6XVpF9LfTpmxZDhWCHzly9qBIYeGZE=
-			</data>
-		</dict>
 		<key>Surveys.storyboardc/BRSurveyViewControllerStoryboardId.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1210,6 +1224,48 @@
 			<key>hash2</key>
 			<data>
 			wwjTcXuRHudsluNYwYuAtMPOGt1tbWeEkw/GViuphIw=
+			</data>
+		</dict>
+		<key>add_receipt_frame.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			thqVI0oL8N6wHd9o7Ausn9beu2aNor7lKePEJcu/uIY=
+			</data>
+		</dict>
+		<key>add_receipt_frame@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mVQbgTsOp/wPlqRWBrk+p0CN/KwnlZn6LZamf8wRZ8I=
+			</data>
+		</dict>
+		<key>add_receipt_frame@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FRc0FfhocY72Yvbt+6V9pNFOTj7f2kAWw7DNPXK5UxA=
+			</data>
+		</dict>
+		<key>align_receipt.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6P7QX5gMkBO1kdAbvuMHt7ykgcdUpgZfbxbpJZb9MkA=
+			</data>
+		</dict>
+		<key>align_receipt@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8hSs7YoFfQrrOslfu1h2fI/Ta2zoBdxmbJtnGK22Yns=
+			</data>
+		</dict>
+		<key>align_receipt@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z8SF/67M7lRKl6VWfmqUGrtXvPLSx8PgtWpJ0t5W53s=
 			</data>
 		</dict>
 		<key>box_arrow_blue.png</key>
@@ -1797,6 +1853,27 @@
 			<key>hash2</key>
 			<data>
 			wLXwQNCcDVuo6dKNxTRkDpZFsMYZ34UiyJEhUPhf8vc=
+			</data>
+		</dict>
+		<key>receipt_guides.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LqcykHxUqXL2C0JyZnMpqnhgcFACDtYY8D+8dnJITO0=
+			</data>
+		</dict>
+		<key>receipt_guides@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZJEYAZgxc2pUhvbNDlh1ZERFtGsvLI1q9zEam2AYiGQ=
+			</data>
+		</dict>
+		<key>receipt_guides@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zBJulgP06cZzeBE6b0mj1NtXgCB/qUdQOxsiSnAKT7A=
 			</data>
 		</dict>
 		<key>select.png</key>

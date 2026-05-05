@@ -1,3 +1,7 @@
+## 1.69.0
+### CHANGED
+- Overall extraction improvements
+
 ## 1.68.0
 ### CHANGED
 - Overall improvements to barcode extraction

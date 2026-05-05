@@ -29,7 +29,7 @@
       </p>
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          BlinkReceipt iOS SDK 1.68.0 Docs
+          BlinkReceipt iOS SDK 1.69.0 Docs
         </a>
         
       </p>
@@ -84,6 +84,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BRAppearanceTheme.html">BRAppearanceTheme</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/BRCameraViewController.html">BRCameraViewController</a>
               </li>
@@ -156,6 +159,12 @@
             <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRAppearanceColorKey.html">BRAppearanceColorKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BRAppearanceIconKey.html">BRAppearanceIconKey</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/BRCameraType.html">BRCameraType</a>
               </li>
               <li class="nav-group-task">
@@ -225,6 +234,84 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)BRAppearanceTheme"></a>
+                    <a name="//apple_ref/objc/Class/BRAppearanceTheme" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BRAppearanceTheme">BRAppearanceTheme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Customizes colors and icons in the SDK&rsquo;s stock scan UI (help sheet,
+  onboarding, camera toolbar, and related surfaces).</p>
+
+<p>Subclass <code>BRAppearanceTheme</code> and override <code>colorForKey:</code> and / or
+  <code>imageForKey:</code> to supply your own values, then assign an instance to
+  <code><a href="Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)appearance">BRScanOptions.appearance</a></code> <em>before</em> you start a scan. Both methods use an
+  <em>opt-in</em> model: return <code>nil</code> for any key you don&rsquo;t want to customize and
+  the SDK keeps its built-in value. The base implementation returns <code>nil</code>
+  for every key, so an unmodified <code>BRAppearanceTheme</code> is equivalent to
+  leaving <code><a href="Classes/BRScanOptions.html#/c:objc(cs)BRScanOptions(py)appearance">BRScanOptions.appearance</a></code> set to <code>nil</code>.</p>
+
+<p>The SDK queries the theme each time the relevant control is configured,
+  so values may be read more than once per scan session and should be cheap
+  to produce. You can swap themes between scans (for example, to react to
+  light / dark mode) by assigning a new instance.</p>
+
+<p>Example (Objective-C):</p>
+<pre class="highlight objective_c"><code>  <span class="k">@interface</span> <span class="nc">MyAppearanceTheme</span> <span class="p">:</span> <span class="nc">BRAppearanceTheme</span>
+  <span class="k">@end</span>
+
+  <span class="k">@implementation</span> <span class="nc">MyAppearanceTheme</span>
+  <span class="k">-</span> <span class="p">(</span><span class="n">UIColor</span> <span class="o">*</span><span class="p">)</span><span class="nf">colorForKey</span><span class="p">:(</span><span class="n">BRAppearanceColorKey</span><span class="p">)</span><span class="nv">key</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="o">==</span> <span class="n">BRAppearanceColorKeyHelpModalCloseButtonBackground</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="n">UIColor</span><span class="p">.</span><span class="n">systemBlueColor</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">@end</span>
+
+  <span class="n">BRScanOptions</span> <span class="o">*</span><span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="n">BRScanOptions</span> <span class="nf">new</span><span class="p">];</span>
+  <span class="n">options</span><span class="p">.</span><span class="n">appearance</span> <span class="o">=</span> <span class="p">[</span><span class="n">MyAppearanceTheme</span> <span class="nf">new</span><span class="p">];</span>
+</code></pre>
+
+<p>Example (Swift):</p>
+<pre class="highlight objective_c"><code>  <span class="n">final</span> <span class="n">class</span> <span class="n">MyAppearanceTheme</span><span class="o">:</span> <span class="n">BRAppearanceTheme</span> <span class="p">{</span>
+      <span class="n">override</span> <span class="n">func</span> <span class="n">color</span><span class="p">(</span><span class="k">for</span> <span class="n">key</span><span class="o">:</span> <span class="n">BRAppearanceColorKey</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UIColor</span><span class="p">?</span> <span class="err">{</span>
+          <span class="n">key</span> <span class="o">==</span> <span class="p">.</span><span class="n">helpModalCloseButtonBackground</span> <span class="p">?</span> <span class="p">.</span><span class="n">systemBlue</span> <span class="p">:</span> <span class="nb">nil</span>
+      <span class="err">}</span>
+  <span class="err">}</span>
+
+  <span class="n">let</span> <span class="n">options</span> <span class="o">=</span> <span class="n">BRScanOptions</span><span class="p">()</span>
+  <span class="n">options</span><span class="p">.</span><span class="n">appearance</span> <span class="o">=</span> <span class="n">MyAppearanceTheme</span><span class="p">()</span>
+</code></pre>
+
+                        <a href="Classes/BRAppearanceTheme.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BRAppearanceTheme</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BRAppearanceTheme</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRAppearanceTheme.h#L115-L135">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)BRCameraViewController"></a>
                     <a name="//apple_ref/objc/Class/BRCameraViewController" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)BRCameraViewController">BRCameraViewController</a>
@@ -253,7 +340,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h#L42-L227">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCameraViewController.h#L42-L227">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -289,7 +376,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCoupon.h#L23-L85">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRCoupon.h#L23-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -324,7 +411,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRFrameAttributes.h#L14-L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRFrameAttributes.h#L14-L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -397,7 +484,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L59">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRMissedEarningsBaseViewController.h#L21-L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -433,7 +520,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPaymentMethod.h#L16-L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -469,7 +556,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRProduct.h#L18-L251">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRProduct.h#L18-L251">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -505,7 +592,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRProductAdditionalLine.h#L17-L40">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -541,7 +628,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPromotion.h#L19-L69">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPromotion.h#L19-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -577,7 +664,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPromotionInfo.h#L18-L30">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRPromotionInfo.h#L18-L30">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -617,7 +704,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRQualifiedProduct.h#L15-L20">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRQualifiedProduct.h#L15-L20">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -653,7 +740,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanManager.h#L23-L245">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanManager.h#L23-L245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -689,7 +776,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L68-L277">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanOptions.h#L69-L286">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -725,7 +812,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResults.h#L45-L461">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRScanResults.h#L45-L461">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -761,7 +848,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRShipment.h#L17-L29">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -797,7 +884,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurvey.h#L17-L48">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurvey.h#L17-L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -833,7 +920,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyAnswer.h#L16-L27">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyAnswer.h#L16-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -869,7 +956,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyQuestion.h#L23-L70">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyQuestion.h#L23-L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -905,7 +992,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyResponse.h#L16-L32">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRSurveyResponse.h#L16-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -941,7 +1028,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L15-L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -977,7 +1064,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L30-L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1013,7 +1100,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L42-L54">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1049,7 +1136,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.68.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
+                        <a href="https://github.com/BlinkReceipt/blinkreceipt-ios/tree/1.69.0/BlinkReceipt.xcframework/ios-arm64/BlinkReceipt.framework/Headers/BRValue.h#L59-L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1062,7 +1149,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-05-04)</p>
+      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-05-05)</p>
       
     </section>
   </body>

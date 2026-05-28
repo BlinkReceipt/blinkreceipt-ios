@@ -1,3 +1,7 @@
+## 1.70.0
+### CHANGED
+- Overall extraction improvements
+
 ## 1.69.0
 ### CHANGED
 - Overall extraction improvements

@@ -68,9 +68,6 @@
 */
 @property (readonly, nonatomic) BOOL deviceCanProcessVideo;
 
-
-@property (nonatomic) BOOL enableBlinkEngage;
-
 ///---------------------
 /// @name Class Methods
 ///---------------------

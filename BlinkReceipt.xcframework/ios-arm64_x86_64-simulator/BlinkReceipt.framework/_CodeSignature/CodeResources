@@ -70,19 +70,19 @@
 		</data>
 		<key>Headers/BRScanManager.h</key>
 		<data>
-		rf8mQ/jl7sKclSiey/WjQ/SW928=
+		VTRsBg7adZgv263RxFeibsNGN38=
 		</data>
 		<key>Headers/BRScanOptions.h</key>
 		<data>
-		1ZzwiEz1ZL01feh0I/Cc5kq+N4g=
+		7d5WEpzikpNOP3uZ3ckeRfXAvBk=
 		</data>
 		<key>Headers/BRScanResults.h</key>
 		<data>
-		r4kY8y2c6zWmZWuzGLDmdYdcTXQ=
+		8M2yAFNlyEFU/XE6DlaKlCZDxZw=
 		</data>
 		<key>Headers/BRScanResultsDelegate.h</key>
 		<data>
-		3uKkjIA3h43rTXzmN1+QE7PUSgc=
+		SqpjqNpF4of6ttFBuCeKGSPO5+U=
 		</data>
 		<key>Headers/BRSerializable.h</key>
 		<data>
@@ -122,11 +122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hl0cSTw4AGpl2SuPOlJC2Gpc2O8=
-		</data>
-		<key>Loading.png</key>
-		<data>
-		Y5og4wWM0fHnQndo99lGZD9yxl8=
+		YAByBq/2vdPkk29u/Jxm8X594Ok=
 		</data>
 		<key>LongReceipt.gif</key>
 		<data>
@@ -695,6 +691,18 @@
 		<data>
 		/Wy/OlEnPME2Euef3CA6bbTZ6mg=
 		</data>
+		<key>spinner.png</key>
+		<data>
+		uod6TM0rdyTyrhnbhX/EluNYiuw=
+		</data>
+		<key>spinner@2x.png</key>
+		<data>
+		QwrOe/HsI5WTOK5w9HfOz29iMJk=
+		</data>
+		<key>spinner@3x.png</key>
+		<data>
+		pwtPvZbzpFQnu6Ewbp1RPX5rrTE=
+		</data>
 		<key>windfall-arca1-intermediate.der</key>
 		<data>
 		jaf5Zexe/DeRDxxuWf3BzGpu3hY=
@@ -838,28 +846,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tZ8c/zHCzpqjutTsk0CqjQecCnsAxaK9VoDrE54/5Pc=
+			0gaSpmSgIvQBoeO+juhe082gFtMSIcOQ1cFJ1L+Lr7Q=
 			</data>
 		</dict>
 		<key>Headers/BRScanOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j4wwam7igYte6YFAucIbkxvkj6CnicV73JqEtphMgzE=
+			uyGmMrUyOMcMknm5JnG3YXd0tsH4z/racd+59WfIXUY=
 			</data>
 		</dict>
 		<key>Headers/BRScanResults.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3y0/na02yh/QqdZufnrjijFUkDCWsUKHkHXPtuFPGWw=
+			B1BvnuXcDaU0fNmmazOU4ojjOPZ9q11zHzRI9lWoOyo=
 			</data>
 		</dict>
 		<key>Headers/BRScanResultsDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3OG7dp26Zyq5jc3RHieNg8gSJrO9sZKEdkOlqeV2JKM=
+			J7QqAb5t0f7QD9vPT4pXyL+7RzjcE7fPulQgDDY2K20=
 			</data>
 		</dict>
 		<key>Headers/BRSerializable.h</key>
@@ -923,13 +931,6 @@
 			<key>hash2</key>
 			<data>
 			gpVcc90hRq6TGj0XZb/tc0WSXq2SF8vz04s1hAGUzJM=
-			</data>
-		</dict>
-		<key>Loading.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pqxt0xQtzuFyBZ61W2K3ZBWngZp0jUGp/8b/zEp1NA0=
 			</data>
 		</dict>
 		<key>LongReceipt.gif</key>
@@ -1902,6 +1903,27 @@
 			<key>hash2</key>
 			<data>
 			ZyUwJtWlDUx6nSFlpGMLHqUWxJX4adJ7hPt71picv1Q=
+			</data>
+		</dict>
+		<key>spinner.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iTzihldLOecCXHaVy6v3A66y059+XEYxO1AB661C/xQ=
+			</data>
+		</dict>
+		<key>spinner@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8TlvQ7aD7UGa3C4F7r+WItiBTkP+T4bvdpoLwQdEiMM=
+			</data>
+		</dict>
+		<key>spinner@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QVMLuzqcSlZqq6sKwY8kxMM/8HvWCZEH3qBYMrtmCl0=
 			</data>
 		</dict>
 		<key>windfall-arca1-intermediate.der</key>

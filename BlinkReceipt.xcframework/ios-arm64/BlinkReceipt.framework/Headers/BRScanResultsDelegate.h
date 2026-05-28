@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, BRErrorCodes) {
  *  Indicates that the scanning session has ended
  *
  *  @param cameraViewController     The subclass of `BRCameraViewController` to dismiss
- *  @param scanResults              The results of the scanning session. Always nil if BRScanManager.enableBlinkEngage is set to true
+ *  @param scanResults              The results of the scanning session. Always nil if `BRScanOptions.enableBlinkEngage` is enabled for the scan
  */
 - (void)didFinishScanning:(UIViewController*)cameraViewController withScanResults:(BRScanResults*)scanResults;
 

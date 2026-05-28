@@ -201,6 +201,16 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *last4CC;
 
 /**
+ *  The payment authorization code detected on the receipt, if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *authCode;
+
+/**
+ *  The payment application identifier detected on the receipt, if any
+ */
+@property (strong, nonatomic, readonly) BRStringValue *aid;
+
+/**
  *  The tax ID of the retailer, if any
  */
 @property (strong, nonatomic, readonly) BRStringValue *taxId;

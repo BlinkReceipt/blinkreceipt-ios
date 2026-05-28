@@ -274,6 +274,13 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  */
 @property (nonatomic) BOOL enableMerchantChip;
 
+/**
+ *  When enabled, activates BlinkEngage monetization behavior for this scan session.
+ *
+ *  Default: NO
+ */
+@property (nonatomic) BOOL enableBlinkEngage;
+
 ///------------------
 /// @name Appearance
 ///------------------

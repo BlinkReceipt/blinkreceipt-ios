@@ -1,3 +1,7 @@
+## 1.70.1
+### CHANGED
+- Stability improvements and performance enhancements
+
 ## 1.70.0
 ### CHANGED
 - Overall extraction improvements

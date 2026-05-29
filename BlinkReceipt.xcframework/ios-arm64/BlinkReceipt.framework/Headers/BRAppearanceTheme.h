@@ -35,6 +35,8 @@ typedef NS_ENUM(NSInteger, BRAppearanceColorKey) {
     BRAppearanceColorKeyOnboardingConfirmButtonLabel,
     /// Active dot color of the page control on the onboarding screen.
     BRAppearanceColorKeyOnboardingCurrentPageControl,
+    /// Tint color of the loading spinner shown on the camera screen while a captured frame is being processed.
+    BRAppearanceColorKeyCameraLoadingSpinner,
 };
 
 /**
@@ -65,6 +67,8 @@ typedef NS_ENUM(NSInteger, BRAppearanceIconKey) {
     BRAppearanceIconKeyFinishButton,
     /// Close (cancel) button on the camera screen. Recommended size: 46 × 46 pt.
     BRAppearanceIconKeyCloseButton,
+    /// Checked state icon for the date, total, and merchant chips after a frame is confirmed. Recommended size: 24 × 24 pt.
+    BRAppearanceIconKeyChipChecked,
 };
 
 /**

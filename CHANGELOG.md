@@ -1,3 +1,11 @@
+## 1.71.0
+### CHANGED
+**Improvements**
+
+- Enhanced barcode extraction to improve barcode recognition and reliability across supported receipt formats.
+- Improved duplicate detection accuracy to better identify duplicate submissions while reducing false positives.
+
+
 ## 1.70.1
 ### CHANGED
 - Stability improvements and performance enhancements

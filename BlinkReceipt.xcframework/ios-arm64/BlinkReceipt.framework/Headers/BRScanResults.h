@@ -251,6 +251,19 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) float ocrConfidence;
 
 /**
+ *  Trip confidence (0–100) computed by the parser at the end of the scan session.
+ *  Reflects how confidently the scan represents a complete purchase trip (date present,
+ *  merchant identified, total found). 0 when not computed.
+ */
+@property (nonatomic, readonly) float tripConfidence;
+
+/**
+ *  Item confidence (0–100) computed by the parser at the end of the scan session.
+ *  Reflects how accurately the individual line items were captured. 0 when not computed.
+ */
+@property (nonatomic, readonly) float itemConfidence;
+
+/**
  *  Indicates whether any server lookups were still pending at the time results were returned to the client
  */
 @property (nonatomic, readonly) BOOL serverLookupsCompleted;

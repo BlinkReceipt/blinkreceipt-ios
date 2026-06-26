@@ -1,3 +1,14 @@
+## 1.72.0
+### CHANGED
+**Fuel Extraction Improvements**
+
+- Improved fuel grade extraction accuracy and reliability
+
+**Stability Improvements**
+
+- Resolved a crash that could occur when processing specific receipt formats.
+- General performance and stability enhancements.
+
 ## 1.71.0
 ### CHANGED
 **Improvements**

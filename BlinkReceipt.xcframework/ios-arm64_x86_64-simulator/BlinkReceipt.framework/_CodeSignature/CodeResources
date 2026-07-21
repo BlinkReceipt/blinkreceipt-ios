@@ -10,15 +10,15 @@
 		</data>
 		<key>BRLiveScanViewController.nib</key>
 		<data>
-		UTyFvNqvO7WjT6HA2VO92PfFcFU=
+		l3W7ypwgaEGP17kGN6N1AVLlrD8=
 		</data>
 		<key>BRNewStaticScanViewController.nib</key>
 		<data>
-		VMD8FSwS0O2BwCpDuLnClvOWMV4=
+		A7om0m9uLLhhhyC6FY2NqANgTFM=
 		</data>
 		<key>BRStaticScanViewController.nib</key>
 		<data>
-		8fTsp7TvyGg8k7d2AaITZy/peOY=
+		TdHo2/8izdf+DpvUWe96+T4vVFY=
 		</data>
 		<key>ChipsView.nib</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/BlinkReceipt-Swift.h</key>
 		<data>
-		Yv+UNXwNtmEJJuetrBlujj9BGZI=
+		Qnmajosdayd0kOiAoe+lRjc7XKU=
 		</data>
 		<key>Headers/BlinkReceipt.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F1oghXh0kvOOabVYAY1D2IY2cp4=
+		wa028jVzXJFvrGbfMtW8KnwUtSU=
 		</data>
 		<key>LongReceipt.gif</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/objects-11.0+.nib</key>
 		<data>
-		Hk/HBFJxXZ5h0ZmXQgUVVTqyhGw=
+		AC0FtdTQ4yvLg369agyQBwqZ2o4=
 		</data>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/runtime.nib</key>
 		<data>
-		/oCmo3NC4eEnCT25t/p1VrCwrc0=
+		y7Tx9mdZJv+zWNfAzqyWubq4jZM=
 		</data>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsCameraViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/objects-11.0+.nib</key>
 		<data>
-		I2K/snaxQwBNg4/sksShEyGIdUM=
+		v64v99vHl9z+S2KQl9a9Ya9jcbs=
 		</data>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/runtime.nib</key>
 		<data>
-		5/QMNRl1e1HbpYLW74gxt3XDqps=
+		cqMWWdwYYRN6dDrZBZL/xXqrx/A=
 		</data>
 		<key>MissedEarnings.storyboardc/Info.plist</key>
 		<data>
@@ -214,19 +214,19 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		J4z3XlAMEqlhU650fk/YR48LLDo=
+		jLk+D8hjhe22YpJjtnZCTcfL5Bg=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8/YxjMC+y7Y081mgLyALUZVLzXw=
+		oA2QmzQsm3msCUO7z3nPx34fd/o=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		J4z3XlAMEqlhU650fk/YR48LLDo=
+		jLk+D8hjhe22YpJjtnZCTcfL5Bg=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jR4En4BDWgAekh5F7nMb9O/q1dc=
+		VoK/hrWNA80rFdJ/pV0EZSssAEA=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -234,19 +234,19 @@
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uYUdAiQ7R1uYtCQzFVaswuLR2+0=
+		i6A1hf0xIMclP99Fr/f2ofkhGNw=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8FDotPBrZQiFRVn1xMGYRPpmqtI=
+		+eFs7YZO02OAmUup7YlfmwzKTX4=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uYUdAiQ7R1uYtCQzFVaswuLR2+0=
+		i6A1hf0xIMclP99Fr/f2ofkhGNw=
 		</data>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		L92Gd5s735n6Vf4kGDOPdGkgPl8=
+		Mors4SQc1XU6Hsaj25WV9nMr0Pk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Surveys.storyboardc/W40-qE-h95-view-THC-qY-r48.nib</key>
 		<data>
-		TXTowUmBDXTgoNYf/qYjqjPIWPQ=
+		e/iGBsdCgVmfSZzsURWqbV/nJgU=
 		</data>
 		<key>add_receipt_frame.png</key>
 		<data>
@@ -741,21 +741,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KVwASKh3/BWleeYkLAT6PRALx/tklVoqX5XTcMlm1m0=
+			p247Iq2Kt2ifA+x1iaSwovzX+0Qvym1H8jGMuev6vBM=
 			</data>
 		</dict>
 		<key>BRNewStaticScanViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hZl7cGT/n8PwouRavZOUnN0JGIRPdqIlhsY605LIjcY=
+			9wgBKVDkN+bsGpIpg+COMbMfUeK2l+Zibzj1m0j0weE=
 			</data>
 		</dict>
 		<key>BRStaticScanViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Ig/wvtZ5Qo+ytElaCGQ+OvqQmbn16sFGeUCdfcgmFw=
+			2Kve+Fc6hdQI91DGcV9N1rrHB5ZqrdTbbuIL5Nd1ekA=
 			</data>
 		</dict>
 		<key>ChipsView.nib</key>
@@ -923,7 +923,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ocuUqy5OzTejvr07tuwa6qMPL7kRHt8kKiUEpnIriRo=
+			/0mEYXEZKJq9t3uraCj2Wb9oXearYvPloVEKLmEonIQ=
 			</data>
 		</dict>
 		<key>Headers/BlinkReceipt.h</key>
@@ -944,14 +944,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jYr4KEhAjQG2ori4j/n4SevJy/ifAYuD0zs6gOiHDo8=
+			1ulca0FNRN/+f66EvI7Om/XNbRnJj+xT4U5lZ3zcO3w=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/3Lx-Yw-yIw-view-rnt-NL-fzD.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RINCqRk2+Hci2BvC1aCHAKICBi0GlJCYH60EPEA2pjA=
+			r6gchVUHh50+GZNn/MFMfopnP8irOb6pbLXYKgcxCXc=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/BRMissedEarningsCameraViewController.nib/objects-11.0+.nib</key>
@@ -1000,14 +1000,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wJN3PFzbxt04bIOP8ifbMtjrVbAb3rXbXHUWJD/z4Nw=
+			Wzmw312NwP6yydOkl9TVeWIWJ7yOyFccusmriBLVDWc=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/HH6-0l-PeQ-view-FVR-6b-BrI.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57jSBKRhJgFd3enQ3xxRmB8IByzTSypJ61vludl29Ek=
+			HK7msWmF7YNLCcXnMuAmGPww2KaIYekXIUPJ8m132Hw=
 			</data>
 		</dict>
 		<key>MissedEarnings.storyboardc/Info.plist</key>
@@ -1091,28 +1091,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCY0TFpLFNDe04RuVgfmPcGX149DFShaO2rbETKU0WM=
+			8UXrNuAoi5lQwEd9NNNsBjCdodBW7lVjk42bDoEcZic=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qhd9NJ8UtW+2cnecNbcXyynW/hGCcHCZJ7BW5mq45v8=
+			3hXpVekUuqyIv26JqslnnRfCI4/WJBiQEw97FimV1O8=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCY0TFpLFNDe04RuVgfmPcGX149DFShaO2rbETKU0WM=
+			8UXrNuAoi5lQwEd9NNNsBjCdodBW7lVjk42bDoEcZic=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY4ltXiR+n889scrV4LrvKrSU8W1N95sM7++NyYAz20=
+			Spi7g5xkJjfK7/US3oME1Wz+lknB4/l8da5fPOVtYvI=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1126,28 +1126,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			10qjbP8SCXQd0E1IGLPnJEePJ4aSxzzs0n1ibqd1Dsg=
+			Dh2Xaxry0wKDhgIAg5PFizxoahfXzM+M1uhSW15MDuk=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5xuL79tmTijvcR7PXRTk9+lo5oBzh9bI06RyCpqqwc=
+			L9Ue60DChGjYutJxMh1dMu8VzJbbohgOO0C3TcZYryM=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			10qjbP8SCXQd0E1IGLPnJEePJ4aSxzzs0n1ibqd1Dsg=
+			Dh2Xaxry0wKDhgIAg5PFizxoahfXzM+M1uhSW15MDuk=
 			</data>
 		</dict>
 		<key>Modules/BlinkReceipt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I0ietIXU29iEe0FxDWgzN7lsak2shTsB1RylLHuj7ak=
+			U+V417xB8gPHQ/oFG8yYnACFs6YYNMx74/bvN2exklA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1224,7 +1224,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wwjTcXuRHudsluNYwYuAtMPOGt1tbWeEkw/GViuphIw=
+			2PKp3bEYPf/VtpymLiouFu9cXz0hIggI+dGNpIi3LqI=
 			</data>
 		</dict>
 		<key>add_receipt_frame.png</key>

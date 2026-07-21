@@ -1,3 +1,10 @@
+## 1.73.0
+### ADDED
+**BlinkEngage Improvements**
+
+- Monetization (BlinkEngage) scans now verify that the total, merchant name, and purchase date are present before submission. If any are missing, a drawer prompts the user to retake the photo or enter values manually. If every missing field is recovered by retake, the scan submits as normal; if any field is entered manually, the scan routes to a blocking screen and is not submitted to BlinkEngage. Non-monetization scans are unaffected.
+
+
 ## 1.72.0
 ### CHANGED
 **Fuel Extraction Improvements**

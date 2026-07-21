@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BlinkReceipt
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import BlinkReceipt
 import Foundation
 import Swift
@@ -10,8 +10,12 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class BRSimpleKeychain : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueFromKeychain(forKey key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDataFromKeychain(forKey key: Swift.String) -> Foundation.NSData?
+  #endif
   @objc public func setKeychain(value: Swift.String, forKey key: Swift.String)
   @objc public func setKeychain(data: Foundation.NSData, forKey key: Swift.String)
   @objc public func deleteKeychainValue(forKey key: Swift.String)
@@ -29,11 +33,17 @@ import _SwiftConcurrencyShims
     @objc get
   }
   @objc public init(fileManager: Foundation.FileManager = .default, device: UIKit.UIDevice = .current)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc public func saveData(_ data: Foundation.Data?, fileExtension: Swift.String, additionalMetadata: Any?) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func deleteFile(named name: Swift.String?, fileExtension: Swift.String)
+  #endif
   @objc public func deleteFiles(withExtension fileExtension: Swift.String)
   @objc public func deleteFile(at url: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func metadataForFile(at url: Foundation.URL) -> Swift.String?
+  #endif
   @objc deinit
 }

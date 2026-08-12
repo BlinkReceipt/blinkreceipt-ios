@@ -1,3 +1,7 @@
+## 1.74.0
+### CHANGED
+- Stability improvements and performance enhancements
+
 ## 1.73.0
 ### ADDED
 **BlinkEngage Improvements**

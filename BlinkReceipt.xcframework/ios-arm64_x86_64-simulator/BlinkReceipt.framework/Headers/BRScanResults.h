@@ -231,6 +231,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (strong, nonatomic, readonly) BRStringValue *paymentTransactionId;
 
 /**
+*  Represents the purchase country code
+*/
+@property (strong, nonatomic, readonly) BRStringValue *purchaseCountry;
+
+/**
 *  Represents the type of purchase
 */
 @property (strong, nonatomic, readonly) NSString *purchaseType;

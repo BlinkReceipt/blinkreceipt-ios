@@ -1,0 +1,44 @@
+# Promote BlinkReceipt SDK to Production
+#
+# Manually triggered workflow that promotes a specific RC build from staging to production.
+# Takes an RC tag (e.g. v1.75.0-rc.2) and:
+#   - Copies artifacts from commerce-ios-products-staging → blinkreceipt-ios
+#   - Creates a GitHub Release on blinkreceipt-ios
+#   - Pushes the podspec to BlinkReceipt/PodSpecRepo (CocoaPods)
+#   - Sends a Slack notification
+#
+# The RC tag / staging branch (BlinkReceipt/<rc_tag>) must already exist in
+# commerce-ios-products-staging (produced by the staging build).
+#
+name: Promote BlinkReceipt SDK to Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      rc_tag:
+        description: 'RC tag to promote (e.g. v1.75.0-rc.2)'
+        required: true
+        type: string
+      is_beta:
+        description: 'Beta release (versioned branch) or full production (main)?'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  promote:
+    uses: BlinkReceipt/github-workflows/.github/workflows/ios-sdk-promote.yml@main
+    with:
+      rc_tag: ${{ inputs.rc_tag }}
+      sdk_name: BlinkReceipt
+      production_repo: blinkreceipt-ios
+      production_branch: master
+      is_beta: ${{ inputs.is_beta }}
+      ci_bot_app_id: ${{ vars.CI_BOT_APP_ID }}
+      slack_channel_id: ${{ vars.SLACK_CHANNEL_ID }}
+    secrets:
+      CI_BOT_APP_PRIVATE_KEY: ${{ secrets.CI_BOT_APP_PRIVATE_KEY }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

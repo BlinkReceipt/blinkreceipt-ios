@@ -1,0 +1,22 @@
+# Runs the iOS PR quality gate on PRs into master.
+name: PR Check
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  checks:
+    uses: BlinkReceipt/github-workflows/.github/workflows/ios-pr-checks.yaml@main
+    secrets:
+      CACHE_ENCRYPTION_KEY: ${{ secrets.CACHE_ENCRYPTION_KEY }}
+      CI_BOT_APP_PRIVATE_KEY: ${{ secrets.CI_BOT_APP_PRIVATE_KEY }}
+    with:
+      runs_on: macos-26-self-hosted
+      lint: false
+      unit_tests: true
+      test_build: true

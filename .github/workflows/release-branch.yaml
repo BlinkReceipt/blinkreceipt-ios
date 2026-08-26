@@ -1,0 +1,31 @@
+# Thin caller for the universal Create Release Branch reusable workflow (BlinkReceipt/github-workflows).
+# Picks a bump type and delegates all git/version logic.
+name: Create Release Branch
+run-name: Create release branch (${{ inputs.bump_type }}) by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_type:
+        description: >
+          Bump the latest release: major -> (M+1).0.0, feature -> M.(F+1).0, fix -> M.F.(X+1).
+          Creates release/<major>.<feature>.<fix> off the latest GitHub release.
+        required: true
+        default: feature
+        type: choice
+        options:
+          - major
+          - feature
+          - fix
+
+jobs:
+  create-release-branch:
+    uses: BlinkReceipt/github-workflows/.github/workflows/create-release-branch.yml@main
+    with:
+      name: BlinkReceipt
+      bump_type: ${{ inputs.bump_type }}
+      ci_bot_app_id: ${{ vars.CI_BOT_APP_ID }}
+      slack_channel_id: ${{ vars.SLACK_CHANNEL_ID }}
+    secrets:
+      CI_BOT_APP_PRIVATE_KEY: ${{ secrets.CI_BOT_APP_PRIVATE_KEY }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

@@ -28,7 +28,7 @@
       </p>
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          BlinkReceipt iOS SDK 1.74.0 Docs
+          BlinkReceipt iOS SDK 1.75.0 Docs
         </a>
         
       </p>
@@ -276,6 +276,21 @@
   }
 </style>
 <h1 id='release-notes' class='heading'>Release Notes</h1>
+<h2 id='september-1-2026' class='heading'>September 1, 2026</h2>
+
+<div class="note">
+  <div class="note-type">
+    <span class="fixed">FIXED</span>
+  </div>
+  <div class="note-content">Scanning a second receipt without fully leaving the scanner returned the first receipt&rsquo;s data instead of its own, wrongly flagging valid receipts as duplicates and risking denial of a user&rsquo;s reward. This was the leading cause of the false duplicates found in recent testing. Each scan now returns its own data, removing that cause.</div>
+</div>
+
+<div class="note">
+  <div class="note-type">
+    <span class="added">ADDED</span>
+  </div>
+  <div class="note-content"><code>isReturn</code>: receipts flag whether they&rsquo;re a return, right on the receipt object, and it defaults to false. It introduces no breaking changes.</div>
+</div>
 <h2 id='august-12-2026' class='heading'>August 12, 2026</h2>
 
 <div class="note">
@@ -868,7 +883,7 @@ Routine maintenance and performance updates.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-08-11)</p>
+      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-09-01)</p>
       
     </section>
   </body>

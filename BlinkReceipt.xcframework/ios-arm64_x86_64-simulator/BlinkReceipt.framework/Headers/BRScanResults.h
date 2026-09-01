@@ -251,6 +251,11 @@ typedef NS_ENUM(NSUInteger, BRMerchantSource) {
 @property (nonatomic, readonly) BOOL isInstacartShopper;
 
 /**
+ *  Whether this receipt represents a return rather than a purchase
+*/
+@property (nonatomic, readonly) BOOL isReturn;
+
+/**
  *  An average confidence (between 0 and 100) for the OCR performed on this receipt
  */
 @property (nonatomic, readonly) float ocrConfidence;

@@ -1,3 +1,13 @@
+## 1.75.0
+### FIXED
+- Scanning a second receipt without fully leaving the scanner returned the first receipt's data instead of its own, wrongly flagging valid receipts as duplicates and risking denial of a user's reward. This was the leading cause of the false duplicates found in recent testing. Each scan now returns its own data, removing that cause.
+
+### ADDED
+- `isReturn`: receipts flag whether they're a return, right on the receipt object, and it defaults to false. It introduces no breaking changes.
+
+### CHANGED
+- This release includes parser v1.55.1.
+
 ## 1.74.0
 ### CHANGED
 - Stability improvements and performance enhancements

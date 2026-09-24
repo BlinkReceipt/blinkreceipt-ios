@@ -289,21 +289,21 @@
   <div class="note-type">
     <span class="fixed">FIXED</span>
   </div>
-  <div class="note-content">Receipts no longer finish with no data when a Scan API request fails. The Scan API is reached at scan.blinkreceipt.com again, a failed request is retried once, and a classifier that returns no result is no longer counted as &ldquo;not a receipt&rdquo;.</div>
+  <div class="note-content">Receipts could finish with no data when a Scan API request failed. The Scan API is reached at scan.blinkreceipt.com again, a failed request is retried once and no longer blocks the remaining frames of the scan, and a classifier that returns no result is no longer counted as &ldquo;not a receipt&rdquo;. Falling back to on-device OCR after a failed retry is a separate follow-up.</div>
 </div>
 
 <div class="note">
   <div class="note-type">
     <span class="changed">CHANGED</span>
   </div>
-  <div class="note-content">Scan results handed to BlinkEngage now carry scan diagnostics (failure codes and frame counters), and Scan API requests record why a scan was routed to the server, so empty receipts can be traced.</div>
+  <div class="note-content">Scan results handed to BlinkEngage now carry scan diagnostics (failure codes and frame counters), and Scan API requests record why a scan was routed to the server. Backend persistence of the diagnostics is in progress.</div>
 </div>
 
 <div class="note">
   <div class="note-type">
     <span class="changed">CHANGED</span>
   </div>
-  <div class="note-content">The BlinkEngage bridge passes the host view controller when a scan session starts. BlinkEngage 1.14.0 requires BlinkReceipt 1.76.0 or later.</div>
+  <div class="note-content">The BlinkEngage bridge passes the host view controller when a scan session starts. BlinkEngage 1.14.0 will require BlinkReceipt 1.76.0 or later.</div>
 </div>
 <h2 id='september-1-2026' class='heading'>September 1, 2026</h2>
 

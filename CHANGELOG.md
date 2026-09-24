@@ -1,11 +1,11 @@
 ## 1.76.0
 ### FIXED
 - A scan could freeze after the user chose to retake the photo from the missing fields prompt in the standard camera UX, and the only way out was force quitting the app. The retake now returns to the camera and completes.
-- Receipts no longer finish with no data when a Scan API request fails. The Scan API is reached at scan.blinkreceipt.com again, a failed request is retried once, and a classifier that returns no result is no longer counted as "not a receipt".
+- Receipts could finish with no data when a Scan API request failed. The Scan API is reached at scan.blinkreceipt.com again, a failed request is retried once and no longer blocks the remaining frames of the scan, and a classifier that returns no result is no longer counted as "not a receipt". Falling back to on-device OCR after a failed retry is a separate follow-up.
 
 ### CHANGED
-- Scan results handed to BlinkEngage now carry scan diagnostics (failure codes and frame counters), and Scan API requests record why a scan was routed to the server, so empty receipts can be traced.
-- The BlinkEngage bridge passes the host view controller when a scan session starts. BlinkEngage 1.14.0 requires BlinkReceipt 1.76.0 or later.
+- Scan results handed to BlinkEngage now carry scan diagnostics (failure codes and frame counters), and Scan API requests record why a scan was routed to the server. Backend persistence of the diagnostics is in progress.
+- The BlinkEngage bridge passes the host view controller when a scan session starts. BlinkEngage 1.14.0 will require BlinkReceipt 1.76.0 or later.
 
 ## 1.75.0
 ### FIXED

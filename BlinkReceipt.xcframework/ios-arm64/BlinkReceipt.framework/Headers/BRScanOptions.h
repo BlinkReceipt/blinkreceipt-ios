@@ -180,9 +180,9 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
  *  If specified, the SDK will assume all receipts scanned are from a particular country.
  Format is ISO 2 character country code for the receipts which will be scanned (full list here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements )
  *
- *  Default: nil
+ *  Default: US
  */
-@property (strong, nonatomic) NSString *countryCode;
+@property (strong, nonatomic, nullable) NSString *countryCode;
 
 /**
  *  Whether to enable logo detection
@@ -230,7 +230,7 @@ typedef NS_ENUM(NSUInteger, WFRetailerId) {
 /**
  *  One or more promotion slugs to validate against
  */
-@property (strong, nonatomic) NSArray *promotionSlugs;
+@property (strong, nonatomic, nullable) NSArray *promotionSlugs;
 
 /**
  *  If enabled, the stock camera controller's UI will adjust based on the user's text size preference from the Settings or Accessibility screens

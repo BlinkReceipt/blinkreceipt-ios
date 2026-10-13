@@ -1,3 +1,10 @@
+## 1.76.1
+### FIXED
+- `countryCode` and `promotionSlugs` on `BRScanOptions` are declared nullable, which removes the nullability warning customer apps saw when compiling the SDK headers. In Swift they are now `String?` and `[Any]?` instead of implicitly unwrapped optionals.
+
+### CHANGED
+- Trip resolution requests go to the Trip Resolution service's own host instead of the licensing API proxy. Request and response are unchanged. Apps that restrict outbound traffic with an allow-list must allow `api.actualplatform.com`.
+
 ## 1.76.0
 ### FIXED
 - A scan could freeze after the user chose to retake the photo from the missing fields prompt in the standard camera UX, and the only way out was force quitting the app. The retake now returns to the camera and completes.

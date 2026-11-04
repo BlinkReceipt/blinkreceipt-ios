@@ -28,7 +28,7 @@
       </p>
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          BlinkReceipt iOS SDK 1.76.1 Docs
+          BlinkReceipt iOS SDK 1.77.0 Docs
         </a>
         
       </p>
@@ -276,6 +276,28 @@
   }
 </style>
 <h1 id='release-notes' class='heading'>Release Notes</h1>
+<h2 id='november-4-2026' class='heading'>November 4, 2026</h2>
+
+<div class="note">
+  <div class="note-type">
+    <span class="fixed">FIXED</span>
+  </div>
+  <div class="note-content">A scan no longer blocks the main thread when it finishes. The receipt post read the device location through synchronous Core Location calls, and the user frames were JPEG-encoded and written to disk on the main queue, which with full-resolution <code>directScanReceiptImages</code> input could stall the app for seconds. Both now run on background queues; <code>didFinishScanning:</code> is delivered as before.</div>
+</div>
+
+<div class="note">
+  <div class="note-type">
+    <span class="changed">CHANGED</span>
+  </div>
+  <div class="note-content">Scan results handed to BlinkEngage now carry the merchant detection signals (the detected merchant and banner with their confidence, and the phone, logo and text matches behind them). BlinkEngage 1.15.0 requires BlinkReceipt 1.77.0 or later.</div>
+</div>
+
+<div class="note">
+  <div class="note-type">
+    <span class="changed">CHANGED</span>
+  </div>
+  <div class="note-content">This release includes parser v1.56.0.</div>
+</div>
 <h2 id='october-12-2026' class='heading'>October 12, 2026</h2>
 
 <div class="note">
@@ -934,7 +956,7 @@ Routine maintenance and performance updates.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-10-07)</p>
+      <p>&copy; 2026 <a class="link" href="https://www.blinkreceipt.com" target="_blank" rel="external noopener">BlinkReceipt LLC</a>. All rights reserved. (Last updated: 2026-11-04)</p>
       
     </section>
   </body>

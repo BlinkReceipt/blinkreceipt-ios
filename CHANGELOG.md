@@ -1,3 +1,11 @@
+## 1.77.0
+### FIXED
+- A scan no longer blocks the main thread when it finishes. The receipt post read the device location through synchronous Core Location calls, and the user frames were JPEG-encoded and written to disk on the main queue, which with full-resolution `directScanReceiptImages` input could stall the app for seconds. Both now run on background queues; `didFinishScanning:` is delivered as before, without that work in front of it.
+
+### CHANGED
+- Scan results handed to BlinkEngage now carry the merchant detection signals (the detected merchant and banner with their confidence, and the phone, logo and text matches behind them), so the decision screen can use them. BlinkEngage 1.15.0 requires BlinkReceipt 1.77.0 or later.
+- This release includes parser v1.56.0.
+
 ## 1.76.1
 ### FIXED
 - `countryCode` and `promotionSlugs` on `BRScanOptions` are declared nullable, which removes the nullability warning customer apps saw when compiling the SDK headers. In Swift they are now `String?` and `[Any]?` instead of implicitly unwrapped optionals.
